@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 /* ------ Pages ------ */
 // Home
 import Home from "../pages/Home/Home";
+import Preg from "../pages/Pregnency_sec";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
         <Routes>
           {/* Launching Page */}
           <Route path="/" element={<Home/>} />
+          <Route path="/pregnency-sec" element={<Preg/>} />
         </Routes>
       </Router>
     </>
