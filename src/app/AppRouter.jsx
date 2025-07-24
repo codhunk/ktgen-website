@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // Home
 import Home from "../pages/Home/Home";
 import Preg from "../pages/Pregnency_sec";
+import Comp from "../pages/Compaign_sec";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
           {/* Launching Page */}
           <Route path="/" element={<Home/>} />
           <Route path="/pregnency-sec" element={<Preg/>} />
+          <Route path="/campaign-sec" element={<Comp/>} />
         </Routes>
       </Router>
     </>

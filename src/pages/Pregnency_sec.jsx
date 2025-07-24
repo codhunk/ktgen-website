@@ -31,22 +31,22 @@ const Pregnency_sec = () => {
   };
 
   return (
-    <main className='dark:bg-[#4B5945] dark:text-white'>
+    <main className='dark:bg-[#57564F] dark:text-white'>
     <div className="p-6 max-w-5xl mx-auto space-y-10">
       {/* Banner */}
-      <div style={{backgroundImage:"url('/baby.jpg')"}} className="bg-cover text-gray-800 dark:text-[#4B5945] bg-center bg-gray-200 p-8 md:p-20 rounded-xl text-center">
+      <div style={{backgroundImage:"url('/baby.jpg')"}} className="bg-cover text-gray-800 dark:text-[#57564F] bg-center bg-gray-200 p-8 md:p-20 rounded-xl text-center">
         <h1 className="text-4xl font-bold">{t("pregnency_j")}</h1>
-        <p className="mt-2 text-lg">{t("preg_explore")}</p>
+        <p className="mt-2 text-lg font-semibold">{t("preg_explore")}</p>
       </div>
 
       {/* About */}
-      <div className="bg-white dark:bg-[#66785F] dark:text-white text-gray-700  p-6 rounded-xl shadow">
+      <div className="bg-white dark:bg-[#7A7A73] dark:text-white text-gray-700  p-6 rounded-xl shadow">
         <h2 className="text-2xl font-semibold mb-3">{t("preg_about")}</h2>
-        <p className="">{t("preg_h")}</p>
+        <p className="font-semibold">{t("preg_h")}</p>
       </div>
 
       {/* Video Playlist */}
-      <div className="bg-gray-100 dark:bg-[#66785F] p-6 rounded-xl shadow">
+      <div className="bg-gray-100 dark:bg-[#7A7A73] p-6 rounded-xl shadow">
         <h3 className="text-xl font-semibold mb-4 text-gray-700 dark:text-white ">{t("preg_watch")}</h3>
         <div className="flex flex-wrap gap-3 mb-4">
           {videoData.map((video, idx) => (
@@ -54,7 +54,7 @@ const Pregnency_sec = () => {
               key={idx}
               onClick={() => setCurrentIndex(idx)}
               className={`px-3 py-1 rounded-full text-sm border ${
-                currentIndex === idx ? 'bg-gray-700 dark:bg-[#4B5945] text-white':'bg-white dark:bg-[#B2C9AD] dark:hover:bg-[#66785F] hover:bg-gray-100 text-[#4B5945]'}`}
+                currentIndex === idx ? 'bg-gray-700 dark:bg-[#57564F] text-white':'bg-white dark:bg-[#DDDAD0] dark:hover:bg-[#7A7A73] dark:hover:text-white hover:bg-gray-100 text-[#57564F]'}`}
             >
               {video.label}
             </button>
