@@ -34,7 +34,7 @@ const Pregnency_sec = () => {
     <main className='dark:bg-[#57564F] dark:text-white'>
     <div className="p-6 max-w-5xl mx-auto space-y-10">
       {/* Banner */}
-      <div style={{backgroundImage:"url('/baby.jpg')"}} className="bg-cover text-gray-800 dark:text-[#57564F] bg-center bg-gray-200 p-8 md:p-20 rounded-xl text-center">
+      <div style={{backgroundImage:"url('/images/baby.jpg')"}} className="bg-cover text-gray-800 dark:text-[#57564F] bg-center bg-gray-200 p-8 md:p-20 rounded-xl text-center">
         <h1 className="text-4xl font-bold">{t("pregnency_j")}</h1>
         <p className="mt-2 text-lg font-semibold">{t("preg_explore")}</p>
       </div>
