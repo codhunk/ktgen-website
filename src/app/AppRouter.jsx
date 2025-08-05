@@ -9,6 +9,7 @@ import Gallery from "../pages/Gallery";
 import Preg from "../pages/Pregnency_sec";
 import Comp from "../pages/Compaign_sec";
 import Navbar from "../components/Navbar/Navbar";
+import Footer from "../components/Footer/Footer";
 
 const App = () => {
   return (
@@ -22,8 +23,9 @@ const App = () => {
           {/* Gallery Page */}
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/pregnency-sec" element={<Preg />} />
-          <Route path="/campaign-sec" element={<Comp />} />
+          <Route path="/campaign" element={<Comp />} />
         </Routes>
+        <Footer/>
       </Router>
     </>
   );
