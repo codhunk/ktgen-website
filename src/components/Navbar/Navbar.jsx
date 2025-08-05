@@ -32,7 +32,7 @@ const navList = [
     subLink: [
       { name: "CSR", link: "/csr", icon: <RiTeamFill /> },
       { name: "Media", link: "/media", icon: <SiWikimediafoundation /> },
-      { name: "Careers", link: "/careers", icon: <MdOutlineWork /> },
+      { name: "Careers", link: "/career", icon: <MdOutlineWork /> },
       { name: "Compaign", link: "/compaign", icon: <RiTeamFill /> },
     ],
   },
