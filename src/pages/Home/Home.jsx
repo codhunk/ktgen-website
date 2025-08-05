@@ -19,6 +19,11 @@ import LanguageSelector from "../../components/LanguageSelector/LanguageSelector
 import { FaMoon } from "react-icons/fa";
 // Light
 import { MdWbSunny } from "react-icons/md";
+import Counting from "./Counting";
+import OurMission from "./OurMission";
+import TherapeuticSegments from "./Specalist";
+import PartnerProgram from "./PartnerProgram";
+import WhatsAppButton from "./WhatsappButton";
 
 const Home = () => {
   const { t } = useTranslation();
@@ -48,6 +53,9 @@ const Home = () => {
 
   return (
     <>
+      <div>
+        <WhatsAppButton />
+      </div>
       <div className="min-h-screen bg-gradient-to-br from-indigo-200 to-white dark:from-gray-900 dark:to-gray-800 flex flex-col items-center justify-center text-slate-800 dark:text-white px-4 text-center transition-all duration-300">
         <h1 className="text-4xl md:text-6xl font-bold mb-4">{t("welcome")}</h1>
         <p className="text-xl md:text-2xl mb-6">{t("comingSoon")}</p>
@@ -83,10 +91,21 @@ const Home = () => {
             {t("notify")}
           </button>
         </form>
+        <div className="mt-10 ">
+          <Counting />
+        </div>
+        <div className="mt-10 ">
+          <OurMission />
+        </div>
 
-        <footer className="absolute bottom-4 text-sm text-slate-800 dark:text-gray-300">
-          © {new Date().getFullYear()} ManMed Health. All rights reserved.
-        </footer>
+        {/* <div className="mt-10 ">
+          <TherapeuticSegments />
+        </div> */}
+        <div className="mt-10 ">
+          <PartnerProgram />
+        </div>
+
+
       </div>
 
       <ToastAlert />

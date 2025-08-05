@@ -15,12 +15,12 @@ const App = () => {
       <Router>
         <Routes>
           {/* Launching Page */}
-          <Route path="/" element={<Home/>} />
-        <Route path="/career" element={<Careers />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/career" element={<Careers />} />
           {/* Gallery Page */}
-          <Route path="/gallery" element={<Gallery/>} />
-          <Route path="/pregnency-sec" element={<Preg/>} />
-          <Route path="/campaign-sec" element={<Comp/>} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/pregnency-sec" element={<Preg />} />
+          <Route path="/campaign-sec" element={<Comp />} />
 
         </Routes>
       </Router>
