@@ -1,18 +1,11 @@
 import React from "react";
-import video from "./assets/218955_medium.mp4";
+import VideoSlider from "../../components/VideoSlider/VideoSlider";
 
 const Home = () => {
   return (
-    <div className="w-full h-dvh overflow-hidden">
-      <video
-        src={video}
-        autoPlay
-        muted
-        loop
-        playsInline
-        className="w-full h-full object-cover block"
-      />
-    </div>
+    <>
+      <VideoSlider />
+    </>
   );
 };
 
