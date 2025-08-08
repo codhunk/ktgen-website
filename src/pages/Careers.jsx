@@ -254,67 +254,6 @@ const Careers = () => {
 
   return (
     <div className="min-h-screen bg-white text-gray-800">
-      {/* Header/Navbar - Mimicking video's header */}
-      <header className="fixed top-0 left-0 right-0 z-50 bg-gray-900 bg-opacity-70 backdrop-blur-md text-white shadow-lg">
-        <nav className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-          <div className="flex items-center space-x-2">
-            <span className="text-2xl font-bold text-purple-500">Manmed</span>
-            <span className="text-xl font-semibold">Health</span>
-          </div>
-          <ul className="hidden md:flex space-x-8 text-sm font-medium">
-            <li>
-              <a href="#" className="hover:text-purple-400 transition-colors">
-                HOME
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-purple-400 transition-colors">
-                ABOUT US
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-purple-400 transition-colors">
-                MEDICAL SERVICES
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-purple-400 transition-colors">
-                CONTACT US
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="text-purple-400 border-b-2 border-purple-400 pb-1"
-              >
-                CAREERS
-              </a>
-            </li>
-          </ul>
-          <button className="hidden md:block bg-purple-600 hover:bg-purple-700 text-white px-5 py-2 rounded-full text-sm font-medium transition-colors">
-            Contact Us
-          </button>
-          {/* Mobile menu icon (for responsiveness, not fully implemented here) */}
-          <div className="md:hidden">
-            <button className="text-white focus:outline-none">
-              <svg
-                className="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h16m-7 6h7"
-                ></path>
-              </svg>
-            </button>
-          </div>
-        </nav>
-      </header>
 
       {/* Dynamic Content Sections */}
       <section
@@ -326,7 +265,7 @@ const Careers = () => {
         {/* Darker Overlay */}
         <div className="absolute inset-0 bg-black/70 backdrop-blur-sm z-0 transition-opacity"></div>
 
-        <div className="relative max-w-6xl mx-auto px-6 z-10 text-white">
+        <div className="relative max-w-6xl mx-auto px-6 z-8 text-white">
           <div className="max-w-xl">
             <h1 className="text-5xl font-extrabold leading-tight mb-6">
               {dynamicContent[currentContentIndex].heading}
