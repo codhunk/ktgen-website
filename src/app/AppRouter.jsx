@@ -1,5 +1,5 @@
 /* ------ React Router Dom ------ */
-import { Routes, Route, useLocation } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 /* ------ Pages ------ */
 // Home
@@ -10,24 +10,43 @@ import Preg from "../pages/Pregnency_sec";
 import Comp from "../pages/Compaign_sec";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
+import { useGSAP } from '@gsap/react'
+import { ScrollSmoother, ScrollTrigger } from 'gsap/all'
+import gsap from 'gsap'
 import MouseGlow from "../components/MouseGlow/MouseGlow";
 
+
+
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+
 const App = () => {
-  const location = useLocation();
+
+  useGSAP(() => {
+    ScrollSmoother.create({
+      smooth: 3,
+      effects: true,
+    });
+  });
+
   return (
     <>
-      <Navbar />
-      <MouseGlow />
-      <Routes>
-        {/* Launching Page */}
-        <Route path="/" element={<Home key={location.pathname} />} />
-        <Route path="/career" element={<Careers />} />
-        {/* Gallery Page */}
-        <Route path="/gallery" element={<Gallery />} />
-        <Route path="/pregnency-sec" element={<Preg />} />
-        <Route path="/campaign" element={<Comp />} />
-      </Routes>
-      <Footer />
+        <Navbar />
+        <MouseGlow/>
+
+        <div id="smooth-wrapper">
+          <div id="smooth-content">
+            <Routes>
+              {/* Launching Page */}
+              <Route path="/" element={<Home />} />
+              <Route path="/career" element={<Careers />} />
+              {/* Gallery Page */}
+              <Route path="/gallery" element={<Gallery />} />
+              <Route path="/pregnency-sec" element={<Preg />} />
+              <Route path="/campaign" element={<Comp />} />
+            </Routes>
+          </div>
+        </div>
+        <Footer />
     </>
   );
 };

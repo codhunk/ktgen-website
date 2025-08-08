@@ -67,7 +67,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="w-full fixed z-10 top-0 flex justify-center items-center text-sm font-semibold backdrop-blur-lg bg-gradient-to-b from-[#000000e7] to-transparent">
+    <nav className="w-full fixed z-50 top-0 flex justify-center items-center text-sm font-semibold backdrop-blur-lg bg-gradient-to-b from-[#000000e7] to-transparent">
       <div className="w-[95%] 2xl:max-w-7xl flex justify-between items-center py-4">
         {/* Left Section: Logo + Nav */}
         <ul className="flex justify-center items-center gap-10">
@@ -124,10 +124,9 @@ const Navbar = () => {
                 <NavLink
                   to={n.link}
                   className={({ isActive }) =>
-                    `relative group flex items-center text-white px-5 py-1 gap-2 rounded-full transition-all duration-300 ease-in-out overflow-hidden backdrop-blur-md ${
-                      isActive
-                        ? "bg-[#005c63] shadow-md"
-                        : "bg-[#ffffff17] hover:bg-[#005c63] hover:shadow-md"
+                    `relative group flex items-center text-white px-5 py-1 gap-2 rounded-full transition-all duration-300 ease-in-out overflow-hidden backdrop-blur-md ${isActive
+                      ? "bg-[#005c63] shadow-md"
+                      : "bg-[#ffffff17] hover:bg-[#005c63] hover:shadow-md"
                     }`
                   }
                 >
@@ -137,11 +136,10 @@ const Navbar = () => {
                       <span
                         className={`
               absolute left-1 transition-all duration-300 ease-out text-slate-900 bg-white p-1 rounded-full
-              ${
-                isActive
-                  ? "opacity-100 translate-x-0"
-                  : "opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0"
-              }
+              ${isActive
+                            ? "opacity-100 translate-x-0"
+                            : "opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0"
+                          }
             `}
                       >
                         {n.icon}
@@ -149,11 +147,10 @@ const Navbar = () => {
 
                       {/* Label slide-right */}
                       <span
-                        className={`transition-transform duration-300 ease-out ${
-                          isActive
+                        className={`transition-transform duration-300 ease-out ${isActive
                             ? "translate-x-3"
                             : "group-hover:translate-x-3"
-                        }`}
+                          }`}
                       >
                         {n.name}
                       </span>
