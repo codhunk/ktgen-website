@@ -15,9 +15,9 @@ import OurMission from "./OurMission";
 import TherapeuticSegments from "./Specalist";
 import PartnerProgram from "./PartnerProgram";
 import WhatsAppButton from "./WhatsappButton";
-import video from "./assets/218955_medium.mp4"
 import SegmentSlider from "../../components/slider/SegmentSlider";
 import FlavourSection from "./test/FlavourSection";
+import VideoSlider from "../../components/VideoSlider/VideoSlider";
 
 
 const Home = () => {
@@ -28,15 +28,8 @@ const Home = () => {
       <div>
         <WhatsAppButton />
       </div>
-      <div className="w-full h-dvh overflow-hidden">
-        <video
-          src={video}
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="w-full h-full object-cover block"
-        />
+      <div >
+        <VideoSlider/>
       </div>
       <div className="min-h-screen bg-gradient-to-br from-indigo-200 to-white dark:from-gray-900 dark:to-gray-800 flex flex-col items-center justify-center text-slate-800 dark:text-white px-4 text-center transition-all duration-300">
 

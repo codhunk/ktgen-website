@@ -1,5 +1,5 @@
 /* ------ React Router Dom ------ */
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 /* ------ Pages ------ */
 // Home
@@ -13,6 +13,7 @@ import Footer from "../components/Footer/Footer";
 import { useGSAP } from '@gsap/react'
 import { ScrollSmoother, ScrollTrigger } from 'gsap/all'
 import gsap from 'gsap'
+import MouseGlow from "../components/MouseGlow/MouseGlow";
 
 
 
@@ -29,8 +30,9 @@ const App = () => {
 
   return (
     <>
-      <Router>
         <Navbar />
+        <MouseGlow/>
+
         <div id="smooth-wrapper">
           <div id="smooth-content">
             <Routes>
@@ -45,7 +47,6 @@ const App = () => {
           </div>
         </div>
         <Footer />
-      </Router>
     </>
   );
 };

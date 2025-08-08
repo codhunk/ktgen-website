@@ -18,23 +18,22 @@ const Careers = () => {
   const [formStep, setFormStep] = useState(1); // State for current form step
 
   const dynamicContent = [
-  {
-    heading: "Building a Meaningful Career in Healthcare",
-    description: `Pursuing a career in the medical field offers the chance to make a real difference in people's lives. From nursing and lab technology to hospital administration and patient care, the healthcare industry provides a wide range of impactful roles. With a growing demand for skilled professionals, individuals who are compassionate, committed, and qualified will always find opportunities to thrive in this essential field.`,
-    image: "https://images.unsplash.com/photo-1495567720989-cebdbdd97913", // Healthcare-related image
-  },
-  {
-    heading: "Technology Transforming Modern Healthcare",
-    description: `Advancements in medical technology are revolutionizing patient care and healthcare operations. From electronic health records (EHRs) to telemedicine and AI-powered diagnostics, technology is enhancing accuracy, speed, and access to care. At Manmed Health Pvt. Ltd., we embrace innovation to improve outcomes and empower our healthcare teams to deliver better, faster, and more personalized services.`,
-    image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb", // Medical tech image
-  },
-  {
-    heading: "Future-Ready Skills for Healthcare Professionals",
-    description: `The future of healthcare depends on professionals equipped with both medical expertise and a strong grasp of modern tools and systems. Skills in patient communication, electronic records management, clinical data handling, and diagnostic technologies are becoming increasingly important. At Manmed Health Pvt. Ltd., we believe in nurturing talent through continuous learning, professional development, and hands-on experience.`,
-    image: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d", // Image of healthcare professionals or labs
-  },
-];
-
+    {
+      heading: "Building a Meaningful Career in Healthcare",
+      description: `Pursuing a career in the medical field offers the chance to make a real difference in people's lives. From nursing and lab technology to hospital administration and patient care, the healthcare industry provides a wide range of impactful roles. With a growing demand for skilled professionals, individuals who are compassionate, committed, and qualified will always find opportunities to thrive in this essential field.`,
+      image: "https://images.unsplash.com/photo-1495567720989-cebdbdd97913", // Healthcare-related image
+    },
+    {
+      heading: "Technology Transforming Modern Healthcare",
+      description: `Advancements in medical technology are revolutionizing patient care and healthcare operations. From electronic health records (EHRs) to telemedicine and AI-powered diagnostics, technology is enhancing accuracy, speed, and access to care. At Manmed Health Pvt. Ltd., we embrace innovation to improve outcomes and empower our healthcare teams to deliver better, faster, and more personalized services.`,
+      image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb", // Medical tech image
+    },
+    {
+      heading: "Future-Ready Skills for Healthcare Professionals",
+      description: `The future of healthcare depends on professionals equipped with both medical expertise and a strong grasp of modern tools and systems. Skills in patient communication, electronic records management, clinical data handling, and diagnostic technologies are becoming increasingly important. At Manmed Health Pvt. Ltd., we believe in nurturing talent through continuous learning, professional development, and hands-on experience.`,
+      image: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d", // Image of healthcare professionals or labs
+    },
+  ];
 
   // const dynamicContent = [
   //   {
@@ -97,17 +96,23 @@ const Careers = () => {
   const validateStep = () => {
     const newErrors = {};
     if (formStep === 1) {
-      if (!formData.name.trim()) newErrors.name = t("nameRequired") || "Name is required.";
-      if (!formData.email.trim()) newErrors.email = t("emailRequired") || "Email is required.";
-      if (!formData.phone.trim()) newErrors.phone = t("phoneRequired") || "Phone is required.";
+      if (!formData.name.trim())
+        newErrors.name = t("nameRequired") || "Name is required.";
+      if (!formData.email.trim())
+        newErrors.email = t("emailRequired") || "Email is required.";
+      if (!formData.phone.trim())
+        newErrors.phone = t("phoneRequired") || "Phone is required.";
     }
     if (formStep === 2) {
       if (!formData.role.trim()) newErrors.role = "Role is required.";
-      if (!formData.qualification.trim()) newErrors.qualification = "Qualification is required.";
-      if (!formData.experience.trim()) newErrors.experience = "Experience is required.";
+      if (!formData.qualification.trim())
+        newErrors.qualification = "Qualification is required.";
+      if (!formData.experience.trim())
+        newErrors.experience = "Experience is required.";
     }
     if (formStep === 3) {
-      if (!formData.message.trim()) newErrors.message = t("messageRequired") || "Message is required.";
+      if (!formData.message.trim())
+        newErrors.message = t("messageRequired") || "Message is required.";
     }
     return newErrors;
   };
@@ -165,55 +170,52 @@ const Careers = () => {
       experience: "",
     });
     setFormStep(1); // Reset form step to 1
-  
   };
 
   const jobs = [
-  {
-    role: "Frontend Developer",
-    skills: ["React", "Tailwind", "JavaScript"],
-    location: "Mumbai",
-    qualification: "B.Tech / B.Sc in CS",
-    experience: "1-3 years",
-  },
-  {
-    role: "Backend Developer",
-    skills: ["Node.js", "MongoDB", "Express"],
-    location: "Bangalore",
-    qualification: "B.Tech / MCA",
-    experience: "2-5 years",
-  },
-  {
-    role: "UI/UX Designer",
-    skills: ["Figma", "Adobe XD", "Design Systems"],
-    location: "Remote",
-    qualification: "Any Graduate",
-    experience: "1+ years",
-  },
-  {
-    role: "UI/UX Designer",
-    skills: ["Figma", "Adobe XD", "Design Systems"],
-    location: "Remote",
-    qualification: "Any Graduate",
-    experience: "1+ years",
-  },
-  {
-    role: "UI/UX Designer",
-    skills: ["Figma", "Adobe XD", "Design Systems"],
-    location: "Remote",
-    qualification: "Any Graduate",
-    experience: "1+ years",
-  },
-  {
-    role: "UI/UX Designer",
-    skills: ["Figma", "Adobe XD", "Design Systems"],
-    location: "Remote",
-    qualification: "Any Graduate",
-    experience: "1+ years",
-  },
-];
-
-
+    {
+      role: "Frontend Developer",
+      skills: ["React", "Tailwind", "JavaScript"],
+      location: "Mumbai",
+      qualification: "B.Tech / B.Sc in CS",
+      experience: "1-3 years",
+    },
+    {
+      role: "Backend Developer",
+      skills: ["Node.js", "MongoDB", "Express"],
+      location: "Bangalore",
+      qualification: "B.Tech / MCA",
+      experience: "2-5 years",
+    },
+    {
+      role: "UI/UX Designer",
+      skills: ["Figma", "Adobe XD", "Design Systems"],
+      location: "Remote",
+      qualification: "Any Graduate",
+      experience: "1+ years",
+    },
+    {
+      role: "UI/UX Designer",
+      skills: ["Figma", "Adobe XD", "Design Systems"],
+      location: "Remote",
+      qualification: "Any Graduate",
+      experience: "1+ years",
+    },
+    {
+      role: "UI/UX Designer",
+      skills: ["Figma", "Adobe XD", "Design Systems"],
+      location: "Remote",
+      qualification: "Any Graduate",
+      experience: "1+ years",
+    },
+    {
+      role: "UI/UX Designer",
+      skills: ["Figma", "Adobe XD", "Design Systems"],
+      location: "Remote",
+      qualification: "Any Graduate",
+      experience: "1+ years",
+    },
+  ];
 
   // const jobs = [
   //   {
@@ -254,7 +256,6 @@ const Careers = () => {
 
   return (
     <div className="min-h-screen bg-white text-gray-800">
-
       {/* Dynamic Content Sections */}
       <section
         className="relative pt-32 pb-20 bg-cover bg-center bg-no-repeat transition-all duration-1000"
@@ -277,70 +278,76 @@ const Careers = () => {
         </div>
       </section>
 
-    {/* Job Listings Cards - Centered with Margins */}
+      {/* Job Listings Cards - Centered with Margins */}
 
-{/* Job Listings Cards - Centered, Detailed & Responsive */}
-<div className="max-w-screen-xl mx-auto px-4 md:px-8 mt-12">
-  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 lg:gap-10">
-    {jobs.map((job, index) => (
-      <div
-        key={index}
-        className="group flex flex-col justify-between p-6 bg-white rounded-2xl shadow-md border border-gray-200 hover:shadow-xl hover:border-blue-500 transition-all duration-300"
-      >
-        {/* Role */}
-        <div className="mb-4">
-          <h3 className="text-sm text-gray-500 font-medium mb-1">ROLE</h3>
-          <p className="text-2xl font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">
-            {job.role}
-          </p>
-        </div>
+      {/* Job Listings Cards - Centered, Detailed & Responsive */}
+      <div className="max-w-screen-xl mx-auto px-4 md:px-8 mt-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 lg:gap-10">
+          {jobs.map((job, index) => (
+            <div
+              key={index}
+              className="group flex flex-col justify-between p-6 bg-white rounded-2xl shadow-md border border-gray-200 hover:shadow-xl hover:border-blue-500 transition-all duration-300"
+            >
+              {/* Role */}
+              <div className="mb-4">
+                <h3 className="text-sm text-gray-500 font-medium mb-1">ROLE</h3>
+                <p className="text-2xl font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">
+                  {job.role}
+                </p>
+              </div>
 
-        {/* Skills */}
-        <div className="mb-4">
-          <h3 className="text-sm text-gray-500 font-medium mb-1">SKILLS</h3>
-          <div className="flex flex-wrap gap-2">
-            {job.skills.map((skill, sIndex) => (
-              <span
-                key={sIndex}
-                className="bg-blue-50 text-blue-700 px-3 py-1 rounded-full text-xs font-medium border border-blue-200 hover:bg-blue-100 transition"
-              >
-                {skill}
-              </span>
-            ))}
-          </div>
-        </div>
+              {/* Skills */}
+              <div className="mb-4">
+                <h3 className="text-sm text-gray-500 font-medium mb-1">
+                  SKILLS
+                </h3>
+                <div className="flex flex-wrap gap-2">
+                  {job.skills.map((skill, sIndex) => (
+                    <span
+                      key={sIndex}
+                      className="bg-blue-50 text-blue-700 px-3 py-1 rounded-full text-xs font-medium border border-blue-200 hover:bg-blue-100 transition"
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </div>
 
-        {/* Qualification */}
-        <div className="mb-4">
-          <h3 className="text-sm text-gray-500 font-medium mb-1">QUALIFICATION</h3>
-          <p className="text-base text-gray-800">{job.qualification}</p>
-        </div>
+              {/* Qualification */}
+              <div className="mb-4">
+                <h3 className="text-sm text-gray-500 font-medium mb-1">
+                  QUALIFICATION
+                </h3>
+                <p className="text-base text-gray-800">{job.qualification}</p>
+              </div>
 
-        {/* Experience */}
-        <div className="mb-4">
-          <h3 className="text-sm text-gray-500 font-medium mb-1">EXPERIENCE</h3>
-          <p className="text-base text-gray-800">{job.experience}</p>
-        </div>
+              {/* Experience */}
+              <div className="mb-4">
+                <h3 className="text-sm text-gray-500 font-medium mb-1">
+                  EXPERIENCE
+                </h3>
+                <p className="text-base text-gray-800">{job.experience}</p>
+              </div>
 
-        {/* Location & Apply */}
-        <div className="mt-auto">
-          <h3 className="text-sm text-gray-500 font-medium mb-1">LOCATION</h3>
-          <p className="text-lg text-gray-800 font-medium mb-4">
-            {job.location}
-          </p>
-          <button
-            onClick={() => openApplyModal(job.role)}
-            className="bg-blue-600 text-white text-sm font-semibold px-4 py-2 rounded-lg w-full hover:bg-blue-700 active:scale-95 transition transform duration-200"
-          >
-            Apply Now
-          </button>
+              {/* Location & Apply */}
+              <div className="mt-auto">
+                <h3 className="text-sm text-gray-500 font-medium mb-1">
+                  LOCATION
+                </h3>
+                <p className="text-lg text-gray-800 font-medium mb-4">
+                  {job.location}
+                </p>
+                <button
+                  onClick={() => openApplyModal(job.role)}
+                  className="bg-blue-600 text-white text-sm font-semibold px-4 py-2 rounded-lg w-full hover:bg-blue-700 active:scale-95 transition transform duration-200"
+                >
+                  Apply Now
+                </button>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
-    ))}
-  </div>
-</div>
-
-
 
       {/* Modal for Join Us Form */}
       {isModalOpen && (
@@ -373,29 +380,67 @@ const Careers = () => {
             {/* Progress Indicator */}
             <div className="flex justify-between items-center mb-8">
               <div className="flex-1 text-center">
-                <span className={`inline-block w-8 h-8 rounded-full flex items-center justify-center font-bold ${formStep >= 1 ? 'bg-blue-600 text-white' : 'bg-gray-300 text-gray-600'}`}>1</span>
+                <span
+                  className={`inline-block w-8 h-8 rounded-full flex items-center justify-center font-bold ${
+                    formStep >= 1
+                      ? "bg-blue-600 text-white"
+                      : "bg-gray-300 text-gray-600"
+                  }`}
+                >
+                  1
+                </span>
                 <p className="text-sm mt-2 text-gray-600">Personal Info</p>
               </div>
-              <div className={`flex-1 h-1 ${formStep > 1 ? 'bg-blue-600' : 'bg-gray-300'} transition-all duration-300`}></div>
+              <div
+                className={`flex-1 h-1 ${
+                  formStep > 1 ? "bg-blue-600" : "bg-gray-300"
+                } transition-all duration-300`}
+              ></div>
               <div className="flex-1 text-center">
-                <span className={`inline-block w-8 h-8 rounded-full flex items-center justify-center font-bold ${formStep >= 2 ? 'bg-blue-600 text-white' : 'bg-gray-300 text-gray-600'}`}>2</span>
+                <span
+                  className={`inline-block w-8 h-8 rounded-full flex items-center justify-center font-bold ${
+                    formStep >= 2
+                      ? "bg-blue-600 text-white"
+                      : "bg-gray-300 text-gray-600"
+                  }`}
+                >
+                  2
+                </span>
                 <p className="text-sm mt-2 text-gray-600">Role & Experience</p>
               </div>
-              <div className={`flex-1 h-1 ${formStep > 2 ? 'bg-blue-600' : 'bg-gray-300'} transition-all duration-300`}></div>
+              <div
+                className={`flex-1 h-1 ${
+                  formStep > 2 ? "bg-blue-600" : "bg-gray-300"
+                } transition-all duration-300`}
+              ></div>
               <div className="flex-1 text-center">
-                <span className={`inline-block w-8 h-8 rounded-full flex items-center justify-center font-bold ${formStep >= 3 ? 'bg-blue-600 text-white' : 'bg-gray-300 text-gray-600'}`}>3</span>
+                <span
+                  className={`inline-block w-8 h-8 rounded-full flex items-center justify-center font-bold ${
+                    formStep >= 3
+                      ? "bg-blue-600 text-white"
+                      : "bg-gray-300 text-gray-600"
+                  }`}
+                >
+                  3
+                </span>
                 <p className="text-sm mt-2 text-gray-600">Message</p>
               </div>
             </div>
 
             {/* Form for job application */}
-            <form className="space-y-8" onSubmit={formStep === 3 ? handleStepSubmit : handleNext}>
+            <form
+              className="space-y-8"
+              onSubmit={formStep === 3 ? handleStepSubmit : handleNext}
+            >
               {/* Step 1: Name, Email, Phone */}
               {formStep === 1 && (
                 <>
                   {/* Name Input Field */}
                   <div>
-                    <label className="block text-sm font-semibold mb-2" htmlFor="name">
+                    <label
+                      className="block text-sm font-semibold mb-2"
+                      htmlFor="name"
+                    >
                       {t("name") || "Name"}
                     </label>
                     <div className="flex items-center border rounded-lg overflow-hidden border-gray-300 focus-within:ring-2 focus-within:ring-blue-500">
@@ -420,7 +465,10 @@ const Careers = () => {
 
                   {/* Email Input Field */}
                   <div>
-                    <label className="block text-sm font-semibold mb-2" htmlFor="email">
+                    <label
+                      className="block text-sm font-semibold mb-2"
+                      htmlFor="email"
+                    >
                       {t("email") || "Email"}
                     </label>
                     <div className="flex items-center border rounded-lg overflow-hidden border-gray-300 focus-within:ring-2 focus-within:ring-blue-500">
@@ -445,7 +493,10 @@ const Careers = () => {
 
                   {/* Phone Input Field */}
                   <div>
-                    <label className="block text-sm font-semibold mb-2" htmlFor="phone">
+                    <label
+                      className="block text-sm font-semibold mb-2"
+                      htmlFor="phone"
+                    >
                       {t("phone") || "Phone"}
                     </label>
                     <div className="flex items-center border rounded-lg overflow-hidden border-gray-300 focus-within:ring-2 focus-within:ring-blue-500">
@@ -475,7 +526,10 @@ const Careers = () => {
                 <>
                   {/* Role Applying For Input Field (pre-filled) */}
                   <div>
-                    <label className="block text-sm font-semibold mb-2" htmlFor="role">
+                    <label
+                      className="block text-sm font-semibold mb-2"
+                      htmlFor="role"
+                    >
                       Role Applying For
                     </label>
                     <input
@@ -496,7 +550,10 @@ const Careers = () => {
 
                   {/* Qualification Input Field */}
                   <div>
-                    <label className="block text-sm font-semibold mb-2" htmlFor="qualification">
+                    <label
+                      className="block text-sm font-semibold mb-2"
+                      htmlFor="qualification"
+                    >
                       Qualification
                     </label>
                     <input
@@ -509,14 +566,18 @@ const Careers = () => {
                     />
                     {errors.qualification && (
                       <p className="text-red-600 mt-1 text-sm flex items-center gap-1">
-                        <AlertCircle className="w-4 h-4" /> {errors.qualification}
+                        <AlertCircle className="w-4 h-4" />{" "}
+                        {errors.qualification}
                       </p>
                     )}
                   </div>
 
                   {/* Experience Input Field */}
                   <div>
-                    <label className="block text-sm font-semibold mb-2" htmlFor="experience">
+                    <label
+                      className="block text-sm font-semibold mb-2"
+                      htmlFor="experience"
+                    >
                       Years of Experience
                     </label>
                     <input
@@ -541,7 +602,10 @@ const Careers = () => {
                 <>
                   {/* Message Textarea */}
                   <div>
-                    <label className="block text-sm font-semibold mb-2" htmlFor="message">
+                    <label
+                      className="block text-sm font-semibold mb-2"
+                      htmlFor="message"
+                    >
                       Message
                     </label>
                     <div className="flex items-start border rounded-lg overflow-hidden border-gray-300 focus-within:ring-2 focus-within:ring-blue-500">
@@ -582,7 +646,9 @@ const Careers = () => {
                 {formStep < 3 && (
                   <button
                     type="submit" // This will trigger handleNext because formStep < 3
-                    className={`inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-xl hover:bg-blue-700 shadow-md hover:shadow-xl transition-all duration-200 ${formStep === 1 ? 'ml-auto' : ''}`}
+                    className={`inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-xl hover:bg-blue-700 shadow-md hover:shadow-xl transition-all duration-200 ${
+                      formStep === 1 ? "ml-auto" : ""
+                    }`}
                   >
                     Next
                     <ChevronRight className="w-5 h-5" />
@@ -603,59 +669,6 @@ const Careers = () => {
           </div>
         </div>
       )}
-
-      {/* Footer Section */}
-      <footer className="bg-gray-900 text-gray-300 pt-12 pb-6 mt-10">
-        <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
-            {/* Company Info */}
-            <div>
-              <h2 className="text-2xl font-bold text-white mb-4">Manmed Health Pvt LTD</h2>
-              <p className="text-sm leading-relaxed text-gray-400">
-                Revolutionizing healthcare with innovation, compassion, and integrity.
-                Trusted care, delivered with precision.
-              </p>
-            </div>
-            {/* Quick Links */}
-            <div>
-              <h3 className="text-lg font-semibold text-white mb-4">Quick Links</h3>
-              <ul className="space-y-2 text-sm">
-                <li><a href="/" className="hover:text-white transition">Home</a></li>
-                <li><a href="/about" className="hover:text-white transition">About Us</a></li>
-                <li><a href="/services" className="hover:text-white transition">Services</a></li>
-                <li><a href="/careers" className="hover:text-white transition">Careers</a></li>
-                <li><a href="/contact" className="hover:text-white transition">Contact</a></li>
-              </ul>
-            </div>
-            {/* Contact Info */}
-            <div>
-              <h3 className="text-lg font-semibold text-white mb-4">Contact Us</h3>
-              <ul className="space-y-3 text-sm">
-                <li className="flex items-start gap-2"><span>📍</span> <span>123 Health Street, Wellness City, India</span></li>
-                <li className="flex items-start gap-2"><span>📞</span> <span>+91 98765 43210</span></li>
-                <li className="flex items-start gap-2"><span>✉️</span> <span>support@manmedhealth.com</span></li>
-              </ul>
-            </div>
-            {/* Follow Us */}
-            <div>
-              <h3 className="text-lg font-semibold text-white mb-4">Follow Us</h3>
-              <div className="flex space-x-4 text-2xl">
-                {/* Social media icons (using emojis for simplicity, replace with actual Lucide icons or SVGs if available) */}
-                <a href="#" className="hover:text-white transition">🌐</a> {/* Globe for website/general */}
-                <a href="#" className="hover:text-white transition">📘</a> {/* Book for Facebook */}
-                <a href="#" className="hover:text-white transition">📸</a> {/* Camera for Instagram */}
-                <a href="#" className="hover:text-white transition">💼</a> {/* Briefcase for LinkedIn */}
-              </div>
-            </div>
-          </div>
-          {/* Copyright */}
-          <div className="border-t border-gray-700 mt-10 pt-6 text-center">
-            <p className="text-sm text-gray-500">
-              © {new Date().getFullYear()} Manmed Health Pvt LTD. All rights reserved.
-            </p>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 };
