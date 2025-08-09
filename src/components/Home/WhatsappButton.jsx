@@ -57,7 +57,7 @@ const ringVariants = {
 export default function WhatsAppButton() {
   return (
     <motion.div
-      className="fixed bottom-7 right-10 flex flex-col items-center gap-6 z-[999]"
+      className="fixed bottom-7 right-10 flex flex-col items-center gap-6 z-[9999999]"
       variants={containerVariants}
       initial="hidden"
       animate="visible"
@@ -73,7 +73,7 @@ export default function WhatsAppButton() {
         />
 
         <motion.a
-          href="https://wa.me/917607116082"
+          href="https://wa.me/917071543130"
           target="_blank"
           rel="noopener noreferrer"
           className="relative bg-green-500 text-white p-3 rounded-full shadow-lg flex items-center justify-center"

@@ -14,6 +14,7 @@ import { useGSAP } from "@gsap/react";
 import { ScrollSmoother, ScrollTrigger } from "gsap/all";
 import gsap from "gsap";
 import MouseGlow from "../components/MouseGlow/MouseGlow";
+import WhatsAppButton from "../components/Home/WhatsappButton";
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
@@ -40,10 +41,11 @@ const App = () => {
             <Route path="/pregnency-sec" element={<Preg />} />
             <Route path="/campaign" element={<Comp />} />
           </Routes>
-
           <Footer />
         </div>
       </div>
+      {/* WhatsApp Button Part */}
+        <WhatsAppButton />
     </>
   );
 };
