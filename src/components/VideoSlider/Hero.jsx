@@ -46,27 +46,38 @@ const Hero = () => {
         animate="visible"
       >
         <div className="w-full 2xl:max-w-7xl">
-          <div className="w-full md:w-[60%]">
-            {/* Headline */}
-            <motion.h1
-              className="text-4xl md:text-6xl font-bold mb-4"
+          <div className="w-full md:w-[50%]">
+            {/* Company Name */}
+            <motion.span
+              className="block text-sm md:text-base font-medium tracking-widest text-blue-200 uppercase mb-2"
               variants={fadeUp}
             >
-              Branded Generics. Unbranded Trust.
+              Welcome to Manmed Health
+            </motion.span>
+
+            {/* Headline */}
+            <motion.h1
+              className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight text-white mb-4"
+              variants={fadeUp}
+            >
+              Your Health, <br /> Our Mission
             </motion.h1>
 
             {/* Subheadline */}
-            <motion.p className="text-lg md:text-2xl mb-8" variants={fadeUp}>
-              Making high-quality medicines accessible, affordable, and
-              unforgettable.
+            <motion.p
+              className="text-base md:text-lg lg:text-xl text-gray-200 mb-8 leading-relaxed"
+              variants={fadeUp}
+            >
+              Delivering high-quality medicines that are accessible, affordable,
+              and unforgettable — because your health deserves nothing less.
             </motion.p>
 
             {/* CTA Buttons */}
-            <motion.div className="flex flex-wrap gap-4" variants={fadeUp}>
-              <button className="px-4 py-3 bg-gradient-to-r from-indigo-600 to-blue-600 text-white font-semibold rounded-lg shadow-md transition duration-300">
+            <motion.div className="flex flex-wrap gap-3" variants={fadeUp}>
+              <button className="px-4 py-2 text-sm md:text-base bg-gradient-to-r from-indigo-600 to-blue-600 text-white font-medium rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
                 Explore Products
               </button>
-              <button className="px-6 py-3 bg-gradient-to-r from-green-600 to-teal-600 text-white font-semibold rounded-lg shadow-md transition duration-300">
+              <button className="px-4 py-2 text-sm md:text-base bg-gradient-to-r from-green-600 to-teal-600 text-white font-medium rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
                 Partner With Us
               </button>
             </motion.div>
