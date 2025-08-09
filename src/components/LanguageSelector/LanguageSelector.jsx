@@ -27,7 +27,8 @@ const LanguageSelector = () => {
     setIsOpen(false);
   };
 
-  const selectedLang = languages.find((lang) => lang.code === i18n.language);
+  const selectedLang =
+    languages.find((lang) => lang.code === i18n.language) || languages[0];
 
   return (
     <div className="relative inline-block">
@@ -55,7 +56,7 @@ const LanguageSelector = () => {
             <li
               key={lang.code}
               onClick={() => changeLanguage(lang.code)}
-              className="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700"
+              className="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 cursor-pointer"
             >
               <img
                 src={lang.flag}

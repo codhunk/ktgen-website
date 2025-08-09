@@ -9,11 +9,6 @@ import Hero from "../../components/VideoSlider/Hero";
 const Home = () => {
   return (
     <>
-      {/* WhatsApp Button Part */}
-      <div>
-        <WhatsAppButton />
-      </div>
-
       {/* Landing Page Video */}
       <div>
         <Hero />
