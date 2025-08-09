@@ -5,18 +5,20 @@
 
 body {
   overflow-x: hidden;
-  cursor: url("/cursor.png"), auto;
+  user-select: none;
+  /* cursor: url("/cursor.png"), auto; */
 
   a{
-    cursor: url("/cursor_hand.png"), auto;
+    /* cursor: url("/cursor_hand.png"), auto; */
+    cursor: pointer;
   }
 
   button{
-    cursor: url("/cursor_hand.png"), auto;
+    /* cursor: url("/cursor_hand.png"), auto; */
+    cursor: pointer;
   }
 }
 
-/* In your index.css or global CSS */
 .ripple {
   position: fixed;
   width: 20px;

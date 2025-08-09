@@ -60,7 +60,7 @@ export default function MouseGlow() {
         width: "100vw",
         height: "100vh",
         pointerEvents: "none",
-        zIndex: 9999,
+        zIndex: 99999999,
         mixBlendMode: "screen", // optional glow blending
       }}
     />
