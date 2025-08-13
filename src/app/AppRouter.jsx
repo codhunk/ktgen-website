@@ -14,6 +14,7 @@ import { useGSAP } from '@gsap/react'
 import { ScrollSmoother, ScrollTrigger } from 'gsap/all'
 import gsap from 'gsap'
 import MouseGlow from "../components/MouseGlow/MouseGlow";
+import WhatsAppButton from "../pages/Home/WhatsappButton";
 
 
 
@@ -30,23 +31,27 @@ const App = () => {
 
   return (
     <>
-        <Navbar />
-        <MouseGlow/>
 
-        <div id="smooth-wrapper">
-          <div id="smooth-content">
-            <Routes>
-              {/* Launching Page */}
-              <Route path="/" element={<Home />} />
-              <Route path="/career" element={<Careers />} />
-              {/* Gallery Page */}
-              <Route path="/gallery" element={<Gallery />} />
-              <Route path="/pregnency-sec" element={<Preg />} />
-              <Route path="/campaign" element={<Comp />} />
-            </Routes>
-          </div>
+      <Navbar />
+      <MouseGlow />
+      <div className="relative">
+        <WhatsAppButton />
+      </div>
+      <div id="smooth-wrapper">
+        <div id="smooth-content">
+          <Routes>
+            {/* Launching Page */}
+            <Route path="/" element={<Home />} />
+            <Route path="/career" element={<Careers />} />
+            {/* Gallery Page */}
+            <Route path="/gallery" element={<Gallery />} />
+            <Route path="/pregnency-sec" element={<Preg />} />
+            <Route path="/campaign" element={<Comp />} />
+          </Routes>
+
+          <Footer />
         </div>
-        <Footer />
+      </div>
     </>
   );
 };
