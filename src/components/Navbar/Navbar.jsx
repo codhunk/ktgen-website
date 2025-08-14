@@ -1,135 +1,190 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import logo from "../../logo/logo_transparent.png";
+import logo from "../../logo/logo_transparent_light.png";
 import { GoHomeFill } from "react-icons/go";
 import { FaProductHunt } from "react-icons/fa";
-import { RiPsychotherapyFill } from "react-icons/ri";
-import { RiTeamFill } from "react-icons/ri";
-import { MdLocalPharmacy } from "react-icons/md";
+import { RiPsychotherapyFill, RiTeamFill } from "react-icons/ri";
+import { MdLocalPharmacy, MdOutlineWork } from "react-icons/md";
 import { SiWikimediafoundation } from "react-icons/si";
-import { MdOutlineWork } from "react-icons/md";
 import { FaMoon } from "react-icons/fa";
 import { MdWbSunny } from "react-icons/md";
-import { useDarkMode } from "../../hooks/UseDarkMode/useDarkMode";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { RxCross1 } from "react-icons/rx";
 import LanguageSelector from "../LanguageSelector/LanguageSelector";
-import styles from "./Navbar.module.css";
-
-const navList = [
-  { name: "Home", link: "/", icon: <GoHomeFill /> },
-  // { name: "About Us", link: "/about", icon: <RiTeamFill /> },
-  { name: "Products", link: "/products", icon: <FaProductHunt /> },
-  { name: "Therapy", link: "/therapy", icon: <RiPsychotherapyFill /> },
-  {
-    name: "Pharmacies",
-    link: "/doctors-pharmacies",
-    icon: <MdLocalPharmacy />,
-  },
-  // { name: "Pregnancy Guide", link: "/pregnancy", icon: <RiTeamFill /> },
-  {
-    name: "Company",
-    link: "/doctors-pharmacies",
-    icon: <RiTeamFill />,
-    subLink: [
-      { name: "CSR", link: "/csr", icon: <RiTeamFill /> },
-      { name: "Media", link: "/media", icon: <SiWikimediafoundation /> },
-      { name: "Careers", link: "/career", icon: <MdOutlineWork /> },
-      { name: "Compaign", link: "/compaign", icon: <RiTeamFill /> },
-    ],
-  },
-  // { name: "Contact", link: "/contact", icon: <GoHomeFill /> },
-];
+import { useDarkMode } from "../../hooks/UseDarkMode/useDarkMode";
+import { LiaAccusoft } from "react-icons/lia";
 
 const Navbar = () => {
+  const navList = [
+    { name: "Home", link: "/", icon: <GoHomeFill /> },
+    { name: "Products", link: "/products", icon: <FaProductHunt /> },
+    {
+      name: "Pharmacies",
+      link: "/doctors-pharmacies",
+      icon: <MdLocalPharmacy />,
+      subLink: [
+        {
+          name: "Doctors & Pharmacies",
+          link: "/doctors-pharmacies",
+          icon: <RiTeamFill />,
+        },
+        { name: "Therapy", link: "/therapy", icon: <RiPsychotherapyFill /> },
+        {
+          name: "Pregnancy Guide",
+          link: "/pregnency-sec",
+          icon: <RiTeamFill />,
+        },
+        { name: "Campaign", link: "/campaign", icon: <RiTeamFill /> },
+      ],
+    },
+    {
+      name: "Company",
+      link: "/company",
+      icon: <RiTeamFill />,
+      subLink: [
+        { name: "CSR", link: "/csr", icon: <RiTeamFill /> },
+        { name: "Media", link: "/gallery", icon: <SiWikimediafoundation /> },
+        { name: "Careers", link: "/career", icon: <MdOutlineWork /> },
+        { name: "Campaign", link: "/campaign-sec", icon: <RiTeamFill /> },
+      ],
+    },
+    { name: "About Us", link: "/about", icon: <RiTeamFill /> },
+    { name: "Contact", link: "/contact", icon: <GoHomeFill /> },
+  ];
+
+  const [activeDropdown, setActiveDropdown] = useState(null);
+  const [open, setOpen] = useState(false);
   const { isDark, toggleDarkMode } = useDarkMode();
-  const [showVerticalLine, setShowVerticalLine] = useState(false);
-  const [openDropdown, setOpenDropdown] = useState(false);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowVerticalLine(true);
-      setTimeout(() => {
-        setShowVerticalLine(false);
-      }, 2000);
-    }, 1500);
-    return () => clearTimeout(timer);
-  }, []);
-
-  const toggleDropdown = () => {
-    setOpenDropdown(!openDropdown);
-  };
 
   return (
-    <nav className="fixed top-0 z-10 w-full flex justify-center items-center py-8 px-2">
-      <ul className="w-[95%] flex justify-between items-center">
-        {/* Left Section - Logo */}
-        <div className="w-[100px] animate-slideUp opacity-0 animation-delay-0">
-          <NavLink to="/">
-            <img
-              src={logo}
-              alt="logo"
-              draggable="false"
-              className="w-[100px]"
-            />
+    <nav className="w-full fixed z-10 top-0 flex justify-center items-center text-sm font-semibold">
+      <div className="w-[95%] 2xl:max-w-6xl flex justify-between items-center py-4">
+        {/* Left Section: Logo + Nav */}
+        <ul className="flex justify-center items-center gap-10">
+          <NavLink to={"/"}>
+            <img src={logo} alt="logo" draggable="false" className="w-[80px]" />
           </NavLink>
-        </div>
 
-        {/* Middle Section - NavList */}
-        <div className="flex justify-center items-center gap-1 relative bg-[rgba(43,87,107,0.34)] backdrop-blur-sm rounded-full p-1 shadow-md">
-          {/* {showVerticalLine && (
-            <div
-              className={`${styles.verticalLine} absolute top-0 right-0 h-full w-[2px]`}
-            ></div>
-          )} */}
-          {navList.map((n, i) => (
-            <li
-              key={i}
-              className="relative group flex flex-col items-center opacity-0 min-w-24 translate-x-[-20px] animate-slideIn"
-              style={{ animationDelay: `${i * 100}ms` }}
-            >
-              <NavLink
-                to={n.link}
-                className={`flex flex-col items-center ${styles.link}`}
+          <div className="flex justify-center items-center gap-2">
+            {navList.map((n, i) => (
+              <li
+                key={i}
+                className="relative group flex justify-center items-center flex-col"
+                onMouseEnter={() => setActiveDropdown(i)}
+                onMouseLeave={() => setActiveDropdown(null)}
               >
-                <span
-                  className={`absolute bottom-full mb-1 opacity-0 group-hover:opacity-100 translate-y-5 group-hover:translate-y-2 transition-all duration-300 ease-in-out backdrop-blur-lg p-1 rounded-full text-md ${styles.icon}`}
+                <NavLink
+                  to={n.link}
+                  className={({ isActive }) =>
+                    `relative group flex items-center text-white px-5 py-1 gap-2 rounded-full transition-all duration-300 ease-in-out overflow-hidden backdrop-blur-md ${
+                      isActive
+                        ? "bg-[#005c63] shadow-md"
+                        : "bg-[#ffffff17] hover:bg-[#005c63] hover:shadow-md"
+                    }`
+                  }
                 >
-                  {n.icon}
-                </span>
-
-                <span className={styles.animatedText}>{n.name}</span>
-              </NavLink>
-
-              {/* Submenu for dropdown */}
-              {n.subLink && (
-                <ul className="absolute top-full mt-2 bg-[rgba(14,29,36,0.88)] rounded shadow-lg hidden group-hover:flex flex-col z-10">
-                  {n.subLink.map((sub, j) => (
-                    <li key={j}>
-                      <NavLink
-                        to={sub.link}
-                        className="px-4 py-2 flex items-center gap-2 hover:bg-gray-700 text-white"
+                  {({ isActive }) => (
+                    <>
+                      {/* Icon slide-in from left */}
+                      <span
+                        className={`
+              absolute left-1 transition-all duration-300 ease-out text-slate-900 bg-white p-1 rounded-full
+              ${
+                isActive
+                  ? "opacity-100 translate-x-0"
+                  : "opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0"
+              }
+            `}
                       >
-                        {sub.icon}
-                        {sub.name}
-                      </NavLink>
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </li>
-          ))}
-        </div>
+                        {n.icon}
+                      </span>
 
-        {/* Right Section - Language & Dark Mode */}
-        <div className="flex items-center gap-3 opacity-0 animate-fadeIn animation-delay-1000">
+                      {/* Label slide-right */}
+                      <span
+                        className={`transition-transform duration-300 ease-out ${
+                          isActive
+                            ? "translate-x-3"
+                            : "group-hover:translate-x-3"
+                        }`}
+                      >
+                        {n.name}
+                      </span>
+                    </>
+                  )}
+                </NavLink>
+
+                {/* Submenu (only visible if current index matches) */}
+                {n.subLink && (
+                  <ul
+                    className={`absolute top-full mt-0.5 right-0 w-40 bg-[#005c633b] backdrop-blur-md rounded-lg shadow-lg z-20 transform transition-all duration-300 ease-in-out ${
+                      activeDropdown === i
+                        ? "opacity-100 translate-y-0 pointer-events-auto"
+                        : "opacity-0 -translate-y-2 pointer-events-none"
+                    }`}
+                  >
+                    {n.subLink.map((sub, j) => (
+                      <li key={j}>
+                        <NavLink
+                          to={sub.link}
+                          className="flex items-center gap-2 px-4 py-2 text-white hover:bg-gray-700 transition duration-200"
+                          onClick={() => setActiveDropdown(null)}
+                        >
+                          {sub.icon}
+                          {sub.name}
+                        </NavLink>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </li>
+            ))}
+          </div>
+        </ul>
+
+        {/* Right Section (Theme toggle + Language dropdown) */}
+        <ul className="flex justify-center items-center gap-4 text-white">
+          {/* Theme Toggle */}
           <button
-            className="p-2 border border-dashed rounded-full border-slate-200 text-white"
+            className="p-2 border border-dashed rounded-full border-slate-200 bg-slate-950 transition-all duration-300 hover:scale-105"
             onClick={toggleDarkMode}
           >
-            {isDark ? <MdWbSunny /> : <FaMoon />}
+            <span className="transition-transform duration-300 ease-in-out transform">
+              {isDark ? (
+                <MdWbSunny className="text-yellow-300 scale-110" />
+              ) : (
+                <FaMoon className="text-slate-300 scale-110" />
+              )}
+            </span>
           </button>
-          <LanguageSelector />
-        </div>
-      </ul>
+
+          {/* Language Selector Dropdown */}
+          <li className="p-2 border border-dashed rounded-full border-slate-200 bg-slate-950 relative cursor-pointer">
+            <span
+              className="transition-transform duration-300 ease-in-out transform"
+              onClick={() => setOpen(!open)}
+            >
+              {open ? (
+                <RxCross1 className="rotate-180 scale-105 transition-all duration-300" />
+              ) : (
+                <GiHamburgerMenu className="scale-105 transition-all duration-300" />
+              )}
+            </span>
+
+            {/* Dropdown with fade & slide-down */}
+            <div
+              className={`absolute top-full right-0 mt-2 w-36 bg-[#005c633b] backdrop-blur-md rounded-lg shadow-lg z-20 transform transition-all duration-300 ease-in-out ${
+                open
+                  ? "opacity-100 translate-y-0 pointer-events-auto"
+                  : "opacity-0 -translate-y-2 pointer-events-none"
+              }`}
+            >
+              <ul className="flex flex-col justify-center items-center">
+                <LanguageSelector />
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
     </nav>
   );
 };

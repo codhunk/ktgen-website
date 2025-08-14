@@ -1,9 +1,11 @@
 import React from "react";
 import video from "./assets/218955_medium.mp4";
+import MousePointerEffect from "../mousepointereffect";
 
 const Home = () => {
   return (
     <div className="w-full h-dvh overflow-hidden">
+      <MousePointerEffect/>
       <video
         src={video}
         autoPlay
