@@ -95,7 +95,7 @@ const ContactUs = () => {
       </div>
 
       {/* Follow Us */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 py-20 px-6 bg-gradient-to-r from-[#6b21a8] to-[#7e22ce] text-white">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 py-20 px-6 bg-gradient-to-r from-cyan-500 to-purple-500 text-white">
         <div className="bg-white/5 backdrop-blur-xl border border-white/20 p-10 rounded-3xl shadow-xl">
           <h2 className="text-3xl font-bold mb-4">Follow Us</h2>
           <div className="flex gap-6 mb-6">

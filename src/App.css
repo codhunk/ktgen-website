@@ -31,3 +31,46 @@
     opacity: 0;
   }
 }
+body {
+  overflow-x: hidden;
+  user-select: none;
+  /* cursor: url("/cursor.png"), auto; */
+
+  a{
+    /* cursor: url("/cursor_hand.png"), auto; */
+    cursor: pointer;
+  }
+
+  button{
+    /* cursor: url("/cursor_hand.png"), auto; */
+    cursor: pointer;
+  }
+}
+
+.ripple {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  background: rgba(0, 255, 255, 0.4);
+  border: 2px solid rgba(0, 255, 255, 0.6);
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  animation: ripple-animation 1s ease-out forwards;
+  z-index: 9999;
+}
+
+@keyframes ripple-animation {
+  0% {
+    transform: translate(-50%, -50%) scale(0.5);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(10);
+    opacity: 0;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}

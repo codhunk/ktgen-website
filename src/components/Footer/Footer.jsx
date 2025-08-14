@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <>
       {/* Footer */}
-      <footer className="bg-gray-900 text-gray-300 pt-12 pb-6 mt-10">
+      <footer className="bg-gray-900 text-gray-300 pt-12 pb-6">
         <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
             {/* Company Info */}

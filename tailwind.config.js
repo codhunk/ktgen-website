@@ -1,10 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./src/**/*.{js,jsx,ts,tsx}"],
-  darkMode: "class",
-  theme: {
-    extend: {
-     borderRadius: {
+	content: ["./src/**/*.{js,jsx,ts,tsx}"],
+	darkMode: "class",
+	theme: {
+		extend: {
+			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
@@ -59,8 +59,22 @@ export default {
 				'slide-in-right': 'slide-in-right 0.6s ease-out',
 				'scale-in': 'scale-in 0.4s ease-out',
 				'glow-pulse': 'glow-pulse 2s ease-in-out infinite'
-			}
-    },
-  },
-  plugins: [],
+			},
+			keyframes: {
+				"slide-in-left": {
+					"0%": { transform: "translateX(-20px)", opacity: "0" },
+					"100%": { transform: "translateX(0)", opacity: "1" },
+				},
+				"fade-in-out": {
+					"0%, 100%": { opacity: "0.3" },
+					"50%": { opacity: "1" },
+				},
+			},
+			animation: {
+				"slide-in-left": "slide-in-left 0.4s ease-out forwards",
+				"fade-in-out": "fade-in-out 2s ease-in-out infinite",
+			},
+		},
+	},
+	plugins: [],
 };
