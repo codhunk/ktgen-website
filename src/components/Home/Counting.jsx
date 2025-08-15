@@ -1,10 +1,9 @@
 import React from "react";
 import { Building2, MapPin, Clock, Shield, Pill } from "lucide-react";
 import VideoCounting from "./VideoCounting";
-import { motion } from 'framer-motion'
+import { motion } from "framer-motion";
 
 const Counting = () => {
-
   return (
     <section className="py-12 relative overflow-hidden">
       {/* Background design */}
@@ -36,8 +35,6 @@ const Counting = () => {
         <div>
           <VideoCounting />
         </div>
-
-
 
         {/* Bottom accent */}
         <motion.div

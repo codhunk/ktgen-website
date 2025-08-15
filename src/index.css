@@ -55,7 +55,6 @@
 }
 
 @keyframes zoomInOut {
-
   0%,
   100% {
     transform: scale(1);
@@ -142,23 +141,21 @@
 
     .flavors {
       @apply h-full w-full items-center gap-16;
-      @apply flex-col sm:flex-row sm:flex-nowrap; 
+      @apply flex-col sm:flex-row sm:flex-nowrap;
       @apply 2xl:gap-72 lg:gap-52 md:gap-24;
     }
 
-  .drinks {
-    @apply relative w-full h-auto object-contain; 
-    @apply sm:absolute sm:left-1/2 sm:-translate-x-1/2 sm:bottom-0 sm:h-full; 
+    .drinks {
+      @apply relative w-full h-auto object-contain;
+      @apply sm:absolute sm:left-1/2 sm:-translate-x-1/2 sm:bottom-0 sm:h-full;
     }
- 
 
-      .elements {
-        @apply absolute md:top-0 md:bottom-auto bottom-10 w-full;
-      }
+    .elements {
+      @apply absolute md:top-0 md:bottom-auto bottom-10 w-full;
+    }
 
-      h1 {
-        @apply absolute md:bottom-10 md:left-10 bottom-5 left-5 text-white md:text-6xl text-3xl font-semibold uppercase tracking-tighter;
-      }
+    h1 {
+      @apply absolute md:bottom-10 md:left-10 bottom-5 left-5 text-white md:text-6xl text-3xl font-semibold uppercase tracking-tighter;
     }
   }
-
+}
