@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { Building2, MapPin, Clock, Shield, Pill } from "lucide-react";
+import countingVid from "./assets/counting.mp4";
 
 const AnimatedCounter = ({
   value,
@@ -172,6 +173,13 @@ const Counting = () => {
           </p>
         </motion.div>
 
+        <div>
+          <video src={countingVid}  autoPlay
+        muted
+        loop
+        playsInline
+        className="w-full h-full object-cover"/>
+        </div>
         {/* Stats Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 lg:gap-8">
           {countingData.map((stat, index) => (
