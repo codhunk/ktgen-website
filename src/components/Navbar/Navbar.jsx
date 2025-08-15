@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import logo from "../../logo/logo_transparent_light.png";
 import { GoHomeFill } from "react-icons/go";
@@ -19,37 +19,45 @@ const Navbar = () => {
     { name: "Home", link: "/", icon: <GoHomeFill /> },
     { name: "Products", link: "/products", icon: <FaProductHunt /> },
     {
+      name: "Life at ManMed",
+      link: "",
+      icon: <RiTeamFill />,
+      subLink: [
+        { name: "Our Story", link: "/story", icon: <MdOutlineWork /> },
+        { name: "Careers", link: "/career", icon: <MdOutlineWork /> },
+        {
+          name: "Media/Gallery",
+          link: "/gallery",
+          icon: <SiWikimediafoundation />,
+        },
+        { name: "CSR", link: "/csr", icon: <RiTeamFill /> },
+      ],
+    },
+    {
+      name: "Pregnancy Guide",
+      link: "/pregnency-sec",
+      icon: <RiTeamFill />,
+    },
+    { name: "Compaign", link: "/campaign-sec", icon: <RiTeamFill /> },
+    { name: "About Us", link: "/about", icon: <RiTeamFill /> },
+    {
       name: "Pharmacies",
-      link: "/doctors-pharmacies",
+      link: "",
       icon: <MdLocalPharmacy />,
       subLink: [
+        {
+          name: "Therapy Areas",
+          link: "/therapy",
+          icon: <RiPsychotherapyFill />,
+        },
         {
           name: "Doctors & Pharmacies",
           link: "/doctors-pharmacies",
           icon: <RiTeamFill />,
         },
-        { name: "Therapy", link: "/therapy", icon: <RiPsychotherapyFill /> },
-        {
-          name: "Pregnancy Guide",
-          link: "/pregnency-sec",
-          icon: <RiTeamFill />,
-        },
-        { name: "Campaign", link: "/campaign", icon: <RiTeamFill /> },
       ],
     },
-    {
-      name: "Company",
-      link: "/company",
-      icon: <RiTeamFill />,
-      subLink: [
-        { name: "CSR", link: "/csr", icon: <RiTeamFill /> },
-        { name: "Media", link: "/gallery", icon: <SiWikimediafoundation /> },
-        { name: "Careers", link: "/career", icon: <MdOutlineWork /> },
-        { name: "Campaign", link: "/campaign-sec", icon: <RiTeamFill /> },
-      ],
-    },
-    { name: "About Us", link: "/about", icon: <RiTeamFill /> },
-    { name: "Contact", link: "/contact", icon: <GoHomeFill /> },
+    { name: "Contact Us", link: "/contact", icon: <GoHomeFill /> },
   ];
 
   const location = useLocation();
@@ -66,8 +74,33 @@ const Navbar = () => {
     return n?.subLink?.some((sub) => location.pathname.includes(sub.link));
   };
 
+  const [scrollNav, setScrollnav] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Update the scroll value when the user scrolls
+      setScrollnav(window.scrollY);
+    };
+
+    // Attach the scroll event listener when the component mounts
+    window.addEventListener("scroll", handleScroll);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className="w-full fixed z-50 top-0 flex justify-center items-center text-sm font-semibold backdrop-blur-lg bg-gradient-to-b from-[#000000e7] to-transparent">
+    <nav
+      className={`w-full fixed top-0 flex justify-center items-center text-sm font-semibold backdrop-blur-lg transition-colors duration-500 ease-in-out
+    ${
+      scrollNav === 0
+        ? "bg-transparent"
+        : "bg-gradient-to-r from-black/80 via-gray-900/80 to-black/80"
+    }`}
+      style={{ zIndex: 999999 }}
+    >
       <div className="w-[95%] 2xl:max-w-7xl flex justify-between items-center py-4">
         {/* Left Section: Logo + Nav */}
         <ul className="flex justify-center items-center gap-10">
@@ -87,7 +120,7 @@ const Navbar = () => {
             >
               {n?.subLink ? (
                 <div
-                  className={`relative group flex items-center text-white px-5 py-1 gap-2 rounded-full transition-all duration-300 ease-in-out overflow-hidden backdrop-blur-md ${
+                  className={`relative group flex items-center text-white px-5 py-1 gap-2 rounded-full transition-all duration-300 ease-in-out overflow-hidden backdrop-blur-md cursor-pointer ${
                     isSubActive(n)
                       ? "bg-[#005c63] shadow-md"
                       : "bg-[#ffffff17] hover:bg-[#005c63] hover:shadow-md"
@@ -124,9 +157,10 @@ const Navbar = () => {
                 <NavLink
                   to={n.link}
                   className={({ isActive }) =>
-                    `relative group flex items-center text-white px-5 py-1 gap-2 rounded-full transition-all duration-300 ease-in-out overflow-hidden backdrop-blur-md ${isActive
-                      ? "bg-[#005c63] shadow-md"
-                      : "bg-[#ffffff17] hover:bg-[#005c63] hover:shadow-md"
+                    `relative group flex items-center text-white px-5 py-1 gap-2 rounded-full transition-all duration-300 ease-in-out overflow-hidden backdrop-blur-md ${
+                      isActive
+                        ? "bg-[#005c63] shadow-md"
+                        : "bg-[#ffffff17] hover:bg-[#005c63] hover:shadow-md"
                     }`
                   }
                 >
@@ -136,10 +170,11 @@ const Navbar = () => {
                       <span
                         className={`
               absolute left-1 transition-all duration-300 ease-out text-slate-900 bg-white p-1 rounded-full
-              ${isActive
-                            ? "opacity-100 translate-x-0"
-                            : "opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0"
-                          }
+              ${
+                isActive
+                  ? "opacity-100 translate-x-0"
+                  : "opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0"
+              }
             `}
                       >
                         {n.icon}
@@ -147,10 +182,11 @@ const Navbar = () => {
 
                       {/* Label slide-right */}
                       <span
-                        className={`transition-transform duration-300 ease-out ${isActive
+                        className={`transition-transform duration-300 ease-out ${
+                          isActive
                             ? "translate-x-3"
                             : "group-hover:translate-x-3"
-                          }`}
+                        }`}
                       >
                         {n.name}
                       </span>
@@ -260,7 +296,7 @@ const Navbar = () => {
             <li key={i}>
               {n?.subLink ? (
                 <div
-                  className={`w-full flex items-center rounded-md ${
+                  className={`w-full flex items-center rounded-md cursor-pointer ${
                     isSubActive(n)
                       ? "bg-[#005c63] text-white"
                       : "text-gray-800 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800"

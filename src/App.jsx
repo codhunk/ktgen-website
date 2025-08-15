@@ -1,10 +1,13 @@
+import { useState } from "react";
+
 // App Router
 import { BrowserRouter } from "react-router-dom";
-import AppRouter from "./app/AppRouter";
 
 /* ---------- Context Provider ---------- */
 import ToastContextProvider from "./contexts/ToastContext/ToastContextProvider";
-import { useState } from "react";
+
+/* ---------- Components ---------- */
+import AppRouter from "./app/AppRouter";
 import SplashScreen from "./components/SplashScreen/SplashScreen";
 
 const App = () => {

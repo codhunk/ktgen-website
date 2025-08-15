@@ -78,8 +78,8 @@ const SegmentSlider = () => {
     >
       <div
         className={`flavors ${isMobile
-            ? "flex flex-col items-center gap-6 w-full"
-            : "flex flex-row flex-nowrap"
+          ? "flex flex-col items-center gap-6 w-full"
+          : "flex flex-row flex-nowrap"
           }`}
       >
         {SegmentList.map((flavor) => (
@@ -92,12 +92,12 @@ const SegmentSlider = () => {
               src={`/images/${flavor.name}.jpg`}
               alt=""
               className={`${isMobile
-                  ? "w-full h-auto object-contain relative"
-                  : "drinks md:absolute md:left-1/2 md:-translate-x-1/2 md:bottom-0 md:h-full h-40"
+                ? "w-full h-auto object-contain relative"
+                : "drinks md:absolute md:left-1/2 md:-translate-x-1/2 md:bottom-0 md:h-full h-40"
                 }`}
             />
             <h1
-              className={`!text-green-800 text-center mt-2 ${isMobile ? "relative" : ""
+              className={`!text-green-800 text-center  md:mt-2 ${isMobile ? "!absolute !-bottom-5" : ""
                 }`}
             >
               {flavor.name}

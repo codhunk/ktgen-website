@@ -10,18 +10,15 @@ import Preg from "../pages/Pregnency_sec";
 import Comp from "../pages/Compaign_sec";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
-import { useGSAP } from '@gsap/react'
-import { ScrollSmoother, ScrollTrigger } from 'gsap/all'
-import gsap from 'gsap'
+import { useGSAP } from "@gsap/react";
+import { ScrollSmoother, ScrollTrigger } from "gsap/all";
+import gsap from "gsap";
 import MouseGlow from "../components/MouseGlow/MouseGlow";
-import WhatsAppButton from "../pages/Home/WhatsappButton";
-
-
+import WhatsAppButton from "../components/Home/WhatsappButton";
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
 const App = () => {
-
   useGSAP(() => {
     ScrollSmoother.create({
       smooth: 3,
@@ -31,12 +28,8 @@ const App = () => {
 
   return (
     <>
-
       <Navbar />
       <MouseGlow />
-      <div className="relative">
-        <WhatsAppButton />
-      </div>
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <Routes>
@@ -48,10 +41,11 @@ const App = () => {
             <Route path="/pregnency-sec" element={<Preg />} />
             <Route path="/campaign" element={<Comp />} />
           </Routes>
-
           <Footer />
         </div>
       </div>
+      {/* WhatsApp Button Part */}
+      <WhatsAppButton />
     </>
   );
 };
