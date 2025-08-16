@@ -11,7 +11,7 @@ import Navbar from "../components/Navbar/Navbar";
 import CareerPage from "../pages/Career";
 import Footer from "../components/Footer/Footer";
 import ContactUs from "../pages/ContactUs";
-import AboutUs from "../pages/AboutUs";
+import AboutUs from "../pages/About/AboutUs";
 import { useGSAP } from "@gsap/react";
 import { ScrollSmoother, ScrollTrigger } from "gsap/all";
 import gsap from "gsap";
