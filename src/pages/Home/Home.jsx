@@ -1,6 +1,6 @@
 /* --------- Component --------- */
 import { useState } from "react";
-import Counting from "../../components/Home/Counting";
+import Counting from "../../components/Home/Counting/Counting";
 import OurMission from "../../components/Home/OurMission";
 import PartnerProgram from "../../components/Home/PartnerProgram";
 import TestimonialSlider from "../../components/Home/Testimonials/TestimonialSlider";
@@ -93,11 +93,12 @@ const Home = () => {
         <Hero />
       </div>
 
-      <div className="min-h-screen bg-gradient-to-br from-indigo-50 to-white dark:from-gray-900 dark:to-gray-800 flex flex-col items-center justify-center text-slate-800 dark:text-white px-4 text-center transition-all duration-300">
-        <div className="mt-10 ">
-          <Counting />
-        </div>
+      {/* Counting */}
+      <div className="bg-[#FBF8F2] w-full flex justify-center items-center">
+        <Counting />
+      </div>
 
+      <div className="min-h-screen bg-gradient-to-br from-indigo-50 to-white dark:from-gray-900 dark:to-gray-800 flex flex-col items-center justify-center text-slate-800 dark:text-white px-4 text-center transition-all duration-300">
         <div className="mt-10 ">
           <OurMission />
         </div>

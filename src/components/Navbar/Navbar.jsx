@@ -109,7 +109,7 @@ const Navbar = () => {
           </NavLink>
         </ul>
 
-        <ul className="hidden [@media(min-width:870px)]:flex justify-center items-center gap-2">
+        <ul className="hidden [@media(min-width:1200px)]:flex justify-center items-center gap-2">
           {navList.map((n, i) => (
             <li
               key={i}
@@ -249,7 +249,7 @@ const Navbar = () => {
 
           {/* Hamburger toggle (only visible on md and below) */}
           <button
-            className="relative w-5 h-5 hidden [@media(max-width:870px)]:flex flex-col justify-between items-center"
+            className="relative w-5 h-5 hidden [@media(max-width:1200px)]:flex flex-col justify-between items-center"
             onClick={() => setShowSidebar(!showSidebar)}
           >
             <span
