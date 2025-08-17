@@ -103,7 +103,7 @@ export default function WhatsAppButton() {
               repeatDelay: 1,
             }}
           >
-            <FaWhatsapp size={30} />
+            <FaWhatsapp size={25} />
           </motion.div>
         </motion.a>
       </motion.div>

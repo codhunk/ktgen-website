@@ -101,10 +101,10 @@ const TestimonialModal = ({ videos, startIndex, onClose }) => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
-      <div className="relative w-[95%] 2xl:max-w-7xl h-[90%] 2xl:max-h-[600px] flex flex-col items-center gap-5 overflow-hidden">
+      <div className="relative w-full lg:w-[95%] 2xl:max-w-7xl h-full md:h-[90%] 2xl:max-h-[600px] flex flex-col items-center gap-5 overflow-hidden">
         {/* Close Button */}
         <button
-          className="absolute top-0 right-0 z-10 bg-white/20 hover:bg-white/40 text-white p-2 rounded-full"
+          className="absolute top-3 md:top-0 right-3 md:right-0 z-10 bg-slate-800/50 md;bg-white/20 hover:bg-white/40 text-white p-2 rounded-full"
           onClick={onClose}
         >
           <IoMdClose size={20} />
@@ -115,7 +115,7 @@ const TestimonialModal = ({ videos, startIndex, onClose }) => {
           {/* Prev Button */}
           <button
             onClick={prevSlide}
-            className="absolute left-0 z-10 bg-white/20 hover:bg-white/40 text-white p-2 rounded-full"
+            className="absolute left-3 md:left-0 z-10 bg-slate-800/50 md:bg-white/20 hover:bg-white/40 text-white p-2 rounded-full"
           >
             <IoIosArrowBack size={20} />
           </button>
@@ -124,7 +124,7 @@ const TestimonialModal = ({ videos, startIndex, onClose }) => {
           <div className="flex items-center justify-center w-full h-full transition-all duration-500">
             {/* Left small video */}
             <motion.div
-              className="hidden lg:block w-[20%] h-[60%] rounded-lg shadow-lg overflow-hidden"
+              className="hidden lg:block w-[10%] xl:w-[20%] h-[30%] xl:h-[60%] rounded-lg shadow-lg overflow-hidden"
               variants={sideVariants}
               initial="hidden"
               animate="visible"
@@ -139,7 +139,7 @@ const TestimonialModal = ({ videos, startIndex, onClose }) => {
             </motion.div>
 
             {/* Center large video + info */}
-            <div className="flex w-[85%] lg:w-[45%] h-2/3 md:h-full mx-4 rounded-lg overflow-hidden shadow-lg bg-white/5">
+            <div className="flex w-full md:w-[90%] lg:w-[65%] xl:w-[45%] h-full md:mx-4 md:rounded-lg overflow-hidden shadow-lg bg-white/5">
               <AnimatePresence custom={direction}>
                 <motion.div
                   key={activeIndex}
@@ -154,9 +154,9 @@ const TestimonialModal = ({ videos, startIndex, onClose }) => {
                     ref={(el) => (videoRefs.current[activeIndex] = el)}
                     src={videos[activeIndex].src}
                     autoPlay
-                    className="w-1/2 h-full object-cover"
+                    className="w-full md:w-1/2 h-full object-cover"
                   />
-                  <div className="w-1/2 h-full p-5 flex flex-col items-center justify-start bg-white text-black overflow-auto">
+                  <div className="hidden md:flex w-1/2 h-full p-5 flex-col items-center justify-start bg-white text-black overflow-auto">
                     {/* Thumbnail */}
                     <img
                       src={videos[activeIndex].thumbnail}
@@ -181,7 +181,7 @@ const TestimonialModal = ({ videos, startIndex, onClose }) => {
 
             {/* Right small video */}
             <motion.div
-              className="hidden lg:block w-[20%] h-[60%] rounded-lg shadow-lg overflow-hidden"
+              className="hidden lg:block w-[10%] xl:w-[20%] h-[30%] xl:h-[60%] rounded-lg shadow-lg overflow-hidden"
               variants={sideVariants}
               initial="hidden"
               animate="visible"
@@ -200,7 +200,7 @@ const TestimonialModal = ({ videos, startIndex, onClose }) => {
           {/* Next Button */}
           <button
             onClick={nextSlide}
-            className="absolute right-0 z-10 bg-white/20 hover:bg-white/40 text-white p-2 rounded-full"
+            className="absolute right-3 md:right-0 z-10 bg-slate-800/50 md:bg-white/20 hover:bg-white/40 text-white p-2 rounded-full"
           >
             <IoIosArrowForward size={20} />
           </button>

@@ -38,7 +38,7 @@ const Navbar = () => {
       link: "/pregnency-sec",
       icon: <RiTeamFill />,
     },
-    { name: "Compaign", link: "/campaign-sec", icon: <RiTeamFill /> },
+    { name: "Campaign", link: "/campaign-sec", icon: <RiTeamFill /> },
     { name: "About Us", link: "/about", icon: <RiTeamFill /> },
     {
       name: "Pharmacies",

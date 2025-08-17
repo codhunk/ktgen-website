@@ -12,16 +12,19 @@ const TestimonialSlider = ({ videos, onVideoClick }) => {
         loop
         breakpoints={{
           0: {
+            slidesPerView: 1.5, // show 1 full + part of 2nd
+          },
+          500: {
             slidesPerView: 2.3, // show 2 full + part of 3rd
           },
-          400: {
+          700: {
             slidesPerView: 3.3, // show 3 full + part of 4th
           },
           900: {
-            slidesPerView: 5.3, // show 5 full + part of 6th
+            slidesPerView: 4.3, // show 4 full + part of 5th
           },
           1024: {
-            slidesPerView: 6.3, // show 6 full + part of 7th
+            slidesPerView: 5.3, // show 5 full + part of 6th
           },
         }}
       >

@@ -44,7 +44,7 @@ const App = () => {
             {/* Gallery Page */}
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/pregnency-sec" element={<Preg />} />
-            <Route path="/campaign" element={<Comp />} />
+            <Route path="/campaign-sec" element={<Comp />} />
           </Routes>
           <Footer />
         </div>
