@@ -110,7 +110,7 @@ const Home = () => {
         </div>
 
         <div>
-          <AnimatedSlider />
+          {/* <AnimatedSlider /> */}
         </div>
 
         {/* Testominial Slider */}
