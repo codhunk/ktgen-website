@@ -48,12 +48,12 @@ const Hero = () => {
         <div className="w-full 2xl:max-w-7xl">
           <div className="w-full md:w-[50%]">
             {/* Company Name */}
-            <motion.span
+            {/* <motion.span
               className="block text-sm md:text-base font-medium tracking-widest text-blue-200 uppercase mb-2"
               variants={fadeUp}
             >
               Welcome to Manmed Health
-            </motion.span>
+            </motion.span> */}
 
             {/* Headline */}
             <motion.h1

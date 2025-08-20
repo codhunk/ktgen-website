@@ -114,16 +114,16 @@ const Footer = () => {
                 </div>
               ))}
 
-              {/* Corporate Office */}
+              {/* Registered Office */}
               <div className="flex flex-col gap-3 col-span-1 lg:col-span-2">
                 <span className="text-lg text-white font-semibold">
-                  Corporate Office
+                  Registered Office
                 </span>
                 <Link className="flex items-start gap-2 text-[1rem] text-slate-200 hover:text-indigo-400">
                   <MdLocationPin size={38} className="w-fit h-fit mt-1" />
                   <span>
                     A-29 Block B, Sector Pi 1 & 2, Birondi Chakrasenpur, Greater
-                    Noida, UP 201310
+                    Noida, Uttar Pradesh 201310
                   </span>
                 </Link>
                 <Link
@@ -131,7 +131,7 @@ const Footer = () => {
                   className="flex items-center gap-2 text-[1rem] text-slate-200 hover:text-indigo-400"
                 >
                   <FaPhoneAlt size={16} className="h-fit" />
-                  <span>+91 98765 43210</span>
+                  <span>+91 7071543130</span>
                 </Link>
                 <Link
                   to="mailto:contact@manmedhealth.com"
@@ -156,7 +156,7 @@ const Footer = () => {
             </div>
             {/* Footer Copyright Part */}
             <span className="m-auto text-gray-200 text-md">
-              &copy; 2025 Manmed Health Private LTD. | All rights reserved
+              &copy; 2025 Manmed Health Private Limited. | All rights reserved
             </span>
           </div>
           {/* Footer Bottom Section */}
