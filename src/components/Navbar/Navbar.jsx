@@ -16,7 +16,7 @@ import { LiaAccusoft } from "react-icons/lia";
 
 const Navbar = () => {
   const navList = [
-    { name: "Home", link: "/", icon: <GoHomeFill /> },
+    // { name: "Home", link: "/", icon: <GoHomeFill /> },
     { name: "Products", link: "/products", icon: <FaProductHunt /> },
     {
       name: "Life at ManMed",
