@@ -100,8 +100,10 @@ const ContactUs = () => {
               <div>
                 <p className="font-semibold">Address</p>
                 <p className="text-sm">
-                  A-29 Block B, Sector Pi 1 & 2, Birondi Chakrasenpur, Greater
-                  Noida, Uttar Pradesh 201310
+                  {/* A-29 Block B, Sector Pi 1 & 2, Birondi Chakrasenpur, Greater
+                  Noida, Uttar Pradesh 201310 */}
+                  H. No. A-29, Ground Floor, H-1 Block B, 
+                  Sector-Pi/2, Alpha, Greater Noida.
                 </p>
               </div>
             </div>
@@ -109,7 +111,7 @@ const ContactUs = () => {
               <Phone className="text-cyan-500" />
               <div>
                 <p className="font-semibold">Phone</p>
-                <p className="text-sm">+91 7071543130</p>
+                <p className="text-sm">+91 9310337574</p>
               </div>
             </div>
             <div className="flex gap-4 items-start">

@@ -73,7 +73,7 @@ const Footer = () => {
       {/* Footer Outer Sectrion */}
       <div className="w-full flex justify-center items-center bg-gradient-to-t from-black via-gray-900 to-gray-800">
         <div className="w-[90%] md:w-[95%] 2xl:max-w-7xl py-12 flex flex-col gap-5">
-          <div className="w-full flex flex-col gap-10">
+          <div className="w-full  flex flex-col gap-10">
             {/* Footer Grid */}
             <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-8">
               {/* Logo & Description */}
@@ -122,16 +122,16 @@ const Footer = () => {
                 <Link className="flex items-start gap-2 text-[1rem] text-slate-200 hover:text-indigo-400">
                   <MdLocationPin size={38} className="w-fit h-fit mt-1" />
                   <span>
-                    A-29 Block B, Sector Pi 1 & 2, Birondi Chakrasenpur, Greater
-                    Noida, Uttar Pradesh 201310
+                    H. No. A-29, Ground Floor, H-1 Block B, 
+                    Sector-Pi/2, Alpha, Greater Noida.
                   </span>
                 </Link>
                 <Link
-                  to="tel:+919876543210"
+                  to="tel:+919310337574"
                   className="flex items-center gap-2 text-[1rem] text-slate-200 hover:text-indigo-400"
                 >
                   <FaPhoneAlt size={16} className="h-fit" />
-                  <span>+91 7071543130</span>
+                  <span>+91 9310337574</span>
                 </Link>
                 <Link
                   to="mailto:contact@manmedhealth.com"
@@ -154,16 +154,15 @@ const Footer = () => {
                 <BsInstagram />
               </Link>
             </div>
-            {/* Footer Copyright Part */}
-            <span className="m-auto text-gray-200 text-md">
+            
+            {/* <span className="m-auto  text-gray-200 text-md">
               &copy; 2025 Manmed Health Private Limited. | All rights reserved
-            </span>
+            </span> */}
           </div>
           {/* Footer Bottom Section */}
           <div
-            className="w-full flex justify-center items-center gap-2 md:gap-5 text-[9.5vw] xl:text-[8rem]
-          font-bold text-center uppercase text-white mb-10"
-          >
+            className="w-full  flex justify-center items-center gap-2 md:gap-5 text-[9.5vw] xl:text-[8rem]
+          font-bold text-center uppercase text-white mb-10">
             <img
               src={logo}
               alt="logo"
@@ -173,6 +172,12 @@ const Footer = () => {
             <span>Manmed</span>
             <span>Health</span>
           </div>
+          {/* Footer Copyright Part */}
+        <div className=" text-white flex items-center justify-center">
+          <span className="  text-gray-200 text-md">
+              &copy; 2025 Manmed Health Private Limited. | All rights reserved
+            </span>
+        </div>
         </div>
       </div>
     </>
