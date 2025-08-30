@@ -31,8 +31,8 @@ const Pregnency_sec = () => {
   };
 
   return (
-    <main className='dark:bg-[#57564F] dark:text-white'>
-    <div className="p-6 max-w-5xl mx-auto space-y-10">
+    <main className='pt-[88px] dark:bg-[#57564F] dark:text-white'>
+    <div className="py-10 px-3 sm:px-6 max-w-5xl mx-auto space-y-10">
       {/* Banner */}
       <div style={{backgroundImage:"url('/images/baby.jpg')"}} className="bg-cover text-gray-800 dark:text-[#57564F] bg-center bg-gray-200 p-8 md:p-20 rounded-xl text-center">
         <h1 className="text-4xl font-bold">{t("pregnency_j")}</h1>
@@ -46,7 +46,7 @@ const Pregnency_sec = () => {
       </div>
 
       {/* Video Playlist */}
-      <div className="bg-gray-100 dark:bg-[#7A7A73] p-6 rounded-xl shadow">
+      <div className="bg-gray-100 dark:bg-[#7A7A73] py-6 px-4 sm:px-6 rounded-xl shadow">
         <h3 className="text-xl font-semibold mb-4 text-gray-700 dark:text-white ">{t("preg_watch")}</h3>
         <div className="flex flex-wrap gap-3 mb-4">
           {videoData.map((video, idx) => (
@@ -66,7 +66,7 @@ const Pregnency_sec = () => {
           controls
           autoPlay
           onEnded={handleVideoEnded}
-          className="w-full rounded-lg max-h-[500px]"
+          className="w-full rounded-lg h-[300px] sm:h-[450px]"
         >
           <source src={videoData[currentIndex].url} type="video/mp4" />
           Your browser does not support the video tag.

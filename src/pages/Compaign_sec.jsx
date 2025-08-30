@@ -78,7 +78,7 @@ const Compaign_sec = () => {
   };
 
   return (
-    <section className="py-12 bg-gray-50 dark:bg-[#57564F]">
+    <section className="py-12 pt-[95px] bg-gray-50 dark:bg-[#57564F]">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 dark:text-[#F8F3CE] mb-4">{t("campaign_h")}</h2>
@@ -134,7 +134,7 @@ const Compaign_sec = () => {
 
         {/* View more button */}
         <div className="text-center mt-10">
-          <button className="px-6 py-3 bg-blue-600 dark:bg-blue-950 dark:text-[#F8F3CE] text-white rounded-lg hover:bg-blue-700 transition-colors duration-300 font-medium">
+          <button className="px-6 py-3 bg-blue-600 dark:bg-blue-950 dark:text-[#F8F3CE] text-white rounded-lg hover:bg-blue-700 relative top-0 hover:-top-2 duration-300 font-medium">
             {t("view_more")}
           </button>
         </div>
@@ -142,7 +142,7 @@ const Compaign_sec = () => {
         {/* Media Viewer Modal */}
         {isViewerOpen && selectedMedia && (
           <div className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4" onClick={closeMedia}>
-            <div className="relative max-w-3xl w-full max-h-[90vh] mt-5" onClick={(e) => e.stopPropagation()}>
+            <div className="relative max-w-3xl w-full max-h-[90vh] mt-14" onClick={(e) => e.stopPropagation()}>
               <button 
                 className="absolute -top-9 right-0 text-white hover:text-gray-300 z-10"
                 onClick={closeMedia}
@@ -152,27 +152,27 @@ const Compaign_sec = () => {
                 </svg>
               </button>
               
-              <div className="bg-white dark:bg-[#7A7A73] rounded-lg overflow-hidden">
+              <div className="bg-white py-3 sm:py-4 px-3 sm:px-6 dark:bg-[#7A7A73] rounded-lg overflow-hidden">
                 {selectedMedia.type === 'image' ? (
                   <img 
                     src={selectedMedia.url} 
                     alt={selectedMedia.title}
-                    className="w-full max-h-[70vh] object-contain"
+                    className="w-full max-h-[70vh] object-contain rounded-lg sm:rounded-xl"
                   />
                 ) : (
                   <div className="aspect-w-16 aspect-h-9">
                     
                     <video key={selectedMedia.url} controls autoPlay 
-                    className="w-full rounded-lg max-h-[500px]">
+                    className="w-full rounded-lg h-[300px] sm:h-[500px]">
                       <source src={selectedMedia.url} type="video/mp4" />
                       Your browser does not support the video tag.
                     </video>
                   </div>
                 )}
-                <div className="p-6">
+                <div className="py-3">
                   <h3 className="text-xl font-bold text-gray-800 dark:text-[#F8F3CE]">{selectedMedia.title}</h3>
-                  <p className="text-gray-600 dark:text-[#DDDAD0] mt-2">{selectedMedia.description}</p>
-                  <p className="text-sm text-gray-500 dark:text-[#DDDAD0] mt-2">
+                  <p className="text-gray-600 dark:text-[#F8F3CE] font-semibold mt-2">{selectedMedia.description}</p>
+                  <p className="text-sm text-gray-500 dark:text-black font-semibold mt-2">
                     {new Date(selectedMedia.date).toLocaleDateString('en-US', {
                       year: 'numeric',
                       month: 'long',
