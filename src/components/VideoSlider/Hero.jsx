@@ -60,7 +60,8 @@ const Hero = () => {
               className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight text-white mb-4"
               variants={fadeUp}
             >
-              Your Health, <br /> Our Mission
+              {/* Your Health, <br /> Our Mission */}
+              Always By Your Side
             </motion.h1>
 
             {/* Subheadline */}

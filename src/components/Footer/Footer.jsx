@@ -5,8 +5,12 @@ import { MdLocationPin } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 import { FaFacebookF } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaXTwitter, FaLinkedinIn } from "react-icons/fa6";
 import { BsInstagram } from "react-icons/bs";
+import { SiThreads } from "react-icons/si";
+
+
+
 
 const Footer = () => {
   const list = [
@@ -144,20 +148,24 @@ const Footer = () => {
             </div>
             {/* Footer Social Icons Part */}
             <div className="w-full flex justify-start items-center text-white gap-5 text-2xl">
-              <Link to={"/"} className="hover:text-blue-500">
+              <Link to={"/"} className="hover:text-blue-500 relative top-0 hover:-top-2 duration-300">
                 <FaFacebookF />
               </Link>
-              <Link to={"/"} className="hover:text-gray-300">
+              <Link to={"https://x.com/ManMedhealth05"} className="hover:text-gray-300 relative top-0 hover:-top-2 duration-300">
                 <FaXTwitter />
               </Link>
-              <Link to={"/"} className="hover:text-pink-500">
+              <Link to={"https://www.instagram.com/manmedhealth/"} className="hover:text-pink-500 relative top-0 hover:-top-2 duration-300">
                 <BsInstagram />
               </Link>
+              <Link to={"https://www.threads.com/@manmedhealth"} className="hover:text-black relative top-0 hover:-top-2 duration-300">
+                <SiThreads />
+              </Link>
+              <Link to={"/"} className="hover:text-blue-500 relative top-0 hover:-top-2 duration-300">
+                <FaLinkedinIn />
+              </Link>
+
             </div>
-            
-            {/* <span className="m-auto  text-gray-200 text-md">
-              &copy; 2025 Manmed Health Private Limited. | All rights reserved
-            </span> */}
+         
           </div>
           {/* Footer Bottom Section */}
           <div

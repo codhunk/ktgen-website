@@ -157,7 +157,7 @@ const ContactUs = () => {
             <a href="#" className="hover:text-cyan-400">
               <Facebook />
             </a>
-            <a href="#" className="hover:text-cyan-400">
+            <a href="https://www.instagram.com/manmedhealth/" className="hover:text-cyan-400">
               <Instagram />
             </a>
             <a href="#" className="hover:text-cyan-400">
