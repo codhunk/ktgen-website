@@ -1,8 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
 import videoHero from "./videos/video1.mp4";
+import { useTranslation } from "react-i18next";
 
 const Hero = () => {
+  const { t } = useTranslation();
   // Animation variants
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -61,7 +63,7 @@ const Hero = () => {
               variants={fadeUp}
             >
               {/* Your Health, <br /> Our Mission */}
-              Always By Your Side
+              {t("home_heading")}
             </motion.h1>
 
             {/* Subheadline */}
@@ -69,17 +71,16 @@ const Hero = () => {
               className="text-base md:text-lg lg:text-xl text-gray-200 mb-8 leading-relaxed"
               variants={fadeUp}
             >
-              Delivering high-quality medicines that are accessible, affordable,
-              and unforgettable — because your health deserves nothing less.
+              {t("home_para")}
             </motion.p>
 
             {/* CTA Buttons */}
             <motion.div className="flex flex-wrap gap-3" variants={fadeUp}>
               <button className="px-4 py-2 text-sm md:text-base bg-gradient-to-r from-indigo-600 to-blue-600 text-white font-medium rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-                Explore Products
+                {t("home_btn1")}
               </button>
               <button className="px-4 py-2 text-sm md:text-base bg-gradient-to-r from-green-600 to-teal-600 text-white font-medium rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-                Partner With Us
+                {t("home_btn2")}
               </button>
             </motion.div>
           </div>

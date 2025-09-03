@@ -14,6 +14,7 @@ import testiVid6 from "./videos/testominialsVideos/video6.mp4";
 import thumb from "./assets/thumbnail.jpg";
 import TestimonialModal from "../../components/Home/Testimonials/TestimonialModal";
 import AnimatedSlider from "../../components/Home/AnimatedSlider";
+import { useTranslation } from "react-i18next";
 
 const videos = [
   {
@@ -83,6 +84,7 @@ const videos = [
 ];
 
 const Home = () => {
+  const { t } = useTranslation();
   const [modalOpen, setModalOpen] = useState(false);
   const [startIndex, setStartIndex] = useState(0);
 
@@ -105,7 +107,7 @@ const Home = () => {
 
         <div>
           <h1 className=" text-4xl md:text-6xl text-center w-full px-5 py-10 text-black dark:text-green-800 font-bold">
-            Our Expertise Across Specialties
+            {t("home_expert")}
           </h1>
         </div>
 
@@ -116,7 +118,7 @@ const Home = () => {
         {/* Testominial Slider */}
         <div className="w-full md:w-[95%] 2xl:max-w-7xl py-4 px-2">
           <h1 className="text-3xl text-center w-full px-5 py-10 text-black dark:text-green-800 font-bold">
-            Testimonials
+            {t("testimo")}
           </h1>
           <TestimonialSlider
             videos={videos}

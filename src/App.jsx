@@ -8,24 +8,32 @@ import ToastContextProvider from "./contexts/ToastContext/ToastContextProvider";
 
 /* ---------- Components ---------- */
 import AppRouter from "./app/AppRouter";
-import SplashScreen from "./components/SplashScreen/SplashScreen";
+// import SplashScreen from "./components/SplashScreen/SplashScreen";
 
 const App = () => {
-  const [showSplash, setShowSplash] = useState(true);
+  // const [showSplash, setShowSplash] = useState(true);
 
   return (
     <>
-      {showSplash ? (
-        <SplashScreen onFinish={() => setShowSplash(false)} />
-      ) : (
-        <BrowserRouter>
+      {/* {showSplash ? ( */}
+        {/* <SplashScreen onFinish={() => setShowSplash(false)} /> */}
+      {/* ) : ( */}
+        {/* <BrowserRouter> */}
+          {/* ToastContextProvider */}
+          {/* <ToastContextProvider> */}
+            {/* AppRouter */}
+            {/* <AppRouter /> */}
+          {/* </ToastContextProvider> */}
+        {/* </BrowserRouter> */}
+      {/* )} */}
+
+    <BrowserRouter>
           {/* ToastContextProvider */}
           <ToastContextProvider>
             {/* AppRouter */}
             <AppRouter />
           </ToastContextProvider>
         </BrowserRouter>
-      )}
     </>
   );
 };

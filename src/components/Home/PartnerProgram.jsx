@@ -11,8 +11,10 @@ import {
   CheckCircle,
   ArrowRight,
 } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const PartnerProgram = () => {
+  const { t } = useTranslation()
   const sectionRef = useRef(null);
   const inView = useInView(sectionRef, { amount: 0.1 });
 
@@ -53,27 +55,26 @@ const PartnerProgram = () => {
   const features = [
     {
       icon: <Scan className="w-8 h-8" />,
-      title: "Scan & Earn Digital Points",
-      description:
-        "Every scan converts to valuable reward points automatically",
+      title: "partner_titl1",
+      description:"partner_des1",
       color: "from-green-500 to-teal-500",
     },
     {
       icon: <Trophy className="w-8 h-8" />,
-      title: "Monthly Recognition",
-      description: "Top pharmacies receive exclusive recognition and bonuses",
+      title: "partner_titl2",
+      description:"partner_des2",
       color: "from-emerald-500 to-lime-500",
     },
     {
       icon: <Gift className="w-8 h-8" />,
-      title: "Redeemable Rewards",
-      description: "Convert points to gifts, discounts, and exclusive schemes",
+      title: "partner_titl3",
+      description:"partner_des3",
       color: "from-green-400 to-green-600",
     },
     {
       icon: <Package className="w-8 h-8" />,
-      title: "Smart Tracking",
-      description: "Order tracking and intelligent restock reminders",
+      title: "partner_titl4",
+      description:"partner_des4",
       color: "from-green-500 to-teal-500",
     },
   ];
@@ -81,17 +82,17 @@ const PartnerProgram = () => {
   const stats = [
     {
       number: "50K+",
-      label: "Active Pharmacies",
+      label: "partner_lab1",
       icon: <TrendingUp className="w-6 h-6" />,
     },
     {
       number: "2M+",
-      label: "Points Earned",
+      label: "partner_lab12",
       icon: <Star className="w-6 h-6" />,
     },
     {
       number: "98%",
-      label: "Satisfaction Rate",
+      label: "partner_lab3",
       icon: <CheckCircle className="w-6 h-6" />,
     },
   ];
@@ -133,18 +134,18 @@ const PartnerProgram = () => {
             >
               <Zap className="w-4 h-4 text-green-500" />
               <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
-                PARTNER PROGRAM / REWARD SYSTEM
+                {t("partnertop_head")}
               </span>
             </motion.div>
 
             <motion.h1
               variants={itemVariants}
-              className="text-5xl lg:text-7xl font-bold bg-gradient-to-r from-gray-900 via-green-900 to-teal-900 dark:from-white dark:via-green-100 dark:to-teal-100 bg-clip-text text-transparent mb-6 leading-tight"
+              className="pt-5  text-5xl lg:text-7xl font-bold bg-gradient-to-r from-gray-900 via-green-900 to-teal-900 dark:from-white dark:via-green-100 dark:to-teal-100 bg-clip-text text-transparent mb-6 leading-tight"
             >
-              Pharmacy Rewards.
+              {t("partner_head1")}
               <br />
               <span className="bg-gradient-to-r from-green-500 to-teal-600 bg-clip-text text-transparent">
-                Built for Growth.
+                {t("partner_head2")}
               </span>
             </motion.h1>
 
@@ -152,9 +153,7 @@ const PartnerProgram = () => {
               variants={itemVariants}
               className="text-xl lg:text-2xl text-gray-600 dark:text-gray-300 mb-12 leading-relaxed max-w-3xl mx-auto"
             >
-              Transform your pharmacy business with our intelligent reward
-              system. Earn points, gain recognition, and unlock exclusive
-              benefits designed for sustainable growth.
+              {t("partner_para")}
             </motion.p>
 
             <motion.button
@@ -163,7 +162,7 @@ const PartnerProgram = () => {
               whileTap={{ scale: 0.95 }}
               className="group inline-flex items-center gap-3 bg-gradient-to-r from-green-600 to-teal-600 hover:from-green-700 hover:to-teal-700 text-white px-8 py-4 rounded-2xl font-semibold text-lg shadow-2xl hover:shadow-green-500/25 transition-all duration-300"
             >
-              Get Started Today
+              {t("partner_btn")}
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </motion.button>
           </motion.div>
@@ -195,7 +194,7 @@ const PartnerProgram = () => {
                   {stat.number}
                 </div>
                 <div className="text-gray-600 dark:text-gray-400 font-medium">
-                  {stat.label}
+                  {t(stat.label)}
                 </div>
               </motion.div>
             ))}
@@ -214,14 +213,14 @@ const PartnerProgram = () => {
             className="text-center mb-16"
           >
             <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-              Powerful Features for{" "}
+              
+              {t("partnerf_head1")}{" "}
               <span className="bg-gradient-to-r from-green-500 to-teal-600 bg-clip-text text-transparent">
-                Modern Pharmacies
+                {t("partnerf_head2")}
               </span>
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-              Everything you need to maximize your pharmacy's potential and
-              drive sustainable growth
+              {t("partnerf_para")}
             </p>
           </motion.div>
 
@@ -243,10 +242,10 @@ const PartnerProgram = () => {
                     <div className="text-white">{feature.icon}</div>
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4 group-hover:text-green-600 dark:group-hover:text-teal-400 transition-colors">
-                    {feature.title}
+                    {t(feature.title)}
                   </h3>
                   <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                    {feature.description}
+                    {t(feature.description)}
                   </p>
                   <div className="absolute inset-0 bg-gradient-to-r from-green-500/5 to-teal-500/5 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </div>
@@ -279,11 +278,10 @@ const PartnerProgram = () => {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-              Ready to Transform Your Pharmacy?
+              {t("partner_ctah")}
             </h2>
             <p className="text-xl text-green-100 mb-8 max-w-2xl mx-auto">
-              Join thousands of pharmacies already growing with our reward
-              system
+              {t("partner_ctap")}
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -292,7 +290,7 @@ const PartnerProgram = () => {
                 whileTap={{ scale: 0.95 }}
                 className="group inline-flex items-center gap-3 bg-white text-green-600 px-8 py-4 rounded-2xl font-semibold text-lg shadow-2xl hover:shadow-white/25 transition-all duration-300"
               >
-                Start Earning Points
+                {t("partner_ctab1")}
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </motion.button>
 
@@ -301,7 +299,7 @@ const PartnerProgram = () => {
                 whileTap={{ scale: 0.95 }}
                 className="inline-flex items-center gap-3 border-2 border-white/30 text-white px-8 py-4 rounded-2xl font-semibold text-lg hover:bg-white/10 transition-all duration-300"
               >
-                Learn More
+                {t("partner_ctab2")}
               </motion.button>
             </div>
           </motion.div>

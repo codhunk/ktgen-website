@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import {
   Heart,
   Package,
@@ -10,21 +11,22 @@ import {
 } from "lucide-react";
 
 const OurMission = () => {
+  const { t } = useTranslation();
   const features = [
     {
       icon: Package,
-      title: "Brand-first, patient-friendly packaging",
-      description: "Clear, accessible design that builds trust",
+      title: "missdethead1",
+      description: "missdetpara1",
     },
     {
       icon: Truck,
-      title: "Direct-to-retailer supply chain",
-      description: "Efficient distribution for better accessibility",
+      title: "missdethead2",
+      description: "missdetpara2",
     },
     {
       icon: MapPin,
-      title: "Focus on UP & Bihar's underserved markets",
-      description: "Bringing healthcare to those who need it most",
+      title: "missdethead3",
+      description: "missdetpara3",
     },
   ];
 
@@ -58,7 +60,7 @@ const OurMission = () => {
               className="inline-flex items-center gap-2 px-4 py-2 bg-green-50 dark:bg-green-900/20 text-green-700 dark:text-green-400 rounded-full text-sm font-medium border border-green-200 dark:border-green-800"
             >
               <Heart size={16} />
-              OUR MISSION & PROMISE
+              {t("misstop_head")}
             </motion.div>
 
             {/* Headline */}
@@ -69,9 +71,9 @@ const OurMission = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-3xl lg:text-5xl font-bold text-gray-900 dark:text-white leading-tight"
             >
-              Healthcare That Goes{" "}
+              {t("misshead1")}{" "}
               <span className="bg-gradient-to-r from-green-600 to-teal-600 dark:from-green-400 dark:to-teal-400 bg-clip-text text-transparent">
-                Beyond Medicine
+                {t("misshead2")}
               </span>
             </motion.h2>
 
@@ -83,10 +85,7 @@ const OurMission = () => {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed"
             >
-              We're not just a pharma company — we're your partner in better
-              healthcare. Our mission is to make high-quality generics
-              accessible, while building trust through brand clarity, ethical
-              sourcing, and field-first strategies.
+              {t("")}
             </motion.p>
 
             {/* Features List */}
@@ -111,10 +110,10 @@ const OurMission = () => {
                   </div>
                   <div className="text-left">
                     <h4 className="font-semibold text-gray-900 dark:text-white mb-1">
-                      {feature.title}
+                      {t(feature.title)}
                     </h4>
                     <p className="text-gray-600 dark:text-gray-400 text-sm">
-                      {feature.description}
+                      {t(feature.description)}
                     </p>
                   </div>
                 </motion.div>
@@ -131,7 +130,7 @@ const OurMission = () => {
             >
               <button className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-green-600 to-teal-600 hover:from-green-700 hover:to-teal-700 text-white font-semibold rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
                 <Users size={20} />
-                Learn More About Our Impact
+                {t("missbtn")}
               </button>
             </motion.div>
           </motion.div>
@@ -171,10 +170,10 @@ const OurMission = () => {
                   </div>
                   <div>
                     <div className="text-sm font-semibold text-gray-900 dark:text-white">
-                      Quality Assured
+                      {t("missqualhead")}
                     </div>
                     <div className="text-xs text-gray-500 dark:text-gray-400">
-                      WHO-GMP Certified
+                      {t("missqualpara")}
                     </div>
                   </div>
                 </div>
