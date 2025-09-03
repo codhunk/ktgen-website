@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import "swiper/css";
 import "swiper/css/pagination";
 
@@ -11,10 +12,10 @@ import anujPic from "./assets/leaders/anuj.png";
 
 const leaders = [
   {
-    name: "Rahul Patel",
-    title: "Director",
+    name: "meet_card1name",
+    title: "meet_card1title",
     image: rahulPic,
-    bio: "Rahul brings a deep passion for technology and a commitment to excellence in every project we undertake.",
+    bio: "meet_card1bio",
     socials: {
       linkedin: "#",
       twitter: "#",
@@ -22,10 +23,10 @@ const leaders = [
     },
   },
   {
-    name: "Vibha Rani",
-    title: "Director",
+    name: "meet_card2name",
+    title: "meet_card2title",
     image: vibhaPic,
-    bio: "Vibha ensures smooth operations and strategic partnerships, fostering a culture of trust and collaboration.",
+    bio: "meet_card2bio",
     socials: {
       linkedin: "#",
       twitter: "#",
@@ -33,19 +34,22 @@ const leaders = [
     },
   },
   {
-    name: "Anuj Kumar Patel",
-    title: "Director",
+    name: "meet_card3name",
+    title: "meet_card3title",
     image: anujPic,
-    bio: "Anuj is the driving force behind our vision, combining innovation with strategy to lead the company forward.",
+    bio: "meet_card3bio",
     socials: {
       linkedin: "#",
       twitter: "#",
       instagram: "#",
     },
   },
+ 
+
 ];
 
 const LeadershipTeam = () => {
+  const { t } = useTranslation();
   return (
     <section className="bg-gradient-to-r from-purple-100 via-blue-100 to-cyan-100 dark:from-purple-950 dark:via-blue-950 dark:to-cyan-950 py-20">
       <div className="container mx-auto px-4 text-center">
@@ -56,20 +60,21 @@ const LeadershipTeam = () => {
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
         >
-          Meet Our Leadership Team
+          {t("about_meet_head")}
         </motion.h2>
 
         <div className="relative">
           <Swiper
             modules={[Pagination]}
             spaceBetween={30}
-            pagination={{ clickable: true }}
+            pagination={false}
             breakpoints={{
               768: { slidesPerView: 2 },
               1024: { slidesPerView: 3 },
             }}
-            className="pb-10"
-          >
+
+            className="pb-10 ">
+
             {leaders.map((leader, idx) => (
               <SwiperSlide key={idx} className="h-auto">
                 <motion.div
@@ -93,13 +98,13 @@ const LeadershipTeam = () => {
                     {/* Right Section (Details) */}
                     <div className="text-center group-hover:text-left flex-1 group-hover:w-1/2 group-hover:py-4 group-hover:pr-4 transition-all duration-500">
                       <h5 className="text-2xl font-bold text-gray-800 dark:text-slate-100">
-                        {leader.name}
+                        {t(leader.name)}
                       </h5>
                       <p className="text-lg text-indigo-600 dark:text-blue-300 font-medium mt-2">
-                        {leader.title}
+                        {t(leader.title)}
                       </p>
                       <p className="mt-2 text-gray-600 dark:text-white text-sm">
-                        {leader.bio}
+                        {t(leader.bio)}
                       </p>
 
                       {/* Social Links */}

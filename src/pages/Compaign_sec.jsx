@@ -3,20 +3,18 @@ import { useDarkMode } from '../hooks/UseDarkMode/useDarkMode';
 import { useTranslation } from "react-i18next";
 import { TbTriangleFilled } from "react-icons/tb";
 
-
 const Compaign_sec = () => {
   const { isDark, toggleDarkMode } = useDarkMode();
-    const { t } = useTranslation();
+  const { t } = useTranslation();
 
-
-  // Sample campaign media data (replace with your actual data)
+  // Store only the keys and non-translatable data in state
   const [campaignMedia, setCampaignMedia] = useState([
     {
       id: 1,
       type: 'image',
       url: '/images/community_event.jpg',
-      title: t("community_h"),
-      description: t("community_about"),
+      titleKey: "community_h",
+      descriptionKey: "community_about",
       date: '2023-05-15'
     },
     {
@@ -24,16 +22,16 @@ const Compaign_sec = () => {
       type: 'video',
       url: '/videos/6months.mp4',
       thumbnail: '/images/customer_testimonial.jpg',
-      title: t("testimonial_h"),
-      description: t("testimonial_about"),
+      titleKey: "testimonial_h",
+      descriptionKey: "testimonial_about",
       date: '2023-06-22'
     },
     {
       id: 3,
       type: 'image',
       url: '/images/team_building.jpg',
-      title: t("team_h"),
-      description: t("team_about"),
+      titleKey: "team_h",
+      descriptionKey: "team_about",
       date: '2023-04-10'
     },
     {
@@ -41,24 +39,24 @@ const Compaign_sec = () => {
       type: 'video',
       url: '/videos/9months.mp4',
       thumbnail: '/images/product_demo.jpg',
-      title: t("demo_h"),
-      description: t("demo_about"),
+      titleKey: "demo_h",
+      descriptionKey: "demo_about",
       date: '2023-07-05'
     },
     {
       id: 5,
       type: 'image',
       url: '/images/award_cerimoney.jpg',
-      title: t("ceremoney_h"),
-      description: t("ceremoney_about"),
+      titleKey: "ceremoney_h",
+      descriptionKey: "ceremoney_about",
       date: '2023-03-18'
     },
     {
       id: 6,
       type: 'image',
       url: '/images/workshop.jpg',
-      title: t("workshop_h"),
-      description: t("workshop_about"),
+      titleKey: "workshop_h",
+      descriptionKey: "workshop_about",
       date: '2023-06-30'
     },
   ]);
@@ -97,14 +95,14 @@ const Compaign_sec = () => {
                 <div className="relative h-48 w-full overflow-hidden">
                   <img 
                     src={media.url} 
-                    alt={media.title}
+                    alt={t(media.titleKey)}
                     className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                     loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
                     <div className="text-white dark:text-[#F8F3CE]">
-                      <h3 className="font-semibold text-lg">{media.title}</h3>
-                      <p className="text-sm">{media.description}</p>
+                      <h3 className="font-semibold text-lg">{t(media.titleKey)}</h3>
+                      <p className="text-sm">{t(media.descriptionKey)}</p>
                     </div>
                   </div>
                 </div>
@@ -117,15 +115,15 @@ const Compaign_sec = () => {
                   </div>
                   <img 
                     src={media.thumbnail}
-                    alt={media.title}
+                    alt={t(media.titleKey)}
                     className="w-full h-full object-cover"
                     loading="lazy"
                   />
                 </div>
               )}
               <div className="p-4">
-                <h3 className="font-semibold dark:text-[#F8F3CE] text-gray-800">{media.title}</h3>
-                <p className="text-sm text-gray-600 dark:text-[#DDDAD0] mt-1">{media.description}</p>
+                <h3 className="font-semibold dark:text-[#F8F3CE] text-gray-800">{t(media.titleKey)}</h3>
+                <p className="text-sm text-gray-600 dark:text-[#DDDAD0] mt-1">{t(media.descriptionKey)}</p>
                 <p className="text-xs text-gray-500 dark:text-[#DDDAD0] mt-2">{new Date(media.date).toLocaleDateString()}</p>
               </div>
             </div>
@@ -156,7 +154,7 @@ const Compaign_sec = () => {
                 {selectedMedia.type === 'image' ? (
                   <img 
                     src={selectedMedia.url} 
-                    alt={selectedMedia.title}
+                    alt={t(selectedMedia.titleKey)}
                     className="w-full max-h-[70vh] object-contain rounded-lg sm:rounded-xl"
                   />
                 ) : (
@@ -170,8 +168,8 @@ const Compaign_sec = () => {
                   </div>
                 )}
                 <div className="py-3">
-                  <h3 className="text-xl font-bold text-gray-800 dark:text-[#F8F3CE]">{selectedMedia.title}</h3>
-                  <p className="text-gray-600 dark:text-[#F8F3CE] font-semibold mt-2">{selectedMedia.description}</p>
+                  <h3 className="text-xl font-bold text-gray-800 dark:text-[#F8F3CE]">{t(selectedMedia.titleKey)}</h3>
+                  <p className="text-gray-600 dark:text-[#F8F3CE] font-semibold mt-2">{t(selectedMedia.descriptionKey)}</p>
                   <p className="text-sm text-gray-500 dark:text-black font-semibold mt-2">
                     {new Date(selectedMedia.date).toLocaleDateString('en-US', {
                       year: 'numeric',

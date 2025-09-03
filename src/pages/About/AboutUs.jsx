@@ -9,8 +9,10 @@ import MenHealthSection from "./manmedhealth";
 // import MousePointerEffect from "./mousepointereffect";
 import { motion } from "framer-motion";
 import LeadershipTeam from "./teamMembers";
+import { useTranslation } from "react-i18next";
 
 const AboutUs = () => {
+  const { t } = useTranslation();
   return (
     <div className="min-h-screen font-sans text-gray-800">
       {/* <MousePointerEffect /> */}
@@ -30,12 +32,10 @@ const AboutUs = () => {
           transition={{ duration: 1 }}
         >
           <h1 className="text-4xl md:text-6xl font-bold mb-4">
-            Pioneering a Healthier Future, Together
+            {t("about_head")}
           </h1>
           <p className="text-lg md:text-xl font-light">
-            Driven by a commitment to scientific excellence and a passion for
-            human well-being, we are transforming lives with innovative
-            pharmaceutical solutions.
+            {t("about_subhead")}
           </p>
         </motion.div>
       </section>
@@ -52,7 +52,7 @@ const AboutUs = () => {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            Our Story: From Vision to Reality
+            {t("about_story_head")}
           </motion.h2>
           <motion.p
             className="text-lg leading-relaxed text-gray-700 dark:text-gray-100"
@@ -61,14 +61,20 @@ const AboutUs = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
             viewport={{ once: true }}
           >
-            Founded in 2021 by Jalandhar, our journey began with a vision to
+            {/* Founded in 2021 by Jalandhar, our journey began with a vision to
             transform ideas into impactful digital experiences. What started as
             a small initiative quickly grew into a dynamic team driven by
             innovation. We’ve consistently focused on delivering quality
             solutions tailored to our clients' needs. Over the years, our
             dedication has helped us build strong partnerships and a solid
             reputation. Today, we continue to grow, fueled by creativity, trust,
-            and a passion for progress.
+            and a passion for progress. */}
+
+            {/* Vision Statement */}
+            {/* To be the most trusted and accessible partner in India's healthcare journey, empowering every individual to see their well-being not as a cost, but as their most valuable, life-long investment.<br/> */}
+            {/* Mission Statement */}
+            {/* To ethically develop and deliver high-quality, affordable healthcare solutions that address the foundational needs of the Indian population. We are committed to empowering individuals to proactively invest in their health and will remain a reliable partner in every step of their journey, living out our promise: ManMed Health - Always By Your Side. */}
+            {t("about_story_para")}
           </motion.p>
         </div>
       </section>
