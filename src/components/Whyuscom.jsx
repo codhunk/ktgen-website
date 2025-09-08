@@ -13,7 +13,7 @@ import {
 
 function Whyuscom() {
     return (
-        <div className=' bg-white h-[136vh] flex items-center justify-center '>
+        <div className='bg-white h-[137vh] rounded-3xl flex items-center justify-center '>
             <div className='bg-white flex justify-center items-center h-[136vh] w-[320px]'>
                 <div className=' h-[82%] w-[46%] relative bg-yellow-500'>
                         <div className=' flex absolute -left-[50px] -top-[60px]'>
