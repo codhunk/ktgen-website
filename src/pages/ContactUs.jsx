@@ -102,8 +102,9 @@ const ContactUs = () => {
                 <p className="text-sm">
                   {/* A-29 Block B, Sector Pi 1 & 2, Birondi Chakrasenpur, Greater
                   Noida, Uttar Pradesh 201310 */}
-                  H. No. A-29, Ground Floor, H-1 Block B, 
-                  Sector-Pi/2, Alpha, Greater Noida.
+                  H. No. A-29, Ground Floor, H-1 Block B,
+                  Sector-Pi/2, Alpha,<br/> Greater Noida, Noida, 
+                  Gautam Buddha Nagar - 201310, Uttar Pradesh
                 </p>
               </div>
             </div>
@@ -160,7 +161,7 @@ const ContactUs = () => {
             <a href="https://www.instagram.com/manmedhealth/" className="hover:text-cyan-400">
               <Instagram />
             </a>
-            <a href="#" className="hover:text-cyan-400">
+            <a href="https://www.linkedin.com/posts/manmed-health_happyteachersday-nationalteachersday-teachersday2025-activity-7369693664584867842-Bm_F?utm_source=share&utm_medium=member_desktop&rcm=ACoAADo7t-4BXl0vkP_G1xFPyLWvAqVzcT_QSIs" className="hover:text-cyan-400">
               <Linkedin />
             </a>
           </div>

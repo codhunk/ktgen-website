@@ -75,14 +75,14 @@ const Hero = () => {
             </motion.p>
 
             {/* CTA Buttons */}
-            <motion.div className="flex flex-wrap gap-3" variants={fadeUp}>
+            {/* <motion.div className="flex flex-wrap gap-3" variants={fadeUp}>
               <button className="px-4 py-2 text-sm md:text-base bg-gradient-to-r from-indigo-600 to-blue-600 text-white font-medium rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
                 {t("home_btn1")}
               </button>
               <button className="px-4 py-2 text-sm md:text-base bg-gradient-to-r from-green-600 to-teal-600 text-white font-medium rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
                 {t("home_btn2")}
               </button>
-            </motion.div>
+            </motion.div> */}
           </div>
         </div>
       </motion.div>

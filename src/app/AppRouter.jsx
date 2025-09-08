@@ -11,12 +11,14 @@ import Navbar from "../components/Navbar/Navbar";
 import CareerPage from "../pages/Career";
 import Footer from "../components/Footer/Footer";
 import ContactUs from "../pages/ContactUs";
+import Ourmission from "../pages/Ourmission";
 import AboutUs from "../pages/About/AboutUs";
 import { useGSAP } from "@gsap/react";
 import { ScrollSmoother, ScrollTrigger } from "gsap/all";
 import gsap from "gsap";
 import MouseGlow from "../components/MouseGlow/MouseGlow";
 import WhatsAppButton from "../components/Home/WhatsappButton";
+import Whyus from "../pages/Whyus";
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
@@ -45,6 +47,8 @@ const App = () => {
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/pregnency-sec" element={<Preg />} />
             <Route path="/campaign-sec" element={<Comp />} />
+            <Route path="/ourmission" element={<Ourmission />} />
+            <Route path="/whyus" element={<Whyus />} />
           </Routes>
           <Footer />
         </div>

@@ -1,19 +1,20 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { FaChevronDown } from "react-icons/fa";
-import ukEnglishFlag from "./assets/uk_english_flag.png";
-import indiaHindiFlag from "./assets/india_hindi_flag.png";
+// import ukEnglishFlag from "./assets/uk_english_flag.png";
+// import indiaHindiFlag from "./assets/india_hindi_flag.png";
 
 const languages = [
   {
     code: "en",
-    label: "English",
-    flag: ukEnglishFlag,
+    label: "En",
+    // flag: ukEnglishFlag,
+    flag: "En",
   },
   {
     code: "hi",
     label: "हिंदी",
-    flag: indiaHindiFlag,
+    flag: "Hi",
   },
 ];
 
@@ -37,12 +38,13 @@ const LanguageSelector = () => {
         className="flex items-center justify-between text-sm px-2 py-1 bg-white border-gray-800 dark:border-white dark:bg-gray-800 text-gray-800 dark:text-white border border-dashed focus:outline-none rounded-full"
       >
         <div className="flex items-center gap-1">
-          <img
+          {/* <img
             src={selectedLang?.flag}
             alt=""
             className="w-5 h-5"
             draggable="false"
-          />
+          /> */}
+          {selectedLang?.flag}
         </div>
         <FaChevronDown
           size={13}
@@ -51,19 +53,19 @@ const LanguageSelector = () => {
       </button>
 
       {isOpen && (
-        <ul className="absolute z-10 w-28 mt-2 right-0 bg-white dark:bg-gray-800 border dark:border-gray-600 rounded shadow text-gray-800 dark:text-white">
+        <ul className="absolute z-10  mt-2 right-0 bg-white dark:bg-gray-800 border dark:border-gray-600 rounded-md shadow text-gray-800 dark:text-white">
           {languages.map((lang) => (
             <li
               key={lang.code}
               onClick={() => changeLanguage(lang.code)}
               className="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 cursor-pointer"
             >
-              <img
+              {/* <img
                 src={lang.flag}
                 alt=""
                 className="w-5 h-5"
                 draggable="false"
-              />
+              /> */}
               {lang.label}
             </li>
           ))}

@@ -31,7 +31,7 @@ const OurMission = () => {
   ];
 
   return (
-    <section className="py-12 max-w-7xl  dark:bg-gray-900 relative overflow-hidden">
+    <section className="py-12 max-w-7xl mt-12 mx-auto dark:bg-gray-900 relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5 dark:opacity-10">
         <div

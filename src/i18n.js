@@ -78,8 +78,8 @@ i18n
           meet_card3bio: "Anuj is the driving force behind our vision, combining innovation with strategy to lead the company forward.",
 
           // home section
-          home_heading: "Always By Your Side",
-          home_para: "Delivering high-quality medicines that are accessible, affordable, and unforgettable — because your health deserves nothing less.",
+          home_heading: "Manmed-Health Always By Your Side",
+          home_para: "Smartest Choice-Investing in your health. Delivering trusted and affordable health solutions, always. ManMed-Health Always By your side.",
           home_btn1: "Explore Products",
           home_btn2: "Partner With Us",
           count_head: "Trust Through Numbers",
@@ -201,8 +201,8 @@ i18n
           meet_card3bio: "अनुज हमारे विज़न के पीछे प्रेरक शक्ति हैं, जो कंपनी को आगे बढ़ाने के लिए नवाचार को रणनीति के साथ जोड़ते हैं।",
 
           // home section  
-          home_heading: "हमेशा आपके साथ",
-          home_para: "उच्च-गुणवत्ता वाली दवाइयाँ उपलब्ध कराना जो सुलभ, किफ़ायती और अविस्मरणीय हों - क्योंकि आपका स्वास्थ्य इससे कम का हकदार नहीं है।",
+          home_heading: "मैनमेड-हेल्थ हमेशा आपके साथ",
+          home_para: "सबसे स्मार्ट विकल्प- अपने स्वास्थ्य में निवेश। विश्वसनीय और किफ़ायती स्वास्थ्य समाधान, हमेशा उपलब्ध। मैनमेड-हेल्थ हमेशा आपके साथ।",
           home_btn1: "उत्पादों का अन्वेषण करें",
           home_btn2: "हमारे साथ साझेदारी करें",
           count_head: "संख्याओं के माध्यम से विश्वास",

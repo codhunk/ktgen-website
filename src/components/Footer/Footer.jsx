@@ -160,7 +160,7 @@ const Footer = () => {
               <Link to={"https://www.threads.com/@manmedhealth"} className="hover:text-black relative top-0 hover:-top-2 duration-300">
                 <SiThreads />
               </Link>
-              <Link to={"/"} className="hover:text-blue-500 relative top-0 hover:-top-2 duration-300">
+              <Link to={"https://www.linkedin.com/posts/manmed-health_happyteachersday-nationalteachersday-teachersday2025-activity-7369693664584867842-Bm_F?utm_source=share&utm_medium=member_desktop&rcm=ACoAADo7t-4BXl0vkP_G1xFPyLWvAqVzcT_QSIs"} className="hover:text-blue-500 relative top-0 hover:-top-2 duration-300">
                 <FaLinkedinIn />
               </Link>
 

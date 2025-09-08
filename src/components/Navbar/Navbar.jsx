@@ -32,6 +32,7 @@ const Navbar = () => {
           icon: <SiWikimediafoundation />,
         },
         { name: "CSR", link: "/csr", icon: <RiTeamFill /> },
+        { name: "Our-Mission", link: "/ourmission", icon: <RiTeamFill /> },
       ],
     },
     { name: "Products", link: "/products", icon: <FaProductHunt /> },
