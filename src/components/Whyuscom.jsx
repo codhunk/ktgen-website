@@ -13,8 +13,8 @@ import {
 
 function Whyuscom() {
     return (
-        <div className='bg-white h-[90vh] overflow-y-scroll pt-[340px] bg-gray-900 rounded-3xl flex items-center justify-center '>
-            <div className='flex justify-center items-center h-[1260px] w-[320px]'>
+        <div className=' bg-white h-[90vh] overflow-y-scroll bg-gray-900 rounded-3xl flex  justify-center '>
+            <div className=' flex justify-center items-center h-[1260px] w-[320px]'>
                 <div className='h-[84%] w-[46%] relative bg-yellow-500'>
                         <div className=' flex absolute -left-[50px] -top-[60px]'>
                             <div className=' w-[135px] h-[135px] rounded-full bg-white '>
