@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { Shield, MapPin, Building2, Clock } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 import countingVideo from "./assets/countingvideo.mp4";
 
@@ -111,6 +112,7 @@ const CountingNumber = ({ target, duration = 2, suffix = "" }) => {
 };
 
 export default function VideoCounting() {
+  const { t } = useTranslation();
   return (
     <div className="w-full flex flex-row [@media(max-width:900px)]:flex-col justify-center items-center gap-5 h-fit">
       {/* Left Counting Part */}
@@ -118,8 +120,8 @@ export default function VideoCounting() {
         <StatCard
           target={1200}
           suffix="+"
-          title="Partner Pharmacies"
-          description="A strong network ensuring medicines reach every corner."
+          title={t("countc1_head")}
+          description={t("countc1_para")}
           delay={0.4}
           icon={Building2}
         />
@@ -127,8 +129,8 @@ export default function VideoCounting() {
         <StatCard
           target={99}
           suffix="%"
-          title="Timely Delivery Rate"
-          description="Delivering health essentials on time, every time."
+          title={t("countc2_head")}
+          description={t("countc2_para")}
           delay={0.8}
           icon={Clock}
         />
@@ -158,8 +160,8 @@ export default function VideoCounting() {
         <StatCard
           target={500}
           suffix="+"
-          title="Trusted Brand"
-          description="Chosen by patients and healthcare providers alike."
+          title={t("countc3_head")}
+          description={t("countc3_para")}
           delay={0.2}
           icon={Shield}
         />
@@ -167,8 +169,8 @@ export default function VideoCounting() {
         <StatCard
           target={250}
           suffix="+"
-          title="Towns and Villages"
-          description="Extending reliable healthcare access to remote areas."
+          title={t("countc4_head")}
+          description={t("countc4_para")}
           delay={0.6}
           icon={MapPin}
         />

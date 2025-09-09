@@ -11,6 +11,7 @@ import Navbar from "../components/Navbar/Navbar";
 import CareerPage from "../pages/Career";
 import Footer from "../components/Footer/Footer";
 import ContactUs from "../pages/ContactUs";
+import Ourmission from "../pages/Ourmission";
 import AboutUs from "../pages/About/AboutUs";
 import { useGSAP } from "@gsap/react";
 import { ScrollSmoother, ScrollTrigger } from "gsap/all";
@@ -45,6 +46,7 @@ const App = () => {
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/pregnency-sec" element={<Preg />} />
             <Route path="/campaign-sec" element={<Comp />} />
+            <Route path="/ourmission" element={<Ourmission />} />
           </Routes>
           <Footer />
         </div>
