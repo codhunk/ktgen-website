@@ -121,6 +121,7 @@ const Home = () => {
           <h1 className="text-3xl text-center w-full px-5 mb-4 text-black dark:text-green-800 font-bold">
             {t("testimo")}
           </h1>
+          {/* why us component */}
           <Whyuscom/>
           {/* <TestimonialSlider
             videos={videos}
