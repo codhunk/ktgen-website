@@ -212,7 +212,7 @@ const ContactUs = () => {
         <div className="w-full rounded-xl overflow-hidden border border-white/10 shadow-2xl">
           <iframe
             // src="https://earth.google.com/web/embed?authuser=0&hl=en&v=2&mid=1Sx123ABCXYZ#lat=28.4744&lng=77.5030&alt=500&tilt=45&heading=60"
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3507.0925107665757!2d77.5203415!3d28.4767605!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cebdec5bab77f%3A0x940700cebd9d7ccb!2sWebDuality%20Technologies%20Pvt%20Ltd.!5e0!3m2!1sen!2sin!4v1727112469109!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3507.0925107665757!2d77.5203415!3d28.4767605!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cebdec5bab77f%3A0x940700cebd9d7ccb!2sManmed%20Health%20Pvt%20Ltd.!5e0!3m2!1sen!2sin!4v1727112469109!5m2!1sen!2sin"
             className="w-full h-96"
             allowFullScreen
             loading="lazy"

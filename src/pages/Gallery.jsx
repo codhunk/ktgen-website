@@ -350,7 +350,9 @@
 
 import React, { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-
+import rahulPic from "./assets/leaders/rahul.jpg";
+import vibhaPic from "./assets/leaders/vibha.jpeg";
+import anujPic from "./assets/leaders/anuj.png";
 const bannerSlides = [
   {
     image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb",
@@ -377,22 +379,22 @@ const galleryImages = [
 
 const leaders = [
   {
-    name: "Dr. Asha Singh",
+    name: "Anuj Patel",
     position: "Founder & CEO",
-    image: "https://randomuser.me/api/portraits/women/68.jpg",
-    message: "Empathy and technology can change healthcare forever.",
+    image: anujPic,
+    message: "Empathy and technology are reshaping healthcare — making it more human-centered, connected, and impactful than ever before.",
   },
   {
-    name: "Ravi Sharma",
-    position: "COO",
-    image: "https://randomuser.me/api/portraits/men/65.jpg",
-    message: "We thrive on innovation and teamwork.",
+    name: "Rahul Patel",
+    position: "Co-founder COO",
+    image: rahulPic,
+    message: "Our strength lies in continuous innovation and strong collaboration — enabling us to deliver solutions that truly make a difference."
   },
   {
-    name: "Neha Gupta",
-    position: "CTO",
-    image: "https://randomuser.me/api/portraits/women/72.jpg",
-    message: "Engineering impactful solutions is our daily drive.",
+    name: "Vibha Rani",
+    position: "Co-founder CTO",
+    image: vibhaPic,
+    message: "We engineer with intent — crafting innovative solutions that create lasting impact across industries and communities."
   },
 ];
 
@@ -439,11 +441,10 @@ const BannerSlider = () => {
         {bannerSlides.map((slide, index) => (
           <div
             key={index}
-            className={`absolute inset-0 transition-opacity duration-700 ease-in-out transform ${
-              index === current
-                ? "opacity-100 scale-100 z-8"
-                : "opacity-0 scale-95 z-0"
-            }`}
+            className={`absolute inset-0 transition-opacity duration-700 ease-in-out transform ${index === current
+              ? "opacity-100 scale-100 z-8"
+              : "opacity-0 scale-95 z-0"
+              }`}
           >
             <img
               src={slide.image}

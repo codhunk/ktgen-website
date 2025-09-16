@@ -18,6 +18,9 @@ import { ScrollSmoother, ScrollTrigger } from "gsap/all";
 import gsap from "gsap";
 import MouseGlow from "../components/MouseGlow/MouseGlow";
 import WhatsAppButton from "../components/Home/WhatsappButton";
+import TherapyArea from "../pages/Therapy_Area";
+import CSRPage from "../pages/Csr";
+import OurStoryPage from "../pages/ourStroy";
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
@@ -46,6 +49,9 @@ const App = () => {
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/pregnency-sec" element={<Preg />} />
             <Route path="/campaign-sec" element={<Comp />} />
+            <Route path="/therapy" element={<TherapyArea />} />
+            <Route path="/csr" element={<CSRPage />} />
+            <Route path="/story" element={<OurStoryPage />} />
             <Route path="/ourmission" element={<Ourmission />} />
           </Routes>
           <Footer />
