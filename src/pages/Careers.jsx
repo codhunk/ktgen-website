@@ -24,7 +24,7 @@ const jobOpenings = [
     description:
       "Monitor clinical trials, ensure data accuracy, and coordinate with trial sites.",
   },
-   {
+  {
     title: "Pharmaceutical Sales Representative",
     location: "Noida, India",
     type: "Full-time",
@@ -60,7 +60,7 @@ const Career = () => {
   return (
     <main className={`pt-[45px] ${isDark ? "bg-[#0a0a0a] text-white" : "bg-white text-gray-800"}`}>
       {/* Hero Section */}
-    <div className="flex w-full justify-center mt-12">
+      <div className="flex w-full justify-center mt-12">
         <section
           className={`relative w-full md:w-[100%] h-[400px] flex items-center justify-center  overflow-hidden shadow-lg transition-colors duration-300`}
           style={{ backgroundImage: `url(${joinus})`, backgroundSize: "cover", backgroundPosition: "center", }}
@@ -84,7 +84,7 @@ const Career = () => {
       {/* About Working With Us */}
       <section className="max-w-6xl mx-auto px-4 sm:px-6 py-16 space-y-6">
         <h2 className="text-3xl font-bold text-center mb-6">Why Work With Us</h2>
-        <p className="text-center text-gray-700 dark:text-gray-800 leading-relaxed max-w-4xl mx-auto">
+        <p className="text-center text-gray-800 dark:text-gray-800 leading-relaxed max-w-4xl mx-auto">
           At Manmed Health, we are committed to innovation, collaboration, and improving lives. We
           foster a culture of growth, learning, and inclusivity while providing exciting
           opportunities in pharmaceutical research, clinical development, and quality assurance.
@@ -102,13 +102,20 @@ const Career = () => {
                 className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md hover:shadow-xl transition"
               >
                 <h3 className="text-2xl text-black dark:text-gray-100 font-bold mb-2">{job.title}</h3>
-                <p className="text-black dark:text-gray-400 mb-2">
+                <h4 className=" text-xl font-semibold text-black dark:text-gray-300 mb-2">
                   {job.location} • {job.type}
-                </p>
+                </h4>
                 <p className="text-gray-700 dark:text-gray-300 mb-4">{job.description}</p>
-                <button className="px-4 py-2 bg-blue-700 hover:bg-blue-800 text-white font-semibold rounded-md transition">
+                <button
+                  onClick={() => {
+                    const el = document.getElementById("apply-now");
+                    el?.scrollIntoView({ behavior: "smooth" });
+                  }}
+                  className="px-4 py-2 bg-blue-700 hover:bg-blue-800 text-white font-semibold rounded-md transition"
+                >
                   Apply Now
                 </button>
+
               </div>
             ))}
           </div>
@@ -141,23 +148,23 @@ const Career = () => {
           <div className="grid gap-8 md:grid-cols-2 mt-8">
             <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md">
               <p className="text-gray-700 dark:text-gray-300 mb-4">
-                "Working at [Company Name] has allowed me to grow professionally and contribute to
+                "Working at Manmed Health has allowed me to grow professionally and contribute to
                 meaningful projects in healthcare."
               </p>
-              <p className="font-semibold  text-black dark:text-gray-100">- Jane Doe, Research Scientist</p>
+              <p className="font-semibold  text-black dark:text-gray-100">- Amit Tyagi, Research Scientist</p>
             </div>
             <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md">
               <p className="text-gray-700 dark:text-gray-300 mb-4">
                 "A collaborative and innovative environment that motivates me every day."
               </p>
-              <p className="font-semibold  text-black dark:text-gray-100">- John Smith, QA Specialist</p>
+              <p className="font-semibold  text-black dark:text-gray-100">- Priya Sharma, QA Specialist</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Application Form */}
-      <section className="max-w-6xl mx-auto px-4 sm:px-6 py-16 space-y-8">
+      <section id="apply-now" className="max-w-6xl mx-auto px-4 sm:px-6 py-16 space-y-8">
         <h2 className="text-3xl font-bold text-center">Apply Now</h2>
         <form
           onSubmit={handleSubmit}
@@ -211,7 +218,7 @@ const Career = () => {
       </section>
 
       {/* Footer */}
-      
+
     </main>
   );
 };
