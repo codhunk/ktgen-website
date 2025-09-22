@@ -347,23 +347,25 @@
 
 
 
-
 import React, { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import rahulPic from "./assets/leaders/rahul.jpg";
-import vibhaPic from "./assets/leaders/vibha.jpeg";
-import anujPic from "./assets/leaders/anuj.png";
+import annual from "./assets/leaders/annual.jpg"
+import wellness from "./assets/leaders/wellness.jpg"
+import appreciation from "./assets/leaders/appreciation.jpg"
+import gallery from "./assets/leaders/gallery.jpg"
+import culture from "./assets/leaders/culture.jpg"
+import teamwork from "./assets/leaders/teamwork.jpg"
 const bannerSlides = [
   {
-    image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb",
+    image: gallery,
     title: "Media & Gallery",
   },
   {
-    image: "https://images.unsplash.com/photo-1495567720989-cebdbdd97913",
+    image: teamwork,
     title: "Innovation & Teamwork",
   },
   {
-    image: "https://images.unsplash.com/photo-1465101162946-4377e57745c3",
+    image: culture,
     title: "Culture & Values",
   },
 ];
@@ -377,27 +379,6 @@ const galleryImages = [
   "https://images.unsplash.com/photo-1465101162946-4377e57745c3",
 ];
 
-const leaders = [
-  {
-    name: "Anuj Patel",
-    position: "Founder & CEO",
-    image: anujPic,
-    message: "Empathy and technology are reshaping healthcare — making it more human-centered, connected, and impactful than ever before.",
-  },
-  {
-    name: "Rahul Patel",
-    position: "Co-founder COO",
-    image: rahulPic,
-    message: "Our strength lies in continuous innovation and strong collaboration — enabling us to deliver solutions that truly make a difference."
-  },
-  {
-    name: "Vibha Rani",
-    position: "Co-founder CTO",
-    image: vibhaPic,
-    message: "We engineer with intent — crafting innovative solutions that create lasting impact across industries and communities."
-  },
-];
-
 const newsUpdates = [
   {
     title: "New Branch Opened in Pune",
@@ -409,13 +390,31 @@ const newsUpdates = [
     title: "Manmed Tech Summit 2025",
     date: "June 2025",
     summary: "Our annual summit showcased AI innovations in healthtech.",
-    image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb",
+    image: "https://images.unsplash.com/photo-1495567720989-cebdbdd97913",
   },
   {
     title: "CSR Blood Donation Drive",
     date: "May 2025",
     summary: "Over 300 people participated in our nationwide blood donation campaign.",
-    image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb",
+    image: "https://images.unsplash.com/photo-1517816743773-6e0fd518b4a6",
+  },
+];
+
+const featuredEvents = [
+  {
+    image: annual,
+    title: "Annual Tech Carnival",
+    description: "A celebration of innovation, tech showcases, and team collaboration.",
+  },
+  {
+    image: wellness,
+    title: "Wellness Week",
+    description: "Promoting health, mindfulness, and work-life balance at our campus.",
+  },
+  {
+    image: appreciation,
+    title: "Employee Appreciation Day",
+    description: "Recognizing the dedication and passion of our amazing team.",
   },
 ];
 
@@ -460,28 +459,32 @@ const BannerSlider = () => {
         ))}
       </div>
 
-      {/* Leader Speak Section */}
+      {/* Featured Events Section */}
       <section className="bg-gray-50 py-20 animate-fade-in">
         <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl sm:text-5xl font-bold text-center text-gray-800 mb-12">
-            What Our Leaders Say
+            Featured Events
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {leaders.map((leader, index) => (
+          <p className="max-w-3xl mx-auto text-center text-lg text-gray-600 mb-16">
+            Relive our most memorable events, campaigns, and celebrations.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            {featuredEvents.map((event, index) => (
               <div
                 key={index}
-                className="bg-white shadow-xl hover:shadow-2xl rounded-2xl p-6 text-center transition duration-300 transform hover:scale-105"
+                className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1"
               >
                 <img
-                  src={leader.image}
-                  alt={leader.name}
-                  className="w-24 h-24 mx-auto rounded-full mb-4 object-cover"
+                  src={`${event.image}?auto=format&fit=crop&w=800&q=80`}
+                  alt={event.title}
+                  className="w-full h-52 object-cover rounded-t-xl"
                 />
-                <h3 className="text-xl font-semibold text-gray-800">
-                  {leader.name}
-                </h3>
-                <p className="text-sm text-gray-500 mb-4">{leader.position}</p>
-                <p className="text-gray-700 italic">“{leader.message}”</p>
+                <div className="p-6">
+                  <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                    {event.title}
+                  </h3>
+                  <p className="text-gray-600">{event.description}</p>
+                </div>
               </div>
             ))}
           </div>

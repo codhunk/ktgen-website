@@ -3,7 +3,8 @@ import { motion } from "framer-motion";
 
 const HeroAboutUs = () => {
   return (
-    <section className="w-full min-h-[90vh] bg-gradient-to-br from-[#e0f7fa] to-[#f1f8e9] flex items-center justify-center px-6">
+    
+    <section className="w-full min-h-[90vh] bg-gradient-to-br from-[#e0f7fa] to-[#f1f8e9] flex items-center justify-center px-6 ">
       <div className="max-w-6xl w-full flex flex-col md:flex-row items-center justify-between gap-10">
         
         {/* Left content */}

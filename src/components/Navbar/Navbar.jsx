@@ -99,8 +99,8 @@ const Navbar = () => {
       className={`w-full fixed top-0 flex justify-center items-center text-sm font-semibold backdrop-blur-lg transition-colors duration-500 ease-in-out
     ${
       scrollNav === 0
-        ? "bg-transparent"
-        : "bg-gradient-to-r from-black/80 via-gray-900/80 to-black/80"
+        ? "bg-white"
+        : "bg-white"
     }`}
       style={{ zIndex: 999999 }}
     >
@@ -123,7 +123,7 @@ const Navbar = () => {
             >
               {n?.subLink ? (
                 <div
-                  className={`relative group flex items-center text-white px-5 py-1 gap-2 rounded-full transition-all duration-300 ease-in-out overflow-hidden backdrop-blur-md cursor-pointer ${
+                  className={`relative group flex items-center text-black px-5 py-1 gap-2 rounded-full transition-all duration-300 ease-in-out overflow-hidden backdrop-blur-md cursor-pointer ${
                     isSubActive(n)
                       ? "bg-[#005c63] shadow-md"
                       : "bg-[#ffffff17] hover:bg-[#005c63] hover:shadow-md"
@@ -133,7 +133,7 @@ const Navbar = () => {
                     {/* Icon slide-in from left */}
                     <span
                       className={`
-              absolute left-1 transition-all duration-300 ease-out text-slate-900 bg-white p-1 rounded-full
+              absolute left-1 transition-all duration-300 ease-out text-black bg-white p-1 rounded-full
               ${
                 isSubActive(n)
                   ? "opacity-100 translate-x-0"
@@ -160,7 +160,7 @@ const Navbar = () => {
                 <NavLink
                   to={n.link}
                   className={({ isActive }) =>
-                    `relative group flex items-center text-white px-5 py-1 gap-2 rounded-full transition-all duration-300 ease-in-out overflow-hidden backdrop-blur-md ${
+                    `relative group flex items-center text-black px-5 py-1 gap-2 rounded-full transition-all duration-300 ease-in-out overflow-hidden backdrop-blur-md ${
                       isActive
                         ? "bg-[#005c63] shadow-md"
                         : "bg-[#ffffff17] hover:bg-[#005c63] hover:shadow-md"
