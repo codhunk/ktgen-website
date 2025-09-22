@@ -24,6 +24,7 @@ import OurStoryPage from "../pages/ourStroy";
 import Careers from "../pages/Careers";
 import DoctorsPharmaciesPage from "../pages/doctors";
 import Career from "../pages/Careers";
+import ProductsPage from "../pages/product";
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
@@ -48,7 +49,8 @@ const App = () => {
             <Route path="/career" element={<Career />} />
             <Route path="/contact" element={<ContactUs />} />
             <Route path="/about" element={<AboutUs />} />
-              <Route path="/doctors-pharmacies" element={<DoctorsPharmaciesPage />} />
+            <Route path="/doctors-pharmacies" element={<DoctorsPharmaciesPage />} />
+            <Route path="/products" element={<ProductsPage />} />
             {/* Gallery Page */}
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/pregnency-sec" element={<Preg />} />
