@@ -21,6 +21,9 @@ import WhatsAppButton from "../components/Home/WhatsappButton";
 import TherapyArea from "../pages/Therapy_Area";
 import CSRPage from "../pages/Csr";
 import OurStoryPage from "../pages/ourStroy";
+import Careers from "../pages/Careers";
+import DoctorsPharmaciesPage from "../pages/doctors";
+import Career from "../pages/Careers";
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
@@ -42,9 +45,10 @@ const App = () => {
           <Routes>
             {/* Launching Page */}
             <Route path="/" element={<Home />} />
-            <Route path="/career" element={<CareerPage />} />
+            <Route path="/career" element={<Career />} />
             <Route path="/contact" element={<ContactUs />} />
             <Route path="/about" element={<AboutUs />} />
+              <Route path="/doctors-pharmacies" element={<DoctorsPharmaciesPage />} />
             {/* Gallery Page */}
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/pregnency-sec" element={<Preg />} />

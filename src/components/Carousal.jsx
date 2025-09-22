@@ -152,7 +152,7 @@ export default function Carousel() {
   }, []);
 
   return (
-    <div className="w-screen h-[50vh] dark:bg-[#0a0a0a] flex items-center justify-center overflow-hidden relative">
+    <div className="w-screen h-[65vh] dark:bg-[#0a0a0a] flex items-center justify-center overflow-hidden relative">
       {/* Carousel wrapper */}
       <div className="relative w-full max-w-7xl flex items-center justify-center">
         {slides.map((slide, i) => {
