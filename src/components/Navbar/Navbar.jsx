@@ -256,17 +256,17 @@ const Navbar = () => {
             onClick={() => setShowSidebar(!showSidebar)}
           >
             <span
-              className={`block h-[2px] w-full bg-white transition-all duration-300 ${
+              className={`block h-[2px] w-full bg-black transition-all duration-300 ${
                 showSidebar ? "rotate-45 translate-y-2" : ""
               }`}
             ></span>
             <span
-              className={`block h-[2px] w-full bg-white transition-all duration-300 ${
+              className={`block h-[2px] w-full bg-black transition-all duration-300 ${
                 showSidebar ? "opacity-0" : ""
               }`}
             ></span>
             <span
-              className={`block h-[2px] w-full bg-white transition-all duration-300 ${
+              className={`block h-[2px] w-full bg-black transition-all duration-300 ${
                 showSidebar ? "-rotate-45 -translate-y-2" : ""
               }`}
             ></span>
