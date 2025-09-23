@@ -19,9 +19,9 @@ function Whyuscom() {
                     <div className=' flex absolute -left-[50px] -top-[60px]'>
                         <div className=' w-[135px] h-[135px] rounded-full bg-white '>
                             <div className='relative -left-[160px] top-3 w-[290px] flex flex-col items-center'>
-                                <h1 className='font-semibold text-black'>Why Manmed?</h1>
+                                <h1 className='font-semibold text-black'>Trusted Quality, Always</h1>
                                 <p className='text-sm text-gray-600 text-center leading-5'>
-                                    We’re here to simplify men’s health with real solutions, trusted ingredients, and zero false promises.
+                                    At ManMed Health, every medicine is manufactured with precision and care, ensuring the highest quality standards for your health.
                                 </p>
                             </div>
 
@@ -32,9 +32,9 @@ function Whyuscom() {
                         <div className=' w-[135px] h-[135px] p-3 rounded-full bg-yellow-500'><div className=' bg-white h-full rounded-full flex items-center justify-center shadow-[-5px_4px_15px_black]'><Lightbulb className="w-[50px] h-[50px] text-yellow-500" /></div></div>
                         <div className='w-[135px] h-[135px] rounded-full bg-white'>
                             <div className='relative left-4 top-3 w-[290px] flex flex-col items-center'>
-                                <h1 className='font-semibold text-black'>Real Ingredients, Real Impact</h1>
+                                <h1 className='font-semibold text-black'>Real Science, Real Solutions</h1>
                                 <p className='text-sm text-gray-600 text-center leading-5'>
-                                    No gimmicks. Just science-backed solutions that work — built by Manmed.
+                                    Our products are backed by scientific research and advanced formulations because your health deserves nothing less than the best.
                                 </p>
                             </div>
                         </div>
@@ -56,9 +56,9 @@ function Whyuscom() {
                         <div className=' w-[135px] h-[135px] p-3 rounded-full bg-yellow-500'><div className=' bg-white h-full rounded-full flex items-center justify-center shadow-[-5px_4px_15px_black]'><Wifi className="w-[50px] h-[50px] text-yellow-500" /></div></div>
                         <div className='w-[135px] h-[135px] rounded-full bg-white'>
                             <div className='relative left-4 top-3 w-[290px] flex flex-col items-center'>
-                                <h1 className='font-semibold text-black'>Better Sexual Wellness</h1>
+                                <h1 className='font-semibold text-black'>Health with a Human Touch</h1>
                                 <p className='text-sm text-gray-600 text-center leading-5'>
-                                    Support for performance, confidence, and intimacy — with trusted formulations by Manmed.
+                                    We believe in more than just manufacturing medicines we build relationships of trust with doctors, patients, and healthcare partners.
                                 </p>
                             </div>
                         </div>
@@ -67,9 +67,9 @@ function Whyuscom() {
                     <div className=' flex absolute -left-[50px] top-[464px]'>
                         <div className='w-[135px] h-[135px] rounded-full bg-white'>
                             <div className='relative -left-[160px] top-3 w-[290px] flex flex-col items-center'>
-                                <h1 className='font-semibold text-black'>Designed for Comfort</h1>
+                                <h1 className='font-semibold text-black'>A Legacy of Care, For Every Generation</h1>
                                 <p className='text-sm text-gray-600 text-center leading-5'>
-                                    Promoting stress-free intimacy and overall emotional well-being.
+                                    Whether it's for everyday health needs or specialized treatments, ManMed Health is here to support families with reliable care.
                                 </p>
                             </div>
                         </div>
@@ -80,9 +80,9 @@ function Whyuscom() {
                         <div className=' w-[135px] h-[135px] p-3 rounded-full bg-yellow-500'><div className=' bg-white h-full rounded-full flex items-center justify-center shadow-[-5px_4px_15px_black]'><ThumbsUp className="w-[50px] h-[50px] text-yellow-500" /></div></div>
                         <div className='w-[135px] h-[135px] rounded-full bg-white'>
                             <div className='relative left-4 top-3 w-[290px] flex flex-col items-center'>
-                                <h1 className='font-semibold text-black'>Empowering Your Health</h1>
+                                <h1 className='font-semibold text-black'>Consistency You Can Count On</h1>
                                 <p className='text-sm text-gray-600 text-center leading-5'>
-                                    Helping you feel confident, in control, and at your best — every day.
+                                    From raw material sourcing to final delivery, every step is tested, verified, and certified for excellence.
                                 </p>
                             </div>
                         </div>
@@ -91,9 +91,9 @@ function Whyuscom() {
                     <div className=' flex absolute -left-[50px] top-[726px]'>
                         <div className='w-[135px] h-[135px] rounded-full bg-white'>
                             <div className='relative -left-[160px] top-3 w-[290px] flex flex-col items-center'>
-                                <h1 className='font-semibold text-black'>Discreet & Private</h1>
+                                <h1 className='font-semibold text-black'>Designed with You in Mind</h1>
                                 <p className='text-sm text-gray-600 text-center leading-5'>
-                                    From packaging to support — your privacy is always protected.
+                                    We create our products with a deep understanding of your needs, focusing on ease of use and maximum effectiveness, so you can focus on getting better.
                                 </p>
                             </div>
                         </div>
@@ -104,9 +104,9 @@ function Whyuscom() {
                         <div className=' w-[135px] h-[135px] p-3 rounded-full bg-yellow-500'><div className=' bg-white h-full rounded-full flex items-center justify-center shadow-[-5px_4px_15px_black]'><Shield className="w-[50px] h-[50px] text-yellow-500" /></div></div>
                         <div className='w-[135px] h-[135px] rounded-full bg-white'>
                             <div className='relative left-4 top-3 w-[290px] flex flex-col items-center'>
-                                <h1 className='font-semibold text-black'>Safe & Reliable</h1>
+                                <h1 className='font-semibold text-black'>Your Well-being is Our Purpose</h1>
                                 <p className='text-sm text-gray-600 text-center leading-5'>
-                                    Made with high-quality standards to ensure safety, purity, and peace of mind.
+                                    Beyond medicine, we are driven by a mission to improve lives. Our commitment is to your total well-being, providing peace of mind with every product.
                                 </p>
                             </div>
                         </div>
@@ -115,9 +115,9 @@ function Whyuscom() {
                     <div className=' flex absolute -left-[50px] top-[988px]'>
                         <div className='w-[135px] h-[135px] rounded-full bg-white'>
                             <div className='relative -left-[160px] top-3 w-[290px] flex flex-col items-center'>
-                                <h1 className='font-semibold text-black'>More Than a Brand</h1>
+                                <h1 className='font-semibold text-black'>ManMed Health = Your Health Partner</h1>
                                 <p className='text-sm text-gray-600 text-center leading-5'>
-                                    Manmed is your trusted partner in personal wellness — here to support you at every step.
+                                    We're not just a pharmaceutical company we're your companion in health, committed to making India healthier, one medicine at a time.
                                 </p>
                             </div>
                         </div>
