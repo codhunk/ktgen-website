@@ -49,7 +49,7 @@ const TherapeuticSegments = () => {
       icon: Heart,
       description: "Digestive health and gastrointestinal treatments",
       color: "from-green-500 to-emerald-600",
-      darkColor: "dark:from-green-400 dark:to-emerald-500",
+      darkColor: "dark:from-[#95DE4B] dark:to-emerald-500",
       bgColor: "bg-green-50 dark:bg-green-900/20",
       borderColor: "border-green-200 dark:border-green-800",
       image:
@@ -141,18 +141,19 @@ const TherapeuticSegments = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-green-50 dark:bg-green-900/20 text-green-700 dark:text-green-400 rounded-full text-sm font-medium border border-green-200 dark:border-green-800 mb-6">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-green-50 dark:bg-green-900/20 text-green-700 dark:text-[#8acf45] rounded-full text-sm font-medium border border-green-200 dark:border-green-800 mb-6">
             <Stethoscope size={16} />
             THERAPEUTIC SEGMENTS
           </div>
 
           <h2 className="text-3xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-6">
             Our Expertise Across{" "}
-            <span className="bg-gradient-to-r from-green-600 to-teal-600 dark:from-green-400 dark:to-teal-400 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-[#95DE4B] to-[#059BE3] dark:from-[#8acf45] dark:to-[#059BE3] bg-clip-text text-transparent">
               Specialties
             </span>
           </h2>
-
+{/* #95DE4B
+#059BE3 */}
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
             Comprehensive pharmaceutical solutions across multiple therapeutic
             areas, delivering quality healthcare products tailored to diverse
@@ -216,7 +217,7 @@ const TherapeuticSegments = () => {
 
                 {/* Content Section */}
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-green-600 dark:group-hover:text-green-400 transition-colors">
+                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-[#95DE4B] dark:group-hover:text-[#95DE4B] transition-colors">
                     {segment.title}
                   </h3>
 
@@ -267,7 +268,7 @@ const TherapeuticSegments = () => {
             Need detailed information about our products in specific therapeutic
             areas?
           </p>
-          <button className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-green-600 to-teal-600 hover:from-green-700 hover:to-teal-700 text-white font-semibold rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
+          <button className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-[#95DE4B] to-[#059BE3] hover:from-green-700 hover:to-teal-700 text-white font-semibold rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
             <Stethoscope size={20} />
             Request Product Catalog
           </button>

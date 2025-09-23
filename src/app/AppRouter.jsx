@@ -25,6 +25,7 @@ import Careers from "../pages/Careers";
 import DoctorsPharmaciesPage from "../pages/doctors";
 import Career from "../pages/Careers";
 import ProductsPage from "../pages/product";
+import ScrollToTop from "../components/ScrollToTop/scrolltotop";
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
@@ -39,7 +40,7 @@ const App = () => {
   return (
     <>
       <Navbar />
-
+      <ScrollToTop />
       <MouseGlow />
       <div id="smooth-wrapper">
         <div id="smooth-content">

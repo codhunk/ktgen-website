@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-
 import cardiology from "./assets/leaders/cardiology.jpeg";
 import neurology from "./assets/leaders/neurology.jpg";
 import ortho from "./assets/leaders/ortho.jpeg";
