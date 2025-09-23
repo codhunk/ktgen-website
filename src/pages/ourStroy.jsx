@@ -114,11 +114,11 @@ export default function OurStoryPage() {
         variants={fadeUp}
         className="bg-gray-100 py-24 px-6"
       >
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 justify-items-end">
           <motion.img
             src={founderImage}
             alt="Founder"
-            className="rounded-lg shadow-md object-cover h-80 w-full"
+            className="rounded-3xl object-cover h-80 w-80"
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0, transition: { duration: 0.8 } }}
           />
@@ -140,7 +140,7 @@ export default function OurStoryPage() {
         whileInView="visible"
         viewport={{ once: true }}
         variants={stagger}
-        className="py-24 px-6 bg-gray-50 text-center"
+        className="py-20 px-6 bg-gray-50 text-center"
       >
         <h2 className="text-3xl sm:text-4xl font-semibold mb-12">Our Journey</h2>
         <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-10">
