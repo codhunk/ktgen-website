@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+
 import { useDarkMode } from "../hooks/UseDarkMode/useDarkMode";
 import { useTranslation } from "react-i18next";
 import Carousal from "../components/Carousal.jsx";

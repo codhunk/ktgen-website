@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import videoHero from "./videos/video1.mp4";
+import videoHero from "./videos/video2.mp4";
 import { useTranslation } from "react-i18next";
 
 const Hero = () => {

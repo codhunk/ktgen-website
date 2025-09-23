@@ -84,7 +84,7 @@ const Career = () => {
       {/* About Working With Us */}
       <section className="max-w-6xl mx-auto px-4 sm:px-6 py-16 space-y-6">
         <h2 className="text-3xl font-bold text-center mb-6">Why Work With Us</h2>
-        <p className="text-center text-gray-800 dark:text-gray-800 leading-relaxed max-w-4xl mx-auto">
+        <p className="text-center text-gray-800 dark:text-white leading-relaxed max-w-4xl mx-auto">
           At Manmed Health, we are committed to innovation, collaboration, and improving lives. We
           foster a culture of growth, learning, and inclusivity while providing exciting
           opportunities in pharmaceutical research, clinical development, and quality assurance.

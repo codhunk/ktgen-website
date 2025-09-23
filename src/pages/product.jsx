@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState} from "react";
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useDarkMode } from "./hooks/useDarkMode"; // Adjust path as needed
@@ -11,7 +11,7 @@ import antibioticImg from "./assets/leaders/antibiotics.png";
 import coughImg from "./assets/leaders/cough.png";
 import multivitaminImg from "./assets/leaders/multivitamins.png";
 import heroimg from "./assets/leaders/producthero.png";
-
+import { useEffect } from "react";
 const featuredProducts = [
   {
     name: "Painkiller",
@@ -35,10 +35,10 @@ const products = [
   { name: "Herbal", image: herbalImg, description: "Natural and organic remedies." },
   { name: "Vitamin C", image: vitaminImg, description: "Boost your immunity." },
   { name: "Antibiotic", image: antibioticImg, description: "Fight bacterial infections." },
-  { name: "Cough", image: coughImg, description: "Relieve cough and throat irritation." },
+  { name: "Cough Syrup", image: coughImg, description: "Relieve cough and throat irritation." },
   { name: "Multivitamin", image: multivitaminImg, description: "Complete daily nutrition." },
   { name: "Antibiotic", image: antibioticImg, description: "Fight bacterial infections." },
-  { name: "Cough", image: coughImg, description: "Relieve cough and throat irritation." },
+  { name: "Cough Syrup", image: coughImg, description: "Relieve cough and throat irritation." },
 ];
 
 const categories = [
@@ -51,7 +51,7 @@ const categories = [
 const ProductCard = ({ product }) => (
   <motion.div
     whileHover={{ scale: 1.05 }}
-    className="w-72 h-90 bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded-2xl shadow-xl flex flex-col items-center justify-center p-4 cursor-pointer transition-transform hover:shadow-2xl"
+    className="w-75 h-90 bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded-2xl shadow-xl flex flex-col items-center justify-center p-4 cursor-pointer transition-transform hover:shadow-2xl"
   >
     <motion.img
       src={product.image}
@@ -181,10 +181,6 @@ const ProductsPage = () => {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="py-6 bg-blue-700 dark:bg-gray-800 text-white text-center">
-        &copy; {new Date().getFullYear()} Manmed Health. All rights reserved.
-      </footer>
     </div>
   );
 };

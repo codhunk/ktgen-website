@@ -13,54 +13,56 @@ import { RxChevronDown, RxChevronUp, RxCross1 } from "react-icons/rx";
 import LanguageSelector from "../LanguageSelector/LanguageSelector";
 import { useDarkMode } from "../../hooks/UseDarkMode/useDarkMode";
 import { LiaAccusoft } from "react-icons/lia";
+import { Droplet, icons } from "lucide-react";
 
 const Navbar = () => {
   const navList = [
     // { name: "Home", link: "/", icon: <GoHomeFill /> },
-    { name: "About Us", link: "/about", icon: <RiTeamFill /> },
+    { name: "ABOUT US", link: "/about", icon: <RiTeamFill /> },
     
     {
-      name: "Life at ManMed",
+      name: "LIFE AT MANMED",
       link: "",
       icon: <RiTeamFill />,
+      icons: <Droplet />,
       subLink: [
-        { name: "Our Story", link: "/story", icon: <MdOutlineWork /> },
-        { name: "Careers", link: "/career", icon: <MdOutlineWork /> },
+        { name: "OUR STORY", link: "/story", icon: <MdOutlineWork /> },
+        { name: "CAREERS", link: "/career", icon: <MdOutlineWork /> },
         {
-          name: "Media/Gallery",
+          name: "MEDIA/GALLERY",
           link: "/gallery",
           icon: <SiWikimediafoundation />,
         },
         { name: "CSR", link: "/csr", icon: <RiTeamFill /> },
-        { name: "Our-Mission", link: "/ourmission", icon: <RiTeamFill /> },
+        { name: "OUR MISSION", link: "/ourmission", icon: <RiTeamFill /> },
       ],
     },
-    { name: "Products", link: "/products", icon: <FaProductHunt /> },
+    { name: "PRODUCTS", link: "/products", icon: <FaProductHunt /> },
     {
-      name: "Pregnancy Guide",
+      name: "PREGNANCY GUIDE",
       link: "/pregnency-sec",
       icon: <RiTeamFill />,
     },
-    { name: "Campaign", link: "/campaign-sec", icon: <RiTeamFill /> },
-    
+    { name: "CAMPAIGN", link: "/campaign-sec", icon: <RiTeamFill /> },
+
     {
-      name: "Pharmacies",
+      name: "PHARMACY",
       link: "",
       icon: <MdLocalPharmacy />,
       subLink: [
         {
-          name: "Therapy Areas",
+          name: "THERAPY AREA",
           link: "/therapy",
           icon: <RiPsychotherapyFill />,
         },
         {
-          name: "Doctors & Pharmacies",
+          name: "DOCTORS & PHARMACIES",
           link: "/doctors-pharmacies",
           icon: <RiTeamFill />,
         },
       ],
     },
-    { name: "Contact Us", link: "/contact", icon: <GoHomeFill /> },
+    { name: "CONTACT US", link: "/contact", icon: <GoHomeFill /> },
   ];
 
   const location = useLocation();
@@ -123,7 +125,7 @@ const Navbar = () => {
             >
               {n?.subLink ? (
                 <div
-                  className={`relative group flex items-center text-black px-5 py-1 gap-2 rounded-full transition-all duration-300 ease-in-out overflow-hidden backdrop-blur-md cursor-pointer ${
+                  className={`relative group flex items-center text-black hover:text-white px-5 py-1 gap-2 rounded-full transition-all duration-300 ease-in-out overflow-hidden backdrop-blur-md cursor-pointer ${
                     isSubActive(n)
                       ? "bg-[#005c63] shadow-md"
                       : "bg-[#ffffff17] hover:bg-[#005c63] hover:shadow-md"
@@ -160,10 +162,10 @@ const Navbar = () => {
                 <NavLink
                   to={n.link}
                   className={({ isActive }) =>
-                    `relative group flex items-center text-black px-5 py-1 gap-2 rounded-full transition-all duration-300 ease-in-out overflow-hidden backdrop-blur-md ${
+                    `relative group flex items-center text-black hover:text-white px-5 py-1 gap-2 rounded-full transition-all duration-300 ease-in-out overflow-hidden backdrop-blur-md ${
                       isActive
                         ? "bg-[#005c63] shadow-md"
-                        : "bg-[#ffffff17] hover:bg-[#005c63] hover:shadow-md"
+                        : "bg-[#ffffffff] hover:bg-[#005c63] hover:shadow-md"
                     }`
                   }
                 >
@@ -172,7 +174,7 @@ const Navbar = () => {
                       {/* Icon slide-in from left */}
                       <span
                         className={`
-              absolute left-1 transition-all duration-300 ease-out text-slate-900 bg-white p-1 rounded-full
+              absolute left-1 transition-all duration-300 ease-out text-slate-900  bg-white p-1 rounded-full
               ${
                 isActive
                   ? "opacity-100 translate-x-0"
@@ -187,7 +189,7 @@ const Navbar = () => {
                       <span
                         className={`transition-transform duration-300 ease-out ${
                           isActive
-                            ? "translate-x-3"
+                            ? "translate-x-3 "
                             : "group-hover:translate-x-3"
                         }`}
                       >
@@ -201,7 +203,7 @@ const Navbar = () => {
               {/* Submenu (only visible if current index matches) */}
               {n.subLink && (
                 <ul
-                  className={`absolute top-full mt-0.5 right-0 w-40 bg-[#06181ae7] backdrop-blur-md rounded-lg shadow-lg z-20 transform transition-all duration-300 ease-in-out ${
+                  className={`absolute top-full mt-0.5 right-0 w-40  bg-[#06181ae7] backdrop-blur-md rounded-lg shadow-lg z-20 transform transition-all duration-300 ease-in-out ${
                     activeDropdown === i
                       ? "opacity-100 translate-y-0 pointer-events-auto"
                       : "opacity-0 -translate-y-2 pointer-events-none"
