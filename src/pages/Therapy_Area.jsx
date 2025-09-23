@@ -45,12 +45,12 @@ const therapyAreas = [
 
 const testimonials = [
   {
-    name: "John Doe",
+    name: "Kanishk Gupta",
     feedback:
       "ManMed provided exceptional care and truly listened to my concerns. Highly professional staff!",
   },
   {
-    name: "Jane Smith",
+    name: "Ravindra Singh",
     feedback:
       "Their therapy programs helped my child recover smoothly. I’m grateful for ManMed’s pediatric team.",
   },
