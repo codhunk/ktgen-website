@@ -19,7 +19,7 @@ import { useTranslation } from "react-i18next";
 
 const videos = [
   {
-    id: "1",
+    id: "1", 
     src: testiVid1,
     thumbnail: thumb,
     title: "Testimonial 1",
@@ -126,13 +126,13 @@ const Home = () => {
             <Whyuscom />
           </div>
 
-          {/* <TestimonialSlider
+          <TestimonialSlider
             videos={videos}
             onVideoClick={(index) => {
               setStartIndex(index);
               setModalOpen(true);
             }}
-          /> */}
+          />
           {modalOpen && (
             <TestimonialModal
               videos={videos}
