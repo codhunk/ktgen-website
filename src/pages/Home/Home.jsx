@@ -118,7 +118,7 @@ const Home = () => {
 
         {/* Testominial Slider */}
         <div className=" w-full md:w-[95%] 2xl:max-w-7xl pb-4 h-auto mt-6 hidden md:block">
-          <h1 className="text-3xl text-center w-full px-5 mb-4 text-black dark:text-[#7eb449] font-bold">
+          <h1 className="text-3xl text-center w-full px-5 mb-4 text-black dark:text-[#7eb449] font-bold ">
             {t("testimo")}
           </h1>
           {/* why us component */}
