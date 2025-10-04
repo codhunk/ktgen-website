@@ -94,9 +94,7 @@ const Footer = () => {
                   </h2>
                 </section>
                 <p className="text-md text-slate-200 md:ml-2 w-full md:w-[90%]">
-                  Delivering high-quality medicines that are accessible,
-                  affordable, and unforgettable — because your health deserves
-                  nothing less.
+                Smartest Choice-Investing in your health. Delivering trusted and affordable health solutions, always. ManMed Health-Always By your side.
                 </p>
               </div>
 
@@ -182,7 +180,7 @@ const Footer = () => {
           </div>
           {/* Footer Copyright Part */}
         <div className=" text-white flex items-center justify-center">
-          <span className="  text-gray-200 text-md">
+          <span className="  text-gray-200 text-xs">
               &copy; 2025 Manmed Health Private Limited. | All rights reserved
             </span>
         </div>

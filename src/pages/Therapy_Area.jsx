@@ -14,28 +14,28 @@ import pedi_icon from "./assets/icons/pediatrics.png";
 // Therapy Area Content
 const therapyAreas = [
   {
-    title: "Cardiology",
+    title: "ANTIBIOTIC",
     description:
       "At ManMed, our Cardiology department offers the most advanced care for heart-related diseases and conditions. From diagnostic testing to minimally invasive procedures, we ensure every heartbeat is in expert hands.",
     image: cardiology,
     icon: cardio_icon,
   },
   {
-    title: "Neurology",
+    title: "PAIN ANALGESICS",
     description:
       "ManMed's Neurology unit provides comprehensive treatment for brain, spine, and nervous system disorders. Our neurologists use cutting-edge technology to diagnose and manage even the most complex neurological challenges.",
     image: neurology,
     icon: neuro_icon,
   },
   {
-    title: "Orthopedics",
+    title: "GASTRO INTESTINAL",
     description:
       "Restore your mobility with ManMed's Orthopedics department. Whether it's joint replacement, sports injuries, or bone deformities, our orthopedic specialists tailor treatment plans for lasting relief and functionality.",
     image: ortho,
     icon: ortho_icon,
   },
   {
-    title: "Pediatrics",
+    title: "RESPIRATORY",
     description:
       "From newborns to adolescents, ManMed Pediatrics delivers personalized and nurturing care that supports every child's healthy growth. Our pediatricians prioritize prevention, development, and compassionate healing.",
     image: Pediatrics,
@@ -261,7 +261,7 @@ export default function TherapyArea() {
         whileInView="visible"
         viewport={{ once: true }}
         variants={fadeUp}
-        className="py-20 px-4 sm:px-6 lg:px-10 bg-blue-600 text-white text-center"
+        className="py-20 px-4 sm:px-6 lg:px-10 bg-gradient-to-r from-blue-400 via-pink-300 to-green-400 text-white text-center"
       >
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
           Schedule Your Consultation with ManMed
@@ -269,7 +269,7 @@ export default function TherapyArea() {
         <p className="mb-6 max-w-3xl mx-auto text-base sm:text-lg md:text-xl">
           Ready to take control of your health? Connect with ManMed’s expert team today and receive a personalized therapy roadmap tailored to your wellness goals.
         </p>
-        <button className="bg-white text-blue-600 font-semibold px-8 py-3 rounded-full hover:bg-gray-100 transition">
+        <button className="bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 font-semibold px-8 py-3 rounded-full hover:bg-gray-100 transition">
           Book Now
         </button>
       </motion.section>

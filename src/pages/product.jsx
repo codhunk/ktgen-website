@@ -3,18 +3,19 @@ import { useState} from "react";
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useDarkMode } from "./hooks/useDarkMode"; // Adjust path as needed
-
+ 
 import painkillerImg from "./assets/leaders/painkiller.png";
 import herbalImg from "./assets/leaders/herbal.png";
 import vitaminImg from "./assets/leaders/vitaminC.png";
 import antibioticImg from "./assets/leaders/antibiotics.png";
+import gastroImg from "./assets/leaders/gastro.png";
 import coughImg from "./assets/leaders/cough.png";
 import multivitaminImg from "./assets/leaders/multivitamins.png";
 import heroimg from "./assets/leaders/producthero.png";
 import { useEffect } from "react";
 const featuredProducts = [
   {
-    name: "Painkiller",
+    name: "PAIN ANALGESICS",
     image: painkillerImg,
     description: "Fast relief from pain. Trusted by thousands of customers.",
   },
@@ -31,21 +32,21 @@ const featuredProducts = [
 ];
 
 const products = [
-  { name: "Painkiller", image: painkillerImg, description: "Fast relief from pain." },
+  { name: "PAIN ANALGESICS", image: painkillerImg, description: "Fast relief from pain." },
   { name: "Herbal", image: herbalImg, description: "Natural and organic remedies." },
   { name: "Vitamin C", image: vitaminImg, description: "Boost your immunity." },
   { name: "Antibiotic", image: antibioticImg, description: "Fight bacterial infections." },
-  { name: "Cough Syrup", image: coughImg, description: "Relieve cough and throat irritation." },
+  { name: "GASTRO INTESTINAL", image: gastroImg, description: "Fast relief from gas pain." },
   { name: "Multivitamin", image: multivitaminImg, description: "Complete daily nutrition." },
   { name: "Antibiotic", image: antibioticImg, description: "Fight bacterial infections." },
   { name: "Cough Syrup", image: coughImg, description: "Relieve cough and throat irritation." },
 ];
 
 const categories = [
-  { name: "Pain Relief", description: "Medicines for pain relief", color: "from-red-400 to-red-200" },
-  { name: "Immunity", description: "Boost your immune system", color: "from-green-400 to-green-200" },
-  { name: "Digestive Health", description: "Aid digestion naturally", color: "from-yellow-400 to-yellow-200" },
-  { name: "Herbal", description: "Organic and herbal products", color: "from-purple-400 to-purple-200" },
+  { name: "PAIN ANALGESICS", description: "Fast relief from pain.", color: "from-red-400 to-red-200" },
+  { name: "GASTRO INTESTINAL", description: "Fast relief from gas pain", color: "from-green-400 to-green-200" },
+  { name: "ANTIBIOTIC", description: "Fight bacterial infections.", color: "from-yellow-400 to-yellow-200" },
+  { name: "COUGH SYRUP", description: "Relieve cough and throat irritation.", color: "from-purple-400 to-purple-200" },
 ];
 
 const ProductCard = ({ product }) => (
@@ -98,7 +99,7 @@ const ProductsPage = () => {
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
         <div className="relative z-10">
           <h1 className="text-5xl font-bold mb-4">Manmed Health</h1>
-          <p className="text-2xl mb-6">Your Health, Our Priority</p>
+          <p className="text-2xl mb-6">Always By Your Side</p>
           <button onClick={() => {
             const el = document.getElementById("our-products");
             el?.scrollIntoView({ behavior: "smooth" });

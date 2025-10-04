@@ -119,7 +119,7 @@ const ContactUs = () => {
               <Mail className="text-cyan-500" />
               <div>
                 <p className="font-semibold">Email</p>
-                <p className="text-sm">registered@yourcompany.com</p>
+                <p className="text-sm">contact@manmedhealth.com</p>
               </div>
             </div>
           </div>
@@ -170,7 +170,7 @@ const ContactUs = () => {
             <input
               type="email"
               placeholder="Email"
-              className="flex-1 px-3 py-2 rounded-l-xl bg-white/10 text-white border border-white/20"
+              className="flex-1 px-3 py-2 rounded-l-xl bg-white/10 text-black border border-white/20"
             />
             <button className="bg-gradient-to-r from-cyan-500 to-purple-500 px-4 py-2 rounded-r-xl hover:from-cyan-600 hover:to-purple-600">
               Join
@@ -184,13 +184,13 @@ const ContactUs = () => {
                 updates, and career opportunities.
               </p>
             </div>
-            <div className="bg-white/10 p-6 rounded-xl shadow-lg">
+            {/* <div className="bg-white/10 p-6 rounded-xl shadow-lg">
               <h3 className="text-2xl font-bold mb-2">Stay Connected</h3>
               <p>
                 Follow us on social media to keep up with the latest news,
                 updates, and career opportunities.
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
         <div>
@@ -199,11 +199,11 @@ const ContactUs = () => {
             alt="Social"
             className="rounded-2xl shadow-lg mb-6"
           />
-          <h3 className="text-2xl font-bold mb-2">Stay Connected</h3>
-          <p>
+          {/* <h3 className="text-2xl font-bold mb-2">Stay Connected</h3> */}
+          {/* <p>
             Follow us on social media to keep up with the latest news, updates,
             and career opportunities.
-          </p>
+          </p> */}
         </div>
       </div>
 

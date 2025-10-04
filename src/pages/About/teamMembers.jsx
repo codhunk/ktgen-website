@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
-import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
+import { Facebook, Instagram, Linkedin, Twitter, X } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -18,7 +18,7 @@ const leaders = [
     bio: "meet_card1bio",
     socials: {
       linkedin: "#",
-      twitter: "#",
+      X: "#",
       instagram: "#",
     },
   },
@@ -29,7 +29,7 @@ const leaders = [
     bio: "meet_card2bio",
     socials: {
       linkedin: "#",
-      twitter: "#",
+      X: "#",
       instagram: "#",
     },
   },
@@ -40,12 +40,10 @@ const leaders = [
     bio: "meet_card3bio",
     socials: {
       linkedin: "#",
-      twitter: "#",
+      X: "#",
       instagram: "#",
     },
   },
- 
-
 ];
 
 const LeadershipTeam = () => {
@@ -72,9 +70,8 @@ const LeadershipTeam = () => {
               768: { slidesPerView: 2 },
               1024: { slidesPerView: 3 },
             }}
-
-            className="pb-10 ">
-
+            className="pb-10 "
+          >
             {leaders.map((leader, idx) => (
               <SwiperSlide key={idx} className="h-auto">
                 <motion.div
@@ -118,13 +115,16 @@ const LeadershipTeam = () => {
                             <Linkedin className="w-5 h-5 text-blue-700 dark:text-blue-300 hover:text-blue-900 transition-colors duration-300" />
                           </a>
                         )}
-                        {leader.socials.twitter && (
+                        {leader.socials.X && (
                           <a
-                            href={leader.socials.twitter}
+                            href={leader.socials.X}
                             target="_blank"
                             rel="noopener noreferrer"
                           >
-                            <Twitter className="w-5 h-5 text-blue-500 dark:text-blue-100 hover:text-blue-700 transition-colors duration-300" />
+                            <X
+                              className="w-5 h-5 text-black-600 hover:text-black-800 transition-colors"
+                              aria-label="Close" 
+                            />
                           </a>
                         )}
                         {leader.socials.instagram && (
