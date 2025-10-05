@@ -148,13 +148,13 @@ export default function OurMissionPage() {
       {/* Testimonials */}
       <motion.section initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger} className="py-24 px-6 bg-gray-50 text-center">
         <h2 className="text-3xl font-bold mb-10">They Believe in Us</h2>
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10">
-          {[testimonial1, testimonial2].map((img, idx) => (
+        <div className="max-w-6xl mx-auto grid  gap-10 justify-center">
+          {[testimonial1].map((img, idx) => (
             <motion.div key={idx} variants={fadeUp} whileHover={{ scale: 1.02 }} className="bg-white p-6 rounded-lg shadow flex items-center gap-6 text-left">
               <img src={img} alt="Testimonial" className="w-20 h-20 rounded-full object-cover" />
               <div>
                 <p className="italic text-gray-600">“We never had access to a doctor before. ManMed changed that for our village.”</p>
-                <p className="font-semibold text-gray-800 mt-2">– Community Member</p>
+                <p className="font-semibold text-gray-800 mt-2">Our Founder</p>
               </div>
             </motion.div>
           ))}

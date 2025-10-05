@@ -15,7 +15,7 @@ const Compaign_sec = () => {
       url: '/images/community_event.jpg',
       titleKey: "community_h",
       descriptionKey: "community_about",
-      date: '2023-05-15'
+      // date: '2023-05-15'
     },
     {
       id: 2,
@@ -24,7 +24,7 @@ const Compaign_sec = () => {
       thumbnail: '/images/customer_testimonial.jpg',
       titleKey: "testimonial_h",
       descriptionKey: "testimonial_about",
-      date: '2023-06-22'
+      // date: '2023-06-22'
     },
     {
       id: 3,
@@ -32,7 +32,7 @@ const Compaign_sec = () => {
       url: '/images/team_building.jpg',
       titleKey: "team_h",
       descriptionKey: "team_about",
-      date: '2023-04-10'
+      // date: '2023-04-10'
     },
     {
       id: 4,
@@ -41,7 +41,7 @@ const Compaign_sec = () => {
       thumbnail: '/images/product_demo.jpg',
       titleKey: "demo_h",
       descriptionKey: "demo_about",
-      date: '2023-07-05'
+      // date: '2023-07-05'
     },
     {
       id: 5,
@@ -49,7 +49,7 @@ const Compaign_sec = () => {
       url: '/images/award_cerimoney.jpg',
       titleKey: "ceremoney_h",
       descriptionKey: "ceremoney_about",
-      date: '2023-03-18'
+      // date: '2023-03-18'
     },
     {
       id: 6,
@@ -57,7 +57,7 @@ const Compaign_sec = () => {
       url: '/images/workshop.jpg',
       titleKey: "workshop_h",
       descriptionKey: "workshop_about",
-      date: '2023-06-30'
+      // date: '2023-06-30'
     },
   ]);
 

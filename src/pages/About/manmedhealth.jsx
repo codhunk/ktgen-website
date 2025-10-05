@@ -37,7 +37,7 @@ const MenHealthSection = () => {
   const metrics = [
     { number: "15+", label: "metrics_year" },
     { number: "50k+", label: "metrics_man" },
-    { number: "98%", label: "metrics_succ" },
+    { number: "99%", label: "metrics_succ" },
     { number: "24/7", label: "metrics_succ" },
   ];
 
