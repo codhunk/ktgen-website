@@ -19,7 +19,7 @@ import { useTranslation } from "react-i18next";
 
 const videos = [
   {
-    id: "1", 
+    id: "1",
     src: testiVid1,
     thumbnail: thumb,
     title: "Testimonial 1",
@@ -101,7 +101,7 @@ const Home = () => {
         <Counting />
       </div>
 
-      <div className="pb-8 min-h-screen bg-gradient-to-br from-indigo-50 to-white dark:from-gray-900 dark:to-gray-800 flex flex-col items-center justify-center text-slate-800 dark:text-white px-4 text-center transition-all duration-300">
+      <div className="pb-8 min-h-screen bg-indigo-50 dark:bg-gray-900 flex flex-col items-center justify-center text-slate-800 dark:text-white px-4 text-center transition-all duration-300">
         {/* <div className="mt-10 border border-red-600 ">
           <OurMission />
         </div> */}
@@ -117,10 +117,10 @@ const Home = () => {
         </div> */}
 
         {/* Testominial Slider */}
-        <div className=" w-full md:w-[95%] 2xl:max-w-7xl pb-4 h-auto mt-6 hidden md:block">
-          <h1 className="text-3xl text-center w-full px-5 mb-4 text-black dark:text-[#7eb449] font-bold ">
+        <div className="rounded-3xl w-full md:w-[95%] 2xl:max-w-7xl pb-4 h-auto mt-6 hidden md:block">
+          {/* <h1 className="text-3xl text-center w-full px-5 mb-4 text-black dark:text-[#7eb449] font-bold ">
             {t("testimo")}
-          </h1>
+          </h1> */}
           {/* why us component */}
           <div className="hidden md:block">
             <Whyuscom />

@@ -1,10 +1,8 @@
 "use client";
-
 import React, { useState } from "react";
-
 import { useDarkMode } from "../hooks/UseDarkMode/useDarkMode";
 import { useTranslation } from "react-i18next";
-import Carousal from "../components/Carousal.jsx";
+// import Carousal from "../components/Carousal.jsx";
 import YouTube from "react-youtube";
 import pregnancy from "./assets/leaders/pregnancy.jpg"
 
