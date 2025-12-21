@@ -118,7 +118,7 @@ export default function VideoCounting() {
       {/* Left Counting Part */}
       <div className="h-full flex flex-col [@media(min-width:360px)]:flex-row [@media(min-width:900px)]:flex-col [@media(max-width:900px)]:w-full justify-between items-center [@media(min-width:360px)]:items-start [@media(min-width:900px)]:items-center md:items-center gap-8 sm:gap-2 md:gap-5">
         <StatCard
-          target={1200}
+          target={40}
           suffix="+"
           title={t("countc1_head")}
           description={t("countc1_para")}
@@ -158,7 +158,7 @@ export default function VideoCounting() {
       {/* Right Counting Part */}
       <div className="h-full flex flex-col [@media(min-width:360px)]:flex-row [@media(min-width:900px)]:flex-col [@media(max-width:900px)]:w-full justify-between items-center [@media(min-width:360px)]:items-start [@media(min-width:900px)]:items-center md:items-center gap-8 sm:gap-2 md:gap-5">
         <StatCard
-          target={500}
+          target={6}
           suffix="+"
           title={t("countc3_head")}
           description={t("countc3_para")}
@@ -167,7 +167,7 @@ export default function VideoCounting() {
         />
 
         <StatCard
-          target={250}
+          target={100}
           suffix="+"
           title={t("countc4_head")}
           description={t("countc4_para")}

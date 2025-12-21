@@ -1,19 +1,18 @@
 "use client";
-
 import React, { useState } from "react";
-
 import { useDarkMode } from "../hooks/UseDarkMode/useDarkMode";
 import { useTranslation } from "react-i18next";
-import Carousal from "../components/Carousal.jsx";
+// import Carousal from "../components/Carousal.jsx";
 import YouTube from "react-youtube";
 import pregnancy from "./assets/leaders/pregnancy.jpg"
 
 // Video data
+// i made this comment for push.
 const videoData = [
-  { label: "Week 1", url: "https://www.youtube.com/watch?v=izOa3-AX8zQ" },
-  { label: "Week 2", url: "https://www.youtube.com/watch?v=izOa3-AX8zQ" },
-  { label: "Week 3", url: "https://www.youtube.com/watch?v=izOa3-AX8zQ" },
-  { label: "Week 4", url: "https://www.youtube.com/watch?v=izOa3-AX8zQ" },
+  { label: "Week 1", url: "https://www.youtube.com/watch?v=iCXfyPSt-Ro" },
+  { label: "Week 2", url: "https://www.youtube.com/watch?v=S96T7YhtcNY" },
+  { label: "Week 3", url: "https://www.youtube.com/watch?v=swRzGWXkaKc" },
+  { label: "Week 4", url: "https://www.youtube.com/watch?v=nEo06vTGgWE" },
   { label: "2 Months", url: "https://www.youtube.com/watch?v=izOa3-AX8zQ" },
   { label: "3 Months", url: "https://www.youtube.com/watch?v=izOa3-AX8zQ" },
   { label: "4 Months", url: "https://www.youtube.com/watch?v=izOa3-AX8zQ" },
@@ -44,8 +43,8 @@ const Pregnency_sec = () => {
 
   return (
     <main className="pt-[88px] dark:bg-[#0a0a0a] dark:text-white">
-      {/* Carousel */}
-      <Carousal />
+   
+      {/* <Carousal /> */}
 
       {/* Hero Section */}
 {/* Hero Section */}
