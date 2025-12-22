@@ -167,7 +167,7 @@ const ProductsPage = () => {
       </section>
 
       {/* Newsletter Section */}
-      <section className="py-20 px-6 bg-gradient-to-r from-blue-50 to-blue-100 dark:from-gray-800 dark:to-gray-900 text-center">
+      {/* <section className="py-20 px-6 bg-gradient-to-r from-blue-50 to-blue-100 dark:from-gray-800 dark:to-gray-900 text-center">
         <h2 className="text-4xl font-bold mb-6">Stay Updated</h2>
         <p className="mb-6 text-gray-700 dark:text-gray-300">Subscribe to our newsletter for latest products and health tips.</p>
         <div className="flex flex-col sm:flex-row justify-center max-w-md mx-auto">
@@ -180,7 +180,7 @@ const ProductsPage = () => {
             Subscribe
           </button>
         </div>
-      </section>
+      </section> */}
 
     </div>
   );
