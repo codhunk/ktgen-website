@@ -210,8 +210,6 @@ const PartnerProgram = () => {
         </div>
       </section> */}
 
-
-        {/* second copy of star section */}
       <section className="py-6 bg-gray-100 dark:bg-gray-800/50 backdrop-blur-sm">
         <div className="container mx-auto px-6">
           <motion.div
