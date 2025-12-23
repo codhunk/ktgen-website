@@ -12,6 +12,7 @@ import {
   ArrowRight,
 } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { assets } from "../../assets/images/assets";
 
 const PartnerProgram = () => {
   const { t } = useTranslation()
@@ -56,44 +57,47 @@ const PartnerProgram = () => {
     {
       icon: <Scan className="w-8 h-8" />,
       title: "partner_titl1",
-      description:"partner_des1",
+      description: "partner_des1",
       color: "from-green-500 to-teal-500",
     },
     {
       icon: <Trophy className="w-8 h-8" />,
       title: "partner_titl2",
-      description:"partner_des2",
+      description: "partner_des2",
       color: "from-emerald-500 to-lime-500",
     },
     {
       icon: <Gift className="w-8 h-8" />,
       title: "partner_titl3",
-      description:"partner_des3",
+      description: "partner_des3",
       color: "from-green-400 to-[#95DE4B]",
     },
     {
       icon: <Package className="w-8 h-8" />,
       title: "partner_titl4",
-      description:"partner_des4",
+      description: "partner_des4",
       color: "from-green-500 to-teal-500",
     },
   ];
 
   const stats = [
     {
-      number: "50K+",
-      label: "partner_lab1",
-      icon: <TrendingUp className="w-6 h-6" />,
+      icon: `${assets.cer_img1}`
     },
     {
-      number: "2M+",
-      label: "partner_lab12",
-      icon: <Star className="w-6 h-6" />,
+      icon: `${assets.cer_img2}`
     },
     {
-      number: "98%",
-      label: "partner_lab3",
-      icon: <CheckCircle className="w-6 h-6" />,
+      icon: `${assets.cer_img3}`
+    },
+    {
+      icon: `${assets.cer_img4}`
+    },
+    {
+      icon: `${assets.cer_img5}`
+    },
+    {
+      icon: `${assets.cer_img6}`
     },
   ];
 
@@ -169,14 +173,18 @@ const PartnerProgram = () => {
         </div>
       </section>
 
+
+
+
+
       {/* Stats Section */}
-      <section className="py-16 bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm">
+      {/* <section className="border border-red-500 py-16 bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm">
         <div className="container mx-auto px-6">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto"
+            className="grid border border-green-500 grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto"
           >
             {stats.map((stat, index) => (
               <motion.div
@@ -185,9 +193,9 @@ const PartnerProgram = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 whileHover={{ y: -5 }}
-                className="text-center group"
+                className="text-center group border border-red-600"
               >
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-[#7eb449] to-[#059BE3] rounded-2xl mb-4 group-hover:scale-110 transition-transform duration-300">
+                <div className="inline-flex border border-red-500 items-center justify-center w-16 h-16 bg-gradient-to-r from-[#7eb449] to-[#059BE3] rounded-2xl mb-4 group-hover:scale-110 transition-transform duration-300">
                   <div className="text-white">{stat.icon}</div>
                 </div>
                 <div className="text-4xl font-bold text-gray-900 dark:text-white mb-2">
@@ -195,6 +203,31 @@ const PartnerProgram = () => {
                 </div>
                 <div className="text-gray-600 dark:text-gray-400 font-medium">
                   {t(stat.label)}
+                </div>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
+      </section> */}
+
+      <section className="py-6 bg-gray-100 dark:bg-gray-800/50 backdrop-blur-sm">
+        <div className="container mx-auto px-6">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="grid grid-cols-3 md:grid-cols-6 gap-8 max-w-4xl mx-auto"
+          >
+            {stats.map((stat, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                whileHover={{ y: -5 }}
+                className="text-center group">
+                <div className="overflow-hidden inline-flex items-center justify-center w-20 h-20 mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <img src={stat.icon} alt="images" />
                 </div>
               </motion.div>
             ))}
@@ -213,7 +246,7 @@ const PartnerProgram = () => {
             className="text-center mb-16"
           >
             <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-              
+
               {t("partnerf_head1")}{" "}
               <span className="bg-gradient-to-r from-[#7eb449] to-[#059BE3] bg-clip-text text-transparent">
                 {t("partnerf_head2")}
@@ -293,7 +326,7 @@ const PartnerProgram = () => {
                 {t("partner_ctab1")}
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </motion.button>
-{/* #95DE4B
+              {/* #95DE4B
 #059BE3 */}
               <motion.button
                 whileHover={{ scale: 1.05 }}

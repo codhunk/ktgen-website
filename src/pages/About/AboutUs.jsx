@@ -14,7 +14,7 @@ import { useTranslation } from "react-i18next";
 const AboutUs = () => {
   const { t } = useTranslation();
   return (
-    <div className="min-h-screen font-sans text-gray-800">
+    <div className="min-h-screen font-sans text-gray-800 ">
       {/* <MousePointerEffect /> */}
 
       {/* Hero Section */}
@@ -61,19 +61,6 @@ const AboutUs = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
             viewport={{ once: true }}
           >
-            {/* Founded in 2021 by Jalandhar, our journey began with a vision to
-            transform ideas into impactful digital experiences. What started as
-            a small initiative quickly grew into a dynamic team driven by
-            innovation. We’ve consistently focused on delivering quality
-            solutions tailored to our clients' needs. Over the years, our
-            dedication has helped us build strong partnerships and a solid
-            reputation. Today, we continue to grow, fueled by creativity, trust,
-            and a passion for progress. */}
-
-            {/* Vision Statement */}
-            {/* To be the most trusted and accessible partner in India's healthcare journey, empowering every individual to see their well-being not as a cost, but as their most valuable, life-long investment.<br/> */}
-            {/* Mission Statement */}
-            {/* To ethically develop and deliver high-quality, affordable healthcare solutions that address the foundational needs of the Indian population. We are committed to empowering individuals to proactively invest in their health and will remain a reliable partner in every step of their journey, living out our promise: ManMed Health - Always By Your Side. */}
             {t("about_story_para")}
           </motion.p>
         </div>
