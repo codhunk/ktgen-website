@@ -1,135 +1,133 @@
-import { motion } from "framer-motion";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
-import { useTranslation } from "react-i18next";
-import { Facebook, Instagram, Linkedin, Twitter, X } from "lucide-react";
+// import { motion } from "framer-motion";
+// import { Swiper, SwiperSlide } from "swiper/react";
+// import { Pagination } from "swiper/modules";
+// import { Facebook, Instagram, Linkedin, Twitter, X } from "lucide-react";
 
-import { BsInstagram } from "react-icons/bs";
-import { CiLinkedin } from "react-icons/ci";
-import { BsTwitterX } from "react-icons/bs";
+// import { useTranslation } from "react-i18next";
+// import { BsInstagram, BsTwitterX } from "react-icons/bs";
+// import { CiLinkedin } from "react-icons/ci";
 
-import "swiper/css";
-import "swiper/css/pagination";
+// import "swiper/css";
+// import "swiper/css/pagination";
 
-import rahulPic from "./assets/leaders/rahul.jpg";
-import vibhaPic from "./assets/leaders/vibha.jpeg";
-import anujPic from "./assets/leaders/anuj.png";
+// import rahulPic from "./assets/leaders/rahul.jpg";
+// import vibhaPic from "./assets/leaders/vibha.jpeg";
+// import anujPic from "./assets/leaders/anuj.png";
 
-const leaders = [
-  {
-    name: "meet_card1name",
-    title: "meet_card1title",
-    image: rahulPic,
-    bio: "meet_card1bio",
-    socials: {
-      linkedin: "#",
-      X: "#",
-      instagram: "#",
-    },
-  },
-  {
-    name: "meet_card2name",
-    title: "meet_card2title",
-    image: vibhaPic,
-    bio: "meet_card2bio",
-    socials: {
-      linkedin: "#",
-      X: "#",
-      instagram: "#",
-    },
-  },
-  {
-    name: "meet_card3name",
-    title: "meet_card3title",
-    image: anujPic,
-    bio: "meet_card3bio",
-    socials: {
-      linkedin: "#",
-      X: "#",
-      instagram: "#",
-    },
-  },
-];
+// const leaders = [
+//   {
+//     name: "meet_card1name",
+//     title: "meet_card1title",
+//     image: rahulPic,
+//     bio: "meet_card1bio",
+//     socials: {
+//       linkedin: "#",
+//       X: "#",
+//       instagram: "#",
+//     },
+//   },
+//   {
+//     name: "meet_card2name",
+//     title: "meet_card2title",
+//     image: vibhaPic,
+//     bio: "meet_card2bio",
+//     socials: {
+//       linkedin: "#",
+//       X: "#",
+//       instagram: "#",
+//     },
+//   },
+//   {
+//     name: "meet_card3name",
+//     title: "meet_card3title",
+//     image: anujPic,
+//     bio: "meet_card3bio",
+//     socials: {
+//       linkedin: "#",
+//       X: "#",
+//       instagram: "#",
+//     },
+//   },
+// ];
 
-const LeadershipTeam = () => {
-  const { t } = useTranslation();
+// const LeadershipTeam = () => {
+//   const { t } = useTranslation();
 
 
-  return (
-    // max-h-[90vh] overflow-y-auto
-    <section className="border border-2 border-red-500 ">
-      <div className="bg-blue-300 h-[65vh] pt-[60px] ">
-      <div className="border border-black w-full  h-[115px] bg-gray-200 relative">
-        <div className="absolute -top-8 left-20 p-7 text-5xl bg-white shadow-xl rounded-lg text-gray-900 font-semibold border border-black">Board of Derectors</div>
+//   return (
+//     <section className="border border-2 border-red-500 max-h-[90vh] overflow-y-auto">
+//       <div className="bg-blue-300 h-[65vh] pt-[60px] ">
+//       <div className="border border-black w-full  h-[115px] bg-gray-200 relative">
+//         <div className="absolute -top-8 left-20 p-7 text-5xl bg-white shadow-xl rounded-lg text-gray-900 font-semibold border border-black">Board of Derectors</div>
 
-      {/* first card */}
-      <div className="border border-black absolute top-[150px] left-20 flex bg-red-500 rounded-xl overflow-hidden ">
-        <div className="border bg-green-300 h-96 object-cover">
-          <img src={leaders[2].image} alt="Director_img" className="h-full w-full object-cover"  />
-          </div>
-        <div className="border border-green-500 py-[60px] min-w-[600px]">
-          <div className="border border-black max-w-sm mx-auto">
-            <h1 className="text-5xl font-semibold text-black dark:text-white">{leaders[2].name}</h1>
-            <p className="text-xl font-semibold my-5 text-gray-700 dark:text-gray-200">{leaders[2].title}</p>
-            <p className="text-lg mt-1 text-gray-700 dark:text-gray-200">{leaders[2].bio}</p>
+//       {/* first card */}
+//       <div className="border border-black absolute top-[150px] left-20 flex bg-red-500 rounded-xl overflow-hidden ">
+//         <div className="border bg-green-300 h-96 object-cover">
+//           <img src={leaders[2].image} alt="Director_img" className="h-full w-full object-cover"  />
+//           </div>
+//         <div className="border border-green-500 py-[60px] min-w-[600px]">
+//           <div className="border border-black max-w-sm mx-auto">
+//             <h1 className="text-5xl font-semibold text-black dark:text-white">{leaders[2].name}</h1>
+//             <p className="text-xl font-semibold my-5 text-gray-700 dark:text-gray-200">{leaders[2].title}</p>
+//             <p className="text-lg mt-1 text-gray-700 dark:text-gray-200">{leaders[2].bio}</p>
 
-            <div className="flex gap-5 text-2xl mt-5">
-          <a href={leaders[2].socials.linkedin}><CiLinkedin /></a>
-          <a href={leaders[2].socials.X}><BsTwitterX /></a>
-          <a href={leaders[2].socials.instagram}><BsInstagram /></a> 
-            </div>
-          </div>
-        </div>
-      </div>
+//             <div className="flex gap-5 text-2xl mt-5">
+//           <a href={leaders[2].socials.linkedin}><CiLinkedin /></a>
+//           <a href={leaders[2].socials.X}><BsTwitterX /></a>
+//           <a href={leaders[2].socials.instagram}><BsInstagram /></a> 
+//             </div>
+//           </div>
+//         </div>
+//       </div>
 
-      </div>
-      </div> 
+//       </div>
+//       </div> 
 
-      {/* second card */}
-      <div className="border border-green-500 border-2 flex justify-end mt-[280px] pr-[80px]">
-          <div className="border border-black flex bg-red-500 rounded-xl overflow-hidden ">
-        <div className="border bg-green-300 h-96 object-cover">
-          <img src={leaders[1].image} alt="Director_img" className="h-full w-full object-cover"  />
-          </div>
-        <div className="border border-green-500 py-[60px] min-w-[600px]">
-          <div className="border border-black max-w-sm mx-auto">
-            <h1 className="text-5xl font-semibold text-black dark:text-white">{leaders[1].name}</h1>
-            <p className="text-xl font-semibold my-5 text-gray-700 dark:text-gray-200">{leaders[1].title}</p>
-            <p className="text-lg mt-1 text-gray-700 dark:text-gray-200">{leaders[1].bio}</p>
+//       {/* second card */}
+//       <div className="border border-green-500 border-2 flex justify-end mt-[280px] pr-[80px]">
+//           <div className="border border-black flex bg-red-500 rounded-xl overflow-hidden ">
+//         <div className="border bg-green-300 h-96 object-cover">
+//           <img src={leaders[1].image} alt="Director_img" className="h-full w-full object-cover"  />
+//           </div>
+//         <div className="border border-green-500 py-[60px] min-w-[600px]">
+//           <div className="border border-black max-w-sm mx-auto">
+//             <h1 className="text-5xl font-semibold text-black dark:text-white">{leaders[1].name}</h1>
+//             <p className="text-xl font-semibold my-5 text-gray-700 dark:text-gray-200">{leaders[1].title}</p>
+//             <p className="text-lg mt-1 text-gray-700 dark:text-gray-200">{leaders[1].bio}</p>
 
-            <div className="flex gap-5 text-2xl mt-5">
-          <a href={leaders[1].socials.linkedin}><CiLinkedin /></a>
-          <a href={leaders[1].socials.X}><BsTwitterX /></a>
-          <a href={leaders[1].socials.instagram}><BsInstagram /></a> 
-            </div>
-          </div>
-        </div>
-      </div>
-      </div>
+//             <div className="flex gap-5 text-2xl mt-5">
+//           <a href={leaders[1].socials.linkedin}><CiLinkedin /></a>
+//           <a href={leaders[1].socials.X}><BsTwitterX /></a>
+//           <a href={leaders[1].socials.instagram}><BsInstagram /></a> 
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+//       </div>
 
-    {/* third card */}
-      <div className="border border-green-500 border-2 mb-[70px] mt-[100px] flex pl-[80px]">
-          <div className="border border-black flex bg-red-500 rounded-xl overflow-hidden ">
-        <div className="border bg-green-300 h-96 object-cover">
-          <img src={leaders[0].image} alt="Director_img" className="h-full w-full object-cover"  />
-          </div>
-        <div className="border border-green-500 py-[60px] min-w-[600px]">
-          <div className="border border-black max-w-sm mx-auto">
-            <h1 className="text-5xl font-semibold text-black dark:text-white">{leaders[0].name}</h1>
-            <p className="text-xl font-semibold my-5 text-gray-700 dark:text-gray-200">{leaders[0].title}</p>
-            <p className="text-lg mt-1 text-gray-700 dark:text-gray-200">{leaders[0].bio}</p>
+//     {/* third card */}
+//       <div className="border border-green-500 border-2 mb-[70px] mt-[100px] flex pl-[80px]">
+//           <div className="border border-black flex bg-red-500 rounded-xl overflow-hidden ">
+//         <div className="border bg-green-300 h-96 object-cover">
+//           <img src={leaders[0].image} alt="Director_img" className="h-full w-full object-cover"  />
+//           </div>
+//         <div className="border border-green-500 py-[60px] min-w-[600px]">
+//           <div className="border border-black max-w-sm mx-auto">
+//             <h1 className="text-5xl font-semibold text-black dark:text-white">{leaders[0].name}</h1>
+//             <p className="text-xl font-semibold my-5 text-gray-700 dark:text-gray-200">{leaders[0].title}</p>
+//             <p className="text-lg mt-1 text-gray-700 dark:text-gray-200">{leaders[0].bio}</p>
 
-            <div className="flex gap-5 text-2xl mt-5">
-          <a href={leaders[0].socials.linkedin}><CiLinkedin /></a>
-          <a href={leaders[0].socials.X}><BsTwitterX /></a>
-          <a href={leaders[0].socials.instagram}><BsInstagram /></a> 
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  )
+//             <div className="flex gap-5 text-2xl mt-5">
+//           <a href={leaders[0].socials.linkedin}><CiLinkedin /></a>
+//           <a href={leaders[0].socials.X}><BsTwitterX /></a>
+//           <a href={leaders[0].socials.instagram}><BsInstagram /></a> 
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   </section>
+//   )
 
 
   // return (
@@ -243,286 +241,193 @@ const LeadershipTeam = () => {
 
 
   
-};
-
-export default LeadershipTeam;
-
-
-
-
-
-// import { motion } from "framer-motion";
-// import { Linkedin, X, Instagram, Facebook } from "lucide-react";
-
-// const LeadershipTeam = () => {
-//   const directors = [
-//     {
-//       id: 1,
-//       name: "Dr. Y. K. Hamied",
-//       title: "Non-Executive Chairman",
-//       description: "Dr. Y.K. Hamied is Non-Executive Chairman of the Company, and represents the second generation of Cipkra founding family. A world-renowned scientist, Dr Hamied obtained his PhD in organic chemistry in 1960 from the University of Cambridge under the tutelage of the Nobel laureate Lord Alexander Todd.",
-//       image: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&h=400&fit=crop&crop=face", // Scientist image
-//       readMoreLink: "#",
-//       socials: {
-//         linkedin: "#",
-//         twitter: "#",
-//         email: "#"
-//       }
-//     },
-//     {
-//       id: 2,
-//       name: "John Smith",
-//       title: "Executive Director",
-//       description: "With over 20 years of experience in pharmaceutical industry. Former CEO of MedCorp International.",
-//       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face", // Business executive
-//       readMoreLink: "#",
-//       socials: {
-//         linkedin: "#",
-//         twitter: "#",
-//         email: "#"
-//       }
-//     },
-//     {
-//       id: 3,
-//       name: "Sarah Johnson",
-//       title: "Independent Director",
-//       description: "Finance expert with specialization in healthcare investments. Serves on multiple Fortune 500 boards.",
-//       image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w-400&h=400&fit=crop&crop=face", // Professional woman
-//       readMoreLink: "#",
-//       socials: {
-//         linkedin: "#",
-//         twitter: "#",
-//         email: "#"
-//       }
-//     },
-//     {
-//       id: 4,
-//       name: "Robert Chen",
-//       title: "Non-Executive Director",
-//       description: "Technology and innovation specialist focusing on pharmaceutical R&D advancements.",
-//       readMoreLink: "#",
-//     },
-//     {
-//       id: 5,
-//       name: "Maria Garcia",
-//       title: "Executive Director",
-//       description: "Global operations leader with extensive experience in emerging markets expansion.",
-//       readMoreLink: "#",
-//     },
-//     {
-//       id: 6,
-//       name: "David Wilson",
-//       title: "Independent Director",
-//       description: "Legal and regulatory affairs expert with focus on international compliance.",
-//       readMoreLink: "#",
-//     },
-//   ];
-
-//   return (
-//     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50 py-16 px-4 sm:px-6 lg:px-8">
-//       <div className="max-w-7xl mx-auto">
-//         {/* Header */}
-//         <motion.div
-//           initial={{ opacity: 0, y: 20 }}
-//           animate={{ opacity: 1, y: 0 }}
-//           transition={{ duration: 0.6 }}
-//           className="text-center mb-16"
-//         >
-//           <h1 className="text-5xl font-bold text-gray-900 mb-4 tracking-tight">
-//             Board Of Directors
-//           </h1>
-//           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full mb-8"></div>
-//           <p className="text-gray-600 text-lg max-w-3xl mx-auto">
-//             Our leadership team brings together diverse expertise and decades of experience
-//             in pharmaceuticals, research, and global healthcare.
-//           </p>
-//         </motion.div>
-
-//         {/* Directors Grid with Images for First Three */}
-//         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-//           {directors.map((director, index) => (
-//             <motion.div
-//               key={index}
-//               initial={{ opacity: 0, y: 30 }}
-//               whileInView={{ opacity: 1, y: 0 }}
-//               transition={{ duration: 0.5, delay: index * 0.1 }}
-//               viewport={{ once: true }}
-//               whileHover={{ y: -5 }}
-//               className={`bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 border border-gray-100 ${
-//                 director.id <= 3 ? 'group' : ''
-//               }`}
-//             >
-//               {/* For directors with images (first 3) */}
-//               {director.id <= 3 ? (
-//                 <div className="p-0 overflow-hidden">
-//                   {/* Image Container */}
-//                   <div className="relative h-56 overflow-hidden">
-//                     <img
-//                       src={director.image}
-//                       alt={director.name}
-//                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-//                     />
-//                     <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
-                    
-//                     {/* Social Links overlay on image */}
-//                     <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-//                       <div className="flex gap-3 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full">
-//                         {director.socials?.linkedin && (
-//                           <a href={director.socials.linkedin} className="text-blue-700 hover:text-blue-900">
-//                             {/* <Linkedin className="w-5 h-5" /> */}R
-//                           </a>
-//                         )}
-//                         {director.socials?.twitter && (
-//                           <a href={director.socials.twitter} className="text-gray-700 hover:text-black">
-//                             <X className="w-5 h-5" />
-//                           </a>
-//                         )}
-//                         <a href={`mailto:${director.socials?.email}`} className="text-gray-700 hover:text-blue-600">
-//                           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-//                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-//                           </svg>
-//                         </a>
-//                       </div>
-//                     </div>
-//                   </div>
-
-//                   {/* Content Below Image */}
-//                   <div className="p-6">
-//                     <h3 className="text-2xl font-bold text-gray-900 mb-2">
-//                       {director.name}
-//                     </h3>
-//                     <div className="flex items-center gap-2 mb-4">
-//                       <div className="w-6 h-0.5 bg-blue-600"></div>
-//                       <p className="text-lg font-semibold text-blue-700">
-//                         {director.title}
-//                       </p>
-//                     </div>
-                    
-//                     <p className="text-gray-600 mb-6 leading-relaxed text-sm">
-//                       {director.description}
-//                     </p>
-
-//                     <motion.button
-//                       whileHover={{ scale: 1.05 }}
-//                       whileTap={{ scale: 0.95 }}
-//                       className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium transition-colors duration-300 text-sm"
-//                     >
-//                       Read More
-//                       <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-//                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-//                       </svg>
-//                     </motion.button>
-//                   </div>
-//                 </div>
-//               ) : (
-//                 <div className="p-6">
-//                   <h3 className="text-2xl font-bold text-gray-900 mb-2">
-//                     {director.name}
-//                   </h3>
-//                   <div className="flex items-center gap-2 mb-3">
-//                     <div className="w-8 h-0.5 bg-blue-600"></div>
-//                     <p className="text-lg font-semibold text-blue-700">
-//                       {director.title}
-//                     </p>
-//                   </div>
-                  
-//                   <p className="text-gray-600 mb-6 leading-relaxed">
-//                     {director.description}
-//                   </p>
-
-//                   <motion.button
-//                     whileHover={{ scale: 1.05 }}
-//                     whileTap={{ scale: 0.95 }}
-//                     className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium transition-colors duration-300"
-//                   >
-//                     <span className="mr-2">Read More</span>
-//                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-//                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-//                     </svg>
-//                   </motion.button>
-//                 </div>
-//               )}
-              
-//               {/* Decorative Bottom Border */}
-//               <div className="h-1 bg-gradient-to-r from-blue-600 via-purple-500 to-pink-500"></div>
-//             </motion.div>
-
-//           ))}
-//         </div>
-
-//         {/* Featured Director Highlight (Dr. Hamied) with Larger Image */}
-//         <motion.div
-//           initial={{ opacity: 0, scale: 0.95 }}
-//           whileInView={{ opacity: 1, scale: 1 }}
-//           transition={{ duration: 0.7 }}
-//           viewport={{ once: true }}
-//           className="mt-16 bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl p-8 border border-blue-100 shadow-xl overflow-hidden"
-//         >
-//           <div className="flex flex-col lg:flex-row items-center gap-8">
-//             {/* Left Side - Large Image */}
-//             <div className="lg:w-1/3">
-//               <div className="relative w-64 h-64 mx-auto lg:mx-0">
-//                 <img
-//                   src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=500&h=500&fit=crop&crop=face"
-//                   alt="Dr. Y. K. Hamied"
-//                   className="w-full h-full object-cover rounded-2xl shadow-xl border-4 border-white"
-//                 />
-//                 {/* Featured Badge */}
-//                 <div className="absolute -top-3 -right-3 bg-gradient-to-br from-blue-600 to-purple-600 text-white px-4 py-2 rounded-lg font-semibold shadow-lg">
-//                   Chairman
-//                 </div>
-//               </div>
-//             </div>
-
-//             {/* Middle - Name and Title */}
-//             <div className="lg:w-2/3">
-//               <div className="text-center lg:text-left">
-//                 <h2 className="text-4xl font-bold text-gray-900 mb-2">
-//                   Dr. Y. K. Hamied
-//                 </h2>
-//                 <p className="text-xl text-blue-700 font-semibold mb-6">
-//                   Non-Executive Chairman
-//                 </p>
-//                 <p className="text-gray-700 mb-6 leading-relaxed">
-//                   Dr. Y.K. Hamied is Non-Executive Chairman of the Company, and represents the second generation of Cipkra founding family. A world-renowned scientist, Dr Hamied obtained his PhD in organic chemistry in 1960 from the University of Cambridge under the tutelage of the Nobel laureate Lord Alexander Todd.
-//                 </p>
-                
-//                 {/* Social Links for Featured Director */}
-//                 <div className="flex gap-4 mb-6 justify-center lg:justify-start">
-//                   <a href="#" className="p-2 bg-white rounded-full shadow hover:shadow-lg transition-shadow">
-//                     <Linkedin className="w-6 h-6 text-blue-700" />
-//                   </a>
-//                   <a href="#" className="p-2 bg-white rounded-full shadow hover:shadow-lg transition-shadow">
-//                     <X className="w-6 h-6 text-gray-700" />
-//                   </a>
-//                   <a href="#" className="p-2 bg-white rounded-full shadow hover:shadow-lg transition-shadow">
-//                     <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-//                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-//                     </svg>
-//                   </a>
-//                 </div>
-//               </div>
-//             </div>
-//           </div>
-//         </motion.div>
-
-//         {/* Footer Note */}
-//         <motion.div
-//           initial={{ opacity: 0 }}
-//           whileInView={{ opacity: 1 }}
-//           transition={{ duration: 0.5 }}
-//           viewport={{ once: true }}
-//           className="mt-16 text-center"
-//         >
-//           <p className="text-gray-500 text-sm max-w-2xl mx-auto">
-//             Our Board of Directors provides strategic guidance and oversight, ensuring 
-//             we remain committed to our mission of advancing healthcare through innovation 
-//             and excellence.
-//           </p>
-//         </motion.div>
-//       </div>
-//     </div>
-//   );
 // };
 
 // export default LeadershipTeam;
+
+
+
+import { useTranslation } from "react-i18next";
+import { BsInstagram, BsTwitterX } from "react-icons/bs";
+import { CiLinkedin } from "react-icons/ci";
+
+import "swiper/css";
+import "swiper/css/pagination";
+
+import rahulPic from "./assets/leaders/rahul.jpg";
+import vibhaPic from "./assets/leaders/vibha.jpeg";
+import anujPic from "./assets/leaders/anuj.png";
+
+const leaders = [
+  {
+    name: "meet_card1name",
+    title: "meet_card1title",
+    image: rahulPic,
+    bio: "meet_card1bio",
+    socials: {
+      linkedin: "#",
+      X: "#",
+      instagram: "#",
+    },
+  },
+  {
+    name: "meet_card2name",
+    title: "meet_card2title",
+    image: vibhaPic,
+    bio: "meet_card2bio",
+    socials: {
+      linkedin: "#",
+      X: "#",
+      instagram: "#",
+    },
+  },
+  {
+    name: "meet_card3name",
+    title: "meet_card3title",
+    image: anujPic,
+    bio: "meet_card3bio",
+    socials: {
+      linkedin: "#",
+      X: "#",
+      instagram: "#",
+    },
+  },
+];
+
+const LeadershipTeam = () => {
+  const { t } = useTranslation();
+
+  return (
+    <section className="relative max-h-screen w-full overflow-x-hidden overflow-y-auto">
+      {/* Header Section */}
+      <div className="relative w-full h-[65vh] md:h-[70vh] bg-gradient-to-r from-[#74B7AC] to-[#CBF9F9] pt-12 md:pt-16">
+        <div className="relative w-full h-28 md:h-32 bg-gray-200">
+          <div className="absolute -top-8 left-1/2 -translate-x-1/2 md:left-20 md:translate-x-0 w-max px-6 md:px-8 py-5 md:py-7 text-3xl md:text-4xl lg:text-5xl bg-white shadow-xl rounded-lg text-gray-900 font-semibold border border-gray-300">
+            Board of Directors
+          </div>
+        </div>
+
+        {/* First Card - Top Center */}
+        <div className="absolute top-40 md:top-[160px] left-1/2 -translate-x-1/2 md:left-20 md:translate-x-0 w-[90%] md:w-auto max-w-4xl mx-auto">
+          <div className="flex flex-col md:flex-row bg-white rounded-xl overflow-hidden shadow-2xl border border-gray-200">
+            <div className="md:w-2/5 h-64 md:h-96">
+              <img 
+                src={leaders[2].image} 
+                alt="Director" 
+                className="w-full h-full object-cover" 
+              />
+            </div>
+            <div className="md:w-3/5 p-6 md:p-12 lg:p-16">
+              <div className="max-w-sm mx-auto md:mx-0">
+                <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900">
+                  {t(leaders[2].name)}
+                </h1>
+                <p className="text-lg md:text-xl font-semibold my-3 md:my-5 text-gray-700">
+                  {t(leaders[2].title)}
+                </p>
+                <p className="text-base md:text-lg text-gray-600">
+                  {t(leaders[2].bio)}
+                </p>
+                <div className="flex gap-4 md:gap-5 text-xl md:text-2xl mt-6 md:mt-8">
+                  <a href={leaders[2].socials.linkedin} className="hover:text-blue-600 transition-colors">
+                    <CiLinkedin />
+                  </a>
+                  <a href={leaders[2].socials.X} className="hover:text-black transition-colors">
+                    <BsTwitterX />
+                  </a>
+                  <a href={leaders[2].socials.instagram} className="hover:text-pink-600 transition-colors">
+                    <BsInstagram />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Second Card - Right Aligned */}
+      <div className="w-full px-4 md:px-0 mt-10 md:mt-40 ">
+        <div className="flex justify-end">
+          <div className="w-[90%] md:w-auto max-w-4xl mr-0 md:mr-20">
+            <div className="flex flex-col md:flex-row bg-white rounded-xl overflow-hidden shadow-2xl border border-gray-200">
+              <div className="md:w-2/5 h-64 md:h-96 order-1 md:order-2">
+                <img 
+                  src={leaders[1].image} 
+                  alt="Director" 
+                  className="w-full h-full object-cover" 
+                />
+              </div>
+              <div className="md:w-3/5 p-6 md:p-12 lg:p-16 order-2 md:order-1">
+                <div className="max-w-sm mx-auto md:mx-auto md:ml-auto md:mr-0">
+                  <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900">
+                    {t(leaders[1].name)}
+                  </h1>
+                  <p className="text-lg md:text-xl font-semibold my-3 md:my-5 text-gray-700">
+                    {t(leaders[1].title)}
+                  </p>
+                  <p className="text-base md:text-lg text-gray-600">
+                    {t(leaders[1].bio)}
+                  </p>
+                  <div className="flex gap-4 md:gap-5 text-xl md:text-2xl mt-6 md:mt-8">
+                    <a href={leaders[1].socials.linkedin} className="hover:text-blue-600 transition-colors">
+                      <CiLinkedin />
+                    </a>
+                    <a href={leaders[1].socials.X} className="hover:text-black transition-colors">
+                      <BsTwitterX />
+                    </a>
+                    <a href={leaders[1].socials.instagram} className="hover:text-pink-600 transition-colors">
+                      <BsInstagram />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Third Card - Left Aligned */}
+      <div className="w-full px-4 md:px-0 mt-10 md:mt-20 mb-16">
+        <div className="flex justify-start">
+          <div className="w-[90%] md:w-auto max-w-4xl ml-0 md:ml-20">
+            <div className="flex flex-col md:flex-row bg-white rounded-xl overflow-hidden shadow-2xl border border-gray-200">
+              <div className="md:w-2/5 h-64 md:h-96">
+                <img 
+                  src={leaders[0].image} 
+                  alt="Director" 
+                  className="w-full h-full object-cover" 
+                />
+              </div>
+              <div className="md:w-3/5 p-6 md:p-12 lg:p-16">
+                <div className="max-w-sm mx-auto md:mx-0">
+                  <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900">
+                    {t(leaders[0].name)}
+                  </h1>
+                  <p className="text-lg md:text-xl font-semibold my-3 md:my-5 text-gray-700">
+                    {t(leaders[0].title)}
+                  </p>
+                  <p className="text-base md:text-lg text-gray-600">
+                    {t(leaders[0].bio)}
+                  </p>
+                  <div className="flex gap-4 md:gap-5 text-xl md:text-2xl mt-6 md:mt-8">
+                    <a href={leaders[0].socials.linkedin} className="hover:text-blue-600 transition-colors">
+                      <CiLinkedin />
+                    </a>
+                    <a href={leaders[0].socials.X} className="hover:text-black transition-colors">
+                      <BsTwitterX />
+                    </a>
+                    <a href={leaders[0].socials.instagram} className="hover:text-pink-600 transition-colors">
+                      <BsInstagram />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default LeadershipTeam;
