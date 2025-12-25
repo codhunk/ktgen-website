@@ -14,7 +14,7 @@ export default function CookieConsent() {
     localStorage.setItem("cookieConsent", "accepted");
     setVisible(false);
   };
-
+// jnfjkds
   const handleReject = () => {
     localStorage.setItem("cookieConsent", "rejected");
     setVisible(false);
