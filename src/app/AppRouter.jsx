@@ -26,6 +26,9 @@ import DoctorsPharmaciesPage from "../pages/doctors";
 import Career from "../pages/Careers";
 import ProductsPage from "../pages/product";
 import ScrollToTop from "../components/ScrollToTop/scrolltotop";
+import TermsAndConditions from "../pages/TermandCondition";
+import PrivacyPolicy from "../pages/PrivacyAndPolicy";
+import CookieConsent from "../components/CookieConsent";
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
@@ -60,11 +63,15 @@ const App = () => {
             <Route path="/csr" element={<CSRPage />} />
             <Route path="/story" element={<OurStoryPage />} />
             <Route path="/ourmission" element={<Ourmission />} />
+            <Route path="/terms-conditions" element={<TermsAndConditions />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           </Routes>
+          
           <Footer />
         </div>
       </div>
       {/* WhatsApp Button Part */}
+      <CookieConsent />
       <WhatsAppButton />
     </>
   );

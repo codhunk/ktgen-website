@@ -127,7 +127,7 @@ i18n
           partner_titl4: "Smart Tracking",
           partner_des4: "Order tracking and intelligent restock reminders",
           partner_ctah: "Ready to Transform Your Pharmacy?",
-          partner_ctap: "Join thousands of pharmacies already growing with our reward system",
+          partner_ctap: "Join numbers of pharmacies already growing with our reward system",
           partner_ctab1: "Start Earning Points",
           partner_ctab2: "Learn More",
 

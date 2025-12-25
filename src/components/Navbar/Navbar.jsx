@@ -24,7 +24,7 @@ const Navbar = () => {
       name: "LIFE AT MANMED",
       link: "",
       icon: <RiTeamFill />,
-      icons: <Droplet />,
+      icons: <Droplet color="black" />,
       subLink: [
         { name: "OUR STORY", link: "/story", icon: <MdOutlineWork /> },
         { name: "CAREERS", link: "/career", icon: <MdOutlineWork /> },

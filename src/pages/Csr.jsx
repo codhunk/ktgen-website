@@ -226,14 +226,15 @@ const initiatives = [
 ];
 
 const stats = [
-  { label: "Children Educated", value: "12,000+" },
-  { label: "Free Medical Camps", value: "350+" },
-  { label: "Trees Planted", value: "50,000+" },
-  { label: "Meals Served", value: "1 Million+" },
-  { label: "Scholarships Awarded", value: "1,500+" },
-  { label: "Families Supported", value: "30,000+" },
-  { label: "Women Empowered", value: "7,200+" },
-  { label: "Villages Reached", value: "110+" },
+  { label: "Pharamacy", value: "50+" },
+  { label: "Trusted Brands", value: "6+" },
+  { label: "Villages Reached", value: "100+" },
+  { label: "Delivery Rate", value: "99%" },
+  { label: "Trees Planted", value: "50+" },
+  { label: "Meals Served", value: "1000+" },
+  { label: "Scholarships Awarded", value: "10+" },
+  { label: "Women Empowered", value: "10+" },
+
 ];
 
 const campaigns = [
@@ -254,7 +255,7 @@ const campaigns = [
   },
 ];
 
-const galleryImages = [education, health, environment, nutrition,cardiology, campaign1, campaign2, campaign3];
+const galleryImages = [education, health, environment, nutrition, cardiology, campaign1, campaign2, campaign3];
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -327,11 +328,11 @@ export default function CSRPage() {
         </div>
       </motion.section>
 
-      <motion.section initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="py-20 px-6 bg-white text-center">
+      {/* <motion.section initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="py-20 px-6 bg-white text-center">
         <h2 className="text-3xl sm:text-4xl font-semibold mb-6">Partnerships & Collaborations</h2>
         <p className="max-w-4xl mx-auto text-gray-600 text-lg mb-10">ManMed collaborates with NGOs, government bodies, educational institutions, and local community leaders to implement grassroots initiatives with scale and integrity.</p>
         <div className="max-w-4xl mx-auto text-sm text-gray-500">Recent Partners: UNICEF • Tata Trusts • Ministry of Health • Teach for India • Swachh Bharat Abhiyan</div>
-      </motion.section>
+      </motion.section> */}
 
       <motion.section initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="py-20 px-6 bg-gray-50 text-center">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
@@ -343,7 +344,7 @@ export default function CSRPage() {
         </div>
       </motion.section>
 
-      <motion.section initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="py-20 px-6 bg-white text-center">
+      {/* <motion.section initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="py-20 px-6 bg-white text-center">
         <h2 className="text-3xl sm:text-4xl font-semibold mb-12">Recent Campaigns</h2>
         <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
           {campaigns.map((c, i) => (
@@ -356,7 +357,7 @@ export default function CSRPage() {
             </motion.div>
           ))}
         </div>
-      </motion.section>
+      </motion.section> */}
 
       <motion.section initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="py-20 px-6 bg-gray-100 text-center">
         <h2 className="text-3xl sm:text-4xl font-semibold mb-10">CSR in Action — Gallery</h2>

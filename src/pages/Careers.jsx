@@ -71,12 +71,12 @@ const Career = () => {
             <p className="text-lg md:text-xl font-medium mb-6">
               Drive Innovation in Pharmaceutical Research and Care
             </p>
-            <a
+            {/* <a
               href="#open-positions"
               className="px-6 py-3 bg-blue-700 hover:bg-blue-800 text-white font-semibold rounded-md transition"
             >
               View Open Positions
-            </a>
+            </a> */}
           </div>
         </section>
       </div>
@@ -92,7 +92,7 @@ const Career = () => {
       </section>
 
       {/* Open Positions */}
-      <section id="open-positions" className="bg-gray-400 dark:bg-[#1d1d1d] py-16">
+      {/* <section id="open-positions" className="bg-gray-400 dark:bg-[#1d1d1d] py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 space-y-12">
           <h2 className="text-3xl font-bold text-center mb-8  text-black dark:text-gray-100">Current Openings</h2>
           <div className="grid gap-8 md:grid-cols-2">
@@ -120,7 +120,7 @@ const Career = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Benefits Section */}
       <section className="max-w-6xl mx-auto px-4 sm:px-6 py-16 space-y-8">
@@ -142,7 +142,7 @@ const Career = () => {
       </section>
 
       {/* Testimonials Section */}
-      <section className="bg-gray-50 dark:bg-gray-900 py-16">
+      {/* <section className="bg-gray-50 dark:bg-gray-900 py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 space-y-8">
           <h2 className="text-3xl font-bold text-center  text-black dark:text-gray-100">What Our Employees Say</h2>
           <div className="grid gap-8 md:grid-cols-2 mt-8">
@@ -161,7 +161,7 @@ const Career = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Application Form */}
       <section id="apply-now" className="max-w-6xl mx-auto px-4 sm:px-6 py-16 space-y-8">
@@ -186,6 +186,26 @@ const Career = () => {
               value={formData.email}
               onChange={handleChange}
               placeholder="Email Address"
+              required
+              className="w-full p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+            />
+          </div>
+           <div className="grid gap-6 md:grid-cols-2">
+            <input
+              type="text"
+              name="Role"
+              value={formData.role}
+              onChange={handleChange}
+              placeholder="Role"
+              required
+              className="w-full p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:border-gray-800 dark:text-white"
+            />
+            <input
+              type="text"
+              name="Skills"
+              value={formData.skills}
+              onChange={handleChange}
+              placeholder="Skills"
               required
               className="w-full p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
             />

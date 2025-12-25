@@ -211,7 +211,11 @@ const PartnerProgram = () => {
       </section> */}
 
       <section className="py-6 bg-gray-100 dark:bg-gray-800/50 backdrop-blur-sm">
-        <div className="container mx-auto px-6">
+       <h2 className="text-3xl lg:text-4xl font-bold text-center text-gray-700 dark:text-white mb-10">
+            Certified Organization
+          </h2>
+        <div className="container mx-auto px-6 py-10">
+         
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -226,7 +230,7 @@ const PartnerProgram = () => {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 whileHover={{ y: -5 }}
                 className="text-center group">
-                <div className="overflow-hidden inline-flex items-center justify-center w-20 h-20 mb-4 group-hover:scale-110 transition-transform duration-300">
+                <div className="overflow-hidden inline-flex items-center justify-center w-30 h-30 mb-4 group-hover:scale-110 transition-transform duration-300">
                   <img src={stat.icon} alt="images" />
                 </div>
               </motion.div>

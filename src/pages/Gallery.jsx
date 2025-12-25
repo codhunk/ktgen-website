@@ -371,34 +371,53 @@ const bannerSlides = [
 ];
 
 const galleryImages = [
-  "https://images.unsplash.com/photo-1503264116251-35a269479413",
-  "https://images.unsplash.com/photo-1497366811353-6870744d04b2",
-  "https://images.unsplash.com/photo-1517816743773-6e0fd518b4a6",
-  "https://images.unsplash.com/photo-1465101162946-4377e57745c3",
-  "https://images.unsplash.com/photo-1465101162946-4377e57745c3",
-  "https://images.unsplash.com/photo-1465101162946-4377e57745c3",
+  // 1️⃣ Pharma laboratory (NEW)
+  "https://images.unsplash.com/photo-1581594693702-fbdc51b2763b?auto=format&fit=crop&w=1200&q=80",
+
+
+  // 2️⃣ Scientist research (unchanged)
+  "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80",
+
+  // 3️⃣ Medical pills & capsules (NEW)
+  "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=1200&q=80",
+
+  // 4️⃣ Healthcare professional (unchanged)
+  "https://images.unsplash.com/photo-1579165466741-7f35e4755660?auto=format&fit=crop&w=1200&q=80",
+
+  // 5️⃣ Medicine bottles (unchanged)
+  "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=1200&q=80",
+
+  // 9️⃣ Pharmaceutical research team collaboration
+ "https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&w=1200&q=80"
+
 ];
+
+
 
 const newsUpdates = [
   {
     title: "New Branch Opened in Pune",
     date: "July 2025",
     summary: "We are proud to announce our new state-of-the-art facility in Pune.",
-    image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb",
+    image:
+     "https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&w=1200&q=80"
+
   },
   {
     title: "Manmed Tech Summit 2025",
     date: "June 2025",
     summary: "Our annual summit showcased AI innovations in healthtech.",
-    image: "https://images.unsplash.com/photo-1495567720989-cebdbdd97913",
+    image:
+      "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1200&q=80", // tech / conference
   },
   {
     title: "CSR Blood Donation Drive",
     date: "May 2025",
     summary: "Over 300 people participated in our nationwide blood donation campaign.",
-    image: "https://images.unsplash.com/photo-1517816743773-6e0fd518b4a6",
+    image:"https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&w=1200&q=80",
   },
 ];
+
 
 const featuredEvents = [
   {
@@ -462,7 +481,7 @@ const BannerSlider = () => {
       {/* Featured Events Section */}
       <section className="bg-gray-50 py-20 animate-fade-in">
         <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl sm:text-5xl font-bold text-center text-gray-800 mb-12">
+          <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-800 mb-12">
             Featured Events
           </h2>
           <p className="max-w-3xl mx-auto text-center text-lg text-gray-600 mb-16">
@@ -490,7 +509,7 @@ const BannerSlider = () => {
           </div>
 
           {/* Company News */}
-          <h2 className="text-4xl sm:text-5xl font-bold text-center text-gray-800 my-16">
+          <h2 className="text-2xl sm:text-3xl font-bold text-center text-gray-800 my-16">
             Company News & Highlights
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -505,10 +524,10 @@ const BannerSlider = () => {
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                  {/* <h3 className="text-xl font-semibold text-gray-800 mb-2">
                     {news.title}
                   </h3>
-                  <p className="text-sm text-gray-500 mb-3">{news.date}</p>
+                  <p className="text-sm text-gray-500 mb-3">{news.date}</p> */}
                   <p className="text-gray-700">{news.summary}</p>
                 </div>
               </div>
@@ -520,7 +539,7 @@ const BannerSlider = () => {
       {/* Gallery Section */}
       <section className="w-full py-20 bg-white">
         <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl sm:text-5xl font-bold text-center text-gray-800 mb-14">
+          <h2 className="text-2xl sm:text-3xl font-bold text-center text-gray-800 mb-14">
             Our Latest Moments
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

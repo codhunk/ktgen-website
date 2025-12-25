@@ -68,8 +68,9 @@ const Footer = () => {
         {
           name: "Privacy Policy",
           link: "/privacy-policy",
-        },
+        },    
       ],
+
     },
   ];
   return (
@@ -94,7 +95,7 @@ const Footer = () => {
                   </h2>
                 </section>
                 <p className="text-md text-slate-200 md:ml-2 w-full md:w-[90%]">
-                Smartest Choice-Investing in your health. Delivering trusted and affordable health solutions, always. ManMed Health-Always By your side.
+                  Smartest Choice-Investing in your health. Delivering trusted and affordable health solutions, always. ManMed Health-Always By your side.
                 </p>
               </div>
 
@@ -124,7 +125,7 @@ const Footer = () => {
                 <Link className="flex items-start gap-2 text-[1rem] text-slate-200 hover:text-indigo-400">
                   <MdLocationPin size={38} className="w-fit h-fit mt-1" />
                   <span>
-                    H. No. A-29, Ground Floor, H-1 Block B, 
+                    H. No. A-29, Ground Floor, H-1 Block B,
                     Sector-Pi/2, Alpha, Greater Noida.
                   </span>
                 </Link>
@@ -163,7 +164,7 @@ const Footer = () => {
               </Link>
 
             </div>
-         
+
           </div>
           {/* Footer Bottom Section */}
           <div
@@ -179,11 +180,11 @@ const Footer = () => {
             <span>Health</span>
           </div>
           {/* Footer Copyright Part */}
-        <div className=" text-white flex items-center justify-center">
-          <span className="  text-gray-200 text-xs">
+          <div className=" text-white flex items-center justify-center">
+            <span className="  text-gray-200 text-xs">
               &copy; 2025 Manmed Health Private Limited. | All rights reserved
             </span>
-        </div>
+          </div>
         </div>
       </div>
     </>

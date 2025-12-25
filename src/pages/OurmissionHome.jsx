@@ -39,46 +39,46 @@ export default function OurMissionPage() {
         </div>
       </motion.section>
 
-{/* Our Reach & Impact */}
-<section className="bg-white py-20 px-4 sm:px-6 lg:px-8">
-  <div className="max-w-6xl mx-auto">
-    <div className="text-center mb-12">
-      <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-800">
-        Our Reach & Impact
-      </h2>
-      <p className="mt-3 text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
-        We are transforming access to healthcare — one village, one person, one innovation at a time.
-      </p>
-    </div>
+      {/* Our Reach & Impact */}
+      <section className="bg-white py-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-800">
+              Our Reach & Impact
+            </h2>
+            <p className="mt-3 text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
+              We are transforming access to healthcare — one village, one person, one innovation at a time.
+            </p>
+          </div>
 
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-      <div className="bg-gray-50 p-6 rounded-lg shadow-sm text-center hover:shadow-md transition">
-        <div className="text-blue-600 text-4xl font-bold">150+</div>
-        <div className="mt-1 text-sm text-gray-500 uppercase tracking-wide">Villages Covered</div>
-      </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div className="bg-gray-50 p-6 rounded-lg shadow-sm text-center hover:shadow-md transition">
+              <div className="text-blue-600 text-4xl font-bold">100+</div>
+              <div className="mt-1 text-sm text-gray-500 uppercase tracking-wide">Villages Covered</div>
+            </div>
 
-      <div className="bg-gray-50 p-6 rounded-lg shadow-sm text-center hover:shadow-md transition">
-        <div className="text-blue-600 text-4xl font-bold">20K+</div>
-        <div className="mt-1 text-sm text-gray-500 uppercase tracking-wide">Patients Served</div>
-      </div>
+            <div className="bg-gray-50 p-6 rounded-lg shadow-sm text-center hover:shadow-md transition">
+              <div className="text-blue-600 text-4xl font-bold">200+</div>
+              <div className="mt-1 text-sm text-gray-500 uppercase tracking-wide">Patients Served</div>
+            </div>
 
-      <div className="bg-gray-50 p-6 rounded-lg shadow-sm text-center hover:shadow-md transition">
-        <div className="text-blue-600 text-4xl font-bold">500+</div>
-        <div className="mt-1 text-sm text-gray-500 uppercase tracking-wide">Volunteer Doctors</div>
-      </div>
+            <div className="bg-gray-50 p-6 rounded-lg shadow-sm text-center hover:shadow-md transition">
+              <div className="text-blue-600 text-4xl font-bold">50+</div>
+              <div className="mt-1 text-sm text-gray-500 uppercase tracking-wide">Volunteer Doctors</div>
+            </div>
 
-      <div className="bg-gray-50 p-6 rounded-lg shadow-sm text-center hover:shadow-md transition">
-        <div className="text-blue-600 text-4xl font-bold">50+</div>
-        <div className="mt-1 text-sm text-gray-500 uppercase tracking-wide">Camps Conducted</div>
-      </div>
-    </div>
-  </div>
-</section>
+            <div className="bg-gray-50 p-6 rounded-lg shadow-sm text-center hover:shadow-md transition">
+              <div className="text-blue-600 text-4xl font-bold">5+</div>
+              <div className="mt-1 text-sm text-gray-500 uppercase tracking-wide">Camps Conducted</div>
+            </div>
+          </div>
+        </div>
+      </section>
 
 
 
       {/* Our Approach Timeline */}
-      <motion.section initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="py-24 px-6 bg-gray-50 text-center">
+      {/* <motion.section initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="py-24 px-6 bg-gray-50 text-center">
         <h2 className="text-3xl font-bold mb-12">Our Approach: A Journey of Innovation</h2>
         <div className="max-w-4xl mx-auto space-y-8 text-left">
           {[
@@ -93,7 +93,7 @@ export default function OurMissionPage() {
             </motion.div>
           ))}
         </div>
-      </motion.section>
+      </motion.section> */}
 
       {/* Core Beliefs */}
       <motion.section initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger} className="py-24 px-6 bg-white text-center">
@@ -129,7 +129,7 @@ export default function OurMissionPage() {
       </motion.section>
 
       {/* Metrics */}
-      <motion.section initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="py-24 px-6 bg-white text-center">
+      {/* <motion.section initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="py-24 px-6 bg-white text-center">
         <h2 className="text-3xl font-bold mb-12">By the Numbers</h2>
         <div className="max-w-5xl mx-auto grid sm:grid-cols-3 gap-8">
           {[
@@ -143,7 +143,7 @@ export default function OurMissionPage() {
             </motion.div>
           ))}
         </div>
-      </motion.section>
+      </motion.section> */}
 
       {/* Testimonials */}
       <motion.section initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger} className="py-24 px-6 bg-gray-50 text-center">
@@ -166,7 +166,16 @@ export default function OurMissionPage() {
         <div className="max-w-3xl mx-auto relative z-10">
           <h2 className="text-4xl font-bold mb-4">Be Part of the Change</h2>
           <p className="text-lg mb-6">Join our movement to revolutionize healthcare and reach 50 million lives by 2030.</p>
-          <button className="bg-white text-green-700 font-semibold px-8 py-3 rounded-full hover:bg-gray-200 transition">Join Us</button>
+          <motion.a
+            href="mailto:info@manmedhealth.com?subject=Join%20the%20Manmed%20Movement&body=Hello%20Manmed%20Team,%0A%0AI%20would%20like%20to%20know%20more%20about%20joining%20the%20Manmed%20movement."
+            whileHover={{ scale: 1.05 }}
+            className="inline-block"
+          >
+            <motion.button className="bg-white text-green-700 font-semibold px-10 py-4 rounded-full hover:bg-gray-200 transition">
+              Join Us
+            </motion.button>
+          </motion.a>
+
         </div>
         <div className="absolute inset-0 opacity-20 bg-cover bg-center" style={{ backgroundImage: `url(${ctaImage})` }} />
       </motion.section>

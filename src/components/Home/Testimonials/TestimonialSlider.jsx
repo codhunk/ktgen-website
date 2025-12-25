@@ -30,7 +30,7 @@ const TestimonialSlider = ({ videos, onVideoClick }) => {
       >
         {videos.map((video, index) => (
           <SwiperSlide key={video.id}>
-            <div className="rounded-xl overflow-hidden transition-transform duration-500 ease-in-out hover:scale-105 origin-center">
+            <div className="rounded-xl overflow-hidden transition-transform duration-500 ease-in-out hover:scale-105 origin-center  ">
               <video
                 src={video.src}
                 muted

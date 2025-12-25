@@ -34,12 +34,12 @@ const MenHealthSection = () => {
     },
   ];
 
-  const metrics = [
-    { number: "15+", label: "metrics_year" },
-    { number: "50k+", label: "metrics_man" },
-    { number: "99%", label: "metrics_succ" },
-    { number: "24/7", label: "metrics_succ" },
-  ];
+  // const metrics = [
+  //   { number: "15+", label: "metrics_year" },
+  //   { number: "50k+", label: "metrics_man" },
+  //   { number: "99%", label: "metrics_succ" },
+  //   { number: "24/7", label: "metrics_succ" },
+  // ];
 
   const cardVariants = {
     hidden: { opacity: 0, y: 40 },
@@ -134,7 +134,7 @@ const MenHealthSection = () => {
       </div>
 
       {/* Metrics Section */}
-      <motion.div
+      {/* <motion.div
         className="grid grid-cols-2 gap-4 md:grid-cols-4 mt-12"
         initial="hidden"
         whileInView="visible"
@@ -168,7 +168,7 @@ const MenHealthSection = () => {
             </div>
           </motion.div>
         ))}
-      </motion.div>
+      </motion.div> */}
     </div>
   );
 };

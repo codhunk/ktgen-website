@@ -152,7 +152,7 @@ export default function OurStoryPage() {
               className="bg-white rounded-xl shadow-md p-6 cursor-pointer"
             >
               <img src={step.image} alt={step.title} className="w-full h-44 object-cover rounded-md mb-4" />
-              <h4 className="text-xl font-bold text-blue-700">{step.year}</h4>
+              {/* <h4 className="text-xl font-bold text-blue-700">{step.year}</h4> */}
               <h5 className="text-lg font-semibold mb-2">{step.title}</h5>
               <p className="text-gray-600 text-sm">{step.description}</p>
             </motion.div>
@@ -172,11 +172,11 @@ export default function OurStoryPage() {
         <div className="max-w-5xl mx-auto grid sm:grid-cols-2 gap-8">
           <motion.div whileHover={{ scale: 1.03 }} className="rounded-md shadow-lg overflow-hidden">
             <img src={award1} alt="Award 1" className="w-full object-cover" />
-            <p className="mt-4 text-gray-600">Healthcare Excellence Award – 2021</p>
+            <p className="mt-4 text-gray-600">Healthcare Excellence Award</p>
           </motion.div>
           <motion.div whileHover={{ scale: 1.03 }} className="rounded-md shadow-lg overflow-hidden">
             <img src={award2} alt="Award 2" className="w-full object-cover" />
-            <p className="mt-4 text-gray-600">Digital Health Innovator – 2022</p>
+            <p className="mt-4 text-gray-600">Digital Health Innovator</p>
           </motion.div>
         </div>
       </motion.section>
@@ -204,7 +204,7 @@ export default function OurStoryPage() {
       </motion.section>
 
       {/* Testimonials */}
-      <motion.section
+      {/* <motion.section
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
@@ -223,7 +223,7 @@ export default function OurStoryPage() {
             </motion.div>
           ))}
         </div>
-      </motion.section>
+      </motion.section> */}
 
       {/* Vision 2030 */}
       <motion.section
@@ -237,9 +237,17 @@ export default function OurStoryPage() {
         <p className="max-w-3xl mx-auto text-base sm:text-lg md:text-xl mb-6">
           By 2030, ManMed aims to provide quality healthcare access to 50 million people, integrate AI-powered medical solutions, and strengthen community-driven healthcare programs globally.
         </p>
-        <motion.button whileHover={{ scale: 1.05 }} className="bg-white text-green-700 font-semibold px-10 py-4 rounded-full hover:bg-gray-200 transition">
-          Join the Movement
-        </motion.button>
+        <motion.a
+          href="mailto:info@manmedhealth.com"
+          whileHover={{ scale: 1.05 }}
+          className="inline-block"
+        >
+          <motion.button
+            className="bg-white text-green-700 font-semibold px-10 py-4 rounded-full hover:bg-gray-200 transition"
+          >
+            Join the Movement
+          </motion.button>
+        </motion.a>
       </motion.section>
     </div>
   );
