@@ -41,8 +41,7 @@ export default function CookieConsent() {
           px-6 py-5
           flex flex-col md:flex-row
           items-start md:items-center
-          gap-6
-        "
+          gap-6"
       >
         {/* Close Icon (Top Right) */}
         <button
