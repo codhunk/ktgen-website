@@ -33,7 +33,7 @@ export default function CookieConsent() {
         className="
           relative
           mx-auto max-w-6xl
-          bg-[#5b931b]
+          bg-[#977931]
           backdrop-blur-xl
           border border-white/20
           shadow-[0_-10px_30px_rgba(0,0,0,0.18)]
@@ -105,7 +105,7 @@ export default function CookieConsent() {
               text-sm font-semibold
               rounded-lg
               bg-white
-              text-[#75c120]
+              text-[#000000]
               hover:bg-white/90
               transition
               shadow-sm
