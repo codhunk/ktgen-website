@@ -16,28 +16,28 @@ const therapyAreas = [
   {
     title: "ANTIBIOTIC",
     description:
-      "At ManMed, our Cardiology department offers the most advanced care for heart-related diseases and conditions. From diagnostic testing to minimally invasive procedures, we ensure every heartbeat is in expert hands.",
+      "At KT Gen, our Cardiology department offers the most advanced care for heart-related diseases and conditions. From diagnostic testing to minimally invasive procedures, we ensure every heartbeat is in expert hands.",
     image: cardiology,
     icon: cardio_icon,
   },
   {
     title: "PAIN ANALGESICS",
     description:
-      "ManMed's Neurology unit provides comprehensive treatment for brain, spine, and nervous system disorders. Our neurologists use cutting-edge technology to diagnose and manage even the most complex neurological challenges.",
+      "KT Gen's Neurology unit provides comprehensive treatment for brain, spine, and nervous system disorders. Our neurologists use cutting-edge technology to diagnose and manage even the most complex neurological challenges.",
     image: neurology,
     icon: neuro_icon,
   },
   {
     title: "GASTRO INTESTINAL",
     description:
-      "Restore your mobility with ManMed's Orthopedics department. Whether it's joint replacement, sports injuries, or bone deformities, our orthopedic specialists tailor treatment plans for lasting relief and functionality.",
+      "Restore your mobility with KT Gen's Orthopedics department. Whether it's joint replacement, sports injuries, or bone deformities, our orthopedic specialists tailor treatment plans for lasting relief and functionality.",
     image: ortho,
     icon: ortho_icon,
   },
   {
     title: "RESPIRATORY",
     description:
-      "From newborns to adolescents, ManMed Pediatrics delivers personalized and nurturing care that supports every child's healthy growth. Our pediatricians prioritize prevention, development, and compassionate healing.",
+      "From newborns to adolescents, KT Gen Pediatrics delivers personalized and nurturing care that supports every child's healthy growth. Our pediatricians prioritize prevention, development, and compassionate healing.",
     image: Pediatrics,
     icon: pedi_icon,
   },
@@ -47,30 +47,30 @@ const testimonials = [
   {
     name: "Kanishk Gupta",
     feedback:
-      "ManMed provided exceptional care and truly listened to my concerns. Highly professional staff!",
+      "KT Gen provided exceptional care and truly listened to my concerns. Highly professional staff!",
   },
   {
     name: "Ravindra Singh",
     feedback:
-      "Their therapy programs helped my child recover smoothly. I’m grateful for ManMed’s pediatric team.",
+      "Their therapy programs helped my child recover smoothly. I’m grateful for KT Gen’s pediatric team.",
   },
 ];
 
 const faqs = [
   {
-    q: "What therapies does ManMed offer?",
+    q: "What therapies does KT Gen offer?",
     a: "We offer Cardiology, Neurology, Orthopedics, Pediatrics, and several other specialty therapies tailored to patient needs.",
   },
   {
-    q: "Does ManMed provide online consultations?",
+    q: "Does KT Gen provide online consultations?",
     a: "Yes, we provide secure virtual consultations for many of our therapies, ensuring expert care from the comfort of your home.",
   },
   {
-    q: "What insurance plans are accepted by ManMed?",
+    q: "What insurance plans are accepted by KT Gen?",
     a: "We accept most major insurance providers. Please contact our front desk for a complete list of accepted plans.",
   },
   {
-    q: "How can I schedule an appointment with ManMed?",
+    q: "How can I schedule an appointment with KT Gen?",
     a: "You can easily book an appointment online through our website or call our helpline to speak with a care coordinator.",
   },
 ];
@@ -101,7 +101,7 @@ export default function TherapyArea() {
         <div className="absolute inset-0 bg-gradient-to-r from-blue-800/70 to-indigo-800/70 z-10" />
         <div className="relative z-20 px-4 sm:px-6 md:px-10">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 drop-shadow-lg leading-tight">
-            Explore ManMed's Therapy Areas
+            Explore KT Gen's Therapy Areas
           </h1>
           <p className="max-w-2xl md:max-w-3xl mx-auto text-lg sm:text-xl md:text-2xl text-white">
             Specialized healthcare solutions designed to heal, restore, and transform lives.
@@ -120,9 +120,9 @@ export default function TherapyArea() {
         variants={fadeUp}
         className="py-16 px-4 sm:px-6 md:px-10 text-center"
       >
-        <h2 className="text-3xl sm:text-4xl font-semibold mb-6">Why Choose ManMed?</h2>
+        <h2 className="text-3xl sm:text-4xl font-semibold mb-6">Why Choose KT Gen?</h2>
         <p className="max-w-4xl mx-auto text-gray-700 text-base sm:text-lg">
-          At <strong>ManMed</strong>, we don’t just treat conditions — we care for people.
+          At <strong>KT Gen</strong>, we don’t just treat conditions — we care for people.
           Our interdisciplinary team of experts works collaboratively to design therapy plans
           that meet your unique needs. Through innovation, compassion, and a commitment to excellence,
           we ensure that your healing journey is backed by science and led by heart.
@@ -264,10 +264,10 @@ export default function TherapyArea() {
         className="py-20 px-4 sm:px-6 lg:px-10 bg-gradient-to-r from-blue-400 via-pink-300 to-green-400 text-white text-center"
       >
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
-          Schedule Your Consultation with ManMed
+          Schedule Your Consultation with KT Gen
         </h2>
         <p className="mb-6 max-w-3xl mx-auto text-base sm:text-lg md:text-xl">
-          Ready to take control of your health? Connect with ManMed’s expert team today and receive a personalized therapy roadmap tailored to your wellness goals.
+          Ready to take control of your health? Connect with KT Gen’s expert team today and receive a personalized therapy roadmap tailored to your wellness goals.
         </p>
         <button className="bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 font-semibold px-8 py-3 rounded-full hover:bg-gray-100 transition">
           Book Now

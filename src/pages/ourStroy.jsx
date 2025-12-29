@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import heroVideo from "./assets/leaders/hero-story.mp4";
-import founderImage from "./assets/leaders/anuj.png";
+import founderImage from "./assets/leaders/campaign1.jpg";
 import journey1 from "./assets/leaders/journey.jpg";
 import journey2 from "./assets/leaders/journey1.jpg";
 import journey3 from "./assets/leaders/journey2.jpg";
@@ -11,14 +11,14 @@ import patient1 from "./assets/leaders/campaign2.jpg";
 import patient2 from "./assets/leaders/campaign3.jpg";
 
 const milestones = [
-  { year: "2018", title: "Founded with Vision", description: "ManMed was born with a mission to bridge the gap between medical innovation and community care.", image: journey1 },
+  { year: "2018", title: "Founded with Vision", description: "KT Gen was born with a mission to bridge the gap between medical innovation and community care.", image: journey1 },
   { year: "2020", title: "Scaling Impact", description: "Expanded across multiple states, launching digital platforms and mobile medical units.", image: journey2 },
   { year: "2023", title: "Global Collaborations", description: "Partnered with global health organizations to further scale our reach and deepen our impact.", image: journey3 },
 ];
 
 const testimonials = [
-  { name: "Ramesh Kumar", text: "Thanks to ManMed, my village now has access to free health checkups and digital literacy programs.", image: patient1 },
-  { name: "Anita Sharma", text: "The mobile clinic initiative has truly changed our lives. The ManMed team is exceptional!", image: patient2 },
+  { name: "Ramesh Kumar", text: "Thanks to KT Gen, my village now has access to free health checkups and digital literacy programs.", image: patient1 },
+  { name: "Anita Sharma", text: "The mobile clinic initiative has truly changed our lives. The KT Gen team is exceptional!", image: patient2 },
 ];
 
 const fadeUp = { hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } };
@@ -76,7 +76,7 @@ export default function OurStoryPage() {
         <motion.div className="max-w-4xl mx-auto">
           <h2 className="text-4xl sm:text-5xl font-bold mb-4">Our Story</h2>
           <p className="text-lg sm:text-xl text-white/90 mb-6">
-            From humble beginnings to a healthcare revolution — discover ManMed’s journey, values, and vision.
+            From humble beginnings to a healthcare revolution — discover KT Gen’s journey, values, and vision.
           </p>
           <p className="text-md sm:text-lg text-white/70">
             Empowering communities, transforming lives, and creating access to quality healthcare for all.
@@ -95,7 +95,7 @@ export default function OurStoryPage() {
         <h2 className="text-3xl sm:text-4xl font-semibold mb-8">Who We Are</h2>
         <motion.div className="max-w-6xl mx-auto text-gray-700 text-lg space-y-6">
           <motion.p variants={fadeUp}>
-            ManMed was founded to create accessible, affordable, and sustainable healthcare solutions, reaching thousands of underserved communities through digital health and mobile clinics.
+            KT Gen was founded to create accessible, affordable, and sustainable healthcare solutions, reaching thousands of underserved communities through digital health and mobile clinics.
           </motion.p>
           <motion.p variants={fadeUp}>
             Guided by empathy, innovation, and integrity, our initiatives span health education, early diagnosis, and preventive care.
@@ -194,7 +194,7 @@ export default function OurStoryPage() {
           <motion.img src={globe} alt="Global Outreach" className="w-full h-full object-cover rounded-lg shadow-lg" initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0, transition: { duration: 0.8 } }} />
           <motion.div initial={{ opacity: 0, x: 50 }} whileInView={{ opacity: 1, x: 0, transition: { duration: 0.8 } }}>
             <p className="text-lg mb-4">
-              ManMed’s initiatives now extend beyond national borders, delivering healthcare access through remote consultations, digital health platforms, and global research collaborations.
+              KT Gen’s initiatives now extend beyond national borders, delivering healthcare access through remote consultations, digital health platforms, and global research collaborations.
             </p>
             <p className="text-lg">
               Mobile programs provide preventive care and education in underserved regions worldwide, building a connected, healthier global community.
@@ -235,10 +235,10 @@ export default function OurStoryPage() {
       >
         <h2 className="text-3xl sm:text-4xl font-bold mb-4">Vision 2030</h2>
         <p className="max-w-3xl mx-auto text-base sm:text-lg md:text-xl mb-6">
-          By 2030, ManMed aims to provide quality healthcare access to 50 million people, integrate AI-powered medical solutions, and strengthen community-driven healthcare programs globally.
+          By 2030, KT Gen aims to provide quality healthcare access to 50 million people, integrate AI-powered medical solutions, and strengthen community-driven healthcare programs globally.
         </p>
         <motion.a
-          href="mailto:info@manmedhealth.com"
+          href="mailto:info@ktgenpharmaceuticals.com"
           whileHover={{ scale: 1.05 }}
           className="inline-block"
         >

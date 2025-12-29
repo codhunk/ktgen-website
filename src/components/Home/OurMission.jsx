@@ -72,7 +72,7 @@ const OurMission = () => {
               className="text-3xl lg:text-5xl font-bold text-gray-900 dark:text-white leading-tight"
             >
               {t("misshead1")}{" "}
-              <span className="bg-gradient-to-r from-green-600 to-teal-600 dark:from-green-400 dark:to-teal-400 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-[#f9e6b8] to-[#715923] dark:from-[#f9e6b8] dark:to-[#715923] bg-clip-text text-transparent">
                 {t("misshead2")}
               </span>
             </motion.h2>
@@ -128,7 +128,8 @@ const OurMission = () => {
               transition={{ duration: 0.8, delay: 1.2 }}
               className="pt-4"
             >
-              <button className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-green-600 to-teal-600 hover:from-green-700 hover:to-teal-700 text-white font-semibold rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
+              <button className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-[#f9e6b8] to-[#715923] hover:from-[#e8d39a] hover:to-[#5f4a1f]
+ text-white font-semibold rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
                 <Users size={20} />
                 {t("missbtn")}
               </button>

@@ -98,7 +98,7 @@ const ProductsPage = () => {
       >
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
         <div className="relative z-10">
-          <h1 className="text-5xl font-bold mb-4">Manmed Health</h1>
+          <h1 className="text-5xl font-bold mb-4">KT Gen Pharmaceuticals</h1>
           <p className="text-2xl mb-6">Always By Your Side</p>
           <button onClick={() => {
             const el = document.getElementById("our-products");

@@ -3,7 +3,7 @@ import { motion, useInView } from "framer-motion";
 import { Shield, MapPin, Building2, Clock } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
-import countingVideo from "./assets/countingvideo.mp4";
+import countingVideo from "./assets/counting.mp4";
 
 // Stat Card for Counting Cards
 const StatCard = ({
@@ -30,7 +30,7 @@ const StatCard = ({
         initial={{ opacity: 0, scale: 0.8 }}
         animate={inView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
         transition={{ duration: 0.6, delay: delay + 0.3 }}
-        className="bg-slate-800 text-pink-400 p-2 md:p-3 rounded-full shadow-md"
+        className="bg-slate-800 text-[#715923] p-2 md:p-3 rounded-full shadow-md"
       >
         <Icon className="w-5 md:w-8 h-5 md:h-8" />
       </motion.div>
@@ -103,7 +103,7 @@ const CountingNumber = ({ target, duration = 2, suffix = "" }) => {
       initial={{ opacity: 0, scale: 0.5 }}
       animate={inView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.5 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
-      className="text-[3rem] md:text-[5rem] font-bold bg-gradient-to-r from-[#ff7fba] to-[#fad6b4] bg-clip-text text-transparent"
+      className="text-[3rem] md:text-[5rem] font-bold bg-gradient-to-r from-[#715923] to-[#dab28d] bg-clip-text text-transparent"
     >
       {count}
       {suffix}
@@ -149,7 +149,7 @@ export default function VideoCounting() {
             loop
             muted
             playsInline
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover rounded-lg shadow-lg"
             src={countingVideo}
           />
         </motion.div>

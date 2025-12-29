@@ -122,9 +122,9 @@ const Home = () => {
             {t("testimo")}
           </h1> */}
           {/* why us component */}
-          <div className="">
+          {/* <div className="">
             <Whyuscom />
-          </div>
+          </div> */}
 
           <TestimonialSlider
             videos={videos}

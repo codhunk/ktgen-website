@@ -89,9 +89,9 @@
 //               {[
 //                 {
 //                   name: "Dr. Aarti Mehra",
-//                   position: "CEO, Manmed Health",
+//                   position: "CEO, KT Gen Pharmaceuticals",
 //                   message:
-//                     "At Manmed, we don’t just deliver healthcare—we deliver hope and healing.",
+//                     "At KT Gen, we don’t just deliver healthcare—we deliver hope and healing.",
 //                   image: "https://randomuser.me/api/portraits/women/44.jpg",
 //                 },
 //                 {
@@ -156,7 +156,7 @@
 //                 {
 //                   title: "Employee Wellness Program",
 //                   summary:
-//                     "Manmed launched an in-house wellness initiative promoting work-life balance.",
+//                     "KT Gen launched an in-house wellness initiative promoting work-life balance.",
 //                   date: "April 10, 2025",
 //                   image:
 //                     "https://images.pexels.com/photos/5452201/pexels-photo-5452201.jpeg",
@@ -253,7 +253,7 @@
 //           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
 //             <div>
 //               <h2 className="text-2xl font-bold text-white mb-4">
-//                 Manmed Health Pvt LTD
+//                 KT Gen Pharmaceuticals Pvt LTD
 //               </h2>
 //               <p className="text-sm leading-relaxed text-gray-400">
 //                 Revolutionizing healthcare with innovation, compassion, and
@@ -307,7 +307,7 @@
 //                 </li>
 //                 <li className="flex items-start gap-2">
 //                   <span className="mt-0.5 text-white">✉️</span>
-//                   <span>support@manmedhealth.com</span>
+//                   <span>support@ktgenpharmaceuticals.com</span>
 //                 </li>
 //               </ul>
 //             </div>
@@ -333,7 +333,7 @@
 //           </div>
 //           <div className="border-t border-gray-700 mt-10 pt-6 text-center">
 //             <p className="text-sm text-gray-500">
-//               © {new Date().getFullYear()} Manmed Health Pvt LTD. All rights
+//               © {new Date().getFullYear()} KT Gen Pharmaceuticals Pvt LTD. All rights
 //               reserved.
 //             </p>
 //           </div>
@@ -404,7 +404,7 @@ const newsUpdates = [
 
   },
   {
-    title: "Manmed Tech Summit 2025",
+    title: "KT Gen Tech Summit 2025",
     date: "June 2025",
     summary: "Our annual summit showcased AI innovations in healthtech.",
     image:

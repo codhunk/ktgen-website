@@ -1,10 +1,10 @@
 
 import { motion } from "framer-motion";
 import heroImage from "./assets/leaders/healthcare.jpg";
-import founderImage from "./assets/leaders/anuj.png";
+import founderImage from "./assets/leaders/apollo.jpg";
 import storyImage from "./assets/leaders/story-main.jpg";
-import testimonial1 from "./assets/leaders/anuj.png";
-import testimonial2 from "./assets/leaders/rahul.jpg";
+import testimonial1 from "./assets/leaders/campaign1.jpg";
+import testimonial2 from "./assets/leaders/campaign3.jpg";
 import ctaImage from "./assets/leaders/neurology.jpg";
 
 const fadeUp = {
@@ -153,7 +153,7 @@ export default function OurMissionPage() {
             <motion.div key={idx} variants={fadeUp} whileHover={{ scale: 1.02 }} className="bg-white p-6 rounded-lg shadow flex items-center gap-6 text-left">
               <img src={img} alt="Testimonial" className="w-20 h-20 rounded-full object-cover" />
               <div>
-                <p className="italic text-gray-600">“We never had access to a doctor before. ManMed changed that for our village.”</p>
+                <p className="italic text-gray-600">“We never had access to a doctor before. KT Gen changed that for our village.”</p>
                 <p className="font-semibold text-gray-800 mt-2">Our Founder</p>
               </div>
             </motion.div>

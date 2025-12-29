@@ -20,7 +20,7 @@ const Counting = () => {
           {t("count_head")}
         </h2>
         {/* Description Part */}
-        <p className="text-md lg:text-xl font-semibold bg-gradient-to-r from-green-700 to-teal-600 bg-clip-text text-transparent">
+        <p className="text-md lg:text-xl font-semibold bg-gradient-to-r from-[#715923] to-[#e2c88d] bg-clip-text text-transparent">
           {t("count_para")}
         </p>
       </motion.div>
@@ -38,7 +38,7 @@ const Counting = () => {
         transition={{ duration: 1.2, delay: 0.8 }}
         className="mt-12 flex justify-center"
       >
-        <div className="h-1 w-32 bg-gradient-to-r from-green-500 to-teal-600 dark:from-emerald-400 dark:to-green-400 rounded-full"></div>
+        <div className="h-1 w-32 bg-gradient-to-r from-[#715923] to-[#e2c88d] dark:from-[#715923] dark:to-[#e2c88d] rounded-full"></div>
       </motion.div>
     </section>
   );

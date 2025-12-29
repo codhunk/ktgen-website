@@ -70,7 +70,7 @@ const ContactUs = () => {
           <p className="text-gray-700">
             We’re always looking for passionate people to join us. Whether
             you're into development, design, or marketing — we want to hear from
-            you! At Manmed Vitality Core, we’re a community of passionate
+            you! At KT Gen Vitality Core, we’re a community of passionate
             individuals united by a shared mission: to innovate, empower, and
             transform lives through holistic wellness solutions. Whether you're
             a seasoned professional or a driven newcomer.
@@ -102,9 +102,8 @@ const ContactUs = () => {
                 <p className="text-sm">
                   {/* A-29 Block B, Sector Pi 1 & 2, Birondi Chakrasenpur, Greater
                   Noida, Uttar Pradesh 201310 */}
-                  H. No. A-29, Ground Floor, H-1 Block B,
-                  Sector-Pi/2, Alpha,<br/> Greater Noida, Noida, 
-                  Gautam Buddha Nagar - 201310, Uttar Pradesh
+                  3009/1-4,2nd Main, 17th Cross,<br/> Banashankari 2nd Stage, Bangalore 560070 
+                  
                 </p>
               </div>
             </div>
@@ -112,14 +111,14 @@ const ContactUs = () => {
               <Phone className="text-cyan-500" />
               <div>
                 <p className="font-semibold">Phone</p>
-                <p className="text-sm">+91 9310337574</p>
+                <p className="text-sm">+91 7899312233</p>
               </div>
             </div>
             <div className="flex gap-4 items-start">
               <Mail className="text-cyan-500" />
               <div>
                 <p className="font-semibold">Email</p>
-                <p className="text-sm">contact@manmedhealth.com</p>
+                <p className="text-sm">contact@ktgenpharmaceuticals.com</p>
               </div>
             </div>
           </div>
@@ -208,7 +207,7 @@ const ContactUs = () => {
       </div>
 
       {/* Google Map */}
-      <div className="w-full py-20 px-6 bg-[#111827]">
+      {/* <div className="w-full py-20 px-6 bg-[#111827]">
         <div className="w-full rounded-xl overflow-hidden border border-white/10 shadow-2xl">
           <iframe
             // src="https://earth.google.com/web/embed?authuser=0&hl=en&v=2&mid=1Sx123ABCXYZ#lat=28.4744&lng=77.5030&alt=500&tilt=45&heading=60"
@@ -218,7 +217,7 @@ const ContactUs = () => {
             loading="lazy"
           ></iframe>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };

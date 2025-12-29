@@ -19,7 +19,7 @@ function Whyuscom() {
                     <div className=' flex absolute -left-[50px] -top-[60px]'>
                         <div className=' w-[135px] h-[135px] rounded-full bg-white '>
                             <div className='relative -left-[160px] top-3 w-[290px] flex flex-col items-center'>
-                                <h1 className='font-semibold text-black'>Why Manmed?</h1>
+                                <h1 className='font-semibold text-black'>Why KT Gen Pharmaceuticals?</h1>
                                 <p className='text-sm text-gray-600 text-center leading-5'>
                                     We’re here to simplify men’s health with real solutions, trusted ingredients, and zero false promises.
                                 </p>
@@ -34,7 +34,7 @@ function Whyuscom() {
                             <div className='relative left-4 top-3 w-[290px] flex flex-col items-center'>
                                 <h1 className='font-semibold text-black'>Real Ingredients, Real Impact</h1>
                                 <p className='text-sm text-gray-600 text-center leading-5'>
-                                    No gimmicks. Just science-backed solutions that work — built by Manmed.
+                                    No gimmicks. Just science-backed solutions that work — built by KT Gen Pharmaceuticals.
                                 </p>
                             </div>
                         </div>
@@ -58,7 +58,7 @@ function Whyuscom() {
                             <div className='relative left-4 top-3 w-[290px] flex flex-col items-center'>
                                 <h1 className='font-semibold text-black'>Better Sexual Wellness</h1>
                                 <p className='text-sm text-gray-600 text-center leading-5'>
-                                    Support for performance, confidence, and intimacy — with trusted formulations by Manmed.
+                                    Support for performance, confidence, and intimacy — with trusted formulations by KT Gen Pharmaceuticals.
                                 </p>
                             </div>
                         </div>
@@ -117,7 +117,7 @@ function Whyuscom() {
                             <div className='relative -left-[160px] top-3 w-[290px] flex flex-col items-center'>
                                 <h1 className='font-semibold text-black'>More Than a Brand</h1>
                                 <p className='text-sm text-gray-600 text-center leading-5'>
-                                    Manmed is your trusted partner in personal wellness — here to support you at every step.
+                                    KT Gen Pharmaceuticals is your trusted partner in personal wellness — here to support you at every step.
                                 </p>
                             </div>
                         </div>

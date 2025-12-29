@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import videoHero from "./videos/video2.mp4";
+import videoHero from "./videos/video4.mp4";
 import { useTranslation } from "react-i18next";
 
 const Hero = () => {
@@ -54,7 +54,7 @@ const Hero = () => {
               className="block text-sm md:text-base font-medium tracking-widest text-blue-200 uppercase mb-2"
               variants={fadeUp}
             >
-              Welcome to Manmed Health
+              Welcome to KT Gen Pharmaceuticals
             </motion.span> */}
 
             {/* Headline */}

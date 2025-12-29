@@ -103,7 +103,7 @@ const SegmentSlider = () => {
               }`}
             />
             <h1
-              className={`!text-green-800 text-center  md:mt-2 ${
+              className={`!text-[#715923] text-center  md:mt-2 ${
                 isMobile ? "!absolute !-bottom-5" : ""
               }`}
             >

@@ -58,25 +58,25 @@ const PartnerProgram = () => {
       icon: <Scan className="w-8 h-8" />,
       title: "partner_titl1",
       description: "partner_des1",
-      color: "from-green-500 to-teal-500",
+      color: "from-[#715923] to-[#5f4a1f]",
     },
     {
       icon: <Trophy className="w-8 h-8" />,
       title: "partner_titl2",
       description: "partner_des2",
-      color: "from-emerald-500 to-lime-500",
+      color: "from-[#715923] to-[#5f4a1f]",
     },
     {
       icon: <Gift className="w-8 h-8" />,
       title: "partner_titl3",
       description: "partner_des3",
-      color: "from-green-400 to-[#95DE4B]",
+      color: "from-[#715923] to-[#5f4a1f]",
     },
     {
       icon: <Package className="w-8 h-8" />,
       title: "partner_titl4",
       description: "partner_des4",
-      color: "from-green-500 to-teal-500",
+      color: "from-[#715923] to-[#5f4a1f]",
     },
   ];
 
@@ -107,18 +107,18 @@ const PartnerProgram = () => {
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 overflow-hidden">
           <motion.div
-            className="absolute top-20 left-10 w-32 h-32 bg-gradient-to-r from-green-400/20 to-teal-400/20 rounded-full blur-xl"
+            className="absolute top-20 left-10 w-32 h-32 bg-gradient-to-r from-[#715923] to-teal-400/20 rounded-full blur-xl"
             variants={floatingVariants}
             animate="animate"
           />
           <motion.div
-            className="absolute top-40 right-20 w-40 h-40 bg-gradient-to-r from-lime-400/20 to-green-400/20 rounded-full blur-xl"
+            className="absolute top-40 right-20 w-40 h-40 bg-gradient-to-r from-lime-400/20 to-[#715923] rounded-full blur-xl"
             variants={floatingVariants}
             animate="animate"
             transition={{ delay: 1 }}
           />
           <motion.div
-            className="absolute bottom-20 left-1/4 w-28 h-28 bg-gradient-to-r from-emerald-400/20 to-green-400/20 rounded-full blur-xl"
+            className="absolute bottom-20 left-1/4 w-28 h-28 bg-gradient-to-r from-emerald-400/20 to-[#715923] rounded-full blur-xl"
             variants={floatingVariants}
             animate="animate"
             transition={{ delay: 2 }}
@@ -134,9 +134,9 @@ const PartnerProgram = () => {
           >
             <motion.div
               variants={itemVariants}
-              className="inline-flex items-center gap-2 bg-gradient-to-r from-[#7eb449]/10 to-[#059BE3]/10 backdrop-blur-sm rounded-full px-6 py-2 mb-8 border border-[#7eb449]/20 dark:border-[#059BE3]/20"
+              className="inline-flex items-center gap-2 bg-gradient-to-r from-[#e8d39a]/10 to-[#715923]/10 backdrop-blur-sm rounded-full px-6 py-2 mb-8 border border-[#7eb449]/20 dark:border-[#059BE3]/20"
             >
-              <Zap className="w-4 h-4 text-[#7eb449]" />
+              <Zap className="w-4 h-4 text-[#715923]" />
               <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
                 {t("partnertop_head")}
               </span>
@@ -144,11 +144,11 @@ const PartnerProgram = () => {
 
             <motion.h1
               variants={itemVariants}
-              className="pt-5  text-5xl lg:text-7xl font-bold bg-gradient-to-r from-gray-900 via-[#7eb449] to-[#059BE3] dark:from-white dark:via-green-100 dark:to-teal-100 bg-clip-text text-transparent mb-6 leading-tight"
+              className="pt-5  text-5xl lg:text-7xl font-bold bg-gradient-to-r from-gray-900 via-[#715923] to-[#e8d39a] dark:from-white dark:via-green-100 dark:to-teal-100 bg-clip-text text-transparent mb-6 leading-tight"
             >
               {t("partner_head1")}
               <br />
-              <span className="bg-gradient-to-r from-[#7eb449] to-[#059BE3] bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-[#715923] to-[#e8d39a] bg-clip-text text-transparent">
                 {t("partner_head2")}
               </span>
             </motion.h1>
@@ -164,7 +164,7 @@ const PartnerProgram = () => {
               variants={itemVariants}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="group inline-flex items-center gap-3 bg-gradient-to-r from-[#7eb449] to-[#059BE3] hover:from-green-700 hover:to-teal-700 text-white px-8 py-4 rounded-2xl font-semibold text-lg shadow-2xl hover:shadow-green-500/25 transition-all duration-300"
+              className="group inline-flex items-center gap-3 bg-gradient-to-r from-[#f9e6b8] to-[#715923] hover:from-[#e8d39a] hover:to-[#5f4a1f] text-white px-8 py-4 rounded-2xl font-semibold text-lg shadow-2xl hover:shadow-green-500/25 transition-all duration-300"
             >
               {t("partner_btn")}
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -195,7 +195,7 @@ const PartnerProgram = () => {
                 whileHover={{ y: -5 }}
                 className="text-center group border border-red-600"
               >
-                <div className="inline-flex border border-red-500 items-center justify-center w-16 h-16 bg-gradient-to-r from-[#7eb449] to-[#059BE3] rounded-2xl mb-4 group-hover:scale-110 transition-transform duration-300">
+                <div className="inline-flex border border-red-500 items-center justify-center w-16 h-16 bg-gradient-to-r from-[#f9e6b8] to-[#715923]  rounded-2xl mb-4 group-hover:scale-110 transition-transform duration-300">
                   <div className="text-white">{stat.icon}</div>
                 </div>
                 <div className="text-4xl font-bold text-gray-900 dark:text-white mb-2">
@@ -252,7 +252,7 @@ const PartnerProgram = () => {
             <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-6">
 
               {t("partnerf_head1")}{" "}
-              <span className="bg-gradient-to-r from-[#7eb449] to-[#059BE3] bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-[#f9e6b8] to-[#715923] bg-clip-text text-transparent">
                 {t("partnerf_head2")}
               </span>
             </h2>
@@ -278,7 +278,7 @@ const PartnerProgram = () => {
                   >
                     <div className="text-white">{feature.icon}</div>
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4 group-hover:text-[#95DE4B] dark:group-hover:text-teal-400 transition-colors">
+                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4 group-hover:text-[#000000] dark:group-hover:text-black/10 transition-colors">
                     {t(feature.title)}
                   </h3>
                   <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
@@ -293,7 +293,7 @@ const PartnerProgram = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-[#7eb449] to-[#059BE3] relative overflow-hidden">
+      <section className="py-20 bg-gradient-to-r from-[#f9e6b8] to-[#715923]  relative overflow-hidden">
         <div className="absolute inset-0">
           <motion.div
             className="absolute top-10 left-10 w-40 h-40 bg-white/10 rounded-full blur-xl"
@@ -325,7 +325,7 @@ const PartnerProgram = () => {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="group inline-flex items-center gap-3 bg-white text-[#64cb03] px-8 py-4 rounded-2xl font-semibold text-lg shadow-2xl hover:shadow-white/25 transition-all duration-300"
+                className="group inline-flex items-center gap-3 bg-white text-[#000000] px-8 py-4 rounded-2xl font-semibold text-lg shadow-2xl hover:shadow-white/25 transition-all duration-300"
               >
                 {t("partner_ctab1")}
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />

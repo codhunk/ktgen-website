@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../logo/logo_transparent_light.png";
+import logo from "../../logo/ktg.png";
 import { Link } from "react-router-dom";
 import { MdLocationPin } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
@@ -30,7 +30,7 @@ const Footer = () => {
       ],
     },
     {
-      name: "Life at ManMed",
+      name: "Life at KT Gen",
       subList: [
         {
           name: "Therapy Areas",
@@ -91,11 +91,11 @@ const Footer = () => {
                     draggable="false"
                   />
                   <h2 className="text-3xl font-bold text-white">
-                    Manmed Health
+                    KT Gen Pharmaceuticals
                   </h2>
                 </section>
                 <p className="text-md text-slate-200 md:ml-2 w-full md:w-[90%]">
-                  Smartest Choice-Investing in your health. Delivering trusted and affordable health solutions, always. ManMed Health-Always By your side.
+                  Smartest Choice-Investing in your health. Delivering trusted and affordable health solutions, always. KT Gen Pharmaceuticals-Always By your side.
                 </p>
               </div>
 
@@ -125,23 +125,23 @@ const Footer = () => {
                 <Link className="flex items-start gap-2 text-[1rem] text-slate-200 hover:text-indigo-400">
                   <MdLocationPin size={38} className="w-fit h-fit mt-1" />
                   <span>
-                    H. No. A-29, Ground Floor, H-1 Block B,
-                    Sector-Pi/2, Alpha, Greater Noida.
+                    3009/1-4,2nd Main, 17th Cross, 
+                    Banashankari 2nd Stage, Bangalore 560070
                   </span>
                 </Link>
                 <Link
-                  to="tel:+919310337574"
+                  to="tel:+917899312233"
                   className="flex items-center gap-2 text-[1rem] text-slate-200 hover:text-indigo-400"
                 >
                   <FaPhoneAlt size={16} className="h-fit" />
-                  <span>+91 9310337574</span>
+                  <span>+91 7899312233</span>
                 </Link>
                 <Link
-                  to="mailto:contact@manmedhealth.com"
+                  to="mailto:Ktgen.web@gmail.com"
                   className="flex items-center gap-2 text-[1rem] text-slate-200 hover:text-indigo-400"
                 >
                   <IoMdMail size={20} className="h-fit" />
-                  <span>contact@manmedhealth.com</span>
+                  <span>Ktgen.web@gmail.com</span>
                 </Link>
               </div>
             </div>
@@ -168,7 +168,7 @@ const Footer = () => {
           </div>
           {/* Footer Bottom Section */}
           <div
-            className="w-full  flex justify-center items-center gap-2 md:gap-5 text-[9.5vw] xl:text-[8rem]
+            className="w-full  flex justify-center items-center gap-2 md:gap-5 text-[5.5vw] xl:text-[5rem]
           font-bold text-center uppercase text-white mb-10">
             <img
               src={logo}
@@ -176,13 +176,13 @@ const Footer = () => {
               className="w-[10vw] xl:w-[10rem]"
               draggable="false"
             />
-            <span>Manmed</span>
-            <span>Health</span>
+            <span>KT Gen</span>
+            <span>Pharmaceutical</span>
           </div>
           {/* Footer Copyright Part */}
           <div className=" text-white flex items-center justify-center">
             <span className="  text-gray-200 text-xs">
-              &copy; 2025 Manmed Health Private Limited. | All rights reserved
+              &copy; 2025 KT Gen Pharmaceuticals Private Limited. | All rights reserved
             </span>
           </div>
         </div>

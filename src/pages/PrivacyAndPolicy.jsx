@@ -1,9 +1,9 @@
 import React from "react";
 
 export const metadata = {
-  title: "Privacy Policy | Manmed Health Pvt. Ltd.",
+  title: "Privacy Policy | KT Gen Pharmaceuticals Pvt. Ltd.",
   description:
-    "Privacy Policy describing how Manmed Health Pvt. Ltd. collects, uses, and protects personal information.",
+    "Privacy Policy describing how KT Gen Pharmaceuticals Pvt. Ltd. collects, uses, and protects personal information.",
 };
 
 const PrivacyPolicy = () => {
@@ -21,7 +21,7 @@ const PrivacyPolicy = () => {
         <div className="space-y-6 text-gray-700">
           {/* Introduction */}
           <p>
-            At <strong>Manmed Health Pvt. Ltd.</strong>, we are committed to
+            At <strong>KT Gen Pharmaceuticals Pvt. Ltd.</strong>, we are committed to
             protecting your privacy and ensuring the security of your personal
             information. This Privacy Policy explains how we collect, use,
             disclose, and safeguard your data when you visit our website or use
@@ -62,7 +62,7 @@ const PrivacyPolicy = () => {
               3. Sharing of Information
             </h2>
             <p>
-              Manmed Health Pvt. Ltd. does not sell or rent your personal
+              KT Gen Pharmaceuticals Pvt. Ltd. does not sell or rent your personal
               information. We may share data only with trusted partners,
               service providers, or regulatory authorities when required by
               law.
@@ -99,7 +99,7 @@ const PrivacyPolicy = () => {
               6. Third-Party Websites
             </h2>
             <p>
-              Our website may contain links to external websites. Manmed Health
+              Our website may contain links to external websites. KT Gen Pharmaceuticals
               Pvt. Ltd. is not responsible for the privacy practices or content
               of third-party sites.
             </p>
@@ -123,7 +123,7 @@ const PrivacyPolicy = () => {
               8. Changes to This Privacy Policy
             </h2>
             <p>
-              Manmed Health Pvt. Ltd. may update this Privacy Policy from time
+              KT Gen Pharmaceuticals Pvt. Ltd. may update this Privacy Policy from time
               to time. Any changes will be posted on this page with an updated
               revision date.
             </p>
@@ -139,9 +139,9 @@ const PrivacyPolicy = () => {
               Policy, please contact us:
             </p>
             <p className="mt-2">
-              📧 Email: <strong>info@manmedhealth.com</strong>
+              📧 Email: <strong>info@ktgenpharmaceuticals.com</strong>
               <br />
-              📍 Address: Manmed Health Pvt. Ltd., India
+              📍 Address: KT Gen Pharmaceuticals Pvt. Ltd., India
             </p>
           </div>
         </div>

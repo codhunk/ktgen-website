@@ -85,7 +85,7 @@ const Home = () => {
         </form>
 
         <footer className="absolute bottom-4 text-sm text-slate-800 dark:text-gray-300">
-          © {new Date().getFullYear()} ManMed Health. All rights reserved.
+          © {new Date().getFullYear()} KT Gen Pharmaceuticals. All rights reserved.
         </footer>
       </div>
 

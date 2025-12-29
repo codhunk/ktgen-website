@@ -15,7 +15,7 @@ const HeroAboutUs = () => {
           transition={{ duration: 1 }}
         >
           <h1 className="text-4xl md:text-5xl font-bold text-gray-800 leading-tight mb-4">
-            About <span className="text-blue-600">Manmed Vitality Core</span>
+            About <span className="text-blue-600">KT Gen Vitality Core</span>
           </h1>
           <p className="text-lg text-gray-600 mb-6">
             We are a team dedicated to empowering lives through innovative health solutions. 

@@ -121,160 +121,163 @@ const TherapeuticSegments = () => {
   };
 
   return (
-    <section className="py-16 lg:py-24 bg-gray-50 dark:bg-gray-900 relative overflow-hidden">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-5 dark:opacity-10">
-        <div
-          className="absolute inset-0"
-          style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%2316a34a' fill-opacity='0.3'%3E%3Cpath d='M20 20c0-5.5-4.5-10-10-10s-10 4.5-10 10 4.5 10 10 10 10-4.5 10-10zm10 0c0-5.5-4.5-10-10-10s-10 4.5-10 10 4.5 10 10 10 10-4.5 10-10z'/%3E%3C/g%3E%3C/svg%3E")`,
-          }}
-        ></div>
+   <section className="py-16 lg:py-24 bg-gray-50 dark:bg-gray-900 relative overflow-hidden">
+  {/* Background Pattern */}
+  <div className="absolute inset-0 opacity-5 dark:opacity-10">
+    <div
+      className="absolute inset-0"
+      style={{
+        backgroundImage: `url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23715923' fill-opacity='0.3'%3E%3Cpath d='M20 20c0-5.5-4.5-10-10-10s-10 4.5-10 10 4.5 10 10 10 10-4.5 10-10zm10 0c0-5.5-4.5-10-10-10s-10 4.5-10 10 4.5 10 10 10 10-4.5 10-10z'/%3E%3C/g%3E%3C/svg%3E")`,
+      }}
+    />
+  </div>
+
+  <div className="container mx-auto px-4 lg:px-8 relative z-10">
+    {/* Header */}
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, threshold: 0.2 }}
+      transition={{ duration: 0.8 }}
+      className="text-center mb-16"
+    >
+      <div className="inline-flex items-center gap-2 px-4 py-2 
+        bg-[#f9e6b8]/60 dark:bg-[#715923]/30 
+        text-[#715923] dark:text-[#f9e6b8]
+        rounded-full text-sm font-medium 
+        border border-[#f9e6b8] dark:border-[#715923] mb-6"
+      >
+        <Stethoscope size={16} />
+        THERAPEUTIC SEGMENTS
       </div>
 
-      <div className="container mx-auto px-4 lg:px-8 relative z-10">
-        {/* Header Section */}
+      <h2 className="text-3xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-6">
+        Our Expertise Across{" "}
+        <span className="bg-gradient-to-r from-[#f9e6b8] to-[#715923] dark:from-[#f9e6b8] dark:to-[#c9a24d] bg-clip-text text-transparent">
+          Specialties
+        </span>
+      </h2>
+
+      <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+        Comprehensive pharmaceutical solutions across multiple therapeutic
+        areas, delivering quality healthcare products tailored to diverse
+        patient needs.
+      </p>
+    </motion.div>
+
+    {/* Cards Grid */}
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {therapySegments.map((segment, index) => (
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          key={segment.id}
+          initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, threshold: 0.2 }}
-          transition={{ duration: 0.8 }}
-          className="text-center mb-16"
+          viewport={{ once: true, threshold: 0.1 }}
+          transition={{ duration: 0.6, delay: index * 0.1 }}
+          className="group relative"
+          onMouseEnter={() => setHoveredTile(segment.id)}
+          onMouseLeave={() => setHoveredTile(null)}
         >
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-green-50 dark:bg-green-900/20 text-green-700 dark:text-[#8acf45] rounded-full text-sm font-medium border border-green-200 dark:border-green-800 mb-6">
-            <Stethoscope size={16} />
-            THERAPEUTIC SEGMENTS
-          </div>
+          <div
+            className="relative bg-white dark:bg-gray-800 rounded-2xl overflow-hidden
+              border border-gray-200 dark:border-gray-700
+              shadow-lg hover:shadow-2xl
+              transition-all duration-500 transform hover:-translate-y-2
+              cursor-pointer h-full"
+            onClick={() => handleTileClick(segment.id)}
+          >
+            {/* Image */}
+            <div className="relative h-48 overflow-hidden">
+              <img
+                src={segment.image}
+                alt={segment.title}
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-br from-[#f9e6b8]/80 to-[#715923]/80" />
 
-          <h2 className="text-3xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-            Our Expertise Across{" "}
-            <span className="bg-gradient-to-r from-[#95DE4B] to-[#059BE3] dark:from-[#8acf45] dark:to-[#059BE3] bg-clip-text text-transparent">
-              Specialties
-            </span>
-          </h2>
-{/* #95DE4B
-#059BE3 */}
-          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Comprehensive pharmaceutical solutions across multiple therapeutic
-            areas, delivering quality healthcare products tailored to diverse
-            patient needs.
-          </p>
-        </motion.div>
-
-        {/* Interactive Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {therapySegments.map((segment, index) => (
-            <motion.div
-              key={segment.id}
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, threshold: 0.1 }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="group relative"
-              onMouseEnter={() => setHoveredTile(segment.id)}
-              onMouseLeave={() => setHoveredTile(null)}
-            >
-              <div
-                className={`
-                  relative bg-white dark:bg-gray-800 rounded-2xl overflow-hidden 
-                  border ${segment.borderColor} shadow-lg hover:shadow-2xl 
-                  transition-all duration-500 transform hover:-translate-y-2 
-                  cursor-pointer h-full
-                `}
-                onClick={() => handleTileClick(segment.id)}
-              >
-                {/* Image Section */}
-                <div className="relative h-48 overflow-hidden">
-                  <img
-                    src={segment.image}
-                    alt={`${segment.title} therapy segment`}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
-                  <div
-                    className={`absolute inset-0 bg-gradient-to-br ${segment.color} ${segment.darkColor} opacity-80`}
-                  ></div>
-
-                  {/* Icon Overlay */}
-                  <div className="absolute top-4 left-4">
-                    <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center">
-                      <segment.icon className="w-6 h-6 text-white" />
-                    </div>
-                  </div>
-
-                  {/* Hover Overlay */}
-                  <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: hoveredTile === segment.id ? 1 : 0 }}
-                    transition={{ duration: 0.3 }}
-                    className="absolute inset-0 bg-black/40 backdrop-blur-sm flex items-center justify-center"
-                  >
-                    <div className="text-center text-white p-4">
-                      <ArrowRight className="w-8 h-8 mx-auto mb-2" />
-                      <p className="text-sm font-medium">View Details</p>
-                    </div>
-                  </motion.div>
+              <div className="absolute top-4 left-4">
+                <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center">
+                  <segment.icon className="w-6 h-6 text-white" />
                 </div>
-
-                {/* Content Section */}
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-[#95DE4B] dark:group-hover:text-[#95DE4B] transition-colors">
-                    {segment.title}
-                  </h3>
-
-                  <p className="text-gray-600 dark:text-gray-300 text-sm mb-4 leading-relaxed">
-                    {segment.description}
-                  </p>
-
-                  {/* Brand Count */}
-                  <div
-                    className={`inline-flex items-center gap-2 px-3 py-1 ${segment.bgColor} rounded-full text-xs font-medium mb-4`}
-                  >
-                    <div
-                      className={`w-2 h-2 rounded-full bg-gradient-to-r ${segment.color}`}
-                    ></div>
-                    {segment.brands[0]}
-                  </div>
-
-                  {/* Specialties */}
-                  <div className="space-y-1">
-                    {segment.specialties.map((specialty, idx) => (
-                      <div
-                        key={idx}
-                        className="flex items-center gap-2 text-xs text-gray-500 dark:text-gray-400"
-                      >
-                        <div className="w-1 h-1 bg-gray-400 rounded-full"></div>
-                        {specialty}
-                      </div>
-                    ))}
-                  </div>
-                </div>
-
-                {/* Bottom Action Indicator */}
-                <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-gray-200 dark:via-gray-700 to-transparent group-hover:via-green-500 transition-all duration-500"></div>
               </div>
-            </motion.div>
-          ))}
-        </div>
 
-        {/* Bottom CTA */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.8 }}
-          className="text-center mt-16"
-        >
-          <p className="text-gray-600 dark:text-gray-300 mb-6">
-            Need detailed information about our products in specific therapeutic
-            areas?
-          </p>
-          <button className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-[#95DE4B] to-[#059BE3] hover:from-green-700 hover:to-teal-700 text-white font-semibold rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
-            <Stethoscope size={20} />
-            Request Product Catalog
-          </button>
+              {/* Hover Overlay */}
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: hoveredTile === segment.id ? 1 : 0 }}
+                transition={{ duration: 0.3 }}
+                className="absolute inset-0 bg-black/40 backdrop-blur-sm flex items-center justify-center"
+              >
+                <div className="text-center text-white">
+                  <ArrowRight className="w-8 h-8 mx-auto mb-2" />
+                  <p className="text-sm font-medium">View Details</p>
+                </div>
+              </motion.div>
+            </div>
+
+            {/* Content */}
+            <div className="p-6">
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2
+                group-hover:text-[#715923] dark:group-hover:text-[#f9e6b8] transition-colors">
+                {segment.title}
+              </h3>
+
+              <p className="text-gray-600 dark:text-gray-300 text-sm mb-4">
+                {segment.description}
+              </p>
+
+              <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#f9e6b8]/60 dark:bg-[#715923]/30 rounded-full text-xs font-medium mb-4">
+                <div className="w-2 h-2 rounded-full bg-gradient-to-r from-[#f9e6b8] to-[#715923]" />
+                {segment.brands[0]}
+              </div>
+
+              <div className="space-y-1">
+                {segment.specialties.map((item, idx) => (
+                  <div key={idx} className="flex items-center gap-2 text-xs text-gray-500 dark:text-gray-400">
+                    <span className="w-1 h-1 rounded-full bg-gray-400" />
+                    {item}
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Bottom Indicator */}
+            <div className="absolute bottom-0 left-0 right-0 h-1
+              bg-gradient-to-r from-transparent via-gray-200 dark:via-gray-700 to-transparent
+              group-hover:via-[#715923] transition-all duration-500" />
+          </div>
         </motion.div>
-      </div>
-    </section>
+      ))}
+    </div>
+
+    {/* CTA */}
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.8, delay: 0.8 }}
+      className="text-center mt-16"
+    >
+      <p className="text-gray-600 dark:text-gray-300 mb-6">
+        Need detailed information about our products in specific therapeutic
+        areas?
+      </p>
+
+      <button
+        className="inline-flex items-center gap-2 px-8 py-4
+          bg-gradient-to-r from-[#f9e6b8] to-[#715923]
+          hover:from-[#e8d39a] hover:to-[#5f4a1f]
+          text-[#3d2f14] font-semibold rounded-xl
+          transition-all duration-300 transform hover:scale-105
+          hover:shadow-[0_10px_30px_rgba(113,89,35,0.35)]"
+      >
+        <Stethoscope size={20} />
+        Request Product Catalog
+      </button>
+    </motion.div>
+  </div>
+</section>
+
   );
 };
 

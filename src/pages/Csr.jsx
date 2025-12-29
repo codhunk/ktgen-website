@@ -22,7 +22,7 @@
 //   {
 //     title: "Healthcare Camps",
 //     description:
-//       "ManMed organizes regular free health check-ups, mobile clinics, and vaccination drives to improve access to healthcare.",
+//       "KT Gen organizes regular free health check-ups, mobile clinics, and vaccination drives to improve access to healthcare.",
 //     image: health,
 //     icon: heartIcon,
 //   },
@@ -71,7 +71,7 @@
 //         <div className="max-w-4xl z-10">
 //           <h1 className="text-4xl sm:text-5xl font-bold mb-4">Corporate Social Responsibility</h1>
 //           <p className="max-w-2xl mx-auto text-lg sm:text-xl">
-//             At ManMed, we are driven by the belief that corporate success must go hand-in-hand with social progress. Our CSR initiatives are rooted in compassion, innovation, and community-first thinking.
+//             At KT Gen, we are driven by the belief that corporate success must go hand-in-hand with social progress. Our CSR initiatives are rooted in compassion, innovation, and community-first thinking.
 //           </p>
 //         </div>
 //       </motion.section>
@@ -86,7 +86,7 @@
 //       >
 //         <h2 className="text-3xl sm:text-4xl font-semibold mb-6">Our Commitment</h2>
 //         {/* <p className="max-w-4xl mx-auto text-base sm:text-lg text-gray-600">
-//           CSR at ManMed is more than a responsibility—it's a reflection of our core values. Through inclusive programs and community partnerships, we empower lives, preserve nature, and promote wellness beyond hospitals.
+//           CSR at KT Gen is more than a responsibility—it's a reflection of our core values. Through inclusive programs and community partnerships, we empower lives, preserve nature, and promote wellness beyond hospitals.
 //         </p> */}
 //         <div className="mt-10 max-w-5xl mx-auto text-gray-700 text-base sm:text-lg">
 //           <p className="mb-4">
@@ -166,7 +166,7 @@
 //       >
 //         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">Be a Part of the Change</h2>
 //         <p className="mb-6 max-w-3xl mx-auto text-base sm:text-lg md:text-xl">
-//           Want to support or partner with ManMed in our CSR journey? Reach out to collaborate on impactful initiatives that truly transform lives and communities.
+//           Want to support or partner with KT Gen in our CSR journey? Reach out to collaborate on impactful initiatives that truly transform lives and communities.
 //         </p>
 //         <button className="bg-white text-green-700 font-semibold px-10 py-4 rounded-full hover:bg-gray-200 transition">
 //           Contact Us
@@ -205,7 +205,7 @@ const initiatives = [
   {
     title: "Healthcare Camps",
     description:
-      "ManMed organizes regular free health check-ups, mobile clinics, and vaccination drives to improve access to healthcare.",
+      "KT Gen organizes regular free health check-ups, mobile clinics, and vaccination drives to improve access to healthcare.",
     image: health,
     icon: heartIcon,
   },
@@ -276,7 +276,7 @@ export default function CSRPage() {
         <div className="max-w-4xl z-10">
           <h1 className="text-4xl sm:text-5xl font-bold mb-4">Corporate Social Responsibility</h1>
           <p className="max-w-2xl mx-auto text-lg sm:text-xl">
-            At ManMed, we are driven by the belief that corporate success must go hand-in-hand with social progress. Our CSR initiatives are rooted in compassion, innovation, and community-first thinking.
+            At KT Gen, we are driven by the belief that corporate success must go hand-in-hand with social progress. Our CSR initiatives are rooted in compassion, innovation, and community-first thinking.
           </p>
         </div>
       </motion.section>
@@ -330,7 +330,7 @@ export default function CSRPage() {
 
       {/* <motion.section initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="py-20 px-6 bg-white text-center">
         <h2 className="text-3xl sm:text-4xl font-semibold mb-6">Partnerships & Collaborations</h2>
-        <p className="max-w-4xl mx-auto text-gray-600 text-lg mb-10">ManMed collaborates with NGOs, government bodies, educational institutions, and local community leaders to implement grassroots initiatives with scale and integrity.</p>
+        <p className="max-w-4xl mx-auto text-gray-600 text-lg mb-10">KT Gen collaborates with NGOs, government bodies, educational institutions, and local community leaders to implement grassroots initiatives with scale and integrity.</p>
         <div className="max-w-4xl mx-auto text-sm text-gray-500">Recent Partners: UNICEF • Tata Trusts • Ministry of Health • Teach for India • Swachh Bharat Abhiyan</div>
       </motion.section> */}
 

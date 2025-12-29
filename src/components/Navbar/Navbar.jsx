@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
-import logo from "../../logo/logo_transparent_light.png";
+import logo from "../../logo/ktg.png";
 import { GoHomeFill } from "react-icons/go";
 import { FaProductHunt } from "react-icons/fa";
 import { RiPsychotherapyFill, RiTeamFill } from "react-icons/ri";
@@ -21,7 +21,7 @@ const Navbar = () => {
     { name: "ABOUT US", link: "/about", icon: <RiTeamFill /> },
     
     {
-      name: "LIFE AT MANMED",
+      name: "LIFE AT KT GEN",
       link: "",
       icon: <RiTeamFill />,
       icons: <Droplet color="black" />,
@@ -38,11 +38,11 @@ const Navbar = () => {
       ],
     },
     { name: "PRODUCTS", link: "/products", icon: <FaProductHunt /> },
-    {
-      name: "PREGNANCY GUIDE",
-      link: "/pregnency-sec",
-      icon: <RiTeamFill />,
-    },
+    // {
+    //   name: "PREGNANCY GUIDE",
+    //   link: "/pregnency-sec",
+    //   icon: <RiTeamFill />,
+    // },
     { name: "CAMPAIGN", link: "/campaign-sec", icon: <RiTeamFill /> },
 
     {

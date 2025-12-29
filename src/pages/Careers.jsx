@@ -85,7 +85,7 @@ const Career = () => {
       <section className="max-w-6xl mx-auto px-4 sm:px-6 py-16 space-y-6">
         <h2 className="text-3xl font-bold text-center mb-6">Why Work With Us</h2>
         <p className="text-center text-gray-800 dark:text-white leading-relaxed max-w-4xl mx-auto">
-          At Manmed Health, we are committed to innovation, collaboration, and improving lives. We
+          At KT Gen Pharmaceuticals, we are committed to innovation, collaboration, and improving lives. We
           foster a culture of growth, learning, and inclusivity while providing exciting
           opportunities in pharmaceutical research, clinical development, and quality assurance.
         </p>
@@ -148,7 +148,7 @@ const Career = () => {
           <div className="grid gap-8 md:grid-cols-2 mt-8">
             <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md">
               <p className="text-gray-700 dark:text-gray-300 mb-4">
-                "Working at Manmed Health has allowed me to grow professionally and contribute to
+                "Working at KT Gen Pharmaceuticals has allowed me to grow professionally and contribute to
                 meaningful projects in healthcare."
               </p>
               <p className="font-semibold  text-black dark:text-gray-100">- Amit Tyagi, Research Scientist</p>

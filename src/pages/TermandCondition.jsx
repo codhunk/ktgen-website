@@ -1,9 +1,9 @@
 import React from "react";
 
 export const metadata = {
-  title: "Terms & Conditions | Manmed Health Pvt. Ltd.",
+  title: "Terms & Conditions | KT Gen Pharmaceuticals Pvt. Ltd.",
   description:
-    "Terms and Conditions governing the use of Manmed Health Pvt. Ltd. website, products, and services.",
+    "Terms and Conditions governing the use of KT Gen Pharmaceuticals Pvt. Ltd. website, products, and services.",
 };
 
 const TermsAndConditions = () => {
@@ -23,7 +23,7 @@ const TermsAndConditions = () => {
         {/* Content */}
         <div className="space-y-8 text-gray-700 leading-relaxed">
           <p className="text-base">
-            Welcome to <strong>Manmed Health Pvt. Ltd.</strong> These Terms and
+            Welcome to <strong>KT Gen Pharmaceuticals Pvt. Ltd.</strong> These Terms and
             Conditions govern your access to and use of our website, products,
             and services. By accessing or using our platform, you acknowledge
             that you have read, understood, and agreed to be bound by these
@@ -40,12 +40,12 @@ const TermsAndConditions = () => {
             {
               title: "2. Medical Disclaimer",
               content:
-                "All information shared by Manmed Health Pvt. Ltd. complies with applicable pharmaceutical regulations. Always consult a qualified healthcare professional before using any medication or healthcare product.",
+                "All information shared by KT Gen Pharmaceuticals Pvt. Ltd. complies with applicable pharmaceutical regulations. Always consult a qualified healthcare professional before using any medication or healthcare product.",
             },
             {
               title: "3. Intellectual Property Rights",
               content:
-                "All content, trademarks, logos, product names, and materials available on this website are the intellectual property of Manmed Health Pvt. Ltd. Any unauthorized use, reproduction, or distribution is strictly prohibited.",
+                "All content, trademarks, logos, product names, and materials available on this website are the intellectual property of KT Gen Pharmaceuticals Pvt. Ltd. Any unauthorized use, reproduction, or distribution is strictly prohibited.",
             },
             {
               title: "4. Product Information",
@@ -55,12 +55,12 @@ const TermsAndConditions = () => {
             {
               title: "5. Limitation of Liability",
               content:
-                "Manmed Health Pvt. Ltd. shall not be liable for any direct, indirect, incidental, or consequential damages arising from the use or inability to use this website or its products.",
+                "KT Gen Pharmaceuticals Pvt. Ltd. shall not be liable for any direct, indirect, incidental, or consequential damages arising from the use or inability to use this website or its products.",
             },
             {
               title: "6. Third-Party Links",
               content:
-                "Our website may include links to external websites for convenience. Manmed Health Pvt. Ltd. does not control and is not responsible for the content, policies, or practices of any third-party websites.",
+                "Our website may include links to external websites for convenience. KT Gen Pharmaceuticals Pvt. Ltd. does not control and is not responsible for the content, policies, or practices of any third-party websites.",
             },
             {
               title: "7. Governing Law",
@@ -70,7 +70,7 @@ const TermsAndConditions = () => {
             {
               title: "8. Changes to Terms",
               content:
-                "Manmed Health Pvt. Ltd. reserves the right to modify or update these Terms & Conditions at any time without prior notice. Continued use of the website signifies acceptance of the revised terms.",
+                "KT Gen Pharmaceuticals Pvt. Ltd. reserves the right to modify or update these Terms & Conditions at any time without prior notice. Continued use of the website signifies acceptance of the revised terms.",
             },
           ].map((item, index) => (
             <div
@@ -94,9 +94,9 @@ const TermsAndConditions = () => {
               Conditions, please contact us:
             </p>
             <p className="mt-3 text-sm">
-              📧 <strong>Email:</strong> info@manmedhealth.com
+              📧 <strong>Email:</strong> info@ktgenpharmaceuticals.com
               <br />
-              📍 <strong>Address:</strong> Manmed Health Pvt. Ltd., India
+              📍 <strong>Address:</strong> KT Gen Pharmaceuticals Pvt. Ltd., India
             </p>
           </div>
         </div>
