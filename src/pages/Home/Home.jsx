@@ -126,13 +126,13 @@ const Home = () => {
             <Whyuscom />
           </div> */}
 
-          <TestimonialSlider
+          {/* <TestimonialSlider
             videos={videos}
             onVideoClick={(index) => {
               setStartIndex(index);
               setModalOpen(true);
             }}
-          />
+          /> */}
           {modalOpen && (
             <TestimonialModal
               videos={videos}

@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
-import bg from "/images/about_hero.jpg";
+import bg from "/images/about_hero1.jpg";
 import TeamSlider from "./teamMembers";
 import MenHealthSection from "./manmedhealth";
 // import MousePointerEffect from "./mousepointereffect";

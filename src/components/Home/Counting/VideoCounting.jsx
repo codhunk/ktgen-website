@@ -103,7 +103,7 @@ const CountingNumber = ({ target, duration = 2, suffix = "" }) => {
       initial={{ opacity: 0, scale: 0.5 }}
       animate={inView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.5 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
-      className="text-[3rem] md:text-[5rem] font-bold bg-gradient-to-r from-[#715923] to-[#dab28d] bg-clip-text text-transparent"
+      className="text-[2.5rem] md:text-[4rem] font-bold bg-gradient-to-r from-[#1E40AF] to-[#60A5FA] bg-clip-text text-transparent"
     >
       {count}
       {suffix}

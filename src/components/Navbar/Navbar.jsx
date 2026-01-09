@@ -1,373 +1,234 @@
-import React, { useEffect, useState } from "react";
-import { NavLink, useLocation } from "react-router-dom";
-import logo from "../../logo/ktg.png";
-import { GoHomeFill } from "react-icons/go";
-import { FaProductHunt } from "react-icons/fa";
-import { RiPsychotherapyFill, RiTeamFill } from "react-icons/ri";
-import { MdLocalPharmacy, MdOutlineWork } from "react-icons/md";
-import { SiWikimediafoundation } from "react-icons/si";
-import { FaMoon } from "react-icons/fa";
+import React, { useState, useRef } from "react";
+import { NavLink } from "react-router-dom";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+  FaTwitter,
+  FaMoon,
+  FaUser,
+  FaShoppingBag,
+} from "react-icons/fa";
 import { MdWbSunny } from "react-icons/md";
-import { GiHamburgerMenu } from "react-icons/gi";
-import { RxChevronDown, RxChevronUp, RxCross1 } from "react-icons/rx";
+import { RxHamburgerMenu, RxCross1 } from "react-icons/rx";
 import LanguageSelector from "../LanguageSelector/LanguageSelector";
 import { useDarkMode } from "../../hooks/UseDarkMode/useDarkMode";
-import { LiaAccusoft } from "react-icons/lia";
-import { Droplet, icons } from "lucide-react";
+import logo from "../../logo/ktg.png";
 
 const Navbar = () => {
-  const navList = [
-    // { name: "Home", link: "/", icon: <GoHomeFill /> },
-    { name: "ABOUT US", link: "/about", icon: <RiTeamFill /> },
-    
+  const { isDark, toggleDarkMode } = useDarkMode();
+  const [openMenu, setOpenMenu] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState(null);
+  const hoverTimeout = useRef(null);
+
+  const menu = [
+    { name: "ABOUT US", link: "/about" },
     {
       name: "LIFE AT KT GEN",
-      link: "",
-      icon: <RiTeamFill />,
-      icons: <Droplet color="black" />,
-      subLink: [
-        { name: "OUR STORY", link: "/story", icon: <MdOutlineWork /> },
-        { name: "CAREERS", link: "/career", icon: <MdOutlineWork /> },
-        {
-          name: "MEDIA/GALLERY",
-          link: "/gallery",
-          icon: <SiWikimediafoundation />,
-        },
-        { name: "CSR", link: "/csr", icon: <RiTeamFill /> },
-        { name: "OUR MISSION", link: "/ourmission", icon: <RiTeamFill /> },
+      sub: [
+        { name: "Our Story", link: "/story" },
+        { name: "Careers", link: "/career" },
+        { name: "Media / Gallery", link: "/gallery" },
+        { name: "CSR", link: "/csr" },
+        { name: "Our Mission", link: "/ourmission" },
       ],
     },
-    { name: "PRODUCTS", link: "/products", icon: <FaProductHunt /> },
-    // {
-    //   name: "PREGNANCY GUIDE",
-    //   link: "/pregnency-sec",
-    //   icon: <RiTeamFill />,
-    // },
-    { name: "CAMPAIGN", link: "/campaign-sec", icon: <RiTeamFill /> },
-
+    { name: "CAMPAIGN", link: "/campaign-sec" },
     {
       name: "PHARMACY",
-      link: "",
-      icon: <MdLocalPharmacy />,
-      subLink: [
-        {
-          name: "THERAPY AREA",
-          link: "/therapy",
-          icon: <RiPsychotherapyFill />,
-        },
-        {
-          name: "DOCTORS & PHARMACIES",
-          link: "/doctors-pharmacies",
-          icon: <RiTeamFill />,
-        },
+      sub: [
+        { name: "Therapy Area", link: "/therapy" },
+        { name: "Doctors & Pharmacies", link: "/doctors-pharmacies" },
       ],
     },
-    { name: "CONTACT US", link: "/contact", icon: <GoHomeFill /> },
+    { name: "CONTACT US", link: "/contact" },
   ];
 
-  const location = useLocation();
-
-  const [activeDropdown, setActiveDropdown] = useState(null);
-  const { isDark, toggleDarkMode } = useDarkMode();
-  const [showSidebar, setShowSidebar] = useState(false);
-  const [openDropdownIndex, setOpenDropdownIndex] = useState(null);
-  const toggleDropdown = (index) => {
-    setOpenDropdownIndex((prev) => (prev === index ? null : index));
+  const handleEnter = (i) => {
+    if (hoverTimeout.current) clearTimeout(hoverTimeout.current);
+    setOpenDropdown(i);
   };
 
-  const isSubActive = (n) => {
-    return n?.subLink?.some((sub) => location.pathname.includes(sub.link));
+  const handleLeave = () => {
+    hoverTimeout.current = setTimeout(() => {
+      setOpenDropdown(null);
+    }, 300);
   };
-
-  const [scrollNav, setScrollnav] = useState(0);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      // Update the scroll value when the user scrolls
-      setScrollnav(window.scrollY);
-    };
-
-    // Attach the scroll event listener when the component mounts
-    window.addEventListener("scroll", handleScroll);
-
-    // Clean up the event listener when the component unmounts
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
 
   return (
-    <nav
-      className={`w-full fixed top-0 flex justify-center items-center text-sm font-semibold backdrop-blur-lg transition-colors duration-500 ease-in-out
-    ${
-      scrollNav === 0
-        ? "bg-white"
-        : "bg-white"
-    }`}
-      style={{ zIndex: 999999 }}
-    >
-      <div className="w-[95%] 2xl:max-w-7xl flex justify-between items-center py-4">
-        {/* Left Section: Logo + Nav */}
-        <ul className="flex justify-center items-center gap-10">
-          <NavLink to={"/"}>
-            <img src={logo} alt="logo" draggable="false" className="w-[80px]" />
-          </NavLink>
-        </ul>
+    <header className="fixed top-0 w-full z-50">
 
-        <ul className="hidden [@media(min-width:1200px)]:flex justify-center items-center gap-2">
-          {navList.map((n, i) => (
-            <li
-              key={i}
-              className="relative group flex justify-center items-center flex-col opacity-0 animate-slide-in-left"
-              style={{ animationDelay: `${i * 100}ms` }}
-              onMouseEnter={() => setActiveDropdown(i)}
-              onMouseLeave={() => setActiveDropdown(null)}
-            >
-              {n?.subLink ? (
-                <div
-                  className={`relative group flex items-center text-black hover:text-white px-5 py-1 gap-2 rounded-full transition-all duration-300 ease-in-out overflow-hidden backdrop-blur-md cursor-pointer ${
-                    isSubActive(n)
-                      ? "bg-[#005c63] shadow-md"
-                      : "bg-[#ffffff17] hover:bg-[#005c63] hover:shadow-md"
-                  }`}
-                >
-                  <>
-                    {/* Icon slide-in from left */}
-                    <span
-                      className={`
-              absolute left-1 transition-all duration-300 ease-out text-black bg-white p-1 rounded-full
-              ${
-                isSubActive(n)
-                  ? "opacity-100 translate-x-0"
-                  : "opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0"
-              }
-            `}
-                    >
-                      {n.icon}
-                    </span>
-
-                    {/* Label slide-right */}
-                    <span
-                      className={`transition-transform duration-300 ease-out ${
-                        isSubActive(n)
-                          ? "translate-x-3"
-                          : "group-hover:translate-x-3"
-                      }`}
-                    >
-                      {n.name}
-                    </span>
-                  </>
-                </div>
-              ) : (
-                <NavLink
-                  to={n.link}
-                  className={({ isActive }) =>
-                    `relative group flex items-center text-black hover:text-white px-5 py-1 gap-2 rounded-full transition-all duration-300 ease-in-out overflow-hidden backdrop-blur-md ${
-                      isActive
-                        ? "bg-[#005c63] shadow-md"
-                        : "bg-[#ffffffff] hover:bg-[#005c63] hover:shadow-md"
-                    }`
-                  }
-                >
-                  {({ isActive }) => (
-                    <>
-                      {/* Icon slide-in from left */}
-                      <span
-                        className={`
-              absolute left-1 transition-all duration-300 ease-out text-slate-900  bg-white p-1 rounded-full
-              ${
-                isActive
-                  ? "opacity-100 translate-x-0"
-                  : "opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0"
-              }
-            `}
-                      >
-                        {n.icon}
-                      </span>
-
-                      {/* Label slide-right */}
-                      <span
-                        className={`transition-transform duration-300 ease-out ${
-                          isActive
-                            ? "translate-x-3 "
-                            : "group-hover:translate-x-3"
-                        }`}
-                      >
-                        {n.name}
-                      </span>
-                    </>
-                  )}
-                </NavLink>
-              )}
-
-              {/* Submenu (only visible if current index matches) */}
-              {n.subLink && (
-                <ul
-                  className={`absolute top-full mt-0.5 right-0 w-40  bg-[#06181ae7] backdrop-blur-md rounded-lg shadow-lg z-20 transform transition-all duration-300 ease-in-out ${
-                    activeDropdown === i
-                      ? "opacity-100 translate-y-0 pointer-events-auto"
-                      : "opacity-0 -translate-y-2 pointer-events-none"
-                  }`}
-                >
-                  {n.subLink.map((sub, j) => (
-                    <li key={j}>
-                      <NavLink
-                        to={sub.link}
-                        className={({ isActive }) =>
-                          `flex items-center gap-2 px-4 py-2 text-white hover:bg-gray-700 transition duration-200  ${
-                            isActive ? "bg-[#005c63]" : "transparent"
-                          }`
-                        }
-                        onClick={() => setActiveDropdown(null)}
-                      >
-                        {sub.icon}
-                        {sub.name}
-                      </NavLink>
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </li>
-          ))}
-        </ul>
-
-        {/* Right Section (Theme toggle + Language dropdown) */}
-        <ul className="flex justify-center items-center gap-4">
-          {/* Theme Toggle */}
-          <button
-            className="p-2 border border-dashed rounded-full border-gray-800 dark:border-white dark:bg-gray-800 bg-[#ffffffec] transition-all duration-300 hover:scale-105"
-            onClick={toggleDarkMode}
-          >
-            <span className="transition-transform duration-300 ease-in-out transform">
-              {isDark ? (
-                <MdWbSunny className="scale-110 text-white" />
-              ) : (
-                <FaMoon className="scale-110 text-gray-800" />
-              )}
-            </span>
-          </button>
-
-          {/* Language Selector Dropdown */}
-          <li className="p-2">
-            <LanguageSelector />
-          </li>
-
-          {/* Hamburger toggle (only visible on md and below) */}
-          <button
-            className="relative w-5 h-5 hidden [@media(max-width:1200px)]:flex flex-col justify-between items-center"
-            onClick={() => setShowSidebar(!showSidebar)}
-          >
-            <span
-              className={`block h-[2px] w-full bg-black transition-all duration-300 ${
-                showSidebar ? "rotate-45 translate-y-2" : ""
-              }`}
-            ></span>
-            <span
-              className={`block h-[2px] w-full bg-black transition-all duration-300 ${
-                showSidebar ? "opacity-0" : ""
-              }`}
-            ></span>
-            <span
-              className={`block h-[2px] w-full bg-black transition-all duration-300 ${
-                showSidebar ? "-rotate-45 -translate-y-2" : ""
-              }`}
-            ></span>
-          </button>
-        </ul>
-      </div>
-
-      {/* Sidebar Drawer */}
-      <div
-        className={`fixed top-0 left-0 w-64 bg-[#fffffff6] dark:bg-[#000000f1] backdrop-blur-lg shadow-lg z-100 transform transition-transform duration-300 ease-in-out ${
-          showSidebar ? "translate-x-0" : "-translate-x-full"
-        }`}
-        style={{ height: "100vh" }}
-      >
-        <div className="flex justify-between items-center px-4 py-3 border-b dark:border-gray-700">
-          <img src={logo} alt="logo" className="w-20" draggable="false" />
-          <button
-            className="p-2 text-gray-800 dark:text-white"
-            onClick={() => setShowSidebar(false)}
-          >
-            <RxCross1 className="w-5 h-5" />
+      {/* TOP BAR */}
+      <div className="bg-[#020617] text-white text-[11px] border-b border-[#715923]/30">
+        <div className="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between">
+          <div className="flex items-center gap-4 text-[#715923]">
+            <FaFacebookF className="hover:text-white cursor-pointer" />
+            <FaInstagram className="hover:text-white cursor-pointer" />
+            <FaLinkedinIn className="hover:text-white cursor-pointer" />
+            <FaTwitter className="hover:text-white cursor-pointer" />
+          </div>
+          <div className="hidden sm:flex items-center gap-6 tracking-wide">
+            <span>📞 +91 7899312233</span>
+            <span>📞 +91 7899312233</span>
+          </div>
+          <button className="bg-[#715923] text-white px-4 py-1 rounded font-semibold hover:opacity-90 transition">
+            Contact Us
           </button>
         </div>
-
-        <ul
-          className="px-4 py-4 flex flex-col gap-2 overflow-auto my-2"
-          style={{ height: "calc(100vh - 81px)" }}
-        >
-          {navList.map((n, i) => (
-            <li key={i}>
-              {n?.subLink ? (
-                <div
-                  className={`w-full flex items-center rounded-md cursor-pointer ${
-                    isSubActive(n)
-                      ? "bg-[#005c63] text-white"
-                      : "text-gray-800 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800"
-                  }`}
-                  onClick={(e) => {
-                    e.stopPropagation(); // Prevent sidebar close
-                    toggleDropdown(i);
-                  }}
-                >
-                  <span className="flex items-center gap-3 px-4 py-2 rounded-md transition duration-200">
-                    {n.icon}
-                    {n.name}
-                  </span>
-
-                  <button className="ml-auto text-gray-800 dark:text-white px-4 py-2">
-                    {openDropdownIndex === i ? (
-                      <RxChevronUp />
-                    ) : (
-                      <RxChevronDown />
-                    )}
-                  </button>
-                </div>
-              ) : (
-                <NavLink
-                  to={n.link}
-                  className={({ isActive }) =>
-                    `flex items-center gap-3 px-4 py-2 rounded-md transition duration-200 ${
-                      isActive
-                        ? "bg-[#005c63] text-white"
-                        : "text-gray-800 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800"
-                    }`
-                  }
-                  onClick={() => setShowSidebar(false)} // Close on click
-                >
-                  {n.icon}
-                  {n.name}
-                </NavLink>
-              )}
-
-              {n.subLink && openDropdownIndex === i && (
-                <ul className="ml-8 mt-1 space-y-1">
-                  {n.subLink.map((sub, j) => (
-                    <li key={j}>
-                      <NavLink
-                        to={sub.link}
-                        className={({ isActive }) =>
-                          `flex items-center gap-2 px-4 py-1 text-sm rounded-md ${
-                            isActive
-                              ? "bg-[#005c63] text-white"
-                              : "text-gray-800 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800"
-                          }`
-                        }
-                        onClick={() => setShowSidebar(false)}
-                      >
-                        {sub.icon}
-                        {sub.name}
-                      </NavLink>
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </li>
-          ))}
-        </ul>
       </div>
-    </nav>
+
+      {/* MAIN BAR */}
+      <div className="bg-[#020617] text-white border-t border-white/10">
+        <div className="max-w-7xl mx-auto px-5 py-4 flex justify-between items-center">
+
+          {/* LOGO */}
+          <NavLink to="/" className="flex items-center gap-2">
+            <img src={logo} className="w-10" alt="logo" />
+            <div>
+              <p className="text-[10px] text-gray-400">THIS IS</p>
+              <p className="font-bold text-[#715923]">KT GEN</p>
+            </div>
+          </NavLink>
+
+          {/* DESKTOP MENU */}
+          <nav className="hidden lg:flex items-center gap-8 text-sm">
+            {menu.map((item, i) => (
+              <div
+                key={i}
+                className="relative"
+                onMouseEnter={() => handleEnter(i)}
+                onMouseLeave={handleLeave}
+              >
+                {item.sub ? (
+                  <button className="flex items-center gap-1 hover:text-[#715923] transition">
+                    {item.name}
+                    <span className="text-xs">▾</span>
+                  </button>
+                ) : (
+                  <NavLink to={item.link} className="hover:text-[#715923] transition">
+                    {item.name}
+                  </NavLink>
+                )}
+
+                {/* GOLD SUBMENU */}
+                {item.sub && (
+                  <div
+                    onMouseEnter={() => {
+                      if (hoverTimeout.current) clearTimeout(hoverTimeout.current);
+                    }}
+                    onMouseLeave={handleLeave}
+                    className={`absolute top-full mt-4 w-[320px] rounded-2xl bg-white/95 backdrop-blur-xl shadow-2xl border border-[#715923]/20 transition-all duration-300 origin-top
+                    ${
+                      openDropdown === i
+                        ? "opacity-100 scale-100 translate-y-0"
+                        : "opacity-0 scale-95 -translate-y-2 pointer-events-none"
+                    }`}
+                  >
+                    <div className="p-3 grid grid-cols-1 divide-y divide-[#715923]/20">
+                      {item.sub.map((s, j) => (
+                        <NavLink
+                          key={j}
+                          to={s.link}
+                          className="group flex items-center gap-4 p-4 rounded-xl hover:bg-[#715923] transition"
+                        >
+                          <div className="w-10 h-10 rounded-xl bg-[#715923]/10 flex items-center justify-center group-hover:bg-white/20 transition">
+                            <span className="text-[#715923] group-hover:text-white text-lg">●</span>
+                          </div>
+                          <div className="flex-1">
+                            <p className="font-semibold text-gray-800 group-hover:text-white">
+                              {s.name}
+                            </p>
+                            <p className="text-xs text-gray-500 group-hover:text-white/80">
+                              Learn more about {s.name.toLowerCase()}
+                            </p>
+                          </div>
+                          <span className="text-[#715923] group-hover:text-white transition">→</span>
+                        </NavLink>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+            ))}
+          </nav>
+
+          {/* RIGHT SIDE */}
+          <div className="flex items-center gap-4">
+            <button onClick={toggleDarkMode}>
+              {isDark ? <MdWbSunny /> : <FaMoon />}
+            </button>
+            <LanguageSelector />
+            <FaUser />
+            <FaShoppingBag />
+            <button className="lg:hidden" onClick={() => setOpenMenu(true)}>
+              <RxHamburgerMenu size={22} />
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* MOBILE MENU (unchanged logic) */}
+      {openMenu && (
+        <div className="fixed inset-0 bg-black/60 z-50 flex">
+          <div className="bg-white w-80 h-full shadow-xl flex flex-col">
+            <div className="flex items-center justify-between bg-[#020617] p-4 border-b">
+              <img src={logo} className="w-20" alt="logo" />
+              <button onClick={() => setOpenMenu(false)}>
+                <RxCross1 className="text-white text-xl" />
+              </button>
+            </div>
+
+            <div className="flex-1 overflow-y-auto px-4 py-3 space-y-2 text-sm">
+              {menu.map((item, i) => (
+                <div key={i} className="border-b last:border-none pb-2">
+                  {item.sub ? (
+                    <button
+                      onClick={() => setOpenDropdown(openDropdown === i ? null : i)}
+                      className="w-full flex justify-between items-center py-3 font-semibold text-gray-800"
+                    >
+                      {item.name}
+                      <span className={openDropdown === i ? "rotate-180" : ""}>▾</span>
+                    </button>
+                  ) : (
+                    <NavLink
+                      to={item.link}
+                      onClick={() => setOpenMenu(false)}
+                      className="block py-3 font-semibold text-gray-800"
+                    >
+                      {item.name}
+                    </NavLink>
+                  )}
+
+                  {item.sub && openDropdown === i && (
+                    <div className="ml-4 mt-1 space-y-2">
+                      {item.sub.map((sub, j) => (
+                        <NavLink
+                          key={j}
+                          to={sub.link}
+                          onClick={() => setOpenMenu(false)}
+                          className="block py-2 text-gray-600 hover:text-[#715923]"
+                        >
+                          {sub.name}
+                        </NavLink>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+
+            <div className="p-4 border-t flex justify-between items-center">
+              <button onClick={toggleDarkMode}>
+                {isDark ? <MdWbSunny /> : <FaMoon />}
+              </button>
+              <LanguageSelector />
+            </div>
+          </div>
+
+          <div className="flex-1" onClick={() => setOpenMenu(false)} />
+        </div>
+      )}
+    </header>
   );
 };
 

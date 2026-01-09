@@ -15,334 +15,151 @@ import { useTranslation } from "react-i18next";
 import { assets } from "../../assets/images/assets";
 
 const PartnerProgram = () => {
-  const { t } = useTranslation()
+  const { t } = useTranslation();
   const sectionRef = useRef(null);
-  const inView = useInView(sectionRef, { amount: 0.1 });
+  const inView = useInView(sectionRef, { amount: 0.15 });
 
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2,
-        duration: 0.6,
-      },
-    },
+  const container = {
+    hidden: {},
+    visible: { transition: { staggerChildren: 0.15 } },
   };
 
-  const itemVariants = {
-    hidden: { y: 50, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        duration: 0.6,
-        ease: "easeOut",
-      },
-    },
-  };
-
-  const floatingVariants = {
-    animate: {
-      y: [-10, 10, -10],
-      transition: {
-        duration: 4,
-        repeat: Infinity,
-        ease: "easeInOut",
-      },
-    },
+  const item = {
+    hidden: { opacity: 0, y: 25 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
   };
 
   const features = [
-    {
-      icon: <Scan className="w-8 h-8" />,
-      title: "partner_titl1",
-      description: "partner_des1",
-      color: "from-[#715923] to-[#5f4a1f]",
-    },
-    {
-      icon: <Trophy className="w-8 h-8" />,
-      title: "partner_titl2",
-      description: "partner_des2",
-      color: "from-[#715923] to-[#5f4a1f]",
-    },
-    {
-      icon: <Gift className="w-8 h-8" />,
-      title: "partner_titl3",
-      description: "partner_des3",
-      color: "from-[#715923] to-[#5f4a1f]",
-    },
-    {
-      icon: <Package className="w-8 h-8" />,
-      title: "partner_titl4",
-      description: "partner_des4",
-      color: "from-[#715923] to-[#5f4a1f]",
-    },
+    { icon: <Scan />, title: "partner_titl1", desc: "partner_des1" },
+    { icon: <Trophy />, title: "partner_titl2", desc: "partner_des2" },
+    { icon: <Gift />, title: "partner_titl3", desc: "partner_des3" },
+    { icon: <Package />, title: "partner_titl4", desc: "partner_des4" },
   ];
 
-  const stats = [
-    {
-      icon: `${assets.cer_img1}`
-    },
-    {
-      icon: `${assets.cer_img2}`
-    },
-    {
-      icon: `${assets.cer_img3}`
-    },
-    {
-      icon: `${assets.cer_img4}`
-    },
-    {
-      icon: `${assets.cer_img5}`
-    },
-    {
-      icon: `${assets.cer_img6}`
-    },
+  const certs = [
+    assets.cer_img1,
+    assets.cer_img2,
+    assets.cer_img3,
+    assets.cer_img4,
+    assets.cer_img5,
+    assets.cer_img6,
   ];
 
   return (
-    <div className="min-h-screen transition-colors duration-500 bg-gray-50 dark:bg-gray-900">
-      {/* Hero Section */}
-      <section className="relative overflow-hidden">
-        <div className="absolute inset-0 overflow-hidden">
-          <motion.div
-            className="absolute top-20 left-10 w-32 h-32 bg-gradient-to-r from-[#715923] to-teal-400/20 rounded-full blur-xl"
-            variants={floatingVariants}
-            animate="animate"
-          />
-          <motion.div
-            className="absolute top-40 right-20 w-40 h-40 bg-gradient-to-r from-lime-400/20 to-[#715923] rounded-full blur-xl"
-            variants={floatingVariants}
-            animate="animate"
-            transition={{ delay: 1 }}
-          />
-          <motion.div
-            className="absolute bottom-20 left-1/4 w-28 h-28 bg-gradient-to-r from-emerald-400/20 to-[#715923] rounded-full blur-xl"
-            variants={floatingVariants}
-            animate="animate"
-            transition={{ delay: 2 }}
-          />
+    <div className="bg-gray-50 dark:bg-gray-900 overflow-hidden">
+
+      {/* HERO */}
+      <section className="relative w-full py-20 bg-white dark:bg-gray-900 overflow-hidden">
+
+        {/* Gradient Orbs */}
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute -top-20 -left-20 w-[300px] h-[300px] bg-[#715923]/30 rounded-full blur-3xl"></div>
+          <div className="absolute top-20 right-0 w-[260px] h-[260px] bg-[#e8d39a]/30 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-0 left-1/3 w-[260px] h-[260px] bg-emerald-400/20 rounded-full blur-3xl"></div>
         </div>
 
-        <div className="relative container mx-auto px-6 py-20 lg:py-32">
-          <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            animate="visible"
-            className="text-center max-w-4xl mx-auto"
-          >
-            <motion.div
-              variants={itemVariants}
-              className="inline-flex items-center gap-2 bg-gradient-to-r from-[#e8d39a]/10 to-[#715923]/10 backdrop-blur-sm rounded-full px-6 py-2 mb-8 border border-[#7eb449]/20 dark:border-[#059BE3]/20"
-            >
-              <Zap className="w-4 h-4 text-[#715923]" />
-              <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
-                {t("partnertop_head")}
-              </span>
-            </motion.div>
+        <motion.div
+          variants={container}
+          initial="hidden"
+          animate="visible"
+          className="relative w-full px-6 lg:px-20 text-center"
+        >
+          <motion.span variants={item} className="inline-flex items-center gap-2 text-sm font-medium text-[#715923] mb-6">
+            <Zap size={16} /> {t("partnertop_head")}
+          </motion.span>
 
-            <motion.h1
-              variants={itemVariants}
-              className="pt-5  text-5xl lg:text-7xl font-bold bg-gradient-to-r from-gray-900 via-[#715923] to-[#e8d39a] dark:from-white dark:via-green-100 dark:to-teal-100 bg-clip-text text-transparent mb-6 leading-tight"
-            >
-              {t("partner_head1")}
-              <br />
-              <span className="bg-gradient-to-r from-[#715923] to-[#e8d39a] bg-clip-text text-transparent">
-                {t("partner_head2")}
-              </span>
-            </motion.h1>
+          <motion.h1 variants={item} className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-gray-900 dark:text-white mb-6">
+            {t("partner_head1")} <br />
+            <span className="text-[#715923]">{t("partner_head2")}</span>
+          </motion.h1>
 
-            <motion.p
-              variants={itemVariants}
-              className="text-xl lg:text-2xl text-gray-600 dark:text-gray-300 mb-12 leading-relaxed max-w-3xl mx-auto"
-            >
-              {t("partner_para")}
-            </motion.p>
+          <motion.p variants={item} className="text-sm md:text-base text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-8">
+            {t("partner_para")}
+          </motion.p>
 
-            <motion.button
-              variants={itemVariants}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="group inline-flex items-center gap-3 bg-gradient-to-r from-[#f9e6b8] to-[#715923] hover:from-[#e8d39a] hover:to-[#5f4a1f] text-white px-8 py-4 rounded-2xl font-semibold text-lg shadow-2xl hover:shadow-green-500/25 transition-all duration-300"
-            >
+          <motion.div variants={item} className="flex justify-center gap-4">
+            <button className="px-8 py-3 bg-[#715923] text-white font-semibold rounded-lg hover:bg-[#5f4a1f] transition">
               {t("partner_btn")}
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </motion.button>
+            </button>
+            <button className="px-8 py-3 border border-[#715923] text-[#715923] rounded-lg hover:bg-[#715923]/10 transition">
+              Learn More
+            </button>
           </motion.div>
-        </div>
+
+          <motion.div variants={item} className="mt-10 flex justify-center gap-8 text-sm text-gray-600 dark:text-gray-400">
+            <div className="flex items-center gap-2"><CheckCircle size={14} /> ISO Certified</div>
+            <div className="flex items-center gap-2"><TrendingUp size={14} /> Global Network</div>
+            <div className="flex items-center gap-2"><Star size={14} /> Trusted Partners</div>
+          </motion.div>
+        </motion.div>
       </section>
 
-
-
-
-
-      {/* Stats Section */}
-      {/* <section className="border border-red-500 py-16 bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm">
-        <div className="container mx-auto px-6">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="grid border border-green-500 grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto"
-          >
-            {stats.map((stat, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                whileHover={{ y: -5 }}
-                className="text-center group border border-red-600"
-              >
-                <div className="inline-flex border border-red-500 items-center justify-center w-16 h-16 bg-gradient-to-r from-[#f9e6b8] to-[#715923]  rounded-2xl mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <div className="text-white">{stat.icon}</div>
-                </div>
-                <div className="text-4xl font-bold text-gray-900 dark:text-white mb-2">
-                  {stat.number}
-                </div>
-                <div className="text-gray-600 dark:text-gray-400 font-medium">
-                  {t(stat.label)}
-                </div>
-              </motion.div>
-            ))}
-          </motion.div>
-        </div>
-      </section> */}
-
-      <section className="py-6 bg-gray-100 dark:bg-gray-800/50 backdrop-blur-sm">
-       <h2 className="text-3xl lg:text-4xl font-bold text-center text-gray-700 dark:text-white mb-10">
-            Certified Organization
+      {/* CERTIFICATIONS */}
+      <section className="py-14 bg-gray-100 dark:bg-gray-800">
+        <h2 className="text-2xl md:text-3xl font-bold text-center mb-10">
+            {t("certifie_head")} <span className="text-[#715923]">{t("organization_head")}</span>
           </h2>
-        <div className="container mx-auto px-6 py-10">
-         
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="grid grid-cols-3 md:grid-cols-6 gap-8 max-w-4xl mx-auto"
-          >
-            {stats.map((stat, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                whileHover={{ y: -5 }}
-                className="text-center group">
-                <div className="overflow-hidden inline-flex items-center justify-center w-30 h-30 mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <img src={stat.icon} alt="images" />
-                </div>
-              </motion.div>
-            ))}
-          </motion.div>
+
+        <div className="flex flex-wrap justify-center items-center gap-x-8 gap-y-4 px-6">
+          {certs.map((img, i) => (
+            <img
+              key={i}
+              src={img}
+              alt="certification"
+              className="h-20 md:h-24 object-contain opacity-90 hover:opacity-100 transition-transform duration-300 hover:scale-105"
+            />
+          ))}
         </div>
       </section>
 
-      {/* Features Section */}
-      <section ref={sectionRef} className="py-20 bg-gray-50 dark:bg-gray-900">
-        <div className="container mx-auto px-6">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={inView ? "visible" : "hidden"}
-            variants={containerVariants}
-            transition={{ duration: 0.6 }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-6">
 
-              {t("partnerf_head1")}{" "}
-              <span className="bg-gradient-to-r from-[#f9e6b8] to-[#715923] bg-clip-text text-transparent">
-                {t("partnerf_head2")}
-              </span>
-            </h2>
-            <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-              {t("partnerf_para")}
-            </p>
-          </motion.div>
+      {/* FEATURES */}
+      <section ref={sectionRef} className="py-16 bg-white dark:bg-gray-900 px-6 lg:px-20">
+        <motion.div initial="hidden" animate={inView ? "visible" : "hidden"} variants={container}>
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-10">
+            {t("partnerf_head1")} <span className="text-[#715923]">{t("partnerf_head2")}</span>
+          </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {features.map((feature, index) => (
+            {features.map((f, i) => (
               <motion.div
-                key={index}
-                initial="hidden"
-                animate={inView ? "visible" : "hidden"}
-                variants={itemVariants}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                whileHover={{ y: -10, scale: 1.02 }}
-                className="group relative"
+                key={i}
+                variants={item}
+                whileHover={{ y: -6 }}
+                className="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl border border-gray-200 dark:border-gray-700"
               >
-                <div className="bg-white dark:bg-gray-800 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 border border-gray-100 dark:border-gray-700 h-full">
-                  <div
-                    className={`inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r ${feature.color} rounded-2xl mb-6 group-hover:scale-110 transition-transform duration-300`}
-                  >
-                    <div className="text-white">{feature.icon}</div>
-                  </div>
-                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4 group-hover:text-[#000000] dark:group-hover:text-black/10 transition-colors">
-                    {t(feature.title)}
-                  </h3>
-                  <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                    {t(feature.description)}
-                  </p>
-                  <div className="absolute inset-0 bg-gradient-to-r from-green-500/5 to-teal-500/5 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="w-11 h-11 flex items-center justify-center bg-[#715923] text-white rounded-lg mb-5">
+                  {f.icon}
                 </div>
+                <h3 className="font-semibold mb-2">{t(f.title)}</h3>
+                <p className="text-sm text-gray-600 dark:text-gray-400">
+                  {t(f.desc)}
+                </p>
               </motion.div>
             ))}
           </div>
+        </motion.div>
+      </section>
+
+      {/* CTA */}
+      <section className="py-16 bg-[#715923] text-white text-center px-6 lg:px-20">
+        <h2 className="text-2xl md:text-3xl font-bold mb-6">
+          {t("partner_ctah")}
+        </h2>
+        <p className="text-sm md:text-base mb-8 max-w-2xl mx-auto">
+          {t("partner_ctap")}
+        </p>
+
+        <div className="flex justify-center gap-4">
+          <button className="bg-white text-[#715923] px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
+            {t("partner_ctab1")}
+          </button>
+          <button className="border border-white px-8 py-3 rounded-lg hover:bg-white/10 transition">
+            {t("partner_ctab2")}
+          </button>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-[#f9e6b8] to-[#715923]  relative overflow-hidden">
-        <div className="absolute inset-0">
-          <motion.div
-            className="absolute top-10 left-10 w-40 h-40 bg-white/10 rounded-full blur-xl"
-            variants={floatingVariants}
-            animate="animate"
-          />
-          <motion.div
-            className="absolute bottom-10 right-10 w-32 h-32 bg-white/10 rounded-full blur-xl"
-            variants={floatingVariants}
-            animate="animate"
-            transition={{ delay: 1.5 }}
-          />
-        </div>
-
-        <div className="container mx-auto px-6 text-center relative">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-          >
-            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-              {t("partner_ctah")}
-            </h2>
-            <p className="text-xl text-green-100 mb-8 max-w-2xl mx-auto">
-              {t("partner_ctap")}
-            </p>
-
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="group inline-flex items-center gap-3 bg-white text-[#000000] px-8 py-4 rounded-2xl font-semibold text-lg shadow-2xl hover:shadow-white/25 transition-all duration-300"
-              >
-                {t("partner_ctab1")}
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </motion.button>
-              {/* #95DE4B
-#059BE3 */}
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="inline-flex items-center gap-3 border-2 border-white/30 text-white px-8 py-4 rounded-2xl font-semibold text-lg hover:bg-white/10 transition-all duration-300"
-              >
-                {t("partner_ctab2")}
-              </motion.button>
-            </div>
-          </motion.div>
-        </div>
-      </section>
     </div>
   );
 };

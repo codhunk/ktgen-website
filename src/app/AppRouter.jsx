@@ -54,10 +54,10 @@ const App = () => {
             <Route path="/contact" element={<ContactUs />} />
             <Route path="/about" element={<AboutUs />} />
             <Route path="/doctors-pharmacies" element={<DoctorsPharmaciesPage />} />
-            <Route path="/products" element={<ProductsPage />} />
+            {/* <Route path="/products" element={<ProductsPage />} /> */}
             {/* Gallery Page */}
             <Route path="/gallery" element={<Gallery />} />
-            <Route path="/pregnency-sec" element={<Preg />} />
+            {/* <Route path="/pregnency-sec" element={<Preg />} /> */}
             <Route path="/campaign-sec" element={<Comp />} />
             <Route path="/therapy" element={<TherapyArea />} />
             <Route path="/csr" element={<CSRPage />} />

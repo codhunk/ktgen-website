@@ -6,15 +6,15 @@ import { useTranslation } from "react-i18next";
 import "swiper/css";
 import "swiper/css/pagination";
 
-import rahulPic from "../assets/leaders/campaign1.jpg";
-import vibhaPic from "../assets/leaders/campaign2.jpg";
+import tejuPic from "../assets/leaders/teju.jpeg";
+import kiranPic from "../assets/leaders/kiran.JPG";
 import anujPic from "../assets/leaders/campaign3.jpg";
 
 const leaders = [
   {
     name: "meet_card1name",
     title: "meet_card1title",
-    image: rahulPic,
+    image: kiranPic,
     bio: "meet_card1bio",
     socials: {
       linkedin: "#",
@@ -25,7 +25,7 @@ const leaders = [
   {
     name: "meet_card2name",
     title: "meet_card2title",
-    image: vibhaPic,
+    image: tejuPic,
     bio: "meet_card2bio",
     socials: {
       linkedin: "#",
@@ -91,13 +91,12 @@ const LeadershipTeam = () => {
                         draggable="false"
                       />
                     </div>
-
                     {/* Right Section (Details) */}
                     <div className="text-center group-hover:text-left flex-1 group-hover:w-1/2 group-hover:py-4 group-hover:pr-4 transition-all duration-500">
                       <h5 className="text-2xl font-bold text-gray-800 dark:text-slate-100">
                         {t(leader.name)}
                       </h5>
-                      <p className="text-lg text-indigo-600 dark:text-blue-300 font-medium mt-2">
+                      <p className="whitespace-pre-line text-lg text-indigo-600 dark:text-blue-300 font-medium mt-2">
                         {t(leader.title)}
                       </p>
                       <p className="mt-2 text-gray-600 dark:text-white text-sm">

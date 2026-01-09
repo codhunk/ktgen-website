@@ -34,7 +34,7 @@ const HeroAboutUs = () => {
           transition={{ duration: 1, delay: 0.3 }}
         >
           <img
-            src="/images/about_hero.jpg" // Replace with your actual image path
+            src="/images/about_hero1.jpg" // Replace with your actual image path
             alt="About Us"
             className="w-full max-w-md mx-auto rounded-xl shadow-lg"
           />
