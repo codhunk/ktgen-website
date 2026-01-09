@@ -60,7 +60,7 @@ const Career = () => {
   return (
     <main className={`pt-[45px] ${isDark ? "bg-[#0a0a0a] text-white" : "bg-white text-gray-800"}`}>
       {/* Hero Section */}
-      <div className="flex w-full justify-center mt-12">
+      <div className="flex w-full justify-center">
         <section
           className={`relative w-full md:w-[100%] h-[400px] flex items-center justify-center  overflow-hidden shadow-lg transition-colors duration-300`}
           style={{ backgroundImage: `url(${joinus})`, backgroundSize: "cover", backgroundPosition: "center", }}

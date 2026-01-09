@@ -9,8 +9,10 @@ import {
   FaUser,
   FaShoppingBag,
 } from "react-icons/fa";
-import { MdWbSunny } from "react-icons/md";
+import { MdWbSunny, MdOutlineWork } from "react-icons/md";
 import { RxHamburgerMenu, RxCross1 } from "react-icons/rx";
+import { SiWikimediafoundation } from "react-icons/si";
+import { RiTeamFill } from "react-icons/ri";
 import LanguageSelector from "../LanguageSelector/LanguageSelector";
 import { useDarkMode } from "../../hooks/UseDarkMode/useDarkMode";
 import logo from "../../logo/ktg.png";
@@ -26,19 +28,19 @@ const Navbar = () => {
     {
       name: "LIFE AT KT GEN",
       sub: [
-        { name: "Our Story", link: "/story" },
-        { name: "Careers", link: "/career" },
-        { name: "Media / Gallery", link: "/gallery" },
-        { name: "CSR", link: "/csr" },
-        { name: "Our Mission", link: "/ourmission" },
+        { name: "OUR STORY", link: "/story", icon: <MdOutlineWork /> },
+        { name: "CAREERS", link: "/career", icon: <MdOutlineWork /> },
+        { name: "MEDIA / GALLERY", link: "/gallery", icon: <SiWikimediafoundation /> },
+        { name: "CSR", link: "/csr", icon: <RiTeamFill /> },
+        { name: "OUR MISSION", link: "/ourmission", icon: <RiTeamFill /> },
       ],
     },
     { name: "CAMPAIGN", link: "/campaign-sec" },
     {
       name: "PHARMACY",
       sub: [
-        { name: "Therapy Area", link: "/therapy" },
-        { name: "Doctors & Pharmacies", link: "/doctors-pharmacies" },
+        { name: "Therapy Area", link: "/therapy", icon: <MdOutlineWork /> },
+        { name: "Doctors & Pharmacies", link: "/doctors-pharmacies", icon: <MdOutlineWork /> },
       ],
     },
     { name: "CONTACT US", link: "/contact" },
@@ -61,7 +63,7 @@ const Navbar = () => {
       {/* TOP BAR */}
       <div className="bg-[#020617] text-white text-[11px] border-b border-[#715923]/30">
         <div className="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between">
-          <div className="flex items-center gap-4 text-[#715923]">
+          <div className="flex items-center gap-4 text-[#debb4b]">
             <FaFacebookF className="hover:text-white cursor-pointer" />
             <FaInstagram className="hover:text-white cursor-pointer" />
             <FaLinkedinIn className="hover:text-white cursor-pointer" />
@@ -71,7 +73,7 @@ const Navbar = () => {
             <span>📞 +91 7899312233</span>
             <span>📞 +91 7899312233</span>
           </div>
-          <button className="bg-[#715923] text-white px-4 py-1 rounded font-semibold hover:opacity-90 transition">
+          <button className="bg-[#debb4b] text-white px-4 py-1 rounded font-semibold hover:opacity-90 transition">
             Contact Us
           </button>
         </div>
@@ -83,10 +85,10 @@ const Navbar = () => {
 
           {/* LOGO */}
           <NavLink to="/" className="flex items-center gap-2">
-            <img src={logo} className="w-10" alt="logo" />
+            <img src={logo} className="w-14" alt="logo" />
             <div>
-              <p className="text-[10px] text-gray-400">THIS IS</p>
-              <p className="font-bold text-[#715923]">KT GEN</p>
+              <p className="text-[12px] text-gray-100">THIS IS</p>
+              <p className="font-bold text-[#debb4b]">KT GEN</p>
             </div>
           </NavLink>
 
@@ -105,7 +107,7 @@ const Navbar = () => {
                     <span className="text-xs">▾</span>
                   </button>
                 ) : (
-                  <NavLink to={item.link} className="hover:text-[#715923] transition">
+                  <NavLink to={item.link} className="hover:text-[#debb4b] transition">
                     {item.name}
                   </NavLink>
                 )}
@@ -117,7 +119,7 @@ const Navbar = () => {
                       if (hoverTimeout.current) clearTimeout(hoverTimeout.current);
                     }}
                     onMouseLeave={handleLeave}
-                    className={`absolute top-full mt-4 w-[320px] rounded-2xl bg-white/95 backdrop-blur-xl shadow-2xl border border-[#715923]/20 transition-all duration-300 origin-top
+                    className={`absolute top-full mt-4 w-[340px] rounded-2xl bg-white/95 backdrop-blur-xl shadow-2xl border border-[#debb4b]/20 transition-all duration-300 origin-top
                     ${
                       openDropdown === i
                         ? "opacity-100 scale-100 translate-y-0"
@@ -131,9 +133,12 @@ const Navbar = () => {
                           to={s.link}
                           className="group flex items-center gap-4 p-4 rounded-xl hover:bg-[#715923] transition"
                         >
-                          <div className="w-10 h-10 rounded-xl bg-[#715923]/10 flex items-center justify-center group-hover:bg-white/20 transition">
-                            <span className="text-[#715923] group-hover:text-white text-lg">●</span>
+                          {/* ICON */}
+                          <div className="w-10 h-10 rounded-xl bg-[#715923]/10 flex items-center justify-center text-[#715923] group-hover:text-white group-hover:bg-white/20 transition">
+                            {s.icon}
                           </div>
+
+                          {/* TEXT */}
                           <div className="flex-1">
                             <p className="font-semibold text-gray-800 group-hover:text-white">
                               {s.name}
@@ -142,7 +147,11 @@ const Navbar = () => {
                               Learn more about {s.name.toLowerCase()}
                             </p>
                           </div>
-                          <span className="text-[#715923] group-hover:text-white transition">→</span>
+
+                          {/* ARROW */}
+                          <span className="text-[#715923] group-hover:text-white transition">
+                            →
+                          </span>
                         </NavLink>
                       ))}
                     </div>
@@ -167,7 +176,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* MOBILE MENU (unchanged logic) */}
+      {/* MOBILE MENU */}
       {openMenu && (
         <div className="fixed inset-0 bg-black/60 z-50 flex">
           <div className="bg-white w-80 h-full shadow-xl flex flex-col">
@@ -187,7 +196,9 @@ const Navbar = () => {
                       className="w-full flex justify-between items-center py-3 font-semibold text-gray-800"
                     >
                       {item.name}
-                      <span className={openDropdown === i ? "rotate-180" : ""}>▾</span>
+                      <span className={openDropdown === i ? "rotate-180" : ""}>
+                        ▾
+                      </span>
                     </button>
                   ) : (
                     <NavLink
@@ -206,8 +217,9 @@ const Navbar = () => {
                           key={j}
                           to={sub.link}
                           onClick={() => setOpenMenu(false)}
-                          className="block py-2 text-gray-600 hover:text-[#715923]"
+                          className="flex items-center gap-3 py-2 text-gray-600 hover:text-[#715923]"
                         >
+                          <span className="text-[#715923]">{sub.icon}</span>
                           {sub.name}
                         </NavLink>
                       ))}

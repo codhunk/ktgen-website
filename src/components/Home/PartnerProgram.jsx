@@ -54,7 +54,7 @@ const PartnerProgram = () => {
         {/* Gradient Orbs */}
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute -top-20 -left-20 w-[300px] h-[300px] bg-[#715923]/30 rounded-full blur-3xl"></div>
-          <div className="absolute top-20 right-0 w-[260px] h-[260px] bg-[#e8d39a]/30 rounded-full blur-3xl"></div>
+          <div className="absolute top-20 right-0 w-[260px] h-[260px] bg-[#debb4b]/30 rounded-full blur-3xl"></div>
           <div className="absolute bottom-0 left-1/3 w-[260px] h-[260px] bg-emerald-400/20 rounded-full blur-3xl"></div>
         </div>
 
