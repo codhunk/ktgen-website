@@ -16,6 +16,7 @@ import { RiTeamFill } from "react-icons/ri";
 import LanguageSelector from "../LanguageSelector/LanguageSelector";
 import { useDarkMode } from "../../hooks/UseDarkMode/useDarkMode";
 import logo from "../../logo/ktg.png";
+import { ArrowBigDownIcon, DropletIcon } from "lucide-react";
 
 const Navbar = () => {
   const { isDark, toggleDarkMode } = useDarkMode();
@@ -61,7 +62,7 @@ const Navbar = () => {
     <header className="fixed top-0 w-full z-50">
 
       {/* TOP BAR */}
-      <div className="bg-[#020617] text-white text-[11px] border-b border-[#715923]/30">
+      {/* <div className="bg-[#020617] text-white text-[11px] border-b border-[#715923]/30">
         <div className="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between">
           <div className="flex items-center gap-4 text-[#debb4b]">
             <FaFacebookF className="hover:text-white cursor-pointer" />
@@ -77,11 +78,11 @@ const Navbar = () => {
             Contact Us
           </button>
         </div>
-      </div>
+      </div> */}
 
       {/* MAIN BAR */}
       <div className="bg-[#020617] text-white border-t border-white/10">
-        <div className="max-w-7xl mx-auto px-5 py-4 flex justify-between items-center">
+        <div className="max-w-7xl mx-auto px-5 py-6 flex justify-between items-center">
 
           {/* LOGO */}
           <NavLink to="/" className="flex items-center gap-2">
@@ -104,7 +105,7 @@ const Navbar = () => {
                 {item.sub ? (
                   <button className="flex items-center gap-1 hover:text-[#715923] transition">
                     {item.name}
-                    <span className="text-xs">▾</span>
+                    <span className="text-xs"><ArrowBigDownIcon size={12} /></span>
                   </button>
                 ) : (
                   <NavLink to={item.link} className="hover:text-[#debb4b] transition">
@@ -167,8 +168,8 @@ const Navbar = () => {
               {isDark ? <MdWbSunny /> : <FaMoon />}
             </button>
             <LanguageSelector />
-            <FaUser />
-            <FaShoppingBag />
+            {/* <FaUser /> */}
+            {/* <FaShoppingBag /> */}
             <button className="lg:hidden" onClick={() => setOpenMenu(true)}>
               <RxHamburgerMenu size={22} />
             </button>
@@ -197,7 +198,7 @@ const Navbar = () => {
                     >
                       {item.name}
                       <span className={openDropdown === i ? "rotate-180" : ""}>
-                        ▾
+                        <ArrowBigDownIcon/>
                       </span>
                     </button>
                   ) : (

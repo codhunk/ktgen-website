@@ -79,7 +79,7 @@ i18n
 
           // home section
           home_heading: "KT Gen Pharmaceuticals Always By Your Side",
-          home_para: "Smartest Choice-Investing in your health. Delivering trusted and affordable health solutions, always. KT Gen Pharmaceuticals Always By your side.",
+          home_para: "At KT Gen, we are committed to improving lives through high-quality, affordable, and innovative healthcare solutions. As a trusted pharmaceutical company, we focus on delivering safe, effective, and reliable medicines that meet global standards of quality.",
           home_btn1: "Explore Products",
           home_btn2: "Partner With Us",
           count_head: "Trust Through Numbers",

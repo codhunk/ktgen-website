@@ -46,7 +46,7 @@ const App = () => {
       <ScrollToTop />
       <MouseGlow />
       <div id="smooth-wrapper" >
-        <div id="smooth-content" className="mt-16">
+        <div id="smooth-content" className="mt-12">
           <Routes>
             {/* Launching Page */}
             <Route path="/" element={<Home />} />

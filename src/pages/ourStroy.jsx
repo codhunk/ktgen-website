@@ -76,7 +76,13 @@ export default function OurStoryPage() {
         <motion.div className="max-w-4xl mx-auto">
           <h2 className="text-4xl sm:text-5xl font-bold mb-4">Our Story</h2>
           <p className="text-lg sm:text-xl text-white/90 mb-6">
-            From humble beginnings to a healthcare revolution — discover KT Gen’s journey, values, and vision.
+            KT Gen was founded with a clear and meaningful purpose — to make high-quality, safe, and affordable medicines accessible to everyone.
+
+            From the very beginning, we believed that healthcare is not just a business, but a responsibility. With this belief, KT Gen was built on strong values of quality, integrity, and patient care. Every product we develop is guided by scientific research, strict quality standards, and a deep commitment to patient safety.
+
+            What started as a small initiative with a big vision has grown into a trusted pharmaceutical brand, respected by doctors, pharmacists, and healthcare partners. Our growing presence reflects the trust we have earned through consistency, transparency, and performance.
+
+
           </p>
           <p className="text-md sm:text-lg text-white/70">
             Empowering communities, transforming lives, and creating access to quality healthcare for all.

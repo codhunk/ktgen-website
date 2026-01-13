@@ -12,17 +12,6 @@ import anujPic from "../assets/leaders/campaign3.jpg";
 
 const leaders = [
   {
-    name: "meet_card1name",
-    title: "meet_card1title",
-    image: kiranPic,
-    bio: "meet_card1bio",
-    socials: {
-      linkedin: "#",
-      X: "#",
-      instagram: "#",
-    },
-  },
-  {
     name: "meet_card2name",
     title: "meet_card2title",
     image: tejuPic,
@@ -34,16 +23,27 @@ const leaders = [
     },
   },
   {
-    name: "meet_card3name",
-    title: "meet_card3title",
-    image: anujPic,
-    bio: "meet_card3bio",
+    name: "meet_card1name",
+    title: "meet_card1title",
+    image: kiranPic,
+    bio: "meet_card1bio",
     socials: {
       linkedin: "#",
       X: "#",
       instagram: "#",
     },
   },
+  // {
+  //   name: "meet_card3name",
+  //   title: "meet_card3title",
+  //   image: anujPic,
+  //   bio: "meet_card3bio",
+  //   socials: {
+  //     linkedin: "#",
+  //     X: "#",
+  //     instagram: "#",
+  //   },
+  // },
 ];
 
 const LeadershipTeam = () => {

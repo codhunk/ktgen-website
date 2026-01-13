@@ -1,167 +1,253 @@
-import React, { useRef } from "react";
-import { motion, useInView } from "framer-motion";
+"use client";
+import { assets } from "../../assets/images/assets";
+import { motion } from "framer-motion";
+import ctaImg from "./assets/images/e2.jpg";
 import {
-  Scan,
-  Trophy,
-  Gift,
-  Package,
-  Star,
-  Zap,
-  TrendingUp,
-  CheckCircle,
+  ShieldCheck,
+  Globe,
+  Microscope,
+  Building2,
   ArrowRight,
 } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import { assets } from "../../assets/images/assets";
+import pharmaVideo from "./assets/mp4/phama.mp4";
 
-const PartnerProgram = () => {
+/* ---------------- DATA ---------------- */
+
+const certs = [
+  assets.cer_img1,
+  assets.cer_img2,
+  assets.cer_img3,
+  assets.cer_img4,
+  assets.cer_img5,
+  assets.cer_img6,
+];
+
+const features = [
+  {
+    icon: <ShieldCheck size={26} />,
+    title: "Regulatory Compliance",
+    desc: "All operations follow GMP, WHO and global pharmaceutical standards.",
+    sub: "Ensuring full legal, safety and quality compliance across every market.",
+  },
+  {
+    icon: <Microscope size={26} />,
+    title: "Advanced R&D",
+    desc: "Innovation-driven laboratories ensuring quality and safety.",
+    sub: "Continuous research for improved formulations and better patient outcomes.",
+  },
+  {
+    icon: <Building2 size={26} />,
+    title: "Certified Manufacturing",
+    desc: "Large-scale production facilities with international certifications.",
+    sub: "Modern infrastructure meeting FDA, ISO and global regulatory norms.",
+  },
+  {
+    icon: <Globe size={26} />,
+    title: "Global Reach",
+    desc: "Distribution partnerships across multiple healthcare markets.",
+    sub: "Expanding pharmaceutical access in emerging and developed economies.",
+  },
+];
+
+/* ---------------- COMPONENT ---------------- */
+
+export default function PartnerProgram() {
   const { t } = useTranslation();
-  const sectionRef = useRef(null);
-  const inView = useInView(sectionRef, { amount: 0.15 });
-
-  const container = {
-    hidden: {},
-    visible: { transition: { staggerChildren: 0.15 } },
-  };
-
-  const item = {
-    hidden: { opacity: 0, y: 25 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
-  };
-
-  const features = [
-    { icon: <Scan />, title: "partner_titl1", desc: "partner_des1" },
-    { icon: <Trophy />, title: "partner_titl2", desc: "partner_des2" },
-    { icon: <Gift />, title: "partner_titl3", desc: "partner_des3" },
-    { icon: <Package />, title: "partner_titl4", desc: "partner_des4" },
-  ];
-
-  const certs = [
-    assets.cer_img1,
-    assets.cer_img2,
-    assets.cer_img3,
-    assets.cer_img4,
-    assets.cer_img5,
-    assets.cer_img6,
-  ];
 
   return (
-    <div className="bg-gray-50 dark:bg-gray-900 overflow-hidden">
+    <section className="bg-white py-16 md:py-12">
+      <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
 
-      {/* HERO */}
-      <section className="relative w-full py-20 bg-white dark:bg-gray-900 overflow-hidden">
-
-        {/* Gradient Orbs */}
-        <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute -top-20 -left-20 w-[300px] h-[300px] bg-[#715923]/30 rounded-full blur-3xl"></div>
-          <div className="absolute top-20 right-0 w-[260px] h-[260px] bg-[#debb4b]/30 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-0 left-1/3 w-[260px] h-[260px] bg-emerald-400/20 rounded-full blur-3xl"></div>
-        </div>
-
+        {/* ================= HERO ================= */}
         <motion.div
-          variants={container}
-          initial="hidden"
-          animate="visible"
-          className="relative w-full px-6 lg:px-20 text-center"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7 }}
+          className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
         >
-          <motion.span variants={item} className="inline-flex items-center gap-2 text-sm font-medium text-[#715923] mb-6">
-            <Zap size={16} /> {t("partnertop_head")}
-          </motion.span>
+          <div>
+            <p className="text-blue-700 font-semibold mb-3">
+              Pharmaceutical Partnership Program
+            </p>
 
-          <motion.h1 variants={item} className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-gray-900 dark:text-white mb-6">
-            {t("partner_head1")} <br />
-            <span className="text-[#715923]">{t("partner_head2")}</span>
-          </motion.h1>
+            <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-6">
+              Partnering to Deliver <br />
+              <span className="text-blue-700">Trusted Healthcare Solutions</span>
+            </h1>
 
-          <motion.p variants={item} className="text-sm md:text-base text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-8">
-            {t("partner_para")}
-          </motion.p>
+            <p className="text-gray-600 max-w-xl mb-4">
+              We collaborate with healthcare organizations, distributors and
+              innovators to expand global access to safe, effective and
+              high-quality pharmaceutical products.
+            </p>
 
-          <motion.div variants={item} className="flex justify-center gap-4">
-            <button className="px-8 py-3 bg-[#715923] text-white font-semibold rounded-lg hover:bg-[#5f4a1f] transition">
-              {t("partner_btn")}
-            </button>
-            <button className="px-8 py-3 border border-[#715923] text-[#715923] rounded-lg hover:bg-[#715923]/10 transition">
-              Learn More
-            </button>
-          </motion.div>
+            <p className="text-gray-500 max-w-xl mb-8">
+              Our partnerships are built on transparency, regulatory excellence,
+              and a shared commitment to improving patient lives worldwide.
+            </p>
 
-          <motion.div variants={item} className="mt-10 flex justify-center gap-8 text-sm text-gray-600 dark:text-gray-400">
-            <div className="flex items-center gap-2"><CheckCircle size={14} /> ISO Certified</div>
-            <div className="flex items-center gap-2"><TrendingUp size={14} /> Global Network</div>
-            <div className="flex items-center gap-2"><Star size={14} /> Trusted Partners</div>
-          </motion.div>
-        </motion.div>
-      </section>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <button className="bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-800">
+                Become a Partner
+              </button>
 
-      {/* CERTIFICATIONS */}
-      <section className="py-14 bg-gray-100 dark:bg-gray-800">
-        <h2 className="text-2xl md:text-3xl font-bold text-center mb-10">
-            {t("certifie_head")} <span className="text-[#715923]">{t("organization_head")}</span>
-          </h2>
+              <button className="flex items-center gap-2 text-[#c9a24d] font-semibold">
+                View Program <ArrowRight size={18} />
+              </button>
+            </div>
+          </div>
 
-        <div className="flex flex-wrap justify-center items-center gap-x-8 gap-y-4 px-6">
-          {certs.map((img, i) => (
-            <img
-              key={i}
-              src={img}
-              alt="certification"
-              className="h-20 md:h-24 object-contain opacity-90 hover:opacity-100 transition-transform duration-300 hover:scale-105"
+          <div className="relative h-[260px] sm:h-[360px] lg:h-[420px] rounded-2xl overflow-hidden border shadow-lg">
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              src={pharmaVideo}
+              className="w-full h-full object-cover"
             />
-          ))}
-        </div>
-      </section>
+            <div className="absolute inset-0 bg-gradient-to-t from-white/80 to-transparent"></div>
+          </div>
+        </motion.div>
+
+        {/* ================= CERTIFICATIONS ================= */}
+        <section className="mt-24">
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl font-bold text-gray-900">
+              {t("certifie_head")}{" "}
+              <span className="text-[#c9a24d]">{t("organization_head")}</span>
+            </h2>
+
+            <p className="mt-3 text-gray-600 max-w-2xl mx-auto">
+              Our facilities and processes are certified by internationally
+              recognized regulatory authorities, ensuring compliance, safety
+              and global trust.
+            </p>
+          </motion.div>
+
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={{
+              hidden: {},
+              visible: { transition: { staggerChildren: 0.12 } },
+            }}
+            className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8"
+          >
+            {certs.map((img, i) => (
+              <motion.div
+                key={i}
+                variants={{
+                  hidden: { opacity: 0, y: 20 },
+                  visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+                }}
+                whileHover={{ scale: 1.06 }}
+                className="bg-white border border-gray-200 rounded-2xl shadow-sm hover:shadow-md transition p-8 flex items-center justify-center"
+              >
+                <img
+                  src={img}
+                  alt="Certification"
+                  className="h-20 sm:h-24 md:h-28 object-contain opacity-90 hover:opacity-100 transition"
+                />
+              </motion.div>
+            ))}
+          </motion.div>
+
+        </section>
 
 
-      {/* FEATURES */}
-      <section ref={sectionRef} className="py-16 bg-white dark:bg-gray-900 px-6 lg:px-20">
-        <motion.div initial="hidden" animate={inView ? "visible" : "hidden"} variants={container}>
-          <h2 className="text-2xl md:text-3xl font-bold text-center mb-10">
-            {t("partnerf_head1")} <span className="text-[#715923]">{t("partnerf_head2")}</span>
+        {/* ================= FEATURES ================= */}
+        <div className="mt-24">
+          <h2 className="text-3xl font-bold text-center mb-12">
+            Why Global Partners Choose Us
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
             {features.map((f, i) => (
               <motion.div
                 key={i}
-                variants={item}
-                whileHover={{ y: -6 }}
-                className="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl border border-gray-200 dark:border-gray-700"
+                whileHover={{ y: -8 }}
+                className="bg-white border rounded-2xl p-8 shadow-md hover:shadow-xl"
               >
-                <div className="w-11 h-11 flex items-center justify-center bg-[#715923] text-white rounded-lg mb-5">
+                <div className="w-12 h-12 flex items-center justify-center bg-blue-50 text-blue-700 rounded-xl mb-5">
                   {f.icon}
                 </div>
-                <h3 className="font-semibold mb-2">{t(f.title)}</h3>
-                <p className="text-sm text-gray-600 dark:text-gray-400">
-                  {t(f.desc)}
-                </p>
+                <h3 className="font-semibold text-lg mb-2">{f.title}</h3>
+                <p className="text-gray-600">{f.desc}</p>
+                <p className="text-gray-500 mt-2">{f.sub}</p>
               </motion.div>
             ))}
           </div>
-        </motion.div>
-      </section>
-
-      {/* CTA */}
-      <section className="py-16 bg-[#715923] text-white text-center px-6 lg:px-20">
-        <h2 className="text-2xl md:text-3xl font-bold mb-6">
-          {t("partner_ctah")}
-        </h2>
-        <p className="text-sm md:text-base mb-8 max-w-2xl mx-auto">
-          {t("partner_ctap")}
-        </p>
-
-        <div className="flex justify-center gap-4">
-          <button className="bg-white text-[#715923] px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
-            {t("partner_ctab1")}
-          </button>
-          <button className="border border-white px-8 py-3 rounded-lg hover:bg-white/10 transition">
-            {t("partner_ctab2")}
-          </button>
         </div>
-      </section>
 
-    </div>
+        {/* ================= SPLIT CTA ================= */}
+        <div className="mt-32 relative">
+
+          {/* Soft pharma background */}
+          <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-[#c9a24d]/10 rounded-3xl"></div>
+
+          <div className="relative grid grid-cols-1 lg:grid-cols-2 overflow-hidden rounded-3xl border bg-white/90 backdrop-blur shadow-xl">
+
+            {/* LEFT — Pharma Image */}
+            <div className="relative h-[280px] sm:h-[360px] lg:h-full">
+              <img
+                src={ctaImg}   // replace with your pharma image
+                alt="Pharmaceutical Partnership"
+                className="w-full h-full object-cover"
+              />
+
+              {/* Gold–Blue overlay for brand tone */}
+              <div className="absolute inset-0 bg-gradient-to-tr from-blue-900/50 to-[#c9a24d]/40"></div>
+            </div>
+
+            {/* RIGHT — CTA Content */}
+            <div className="p-10 sm:p-14 lg:p-16 text-center lg:text-left flex flex-col justify-center">
+
+              <span className="inline-block mb-6 px-6 py-1 rounded-full text-xs font-semibold tracking-wide text-blue-700 bg-blue-100 w-fit mx-auto lg:mx-0">
+                Pharmaceutical Partnership
+              </span>
+
+              <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6 leading-tight">
+                Build the Future of <br />
+                <span className="text-blue-700">Healthcare With Us</span>
+              </h2>
+
+              <p className="max-w-xl text-gray-600 mb-4">
+                Join our pharmaceutical ecosystem to deliver ethical, compliant and
+                innovative medical solutions across the world.
+              </p>
+
+              <p className="max-w-xl text-gray-500 mb-10">
+                Whether you are a distributor, manufacturer, hospital group or research
+                institution, we provide the platform to grow together.
+              </p>
+
+              <div className="flex flex-col sm:flex-row gap-5">
+                <button className="bg-blue-700 text-white px-4 py-4 rounded-xl font-semibold hover:bg-blue-800 transition shadow-md">
+                  Become a Partner
+                </button>
+
+                <button className="border border-[#c9a24d] text-[#c9a24d] px-4 py-4 rounded-xl font-semibold hover:bg-[#c9a24d]/10 transition">
+                  Schedule a Discussion
+                </button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
   );
-};
-
-export default PartnerProgram;
+}

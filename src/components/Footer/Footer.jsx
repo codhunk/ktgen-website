@@ -68,7 +68,7 @@ const Footer = () => {
         {
           name: "Privacy Policy",
           link: "/privacy-policy",
-        },    
+        },
       ],
 
     },
@@ -95,7 +95,7 @@ const Footer = () => {
                   </h2>
                 </section>
                 <p className="text-md text-slate-200 md:ml-2 w-full md:w-[90%]">
-                  Smartest Choice-Investing in your health. Delivering trusted and affordable health solutions, always. KT Gen Pharmaceuticals-Always By your side.
+                  At KT Gen, we are committed to improving lives through high-quality, affordable, and innovative healthcare solutions. As a trusted pharmaceutical company, we focus on delivering safe, effective, and reliable medicines that meet global standards of quality.
                 </p>
               </div>
 
@@ -125,7 +125,7 @@ const Footer = () => {
                 <Link className="flex items-start gap-2 text-[1rem] text-slate-200 hover:text-indigo-400">
                   <MdLocationPin size={38} className="w-fit h-fit mt-1" />
                   <span>
-                    3009/1-4,2nd Main, 17th Cross, 
+                    3009/1-4,2nd Main, 17th Cross,
                     Banashankari 2nd Stage, Bangalore 560070
                   </span>
                 </Link>

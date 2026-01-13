@@ -16,6 +16,7 @@ import TestimonialModal from "../../components/Home/Testimonials/TestimonialModa
 import AnimatedSlider from "../../components/Home/AnimatedSlider";
 import Whyuscom from '../../components/Whyuscom'
 import { useTranslation } from "react-i18next";
+import CountHead from "../../components/Home/Counting/CountHead";
 
 const videos = [
   {
@@ -95,7 +96,7 @@ const Home = () => {
       <div>
         <Hero />
       </div>
-
+      <CountHead />
       {/* Counting */}
       <div className="bg-[#FBF8F2] w-full flex justify-center items-center">
         <Counting />

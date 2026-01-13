@@ -4,12 +4,16 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 import bg from "/images/about_hero1.jpg";
+import team1 from "../assets/leaders/kiran1.JPG";
 import TeamSlider from "./teamMembers";
 import MenHealthSection from "./manmedhealth";
 // import MousePointerEffect from "./mousepointereffect";
 import { motion } from "framer-motion";
 import LeadershipTeam from "./teamMembers";
 import { useTranslation } from "react-i18next";
+import { HeartHandshake, ThumbsUpIcon } from "lucide-react";
+import { TbBulbFilled } from "react-icons/tb";
+import { SiTrustedshops } from "react-icons/si";
 
 const AboutUs = () => {
   const { t } = useTranslation();
@@ -64,6 +68,95 @@ const AboutUs = () => {
             {t("about_story_para")}
           </motion.p>
         </div>
+      </section>
+      <section className="w-full bg-white">
+
+        {/* ------------------- HERO SPLIT ------------------- */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[85vh]">
+
+          {/* LEFT IMAGE */}
+          <div className="relative">
+            <div
+              className="absolute inset-0 bg-cover bg-center"
+              style={{ backgroundImage: `url(${team1})` }}
+            />
+            <div className="absolute inset-0 bg-black/10" />
+          </div>
+
+          {/* RIGHT CONTENT */}
+          <div className="bg-gradient-to-br from-[#74cdd1] via-[#5fbad6] to-[#3f90c9] flex items-center">
+            <div className="px-10 lg:px-24 py-24 text-white max-w-xl">
+
+              <p className="uppercase tracking-widest text-sm opacity-80 mb-4">
+                Our Credo
+              </p>
+
+              <h1 className="text-5xl font-light leading-tight mb-8">
+                What guides every decision we make
+              </h1>
+
+              <p className="text-lg leading-relaxed opacity-95">
+                Our core values guide every conversation, organisational decision
+                and anchor the actions of our employees. We constantly evolve to
+                remain meaningful to every life we touch.
+              </p>
+
+              <button className="mt-12 bg-[#004b99] px-10 py-4 rounded-full font-medium flex items-center gap-3 hover:bg-[#003b7d] transition">
+                Read More <span className="text-xl">→</span>
+              </button>
+
+            </div>
+          </div>
+
+        </div>
+
+        {/* ------------------- VALUES GRID ------------------- */}
+        <div className="max-w-7xl mx-auto px-10 lg:px-24 py-24 grid grid-cols-1 lg:grid-cols-2 gap-20">
+
+          {/* LEFT – VALUE CARDS */}
+          <div>
+            <p className="uppercase tracking-widest text-sm text-gray-400 mb-8">
+              We are a
+            </p>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
+
+              {[
+                { icon: <HeartHandshake size={32}/>, title: "Purpose", sub: "Inspired" },
+                { icon: <ThumbsUpIcon size={32} />, title: "Responsibility", sub: "Centered" },
+                { icon: <TbBulbFilled size={32} />, title: "Innovation", sub: "Driven" },
+                { icon: <SiTrustedshops size={32} />, title: "Integrity & Trust", sub: "Anchored" },
+              ].map((item, i) => (
+                <div key={i} className="flex gap-6">
+                  <div className="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center text-xl text-blue-500">
+                    {item.icon}
+                  </div>
+                  <div>
+                    <p className="text-lg font-medium text-gray-900">
+                      {item.title}
+                    </p>
+                    <p className="text-gray-500">
+                      {item.sub}
+                    </p>
+                  </div>
+                </div>
+              ))}
+
+            </div>
+          </div>
+
+          {/* RIGHT – BRAND STATEMENT */}
+          <div className="flex items-center">
+            <div className="border-l border-gray-300 pl-12 text-gray-700 text-xl leading-relaxed max-w-lg">
+              A global pharmaceutical firm that consistently
+              <span className="text-blue-600 font-medium"> cares for life </span>
+              and delivers on its commitment to patients, partners,
+              regulators, employees, investors, and the community.
+            </div>
+          </div>
+
+        </div>
+
       </section>
 
       {/* Leadership Section with animation */}
