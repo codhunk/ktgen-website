@@ -167,7 +167,7 @@ const Navbar = () => {
             <button onClick={toggleDarkMode}>
               {isDark ? <MdWbSunny /> : <FaMoon />}
             </button>
-            <LanguageSelector />
+            {/* <LanguageSelector /> */}
             {/* <FaUser /> */}
             {/* <FaShoppingBag /> */}
             <button className="lg:hidden" onClick={() => setOpenMenu(true)}>
@@ -234,7 +234,7 @@ const Navbar = () => {
               <button onClick={toggleDarkMode}>
                 {isDark ? <MdWbSunny /> : <FaMoon />}
               </button>
-              <LanguageSelector />
+              {/* <LanguageSelector /> */}
             </div>
           </div>
 
