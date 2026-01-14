@@ -75,7 +75,7 @@ i18n
           meet_card2bio: "Dr. Tejuvarshini V ensures smooth operations and strategic partnerships, fostering a culture of trust and collaboration.",
           meet_card3name: "Rohit Raj V",
           meet_card3title: "Managing Director\nKT Gen Pharmaceuticals Private Limited",
-          meet_card3bio: "Dr. Tejuvarshini V is the driving force behind our vision, combining innovation with strategy to lead the company forward.",
+          meet_card3bio: "Rohit Raj V is the driving force behind our vision, combining innovation with strategy to lead the company forward.",
 
           // home section
           home_heading: "KT Gen Pharmaceuticals Always By Your Side",
