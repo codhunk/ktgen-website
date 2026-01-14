@@ -8,7 +8,8 @@ import "swiper/css/pagination";
 
 import tejuPic from "../assets/leaders/teju.jpeg";
 import kiranPic from "../assets/leaders/kiran.JPG";
-import anujPic from "../assets/leaders/campaign3.jpg";
+import anujPic from "./assets/leaders/rohit.jpeg";
+
 
 const leaders = [
   {
@@ -33,17 +34,17 @@ const leaders = [
       instagram: "#",
     },
   },
-  // {
-  //   name: "meet_card3name",
-  //   title: "meet_card3title",
-  //   image: anujPic,
-  //   bio: "meet_card3bio",
-  //   socials: {
-  //     linkedin: "#",
-  //     X: "#",
-  //     instagram: "#",
-  //   },
-  // },
+  {
+    name: "meet_card3name",
+    title: "meet_card3title",
+    image: anujPic,
+    bio: "meet_card3bio",
+    socials: {
+      linkedin: "#",
+      X: "#",
+      instagram: "#",
+    },
+  },
 ];
 
 const LeadershipTeam = () => {
