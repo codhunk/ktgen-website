@@ -15,7 +15,7 @@ const leaders = [
   {
     name: "meet_card2name",
     title: "meet_card2title",
-    image: tejuPic,
+    image: kiranPic,
     bio: "meet_card2bio",
     socials: {
       linkedin: "#",
@@ -26,7 +26,7 @@ const leaders = [
   {
     name: "meet_card1name",
     title: "meet_card1title",
-    image: kiranPic,
+    image:  tejuPic,
     bio: "meet_card1bio",
     socials: {
       linkedin: "#",
@@ -50,7 +50,7 @@ const leaders = [
 const LeadershipTeam = () => {
   const { t } = useTranslation();
   return (
-    <section className="border border-red-500 bg-gradient-to-r from-purple-100 via-blue-100 to-cyan-100 dark:from-purple-950 dark:via-blue-950 dark:to-cyan-950 py-20">
+    <section className="border border-red-500 bg-gradient-to-r from-purple-100 via-blue-100 to-cyan-100 dark:from-purple-950 dark:via-blue-950 dark:to-cyan-950 py-10">
       <div className="container mx-auto px-4 text-center">
         <motion.h2
           className="text-4xl font-bold text-blue-900 dark:text-indigo-100 mb-12"
