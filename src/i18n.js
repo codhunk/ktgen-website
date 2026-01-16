@@ -77,7 +77,7 @@ i18n
           meet_card3title: "Managing Director\nKT Gen Pharmaceuticals Private Limited",
           meet_card3bio: "Rohit Raj V is the driving force behind our vision, combining innovation with strategy to lead the company forward.",
           // home section
-          home_heading: "KT Gen Pharmaceuticals -",
+          home_heading: "KT Gen Pharmaceuticals",
           home_para: "At KT Gen, we are committed to improving lives through high-quality, affordable, and innovative healthcare solutions. As a trusted pharmaceutical company, we focus on delivering safe, effective, and reliable medicines that meet global standards of quality.",
           home_btn1: "Explore Products",
           home_btn2: "Partner With Us",

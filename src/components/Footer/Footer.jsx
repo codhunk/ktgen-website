@@ -182,8 +182,21 @@ const Footer = () => {
           {/* Footer Copyright Part */}
           <div className=" text-white flex items-center justify-center">
             <span className="  text-gray-200 text-xs">
-              &copy; 2025 KT Gen Pharmaceuticals Private Limited. | All rights reserved
+              &copy; 2026 KT Gen Pharmaceuticals Private Limited. | All rights reserved 2026
             </span>
+            <span className="hidden md:inline-block mx-2 text-gray-200">|</span>
+            <span className="text-gray-200 text-xs">
+              Designed & Developed by{" "}
+              <a
+                href="https://www.webduality.in"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline text-blue-600"
+              >
+                Webduality Technologies
+              </a>
+            </span>
+
           </div>
         </div>
       </div>
