@@ -169,7 +169,7 @@ const Footer = () => {
           {/* Footer Bottom Section */}
           <div
             className="w-full  flex justify-center items-center gap-2 md:gap-5 text-[5.5vw] xl:text-[5rem]
-          font-bold text-center uppercase text-white mb-10">
+          font-bold text-center uppercase text-white mb-6">
             <img
               src={logo}
               alt="logo"
@@ -180,18 +180,18 @@ const Footer = () => {
             <span>Pharmaceutical</span>
           </div>
           {/* Footer Copyright Part */}
-          <div className=" text-white flex items-center justify-center">
+          <div className=" text-white flex items-center justify-center mb-2">
             <span className="  text-gray-200 text-xs">
               &copy; 2026 KT Gen Pharmaceuticals Private Limited. | All rights reserved 2026
             </span>
             <span className="hidden md:inline-block mx-2 text-gray-200">|</span>
-            <span className="text-gray-200 text-xs">
+            <span className="text-gray-200 text-xs ">
               Designed & Developed by{" "}
               <a
                 href="https://www.webduality.in"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:underline text-blue-600"
+                className="hover:underline text-[#c9a24d] text-sm italic font-medium"
               >
                 Webduality Technologies
               </a>
