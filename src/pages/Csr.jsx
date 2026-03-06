@@ -178,6 +178,7 @@
 
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 import education from "./assets/leaders/education.jpg";
 import health from "./assets/leaders/healthcare.jpg";
@@ -205,7 +206,7 @@ const initiatives = [
   {
     title: "Healthcare Camps",
     description:
-      "KT Gen organizes regular free health check-ups, mobile clinics, and vaccination drives to improve access to healthcare.",
+      "KTGEN Pharmaceuticals organizes regular free health check-ups, mobile clinics, and vaccination drives to improve access to healthcare.",
     image: health,
     icon: heartIcon,
   },
@@ -270,13 +271,14 @@ const fadeUp = {
 };
 
 export default function CSRPage() {
+  const { t } = useTranslation();
   return (
     <div className="bg-white text-gray-800">
       <motion.section initial="hidden" animate="visible" variants={fadeUp} className="relative min-h-[60vh] flex items-center justify-center text-center bg-gradient-to-r from-green-600 to-blue-600 text-white px-6">
         <div className="max-w-4xl z-10">
           <h1 className="text-4xl sm:text-5xl font-bold mb-4">Corporate Social Responsibility</h1>
           <p className="max-w-2xl mx-auto text-lg sm:text-xl">
-            At KT Gen, we are driven by the belief that corporate success must go hand-in-hand with social progress. Our CSR initiatives are rooted in compassion, innovation, and community-first thinking.
+            At KTGEN Pharmaceuticals, we are driven by the belief that corporate success must go hand-in-hand with social progress. Our CSR initiatives are rooted in compassion, innovation, and community-first thinking.
           </p>
         </div>
       </motion.section>
@@ -321,10 +323,17 @@ export default function CSRPage() {
       </motion.section>
 
       <motion.section initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="py-20 px-6 bg-gray-100 text-center">
-        <h2 className="text-3xl sm:text-4xl font-semibold mb-6">Our Vision & Mission</h2>
+        <h2 className="text-3xl sm:text-4xl font-semibold mb-6">{t("vision_head")} & {t("mission_head")}</h2>
         <div className="max-w-5xl mx-auto text-gray-700 text-lg space-y-4">
-          <p><strong>Vision:</strong> To create a sustainable and inclusive future where everyone has access to quality education, healthcare, and a clean environment.</p>
-          <p><strong>Mission:</strong> To empower communities through impactful programs driven by transparency, collaboration, and measurable outcomes.</p>
+          <p><strong>{t("vision_head")}:</strong> {t("vision_para")}</p>
+          <div>
+            <strong>{t("mission_head")}:</strong>
+            <ul className="mt-2 space-y-1">
+              {Array.isArray(t("mission_points")) && t("mission_points").map((point, idx) => (
+                <li key={idx}>• {point}</li>
+              ))}
+            </ul>
+          </div>
         </div>
       </motion.section>
 

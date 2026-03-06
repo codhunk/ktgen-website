@@ -19,26 +19,26 @@ const MenHealthSection = () => {
     {
       icon: <FaStethoscope className="text-2xl text-red-600" />,
       image: doctorImg,
-      title: "redefine_card1",
-      description: "redefine_card1_p",
+      title: "feature_1_title",
+      description: "feature_1_desc",
     },
     {
       icon: <IoIosHeart className="text-2xl text-blue-600" />,
       image: heartImg,
-      title: "redefine_card2",
-      description: "redefine_card2_p",
+      title: "feature_2_title",
+      description: "feature_2_desc",
     },
     {
       icon: <RiBrainLine className="text-2xl text-blue-600" />,
       image: brainImg,
-      title: "redefine_card3",
-      description: "redefine_card3_p",
+      title: "feature_3_title",
+      description: "feature_3_desc",
     },
     {
       icon: <TbTrophy className="text-2xl text-green-400" />,
       image: trophyImg,
-      title: "redefine_card4",
-      description: "redefine_card4_p",
+      title: "feature_4_title",
+      description: "feature_4_desc",
     },
   ];
 
@@ -69,7 +69,7 @@ const MenHealthSection = () => {
             </h2>
 
             <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
-              {t("redefint_para")}
+              {t("redefine_para")}
             </p>
 
             <div className="space-y-6 mb-8">

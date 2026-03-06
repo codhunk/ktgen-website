@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import { Mail, Phone, MapPin, Facebook, Instagram, Linkedin } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const tabs = ["General", "Sales", "Support", "Careers"];
 
 const ContactUs = () => {
+  const { t } = useTranslation();
   const [activeTab, setActiveTab] = useState("Careers");
 
   return (
@@ -43,11 +45,10 @@ const ContactUs = () => {
               <button
                 key={tab}
                 onClick={() => setActiveTab(tab)}
-                className={`px-5 py-2 rounded-full text-sm font-medium transition ${
-                  activeTab === tab
-                    ? "bg-gradient-to-r from-cyan-500 to-purple-500 text-white"
-                    : "bg-gray-100 hover:bg-gray-200"
-                }`}
+                className={`px-5 py-2 rounded-full text-sm font-medium transition ${activeTab === tab
+                  ? "bg-gradient-to-r from-cyan-500 to-purple-500 text-white"
+                  : "bg-gray-100 hover:bg-gray-200"
+                  }`}
               >
                 {tab}
               </button>
@@ -80,18 +81,19 @@ const ContactUs = () => {
         <div className="bg-white/95 border border-gray-200 p-10 rounded-3xl shadow-xl backdrop-blur-md flex flex-col justify-between">
           <div>
             <h3 className="text-3xl font-bold mb-4 text-gray-800">
-              KT Gen Pharmaceuticals
+              KTGEN Pharmaceuticals
             </h3>
             <p className="text-gray-600 mb-8">
               A science-driven healthcare company committed to innovation, quality, and global wellness.
             </p>
 
             <div className="space-y-6 text-gray-700">
+              <h3 className="text-lg font-semibold text-gray-800">Registered Office:</h3>
               <div className="flex gap-4">
+
                 <MapPin className="text-cyan-500" />
-                <p className="text-sm">
-                  3009/1-4, 2nd Main, 17th Cross,<br />
-                  Banashankari 2nd Stage, Bangalore – 560070
+                <p className="text-sm whitespace-pre-line">
+                  {t("address_full")}
                 </p>
               </div>
               <div className="flex gap-4">
@@ -125,7 +127,7 @@ const ContactUs = () => {
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-4xl font-bold text-center mb-14 text-gray-800">
-            Why Work With <span className="text-cyan-600">KT Gen</span>
+            Why Work With <span className="text-cyan-600">KTGEN</span>
           </h2>
           <div className="grid md:grid-cols-3 gap-10">
             {[
@@ -170,7 +172,7 @@ const ContactUs = () => {
       {/* CTA */}
       <section className="py-24 bg-gradient-to-r from-cyan-500 to-purple-600 text-center text-white">
         <h2 className="text-4xl font-extrabold mb-6">
-          Ready to Join KT Gen?
+          Ready to Join KTGEN?
         </h2>
         <p className="mb-10 text-lg">
           Work on healthcare solutions that impact millions of lives worldwide.
@@ -180,7 +182,7 @@ const ContactUs = () => {
         </button>
       </section>
 
-    </section>
+    </section >
   );
 };
 

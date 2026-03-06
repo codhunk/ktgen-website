@@ -34,7 +34,7 @@ const TypewriterText = ({ words }) => {
   }, [currentText, isDeleting, currentWordIndex, words]);
 
   return (
-    <span className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-6 text-blue-400">
+    <span className="text-3xl sm:text-4xl lg:text-4xl font-bold leading-tight mb-6 text-blue-400">
       {currentText}
       <span className="animate-pulse text-blue-400">|</span>
     </span>
@@ -42,7 +42,7 @@ const TypewriterText = ({ words }) => {
 };
 const Hero = () => {
   const { t } = useTranslation();
- 
+
   const fadeUp = {
     hidden: { opacity: 0, y: 40 },
     visible: {
@@ -76,21 +76,21 @@ const Hero = () => {
           className="max-w-3xl"
         >
           <span className="inline-block mb-6 px-8 py-1 bg-white/10 rounded-full text-xs tracking-widest uppercase text-white">
-            KT Gen Pharmaceuticals
+            KTGEN Pharmaceuticals
           </span>
 
           <h1 className="whitespace-pre-line text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-6 text-white">
             {t("home_heading")}
           </h1>
           {/* <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-6 text-blue-400">Beyond Medicine, Towards Well-Being</h1> */}
-         <TypewriterText
-                            words={[
-                                "Beyond Medicine, Towards Well-Being",
-                                
-                            ]}
-                        />
+          <TypewriterText
+            words={[
+              "Beyond Medicine, Towards Well-Being",
 
-          <p className="text-gray-200 text-sm sm:text-base lg:text-lg leading-relaxed mt-6 mb-10">
+            ]}
+          />
+
+          <p className="text-gray-200 text-base sm:text-base lg:text-lg leading-relaxed mt-6 mb-10">
             {t("home_para")}
           </p>
 
