@@ -51,14 +51,14 @@ const CountHead = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="w-full bg-[#0b2136] py-24 relative overflow-hidden">
+    <section className="w-full bg-[#0b2136] py-18 relative overflow-hidden">
       {/* Dynamic Background Elements */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
         <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-blue-600/10 blur-[120px] rounded-full animate-pulse"></div>
         <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-[#c9a24d]/10 blur-[120px] rounded-full animate-pulse" style={{ animationDelay: '2s' }}></div>
       </div>
 
-      <div className="w-[90%] 2xl:max-w-7xl mx-auto relative z-10">
+      <div className="w-[90%] 2xl:max-w-7xl mx-auto relative z-10  py-12">
 
         {/* Header */}
         <motion.div
@@ -66,7 +66,7 @@ const CountHead = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="text-center max-w-3xl mx-auto mb-20"
+          className="text-center max-w-3xl mx-auto mb-16"
         >
           <motion.span
             initial={{ opacity: 0, scale: 0.9 }}
@@ -89,7 +89,7 @@ const CountHead = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16"
         >
           {stats.map((item, index) => (
             <motion.div
@@ -99,16 +99,16 @@ const CountHead = () => {
                 y: -12,
                 transition: { duration: 0.4, ease: "easeOut" }
               }}
-              className={`group relative bg-white/5 backdrop-blur-xl border border-white/10 rounded-[2.5rem] p-8 text-center transition-all duration-500 hover:bg-white/10 hover:border-white/20 shadow-2xl ${item.glowColor}`}
+              className={`group relative bg-white/5 backdrop-blur-xl border border-white/10 rounded-[1rem] p-8 text-center transition-all duration-500 hover:bg-white/10 hover:border-white/20 shadow-2xl ${item.glowColor}`}
             >
               {/* Card Glow Effect */}
-              <div className="absolute inset-0 rounded-[2.5rem] bg-[#c9a24d]/0 group-hover:bg-[#c9a24d]/5 transition-colors duration-500"></div>
+              <div className="absolute inset-0 rounded-[1rem] bg-[#c9a24d]/0 group-hover:bg-[#c9a24d]/5 transition-colors duration-500"></div>
 
               <motion.div
                 className="relative w-20 h-20 mx-auto mb-8 flex items-center justify-center"
               >
                 {/* Icon Background Circle */}
-                <div className="absolute inset-0 bg-gradient-to-tr from-blue-600/20 to-[#c9a24d]/20 rounded-2xl rotate-45 group-hover:rotate-90 transition-transform duration-700 border border-white/10"></div>
+                <div className="absolute inset-0 bg-gradient-to-tr from-blue-600/20 to-[#c9a24d]/20 rounded-xl rotate-45 group-hover:rotate-90 transition-transform duration-700 border border-white/10"></div>
 
                 <motion.span
                   className="relative text-3xl text-[#c9a24d] drop-shadow-[0_0_10px_rgba(201,162,77,0.5)]"

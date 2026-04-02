@@ -35,7 +35,7 @@ const ContactUs = () => {
       <div className="relative -mt-24 z-20 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 px-6 pb-24">
 
         {/* FORM */}
-        <div className="bg-white/95 border border-gray-200 p-10 rounded-3xl shadow-xl backdrop-blur-md">
+        <div className="bg-white/95 border border-gray-200 p-10 rounded-xl shadow-xl backdrop-blur-md">
           <h2 className="text-3xl font-bold mb-8 text-gray-800">
             {activeTab} Inquiry
           </h2>
@@ -78,7 +78,7 @@ const ContactUs = () => {
         </div>
 
         {/* INFO CARD */}
-        <div className="bg-white/95 border border-gray-200 p-10 rounded-3xl shadow-xl backdrop-blur-md flex flex-col justify-between">
+        <div className="bg-white/95 border border-gray-200 p-10 rounded-xl shadow-xl backdrop-blur-md flex flex-col justify-between">
           <div>
             <h3 className="text-3xl font-bold mb-4 text-gray-800">
               KTGEN Pharmaceuticals
@@ -137,7 +137,7 @@ const ContactUs = () => {
             ].map(([t, d], i) => (
               <div
                 key={i}
-                className="bg-gray-50 border border-gray-200 p-8 rounded-2xl hover:shadow-xl transition"
+                className="bg-gray-50 border border-gray-200 p-8 rounded-xl hover:shadow-xl transition"
               >
                 <h3 className="text-xl font-semibold mb-4 text-gray-800">{t}</h3>
                 <p className="text-gray-600">{d}</p>
@@ -157,7 +157,7 @@ const ContactUs = () => {
             {["Application", "HR Review", "Interview", "Final Offer"].map((step, i) => (
               <div
                 key={i}
-                className="relative bg-white p-8 rounded-2xl border border-gray-200 shadow-md"
+                className="relative bg-white p-8 rounded-xl border border-gray-200 shadow-md"
               >
                 <div className="absolute -top-6 left-1/2 -translate-x-1/2 bg-cyan-500 text-white w-12 h-12 flex items-center justify-center rounded-full font-bold">
                   {i + 1}

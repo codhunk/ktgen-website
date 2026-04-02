@@ -136,7 +136,7 @@ const AboutUs = () => {
               transition={{ duration: 0.8 }}
               className="relative"
             >
-              <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl aspect-[4/3] lg:aspect-square">
+              <div className="relative z-10 rounded-xl overflow-hidden shadow-2xl aspect-[4/3] lg:aspect-square">
                 <img 
                   src={doctorImg} 
                   alt="Professional Healthcare" 
@@ -160,7 +160,7 @@ const AboutUs = () => {
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="group relative p-10 bg-blue-900 rounded-3xl text-white shadow-xl overflow-hidden"
+              className="group relative p-10 bg-blue-900 rounded-xl text-white shadow-xl overflow-hidden"
             >
               <div className="absolute top-0 right-0 p-6 text-blue-800 opacity-20 transform translate-x-4 -translate-y-4">
                 <Target size={140} />
@@ -180,7 +180,7 @@ const AboutUs = () => {
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="relative p-10 bg-white rounded-3xl border border-gray-100 shadow-xl shadow-blue-900/5 group"
+              className="relative p-10 bg-white rounded-xl border border-gray-100 shadow-xl shadow-blue-900/5 group"
             >
               <div className="absolute top-0 right-0 p-6 text-blue-50 opacity-10 transform translate-x-4 -translate-y-4">
                 <Eye size={140} />
@@ -237,13 +237,13 @@ const AboutUs = () => {
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.05 }}
                 whileHover={{ y: -8 }}
-                className="group relative p-10 bg-white border border-slate-100 rounded-[2.5rem] shadow-xl shadow-blue-900/5 hover:shadow-2xl hover:shadow-blue-900/10 transition-all duration-500 flex flex-col items-start"
+                className="group relative p-10 bg-white border border-slate-100 rounded-[1rem] shadow-xl shadow-blue-900/5 hover:shadow-2xl hover:shadow-blue-900/10 transition-all duration-500 flex flex-col items-start"
               >
                 {/* Decorative Background Element */}
                 <div className="absolute -top-6 -right-6 w-24 h-24 bg-blue-100 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-0"></div>
 
                 <div className="relative z-10">
-                  <div className="w-16 h-16 bg-blue-50 text-blue-700 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-blue-700 group-hover:text-white transition-all duration-300 shadow-inner">
+                  <div className="w-16 h-16 bg-blue-50 text-blue-700 rounded-xl flex items-center justify-center mb-8 group-hover:bg-blue-700 group-hover:text-white transition-all duration-300 shadow-inner">
                     {idx % 3 === 0 ? <Zap size={28} /> : idx % 3 === 1 ? <Globe size={28} /> : <Handshake size={28} />}
                   </div>
 
@@ -272,7 +272,7 @@ const AboutUs = () => {
               <h2 className="text-3xl font-bold text-gray-900 mb-6">{t("quality_head")}</h2>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">{t("quality_para_1")}</p>
 
-              <div className="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <div className="bg-gray-50 rounded-xl p-6 border border-gray-100">
                 <h4 className="text-base font-bold text-blue-900 mb-4 uppercase tracking-wider">{t("quality_para_2")}</h4>
                 <div className="grid sm:grid-cols-2 gap-4">
                   {Array.isArray(t("quality_points")) && t("quality_points").map((point, idx) => (
@@ -292,7 +292,7 @@ const AboutUs = () => {
               viewport={{ once: true }}
               className="lg:col-span-5 relative group h-full"
             >
-              <div className="h-full p-10 bg-gradient-to-br from-blue-600 to-blue-800 rounded-3xl text-white shadow-xl relative overflow-hidden">
+              <div className="h-full p-10 bg-gradient-to-br from-blue-600 to-blue-800 rounded-xl text-white shadow-xl relative overflow-hidden">
                 <div className="absolute -bottom-8 -right-8 opacity-10 group-hover:scale-105 transition-transform duration-700">
                   <Truck size={240} />
                 </div>
@@ -396,14 +396,14 @@ const AboutUs = () => {
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="relative p-10 md:p-12 bg-blue-900 rounded-[3rem] text-white shadow-2xl overflow-hidden group border-2 border-[#c9a24d]/20"
+              className="relative p-10 md:p-12 bg-blue-900 rounded-[1rem] text-white shadow-2xl overflow-hidden group border-2 border-[#c9a24d]/20"
             >
               <div className="absolute top-0 right-0 p-8 text-blue-800 opacity-20 transform translate-x-4 -translate-y-4 group-hover:scale-110 transition-transform duration-700">
                 <Leaf size={180} />
               </div>
 
               <div className="relative z-10">
-                <div className="w-16 h-16 bg-blue-800 rounded-2xl flex items-center justify-center mb-8 shadow-inner border border-blue-700">
+                <div className="w-16 h-16 bg-blue-800 rounded-xl flex items-center justify-center mb-8 shadow-inner border border-blue-700">
                   <Leaf size={32} className="text-[#c9a24d]" />
                 </div>
                 <h3 className="text-2xl md:text-3xl font-bold mb-6 tracking-tight text-[#c9a24d]">
@@ -436,7 +436,7 @@ const AboutUs = () => {
             viewport={{ once: true }}
             className="space-y-10"
           >
-            <div className="w-20 h-20 bg-white/10 backdrop-blur-xl rounded-2xl mx-auto flex items-center justify-center border border-[#c9a24d]/30 shadow-2xl">
+            <div className="w-20 h-20 bg-white/10 backdrop-blur-xl rounded-xl mx-auto flex items-center justify-center border border-[#c9a24d]/30 shadow-2xl">
               <Handshake size={36} className="text-[#c9a24d]" />
             </div>
 
@@ -452,7 +452,7 @@ const AboutUs = () => {
               whileHover={{ scale: 1.05, boxShadow: "0 20px 50px rgba(0,0,0,0.4)" }}
               whileTap={{ scale: 0.95 }}
               onClick={() => window.location.href = '/contact'}
-              className="group relative inline-flex items-center gap-4 bg-white text-blue-900 px-12 py-5 rounded-2xl font-bold text-xl hover:bg-white/90 transition active:translate-y-1 shadow-2xl"
+              className="group relative inline-flex items-center gap-4 bg-white text-blue-900 px-12 py-5 rounded-xl font-bold text-xl hover:bg-white/90 transition active:translate-y-1 shadow-2xl"
             >
               {t("contact_us")}
               <div className="w-8 h-8 bg-blue-50 rounded-full flex items-center justify-center group-hover:bg-blue-700 group-hover:text-white transition-all duration-300">

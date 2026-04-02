@@ -52,7 +52,7 @@ const categories = [
 const ProductCard = ({ product }) => (
   <motion.div
     whileHover={{ scale: 1.05 }}
-    className="w-75 h-90 bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded-2xl shadow-xl flex flex-col items-center justify-center p-4 cursor-pointer transition-transform hover:shadow-2xl"
+    className="w-75 h-90 bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded-xl shadow-xl flex flex-col items-center justify-center p-4 cursor-pointer transition-transform hover:shadow-2xl"
   >
     <motion.img
       src={product.image}
@@ -127,7 +127,7 @@ const ProductsPage = () => {
             <motion.div
               key={idx}
               whileHover={{ scale: 1.05 }}
-              className={`p-6 rounded-2xl shadow-md bg-gradient-to-br ${cat.color} text-white text-center`}
+              className={`p-6 rounded-xl shadow-md bg-gradient-to-br ${cat.color} text-white text-center`}
             >
               <h3 className="text-2xl font-semibold mb-2">{cat.name}</h3>
               <p>{cat.description}</p>

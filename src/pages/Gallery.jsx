@@ -516,7 +516,7 @@ const BannerSlider = () => {
             {newsUpdates.map((news, index) => (
               <div
                 key={index}
-                className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1"
+                className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1"
               >
                 <img
                   src={`${news.image}?w=800&q=80`}
@@ -546,7 +546,7 @@ const BannerSlider = () => {
             {galleryImages.map((src, index) => (
               <div
                 key={index}
-                className="relative overflow-hidden rounded-2xl shadow-md group"
+                className="relative overflow-hidden rounded-xl shadow-md group"
               >
                 <img
                   src={`${src}?auto=format&fit=crop&w=1000&q=80`}

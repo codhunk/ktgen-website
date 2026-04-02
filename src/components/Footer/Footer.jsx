@@ -125,8 +125,10 @@ const Footer = () => {
                 <Link className="flex items-start gap-2 text-[1rem] text-slate-200 hover:text-indigo-400">
                   <MdLocationPin size={38} className="w-fit h-fit mt-1" />
                   <span>
-                    3009/1-4,2nd Main, 17th Cross,
-                    Banashankari 2nd Stage, Bangalore 560070
+                    No. 3009/1–4, 17th Cross, 2nd Main Road,
+                    Banashankari 2nd Stage,
+                    Bengaluru – 560070, Karnataka, India
+
                   </span>
                 </Link>
                 <Link

@@ -175,7 +175,7 @@ export default function Carousel() {
               }}
               transition={{ duration: 1 }}
             >
-              <div className="w-[80vw] md:w-[700px] h-[50vh] md:h-[400px] rounded-2xl overflow-hidden shadow-xl relative">
+              <div className="w-[80vw] md:w-[700px] h-[50vh] md:h-[400px] rounded-xl overflow-hidden shadow-xl relative">
                 <img
                   src={slide.img}
                   alt={slide.title}

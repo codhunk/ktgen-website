@@ -57,6 +57,9 @@ export default {
         "slide-in-left": "slide-in-left 0.4s ease-out forwards",
         "fade-in-out": "fade-in-out 2s ease-in-out infinite",
       },
+      fontFamily: {
+        sans: ["Lato", "sans-serif"],
+      },
     },
   },
   plugins: [],

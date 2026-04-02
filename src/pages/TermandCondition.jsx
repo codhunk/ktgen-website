@@ -9,7 +9,7 @@ export const metadata = {
 const TermsAndConditions = () => {
   return (
     <section className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 py-16 px-4">
-      <div className="max-w-5xl mx-auto bg-white rounded-2xl shadow-lg p-8 md:p-12">
+      <div className="max-w-5xl mx-auto bg-white rounded-xl shadow-lg p-8 md:p-12">
         {/* Header */}
         <div className="border-b pb-6 mb-8">
           <h1 className="text-3xl md:text-4xl font-bold text-gray-900">

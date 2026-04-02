@@ -124,7 +124,7 @@ export default function OurStoryPage() {
           <motion.img
             src={founderImage}
             alt="Founder"
-            className="rounded-3xl object-cover h-80 w-80"
+            className="rounded-xl object-cover h-80 w-80"
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0, transition: { duration: 0.8 } }}
           />

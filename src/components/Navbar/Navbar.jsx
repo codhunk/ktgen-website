@@ -120,7 +120,7 @@ const Navbar = () => {
                       if (hoverTimeout.current) clearTimeout(hoverTimeout.current);
                     }}
                     onMouseLeave={handleLeave}
-                    className={`absolute top-full mt-4 w-[340px] rounded-2xl bg-white/95 backdrop-blur-xl shadow-2xl border border-[#debb4b]/20 transition-all duration-300 origin-top
+                    className={`absolute top-full mt-4 w-[340px] rounded-xl bg-white/95 backdrop-blur-xl shadow-2xl border border-[#debb4b]/20 transition-all duration-300 origin-top
                     ${
                       openDropdown === i
                         ? "opacity-100 scale-100 translate-y-0"

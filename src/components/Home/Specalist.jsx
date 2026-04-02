@@ -179,7 +179,7 @@ const TherapeuticSegments = () => {
           onMouseLeave={() => setHoveredTile(null)}
         >
           <div
-            className="relative bg-white dark:bg-gray-800 rounded-2xl overflow-hidden
+            className="relative bg-white dark:bg-gray-800 rounded-xl overflow-hidden
               border border-gray-200 dark:border-gray-700
               shadow-lg hover:shadow-2xl
               transition-all duration-500 transform hover:-translate-y-2

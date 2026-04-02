@@ -99,7 +99,7 @@ export default function PartnerProgram() {
             </div>
           </div>
 
-          <div className="relative h-[260px] sm:h-[360px] lg:h-[420px] rounded-2xl overflow-hidden border shadow-lg">
+          <div className="relative h-[260px] sm:h-[360px] lg:h-[420px] rounded-xl overflow-hidden border shadow-lg">
             <video
               autoPlay
               loop
@@ -152,7 +152,7 @@ export default function PartnerProgram() {
                   visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
                 }}
                 whileHover={{ scale: 1.06 }}
-                className="bg-white border border-gray-200 rounded-2xl shadow-sm hover:shadow-md transition p-8 flex items-center justify-center"
+                className="bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-md transition p-8 flex items-center justify-center"
               >
                 <img
                   src={img}
@@ -177,7 +177,7 @@ export default function PartnerProgram() {
               <motion.div
                 key={i}
                 whileHover={{ y: -8 }}
-                className="bg-white border rounded-2xl p-8 shadow-md hover:shadow-xl"
+                className="bg-white border rounded-xl p-8 shadow-md hover:shadow-xl"
               >
                 <div className="w-12 h-12 flex items-center justify-center bg-blue-50 text-blue-700 rounded-xl mb-5">
                   {f.icon}
@@ -194,9 +194,8 @@ export default function PartnerProgram() {
         <div className="mt-32 relative">
 
           {/* Soft pharma background */}
-          <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-[#c9a24d]/10 rounded-3xl"></div>
-
-          <div className="relative grid grid-cols-1 lg:grid-cols-2 overflow-hidden rounded-3xl border bg-white/90 backdrop-blur shadow-xl">
+          <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-[#c9a24d]/10 rounded-xl"></div>
+          <div className="relative grid grid-cols-1 lg:grid-cols-2 overflow-hidden rounded-xl border bg-white/90 backdrop-blur shadow-xl">
 
             {/* LEFT — Pharma Image */}
             <div className="relative h-[280px] sm:h-[360px] lg:h-full">
