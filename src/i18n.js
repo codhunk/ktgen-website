@@ -119,7 +119,7 @@ i18n
           about_meet_head: "Leadership & Governance",
           meet_card1name: "Dr. Tejuvarshini V",
           meet_card1title: "CEO",
-          meet_card1bio: "Provides strategic leadership with strong expertise in pharmaceutical operations, regulatory compliance, and organizational governance. His vision supports sustainable growth and operational excellence.",
+          meet_card1bio: "Provides strategic leadership with strong expertise in pharmaceutical operations, regulatory compliance, and organizational governance. Her vision supports sustainable growth and operational excellence.",
           meet_card2name: "Dr. Kiran S",
           meet_card2title: "Chairman and Founder",
           meet_card2bio: "Brings extensive experience in pharmaceutical distribution, business development, and quality assurance, strengthening partnerships and operational efficiency.",
@@ -127,7 +127,7 @@ i18n
           meet_card3title: "Managing Director",
           meet_card3bio: "Contributes operational insight in supply chain coordination and market expansion, reinforcing distribution capabilities and customer engagement.",
 
-          // Home Section
+          // Home Section head
           home_heading: "KTGEN Pharmaceuticals",
           home_para: "KTGEN Pharmaceuticals Private Limited is a professionally managed pharmaceutical distribution company based in Bengaluru, India. We are committed to strengthening the healthcare ecosystem by ensuring timely access to quality pharmaceutical products and allied healthcare supplies. Driven by ethical practices, regulatory integrity, and operational excellence, KTGEN Pharmaceuticals works closely with manufacturers and healthcare providers to support consistent, safe, and efficient medicine availability across the healthcare continuum.",
           home_btn1: "Explore Services",
