@@ -121,7 +121,7 @@ i18n
           meet_card1title: "Chairman and Founder",
           meet_card1bio: "Brings extensive experience in pharmaceutical distribution, business development, and quality assurance, strengthening partnerships and operational efficiency.",
           meet_card2name: "Dr. Kiran Shankar",
-          meet_card2title: "Chief Executive Officer (CEO)",
+          meet_card2title: "CEO",
           meet_card2bio: "Provides strategic leadership with strong expertise in pharmaceutical operations, regulatory compliance, and organizational governance. His vision supports sustainable growth and operational excellence.",
           meet_card3name: "Mr. Rohith V",
           meet_card3title: "Managing Director",

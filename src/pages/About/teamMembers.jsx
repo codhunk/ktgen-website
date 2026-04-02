@@ -76,7 +76,7 @@ const LeadershipTeam = () => {
             {leaders.map((leader, idx) => (
               <SwiperSlide key={idx} className="h-auto">
                 <motion.div
-                  className="group rounded-xl p-[3px] bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 hover:scale-105 transition-transform duration-300 ease-in-out cursor-pointer"
+                  className="group rounded-xl p-[2px] bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 hover:scale-105 transition-transform duration-300 ease-in-out cursor-pointer"
                   initial={{ opacity: 0, y: 50 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: idx * 0.2 }}
@@ -94,10 +94,10 @@ const LeadershipTeam = () => {
                     </div>
                     {/* Right Section (Details) */}
                     <div className="text-center group-hover:text-left flex-1 group-hover:w-1/2 group-hover:py-4 group-hover:pr-4 transition-all duration-500">
-                      <h5 className="text-2xl font-bold text-gray-800 dark:text-slate-100">
+                      <h5 className="text-xl font-bold text-gray-800 dark:text-slate-100">
                         {t(leader.name)}
                       </h5>
-                      <p className="whitespace-pre-line text-lg text-indigo-600 dark:text-blue-300 font-medium mt-2">
+                      <p className="whitespace-pre-line text-base text-indigo-600 dark:text-blue-300 font-medium mt-2">
                         {t(leader.title)}
                       </p>
                       <p className="mt-2 text-gray-600 dark:text-white text-sm">
