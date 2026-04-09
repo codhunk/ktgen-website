@@ -120,7 +120,7 @@ i18n
           meet_card1name: "Dr. Tejuvarshini V",
           meet_card1title: "CEO",
           meet_card1bio: "Provides strategic leadership with strong expertise in pharmaceutical operations, regulatory compliance, and organizational governance. Her vision supports sustainable growth and operational excellence.",
-          meet_card2name: "Dr. Kiran S",
+          meet_card2name: "Dr. Kiran Shankar",
           meet_card2title: "Chairman and Founder",
           meet_card2bio: "Brings extensive experience in pharmaceutical distribution, business development, and quality assurance, strengthening partnerships and operational efficiency.",
           meet_card3name: "Mr. Rohith V",
