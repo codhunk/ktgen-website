@@ -18,13 +18,13 @@ const Footer = () => {
       name: "Category",
       subList: [
         { name: "Products", link: "/products" },
+        // {
+        //   name: "Pregnancy Guide",
+        //   link: "/pregnency-sec",
+        // },
         {
-          name: "Pregnancy Guide",
-          link: "/pregnency-sec",
-        },
-        {
-          name: "Campaign",
-          link: "/campaign-sec",
+          name: "Media & Gallery",
+          link: "/gallery",
         },
         { name: "Our Story", link: "/story" },
       ],
@@ -33,21 +33,21 @@ const Footer = () => {
       name: "Life at KT Gen",
       subList: [
         {
-          name: "Therapy Areas",
-          link: "/therapy",
+          name: "Our Mission",
+          link: "/ourmission",
         },
         {
           name: "Doctors & Pharmacies",
           link: "/doctors-pharmacies",
         },
-        {
-          name: "Careers",
-          link: "/career",
-        },
-        {
-          name: "CSR",
-          link: "/csr",
-        },
+        // {
+        //   name: "Careers",
+        //   link: "/career",
+        // },
+        // {
+        //   name: "CSR",
+        //   link: "/csr",
+        // },
       ],
     },
     {
@@ -139,11 +139,11 @@ const Footer = () => {
                   <span>+91 7899312233</span>
                 </Link>
                 <Link
-                  to="mailto:Ktgen.web@gmail.com"
+                  to="mailto:KT GEN.web@gmail.com"
                   className="flex items-center gap-2 text-[1rem] text-slate-200 hover:text-indigo-400"
                 >
                   <IoMdMail size={20} className="h-fit" />
-                  <span>Ktgen.web@gmail.com</span>
+                  <span>KT GEN.web@gmail.com</span>
                 </Link>
               </div>
             </div>

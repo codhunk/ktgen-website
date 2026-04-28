@@ -30,9 +30,9 @@ const Navbar = () => {
       name: "LIFE AT KT GEN",
       sub: [
         { name: "OUR STORY", link: "/story", icon: <MdOutlineWork /> },
-        { name: "CAREERS", link: "/career", icon: <MdOutlineWork /> },
+        // { name: "CAREERS", link: "/career", icon: <MdOutlineWork /> },
         { name: "MEDIA / GALLERY", link: "/gallery", icon: <SiWikimediafoundation /> },
-        { name: "CSR", link: "/csr", icon: <RiTeamFill /> },
+        // { name: "CSR", link: "/csr", icon: <RiTeamFill /> },
         { name: "OUR MISSION", link: "/ourmission", icon: <RiTeamFill /> },
       ],
     },
@@ -40,7 +40,7 @@ const Navbar = () => {
     {
       name: "PHARMACY",
       sub: [
-        { name: "Therapy Area", link: "/therapy", icon: <MdOutlineWork /> },
+        // { name: "Therapy Area", link: "/therapy", icon: <MdOutlineWork /> },
         { name: "Doctors & Pharmacies", link: "/doctors-pharmacies", icon: <MdOutlineWork /> },
       ],
     },
@@ -121,11 +121,10 @@ const Navbar = () => {
                     }}
                     onMouseLeave={handleLeave}
                     className={`absolute top-full mt-4 w-[340px] rounded-xl bg-white/95 backdrop-blur-xl shadow-2xl border border-[#debb4b]/20 transition-all duration-300 origin-top
-                    ${
-                      openDropdown === i
+                    ${openDropdown === i
                         ? "opacity-100 scale-100 translate-y-0"
                         : "opacity-0 scale-95 -translate-y-2 pointer-events-none"
-                    }`}
+                      }`}
                   >
                     <div className="p-3 grid grid-cols-1 divide-y divide-[#715923]/20">
                       {item.sub.map((s, j) => (
@@ -198,7 +197,7 @@ const Navbar = () => {
                     >
                       {item.name}
                       <span className={openDropdown === i ? "rotate-180" : ""}>
-                        <ArrowBigDownIcon/>
+                        <ArrowBigDownIcon />
                       </span>
                     </button>
                   ) : (

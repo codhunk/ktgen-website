@@ -15,22 +15,22 @@ i18n
     resources: {
       en: {
         translation: {
-          welcome: "Welcome to KTGEN Pharmaceuticals",
+          welcome: "Welcome to KT GEN Pharmaceuticals",
           comingSoon: "We're launching soon. Stay tuned!",
           notify: "Notify Me",
           emailPlaceholder: "Enter your email",
 
-          // About KTGEN
-          about_head: "About KTGEN",
+          // About KT GEN
+          about_head: "About KT GEN",
           about_subhead: "Strengthening the Healthcare Ecosystem through Reliable Pharmaceutical Distribution",
           about_paras: [
-            "At KTGEN Pharmaceuticals, we believe that access to quality medicines is fundamental to effective healthcare delivery. Our operations are built on transparency, compliance, and accountability, enabling us to serve as a dependable link between pharmaceutical manufacturers and healthcare providers.",
+            "At KT GEN Pharmaceuticals, we believe that access to quality medicines is fundamental to effective healthcare delivery. Our operations are built on transparency, compliance, and accountability, enabling us to serve as a dependable link between pharmaceutical manufacturers and healthcare providers.",
             "With a strong understanding of pharmaceutical distribution systems and regulatory frameworks, we ensure that every product handled meets required quality and safety standards. Our focus on long-term partnerships allows us to create sustainable value for stakeholders while contributing positively to public health outcomes."
           ],
 
           // Our Role in the Healthcare Ecosystem
           role_head: "Our Role in the Healthcare Ecosystem",
-          role_para: "As a pharmaceutical distribution partner, KTGEN Pharmaceuticals plays a critical role in ensuring continuity of care by:",
+          role_para: "As a pharmaceutical distribution partner, KT GEN Pharmaceuticals plays a critical role in ensuring continuity of care by:",
           role_points: [
             "Bridging manufacturers and healthcare providers",
             "Supporting uninterrupted medicine availability",
@@ -53,7 +53,7 @@ i18n
 
           // Quality, Safety & Compliance
           quality_head: "Quality, Safety & Compliance",
-          quality_para_1: "Quality and patient safety remain at the core of our operations. KTGEN Pharmaceuticals adheres to applicable pharmaceutical distribution norms and regulatory guidelines to ensure product integrity throughout the supply chain.",
+          quality_para_1: "Quality and patient safety remain at the core of our operations. KT GEN Pharmaceuticals adheres to applicable pharmaceutical distribution norms and regulatory guidelines to ensure product integrity throughout the supply chain.",
           quality_para_2: "Our systems emphasize:",
           quality_points: [
             "Proper storage and handling practices",
@@ -65,7 +65,7 @@ i18n
 
           // Cold Chain & Distribution Excellence
           cold_chain_head: "Cold Chain & Distribution Excellence",
-          cold_chain_para: "KTGEN Pharmaceuticals follows appropriate cold chain and storage protocols for temperature-sensitive pharmaceutical products, where applicable. Our distribution processes are designed to preserve product efficacy and safety from receipt to delivery, supported by controlled logistics and monitoring practices.",
+          cold_chain_para: "KT GEN Pharmaceuticals follows appropriate cold chain and storage protocols for temperature-sensitive pharmaceutical products, where applicable. Our distribution processes are designed to preserve product efficacy and safety from receipt to delivery, supported by controlled logistics and monitoring practices.",
 
           // Who We Serve
           who_we_serve_head: "Who We Serve",
@@ -82,7 +82,7 @@ i18n
           // Commitment to Ethical & Responsible Business
           ethics_head: "Commitment to Ethical & Responsible Business",
           ethics_paras: [
-            "KTGEN Pharmaceuticals is guided by ethical business principles and responsible distribution practices. We believe that trust, transparency, and accountability are essential for sustainable growth and meaningful partnerships within the healthcare sector.",
+            "KT GEN Pharmaceuticals is guided by ethical business principles and responsible distribution practices. We believe that trust, transparency, and accountability are essential for sustainable growth and meaningful partnerships within the healthcare sector.",
             "Our commitment extends beyond business performance to supporting responsible healthcare delivery and improved access to essential medicines."
           ],
 
@@ -109,10 +109,10 @@ i18n
 
           // Sustainability & Long-Term Outlook
           sustainability_head: "Sustainability & Long-Term Outlook",
-          sustainability_para: "KTGEN Pharmaceuticals is committed to sustainable growth through continuous improvement of distribution practices, responsible operations, and long-term stakeholder engagement. We aim to strengthen our distribution network, enhance operational capabilities, and align with evolving healthcare needs in India.",
+          sustainability_para: "KT GEN Pharmaceuticals is committed to sustainable growth through continuous improvement of distribution practices, responsible operations, and long-term stakeholder engagement. We aim to strengthen our distribution network, enhance operational capabilities, and align with evolving healthcare needs in India.",
 
-          // Partner With KTGEN
-          partner_head: "Partner With KTGEN",
+          // Partner With KT GEN
+          partner_head: "Partner With KT GEN",
           partner_para: "We invite pharmaceutical manufacturers, healthcare institutions, and distributors to collaborate with us in delivering reliable, compliant, and efficient pharmaceutical distribution solutions.",
 
           // Leadership
@@ -128,8 +128,8 @@ i18n
           meet_card3bio: "Contributes operational insight in supply chain coordination and market expansion, reinforcing distribution capabilities and customer engagement.",
 
           // Home Section head
-          home_heading: "KTGEN Pharmaceuticals",
-          home_para: "KTGEN Pharmaceuticals Private Limited is a professionally managed pharmaceutical distribution company based in Bengaluru, India. We are committed to strengthening the healthcare ecosystem by ensuring timely access to quality pharmaceutical products and allied healthcare supplies. Driven by ethical practices, regulatory integrity, and operational excellence, KTGEN Pharmaceuticals works closely with manufacturers and healthcare providers to support consistent, safe, and efficient medicine availability across the healthcare continuum.",
+          home_heading: "KT GEN Pharmaceuticals",
+          home_para: "KT GEN Pharmaceuticals Private Limited is a professionally managed pharmaceutical distribution company based in Bengaluru, India. We are committed to strengthening the healthcare ecosystem by ensuring timely access to quality pharmaceutical products and allied healthcare supplies. Driven by ethical practices, regulatory integrity, and operational excellence, KT GEN Pharmaceuticals works closely with manufacturers and healthcare providers to support consistent, safe, and efficient medicine availability across the healthcare continuum.",
           home_btn1: "Explore Services",
           home_btn2: "Contact Us",
 
@@ -160,7 +160,7 @@ i18n
           pregnency_j: "Pregnancy Journey",
           preg_explore: "Exploring the stages of pregnancy with care and support.",
           preg_about: "About the Pregnancy Journey",
-          preg_h: "A comprehensive guide to understanding and managing your health during pregnancy. At KTGEN Pharmaceuticals, we provide resources to support expectant mothers through every milestone.",
+          preg_h: "A comprehensive guide to understanding and managing your health during pregnancy. At KT GEN Pharmaceuticals, we provide resources to support expectant mothers through every milestone.",
           preg_watch: "Watch the Journey",
 
           // Campaign Section
@@ -206,22 +206,22 @@ i18n
 
       hi: {
         translation: {
-          welcome: "KTGEN Pharmaceuticals में आपका स्वागत है",
+          welcome: "KT GEN Pharmaceuticals में आपका स्वागत है",
           comingSoon: "हम जल्द ही लॉन्च कर रहे हैं। बने रहें!",
           notify: "मुझे सूचित करें",
           emailPlaceholder: "अपना ईमेल दर्ज करें",
 
-          // About KTGEN
-          about_head: "KTGEN के बारे में",
+          // About KT GEN
+          about_head: "KT GEN के बारे में",
           about_subhead: "विश्वसनीय फार्मास्युटिकल वितरण के माध्यम से स्वास्थ्य सेवा पारिस्थितिकी तंत्र को मजबूत करना",
           about_paras: [
-            "KTGEN Pharmaceuticals में, हमारा मानना है कि गुणवत्तापूर्ण दवाओं तक पहुँच प्रभावी स्वास्थ्य सेवा वितरण के लिए मौलिक है। हमारा संचालन पारदर्शिता, अनुपालन और जवाबदेही पर बना है, जो हमें फार्मास्युटिकल निर्माताओं और स्वास्थ्य सेवा प्रदाताओं के बीच एक भरोसेमंद कड़ी के रूप में सेवा करने में सक्षम बनाता है।",
+            "KT GEN Pharmaceuticals में, हमारा मानना है कि गुणवत्तापूर्ण दवाओं तक पहुँच प्रभावी स्वास्थ्य सेवा वितरण के लिए मौलिक है। हमारा संचालन पारदर्शिता, अनुपालन और जवाबदेही पर बना है, जो हमें फार्मास्युटिकल निर्माताओं और स्वास्थ्य सेवा प्रदाताओं के बीच एक भरोसेमंद कड़ी के रूप में सेवा करने में सक्षम बनाता है।",
             "फार्मास्युटिकल वितरण प्रणालियों और नियामक ढाँचों की गहरी समझ के साथ, हम यह सुनिश्चित करते हैं कि संभाला जाने वाला प्रत्येक उत्पाद आवश्यक गुणवत्ता और सुरक्षा मानकों को पूरा करता है। दीर्घकालिक साझेदारी पर हमारा ध्यान सार्वजनिक स्वास्थ्य परिणामों में सकारात्मक योगदान देते हुए हितधारकों के लिए स्थायी मूल्य बनाने की अनुमति देता है।"
           ],
 
           // Our Role in the Healthcare Ecosystem
           role_head: "स्वास्थ्य सेवा पारिस्थितिकी तंत्र में हमारी भूमिका",
-          role_para: "एक फार्मास्युटिकल वितरण भागीदार के रूप में, KTGEN Pharmaceuticals देखभाल की निरंतरता सुनिश्चित करने में महत्वपूर्ण भूमिका निभाता है:",
+          role_para: "एक फार्मास्युटिकल वितरण भागीदार के रूप में, KT GEN Pharmaceuticals देखभाल की निरंतरता सुनिश्चित करने में महत्वपूर्ण भूमिका निभाता है:",
           role_points: [
             "निर्माताओं और स्वास्थ्य सेवा प्रदाताओं के बीच सेतु बनाना",
             "दवा की निर्बाध उपलब्धता का समर्थन करना",
@@ -244,7 +244,7 @@ i18n
 
           // Quality, Safety & Compliance
           quality_head: "गुणवत्ता, सुरक्षा और अनुपालन",
-          quality_para_1: "गुणवत्ता और रोगी सुरक्षा हमारे संचालन के केंद्र में बनी हुई है। पूरी आपूर्ति श्रृंखला में उत्पाद की अखंडता सुनिश्चित करने के लिए KTGEN Pharmaceuticals लागू फार्मास्युटिकल वितरण मानदंडों और नियामक दिशानिर्देशों का पालन करता है।",
+          quality_para_1: "गुणवत्ता और रोगी सुरक्षा हमारे संचालन के केंद्र में बनी हुई है। पूरी आपूर्ति श्रृंखला में उत्पाद की अखंडता सुनिश्चित करने के लिए KT GEN Pharmaceuticals लागू फार्मास्युटिकल वितरण मानदंडों और नियामक दिशानिर्देशों का पालन करता है।",
           quality_para_2: "हमारी प्रणालियाँ इन पर जोर देती हैं:",
           quality_points: [
             "उचित भंडारण और प्रबंधन प्रथाएं",
@@ -256,7 +256,7 @@ i18n
 
           // Cold Chain & Distribution Excellence
           cold_chain_head: "कोल्ड चेन और वितरण उत्कृष्टता",
-          cold_chain_para: "KTGEN Pharmaceuticals तापमान-संवेदी फार्मास्युटिकल उत्पादों के लिए उचित कोल्ड चेन और भंडारण प्रोटोकॉल का पालन करता है, जहाँ लागू हो। हमारी वितरण प्रक्रियाओं को प्राप्ति से वितरण तक उत्पाद की प्रभावकारिता और सुरक्षा बनाए रखने के लिए डिज़ाइन किया गया है, जो नियंत्रित लॉजिस्टिक्स और निगरानी प्रथाओं द्वारा समर्थित है।",
+          cold_chain_para: "KT GEN Pharmaceuticals तापमान-संवेदी फार्मास्युटिकल उत्पादों के लिए उचित कोल्ड चेन और भंडारण प्रोटोकॉल का पालन करता है, जहाँ लागू हो। हमारी वितरण प्रक्रियाओं को प्राप्ति से वितरण तक उत्पाद की प्रभावकारिता और सुरक्षा बनाए रखने के लिए डिज़ाइन किया गया है, जो नियंत्रित लॉजिस्टिक्स और निगरानी प्रथाओं द्वारा समर्थित है।",
 
           // Who We Serve
           who_we_serve_head: "हम किसकी सेवा करते हैं",
@@ -273,7 +273,7 @@ i18n
           // Commitment to Ethical & Responsible Business
           ethics_head: "नैतिक और जिम्मेदार व्यवसाय के प्रति प्रतिबद्धता",
           ethics_paras: [
-            "KTGEN Pharmaceuticals नैतिक व्यावसायिक सिद्धांतों और जिम्मेदार वितरण प्रथाओं द्वारा निर्देशित है। हमारा मानना है कि स्वास्थ्य सेवा क्षेत्र के भीतर स्थायी विकास और सार्थक साझेदारी के लिए विश्वास, पारदर्शिता और जवाबदेही आवश्यक हैं।",
+            "KT GEN Pharmaceuticals नैतिक व्यावसायिक सिद्धांतों और जिम्मेदार वितरण प्रथाओं द्वारा निर्देशित है। हमारा मानना है कि स्वास्थ्य सेवा क्षेत्र के भीतर स्थायी विकास और सार्थक साझेदारी के लिए विश्वास, पारदर्शिता और जवाबदेही आवश्यक हैं।",
             "हमारी प्रतिबद्धता व्यावसायिक प्रदर्शन से परे जिम्मेदार स्वास्थ्य सेवा वितरण का समर्थन करने और आवश्यक दवाओं तक पहुंच में सुधार करने तक फैली हुई है।"
           ],
 
@@ -300,10 +300,10 @@ i18n
 
           // Sustainability & Long-Term Outlook
           sustainability_head: "स्थिरता और दीर्घकालिक दृष्टिकोण",
-          sustainability_para: "KTGEN Pharmaceuticals वितरण प्रथाओं के निरंतर सुधार, जिम्मेदार संचालन और दीर्घकालिक हितधारक जुड़ाव के माध्यम से स्थायी विकास के लिए प्रतिबद्ध है। हमारा लक्ष्य हमारे वितरण नेटवर्क को मजबूत करना, परिचालन क्षमताओं को बढ़ाना और भारत में विकसित स्वास्थ्य सेवा आवश्यकताओं के साथ संरेखित करना है।",
+          sustainability_para: "KT GEN Pharmaceuticals वितरण प्रथाओं के निरंतर सुधार, जिम्मेदार संचालन और दीर्घकालिक हितधारक जुड़ाव के माध्यम से स्थायी विकास के लिए प्रतिबद्ध है। हमारा लक्ष्य हमारे वितरण नेटवर्क को मजबूत करना, परिचालन क्षमताओं को बढ़ाना और भारत में विकसित स्वास्थ्य सेवा आवश्यकताओं के साथ संरेखित करना है।",
 
-          // Partner With KTGEN
-          partner_head: "KTGEN के साथ भागीदार बनें",
+          // Partner With KT GEN
+          partner_head: "KT GEN के साथ भागीदार बनें",
           partner_para: "हम फार्मास्युटिकल निर्माताओं, स्वास्थ्य संस्थानों और वितरकों को विश्वसनीय, अनुपालन और कुशल फार्मास्युटिकल वितरण समाधान देने में हमारे साथ सहयोग करने के लिए आमंत्रित करते हैं।",
 
           // Leadership
@@ -319,8 +319,8 @@ i18n
           meet_card3bio: "आपूर्ति श्रृंखला समन्वय और बाजार विस्तार में परिचालन अंतर्दृष्टि का योगदान देते हैं, वितरण क्षमताओं और ग्राहकों के जुड़ाव को सुदृढ़ करते हैं।",
 
           // Home Section
-          home_heading: "KTGEN Pharmaceuticals",
-          home_para: "KTGEN Pharmaceuticals Private Limited बेंगलुरु, भारत में स्थित एक पेशेवर रूप से प्रबंधित फार्मास्युटिकल वितरण कंपनी है। हम गुणवत्तापूर्ण फार्मास्युटिकल उत्पादों और संबद्ध स्वास्थ्य सेवा आपूर्ति तक समय पर पहुंच सुनिश्चित करके स्वास्थ्य सेवा पारिस्थितिकी तंत्र को मजबूत करने के लिए प्रतिबद्ध हैं। नैतिक प्रथाओं, नियामक अखंडता और परिचालन उत्कृष्टता से प्रेरित, KTGEN Pharmaceuticals स्वास्थ्य सेवा निरंतरता में निरंतर, सुरक्षित और कुशल दवा उपलब्धता का समर्थन करने के लिए निर्माताओं और स्वास्थ्य सेवा प्रदाताओं के साथ मिलकर काम करता है।",
+          home_heading: "KT GEN Pharmaceuticals",
+          home_para: "KT GEN Pharmaceuticals Private Limited बेंगलुरु, भारत में स्थित एक पेशेवर रूप से प्रबंधित फार्मास्युटिकल वितरण कंपनी है। हम गुणवत्तापूर्ण फार्मास्युटिकल उत्पादों और संबद्ध स्वास्थ्य सेवा आपूर्ति तक समय पर पहुंच सुनिश्चित करके स्वास्थ्य सेवा पारिस्थितिकी तंत्र को मजबूत करने के लिए प्रतिबद्ध हैं। नैतिक प्रथाओं, नियामक अखंडता और परिचालन उत्कृष्टता से प्रेरित, KT GEN Pharmaceuticals स्वास्थ्य सेवा निरंतरता में निरंतर, सुरक्षित और कुशल दवा उपलब्धता का समर्थन करने के लिए निर्माताओं और स्वास्थ्य सेवा प्रदाताओं के साथ मिलकर काम करता है।",
           home_btn1: "सेवाओं को जानें",
           home_btn2: "संपर्क करें",
 
@@ -351,7 +351,7 @@ i18n
           pregnency_j: "गर्भावस्था की यात्रा",
           preg_explore: "देखभाल और सहायता के साथ गर्भावस्था के चरणों की खोज करना।",
           preg_about: "गर्भावस्था की यात्रा के बारे में",
-          preg_h: "गर्भावस्था के दौरान अपने स्वास्थ्य को समझने और प्रबंधित करने के लिए एक व्यापक मार्गदर्शिका। KTGEN Pharmaceuticals में, हम हर मील के पत्थर के माध्यम से गर्भवती माताओं का समर्थन करने के लिए संसाधन प्रदान करते हैं।",
+          preg_h: "गर्भावस्था के दौरान अपने स्वास्थ्य को समझने और प्रबंधित करने के लिए एक व्यापक मार्गदर्शिका। KT GEN Pharmaceuticals में, हम हर मील के पत्थर के माध्यम से गर्भवती माताओं का समर्थन करने के लिए संसाधन प्रदान करते हैं।",
           preg_watch: "यात्रा देखें",
 
           // Campaign Section

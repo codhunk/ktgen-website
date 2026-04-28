@@ -206,7 +206,7 @@ const initiatives = [
   {
     title: "Healthcare Camps",
     description:
-      "KTGEN Pharmaceuticals organizes regular free health check-ups, mobile clinics, and vaccination drives to improve access to healthcare.",
+      "KT GEN Pharmaceuticals organizes regular free health check-ups, mobile clinics, and vaccination drives to improve access to healthcare.",
     image: health,
     icon: heartIcon,
   },
@@ -278,7 +278,7 @@ export default function CSRPage() {
         <div className="max-w-4xl z-10">
           <h1 className="text-4xl sm:text-5xl font-bold mb-4">Corporate Social Responsibility</h1>
           <p className="max-w-2xl mx-auto text-lg sm:text-xl">
-            At KTGEN Pharmaceuticals, we are driven by the belief that corporate success must go hand-in-hand with social progress. Our CSR initiatives are rooted in compassion, innovation, and community-first thinking.
+            At KT GEN Pharmaceuticals, we are driven by the belief that corporate success must go hand-in-hand with social progress. Our CSR initiatives are rooted in compassion, innovation, and community-first thinking.
           </p>
         </div>
       </motion.section>

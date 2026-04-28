@@ -72,10 +72,10 @@ export default function PartnerProgram() {
               Pharmaceutical Partnership Program
             </p>
 
-            <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-6">
+            {/* <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-6">
               Partnering to Deliver <br />
               <span className="text-blue-700">Trusted Healthcare Solutions</span>
-            </h1>
+            </h1> */}
 
             <p className="text-gray-600 max-w-xl mb-4">
               We collaborate with healthcare organizations, distributors and

@@ -50,7 +50,7 @@ const App = () => {
           <Routes>
             {/* Launching Page */}
             <Route path="/" element={<Home />} />
-            <Route path="/career" element={<Career />} />
+            {/* <Route path="/career" element={<Career />} /> */}
             <Route path="/contact" element={<ContactUs />} />
             <Route path="/about" element={<AboutUs />} />
             <Route path="/doctors-pharmacies" element={<DoctorsPharmaciesPage />} />
@@ -59,8 +59,8 @@ const App = () => {
             <Route path="/gallery" element={<Gallery />} />
             {/* <Route path="/pregnency-sec" element={<Preg />} /> */}
             <Route path="/campaign-sec" element={<Comp />} />
-            <Route path="/therapy" element={<TherapyArea />} />
-            <Route path="/csr" element={<CSRPage />} />
+            {/* <Route path="/therapy" element={<TherapyArea />} /> */}
+            {/* <Route path="/csr" element={<CSRPage />} /> */}
             <Route path="/story" element={<OurStoryPage />} />
             <Route path="/ourmission" element={<Ourmission />} />
             <Route path="/terms-conditions" element={<TermsAndConditions />} />

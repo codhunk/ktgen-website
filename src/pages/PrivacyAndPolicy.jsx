@@ -139,7 +139,7 @@ const PrivacyPolicy = () => {
               Policy, please contact us:
             </p>
             <p className="mt-2">
-              📧 Email: <strong>info@ktgenpharmaceuticals.com</strong>
+              📧 Email: <strong>info@KT GENpharmaceuticals.com</strong>
               <br />
               📍 Address: KT Gen Pharmaceuticals Pvt. Ltd., India
             </p>

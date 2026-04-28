@@ -94,7 +94,7 @@ const TermsAndConditions = () => {
               Conditions, please contact us:
             </p>
             <p className="mt-3 text-sm">
-              📧 <strong>Email:</strong> info@ktgenpharmaceuticals.com
+              📧 <strong>Email:</strong> info@KT GENpharmaceuticals.com
               <br />
               📍 <strong>Address:</strong> KT Gen Pharmaceuticals Pvt. Ltd., India
             </p>

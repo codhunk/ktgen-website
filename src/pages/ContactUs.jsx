@@ -81,7 +81,7 @@ const ContactUs = () => {
         <div className="bg-white/95 border border-gray-200 p-10 rounded-xl shadow-xl backdrop-blur-md flex flex-col justify-between">
           <div>
             <h3 className="text-3xl font-bold mb-4 text-gray-800">
-              KTGEN Pharmaceuticals
+              KT GEN Pharmaceuticals
             </h3>
             <p className="text-gray-600 mb-8">
               A science-driven healthcare company committed to innovation, quality, and global wellness.
@@ -102,7 +102,7 @@ const ContactUs = () => {
               </div>
               <div className="flex gap-4">
                 <Mail className="text-cyan-500" />
-                <p className="text-sm">contact@ktgenpharmaceuticals.com</p>
+                <p className="text-sm">contact@KT GENpharmaceuticals.com</p>
               </div>
             </div>
           </div>
@@ -127,7 +127,7 @@ const ContactUs = () => {
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-4xl font-bold text-center mb-14 text-gray-800">
-            Why Work With <span className="text-cyan-600">KTGEN</span>
+            Why Work With <span className="text-cyan-600">KT GEN</span>
           </h2>
           <div className="grid md:grid-cols-3 gap-10">
             {[
@@ -172,7 +172,7 @@ const ContactUs = () => {
       {/* CTA */}
       <section className="py-24 bg-gradient-to-r from-cyan-500 to-purple-600 text-center text-white">
         <h2 className="text-4xl font-extrabold mb-6">
-          Ready to Join KTGEN?
+          Ready to Join KT GEN?
         </h2>
         <p className="mb-10 text-lg">
           Work on healthcare solutions that impact millions of lives worldwide.

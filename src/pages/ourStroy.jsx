@@ -244,7 +244,7 @@ export default function OurStoryPage() {
           By 2030, KT Gen aims to provide quality healthcare access to 50 million people, integrate AI-powered medical solutions, and strengthen community-driven healthcare programs globally.
         </p>
         <motion.a
-          href="mailto:info@ktgenpharmaceuticals.com"
+          href="mailto:info@KT GENpharmaceuticals.com"
           whileHover={{ scale: 1.05 }}
           className="inline-block"
         >

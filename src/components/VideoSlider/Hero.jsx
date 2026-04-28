@@ -76,7 +76,7 @@ const Hero = () => {
           className="max-w-3xl"
         >
           <span className="inline-block mb-6 px-8 py-1 bg-white/10 rounded-full text-xs tracking-widest uppercase text-white">
-            KTGEN Pharmaceuticals
+            KT GEN Pharmaceuticals
           </span>
 
           <h1 className="whitespace-pre-line text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-6 text-white">

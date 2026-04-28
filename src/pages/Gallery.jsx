@@ -307,7 +307,7 @@
 //                 </li>
 //                 <li className="flex items-start gap-2">
 //                   <span className="mt-0.5 text-white">✉️</span>
-//                   <span>support@ktgenpharmaceuticals.com</span>
+//                   <span>support@KT GENpharmaceuticals.com</span>
 //                 </li>
 //               </ul>
 //             </div>
@@ -388,7 +388,7 @@ const galleryImages = [
   "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=1200&q=80",
 
   // 9️⃣ Pharmaceutical research team collaboration
- "https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&w=1200&q=80"
+  "https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&w=1200&q=80"
 
 ];
 
@@ -400,7 +400,7 @@ const newsUpdates = [
     date: "July 2025",
     summary: "We are proud to announce our new state-of-the-art facility in Pune.",
     image:
-     "https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&w=1200&q=80"
+      "https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&w=1200&q=80"
 
   },
   {
@@ -414,7 +414,7 @@ const newsUpdates = [
     title: "CSR Blood Donation Drive",
     date: "May 2025",
     summary: "Over 300 people participated in our nationwide blood donation campaign.",
-    image:"https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&w=1200&q=80",
+    image: "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&w=1200&q=80",
   },
 ];
 
