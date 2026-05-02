@@ -56,7 +56,7 @@ export default function PartnerProgram() {
   const { t } = useTranslation();
 
   return (
-    <section className="bg-white py-16 md:py-12">
+    <section className="bg-white">
       <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* ================= HERO ================= */}
@@ -68,35 +68,21 @@ export default function PartnerProgram() {
           className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
         >
           <div>
-            <p className="text-blue-700 font-semibold mb-3">
-              Pharmaceutical Partnership Program
+            <p className="text-blue-700 font-bold tracking-widest uppercase text-xs mb-4">
+              Partner Program — Grow Beyond Business
             </p>
 
-            {/* <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-6">
-              Partnering to Deliver <br />
-              <span className="text-blue-700">Trusted Healthcare Solutions</span>
-            </h1> */}
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight mb-6">
+              At KT Gen Pharmaceuticals, partnership is not a distribution channel — <span className="text-blue-700">it is a shared journey.</span>
+            </h2>
 
-            <p className="text-gray-600 max-w-xl mb-4">
-              We collaborate with healthcare organizations, distributors and
-              innovators to expand global access to safe, effective and
-              high-quality pharmaceutical products.
+            <p className="text-gray-600 text-lg max-w-xl mb-6 leading-relaxed">
+              We understand that behind every partner is ambition, risk, and a desire to build something lasting.
             </p>
 
-            <p className="text-gray-500 max-w-xl mb-8">
-              Our partnerships are built on transparency, regulatory excellence,
-              and a shared commitment to improving patient lives worldwide.
+            <p className="text-gray-500 max-w-xl mb-8 leading-relaxed">
+              That’s why our Partner Program is designed not just to support your business, but to elevate it.
             </p>
-
-            <div className="flex flex-col sm:flex-row gap-4">
-              <button className="bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-800">
-                Become a Partner
-              </button>
-
-              <button className="flex items-center gap-2 text-[#c9a24d] font-semibold">
-                View Program <ArrowRight size={18} />
-              </button>
-            </div>
           </div>
 
           <div className="relative h-[260px] sm:h-[360px] lg:h-[420px] rounded-xl overflow-hidden border shadow-lg">
@@ -217,8 +203,8 @@ export default function PartnerProgram() {
               </span>
 
               <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6 leading-tight">
-                Build the Future of <br />
-                <span className="text-blue-700">Healthcare With Us</span>
+                Grow Beyond Business <br />
+                <span className="text-blue-700">A Shared Journey</span>
               </h2>
 
               <p className="max-w-xl text-gray-600 mb-4">
@@ -231,15 +217,7 @@ export default function PartnerProgram() {
                 institution, we provide the platform to grow together.
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-5">
-                <button className="bg-blue-700 text-white px-4 py-4 rounded-xl font-semibold hover:bg-blue-800 transition shadow-md">
-                  Become a Partner
-                </button>
 
-                <button className="border border-[#c9a24d] text-[#c9a24d] px-4 py-4 rounded-xl font-semibold hover:bg-[#c9a24d]/10 transition">
-                  Schedule a Discussion
-                </button>
-              </div>
 
             </div>
           </div>

@@ -13,7 +13,13 @@ import {
   Zap,
   CheckCircle2,
   Lock,
-  Leaf
+  Leaf,
+  TrendingUp,
+  BarChart2,
+  Megaphone,
+  HeartHandshake,
+  BadgeCheck,
+  Star
 } from "lucide-react";
 
 import bg from "/images/about_hero1.jpg";
@@ -462,6 +468,147 @@ const AboutUs = () => {
           </motion.div>
         </div>
       </section> */}
+
+      {/* ================= WHAT MAKES OUR PARTNERSHIP DIFFERENT ================= */}
+      <section className="py-24 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
+        {/* Decorative blobs */}
+        <div className="absolute top-0 left-0 w-80 h-80 bg-blue-100 rounded-full blur-[100px] opacity-40 -translate-x-1/3 -translate-y-1/3" />
+        <div className="absolute bottom-0 right-0 w-72 h-72 bg-[#c9a24d]/10 rounded-full blur-[90px] translate-x-1/3 translate-y-1/3" />
+
+        <div className="container mx-auto px-6 max-w-7xl relative z-10">
+
+          {/* Section header */}
+          <div className="text-center max-w-3xl mx-auto mb-6">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+            >
+              <span className="inline-block px-4 py-1.5 mb-4 text-xs font-bold tracking-widest text-[#c9a24d] uppercase bg-[#c9a24d]/10 rounded-full border border-[#c9a24d]/20">
+                {t("partner_program_badge")}
+              </span>
+              <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">
+                {t("partner_program_head")}
+              </h2>
+            </motion.div>
+          </div>
+
+          {/* Intro block */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.1 }}
+            className="max-w-2xl mx-auto text-center mb-16"
+          >
+            <p className="text-lg font-semibold text-blue-900 mb-2">{t("partner_program_intro")}</p>
+            <p className="text-base text-gray-500 font-light leading-relaxed">{t("partner_program_para")}</p>
+          </motion.div>
+
+          {/* Sub-heading */}
+          <motion.h3
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-2xl md:text-3xl font-bold text-gray-900 text-center mb-12"
+          >
+            {t("partner_diff_head")}
+          </motion.h3>
+
+          {/* Cards grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-20">
+            {Array.isArray(t("partner_diff_cards")) && t("partner_diff_cards").map((card, idx) => {
+              const icons = [
+                <TrendingUp size={26} />,
+                <BarChart2 size={26} />,
+                <ShieldCheck size={26} />,
+                <Megaphone size={26} />,
+                <HeartHandshake size={26} />
+              ];
+              return (
+                <motion.div
+                  key={idx}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: idx * 0.1, duration: 0.6 }}
+                  whileHover={{ y: -8, scale: 1.02 }}
+                  className="group relative bg-white border border-slate-100 rounded-2xl p-8 shadow-lg shadow-blue-900/5 hover:shadow-2xl hover:shadow-blue-900/10 hover:border-[#c9a24d]/30 transition-all duration-500 flex flex-col"
+                >
+                  {/* Card number badge */}
+                  <div className="absolute top-6 right-6 text-4xl font-black text-gray-100 group-hover:text-[#c9a24d]/20 transition-colors duration-500 select-none leading-none">
+                    {card.number}
+                  </div>
+
+                  {/* Icon */}
+                  <div className="w-14 h-14 rounded-xl bg-blue-50 text-blue-700 flex items-center justify-center mb-6 group-hover:bg-blue-700 group-hover:text-white transition-all duration-300 shadow-inner">
+                    {icons[idx] || <Star size={26} />}
+                  </div>
+
+                  {/* Content */}
+                  <h4 className="text-lg font-bold text-gray-800 mb-3 group-hover:text-blue-700 transition-colors leading-snug">
+                    {card.title}
+                  </h4>
+                  <p className="text-sm text-gray-500 leading-relaxed font-light flex-1">
+                    {card.desc}
+                  </p>
+
+                  {/* Bottom accent */}
+                  <div className="mt-6 w-8 h-1 bg-blue-100 rounded-full group-hover:w-16 group-hover:bg-[#c9a24d] transition-all duration-500" />
+                </motion.div>
+              );
+            })}
+          </div>
+
+          {/* Shared Vision block */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="relative rounded-2xl overflow-hidden bg-blue-900 p-12 md:p-16 text-white shadow-2xl"
+          >
+            <div className="absolute inset-0 opacity-5" style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23c9a24d' fill-opacity='0.8'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")` }} />
+            <div className="absolute top-0 right-0 w-72 h-72 bg-blue-600 rounded-full blur-[100px] opacity-20 translate-x-1/3 -translate-y-1/3" />
+
+            <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <div className="w-14 h-14 rounded-xl bg-[#c9a24d]/20 border border-[#c9a24d]/30 flex items-center justify-center mb-6">
+                  <Handshake size={28} className="text-[#c9a24d]" />
+                </div>
+                <h3 className="text-2xl md:text-3xl font-bold text-[#c9a24d] mb-4 leading-tight">
+                  {t("partner_shared_head")}
+                </h3>
+                <p className="text-blue-100 text-lg font-light leading-relaxed">
+                  {t("partner_shared_para")}
+                </p>
+              </div>
+
+              <div>
+                <p className="text-sm uppercase tracking-widest text-[#c9a24d] font-bold mb-6">
+                  {t("partner_shared_label")}
+                </p>
+                <div className="space-y-4">
+                  {Array.isArray(t("partner_shared_values")) && t("partner_shared_values").map((val, idx) => (
+                    <motion.div
+                      key={idx}
+                      initial={{ opacity: 0, x: 20 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: idx * 0.15 }}
+                      className="flex items-center gap-4 bg-white/10 backdrop-blur-sm rounded-xl px-5 py-4 border border-white/10 hover:bg-white/15 transition-colors group/val"
+                    >
+                      <div className="w-3 h-3 rounded-full bg-[#c9a24d] shadow-[0_0_8px_rgba(201,162,77,0.6)] group-hover/val:scale-125 transition-transform" />
+                      <span className="text-lg font-medium text-white">{val}</span>
+                    </motion.div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </motion.div>
+
+        </div>
+      </section>
 
       {/* ================= LEADERSHIP TEAM ================= */}
       <LeadershipTeam />

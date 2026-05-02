@@ -28,6 +28,65 @@ i18n
             "With a strong understanding of pharmaceutical distribution systems and regulatory frameworks, we ensure that every product handled meets required quality and safety standards. Our focus on long-term partnerships allows us to create sustainable value for stakeholders while contributing positively to public health outcomes."
           ],
 
+          // Our Story
+          our_story_badge: "Our Story",
+          our_story_head: "KT Gen Pharmaceuticals wasn't built in a boardroom.",
+          our_story_paras: [
+            "It began with a simple but powerful observation — healthcare is everywhere, yet trust is rare.",
+            "In a world where medicines are often reduced to numbers, margins, and transactions, we chose a different path. We believed that every formulation carries a responsibility — not just to heal, but to uphold integrity, precision, and purpose.",
+            "KT Gen was founded with a vision to bridge the gap between science and sincerity. We are not here to be the biggest pharmaceutical company — we are here to be the most dependable one."
+          ],
+          our_story_commitments_label: "Every product we create reflects a deeper commitment:",
+          our_story_commitments: [
+            "To quality that never negotiates",
+            "To innovation that serves real clinical needs",
+            "To partnerships that are built on transparency, not targets"
+          ],
+          our_story_closing: "From carefully curated formulations to ethically driven practices, KT Gen stands for a new generation of pharmaceuticals — where growth is meaningful and trust is measurable.",
+          our_story_tagline: "We don't just manufacture medicines. We build confidence — dose by dose.",
+
+          // Partner Program
+          partner_program_badge: "Partner Program",
+          partner_program_head: "Grow Beyond Business",
+          partner_program_intro: "At KT Gen Pharmaceuticals, partnership is not a distribution channel — it is a shared journey.",
+          partner_program_para: "We understand that behind every partner is ambition, risk, and a desire to build something lasting. That's why our Partner Program is designed not just to support your business, but to elevate it.",
+          partner_diff_head: "What Makes Our Partnership Different?",
+          partner_diff_cards: [
+            {
+              number: "01",
+              title: "Exclusive Growth Opportunity",
+              desc: "We offer region-focused partnerships, ensuring you don't compete — you lead."
+            },
+            {
+              number: "02",
+              title: "Portfolio with Purpose",
+              desc: "Our product range is carefully designed based on real market demand and clinical relevance, helping you move faster and smarter."
+            },
+            {
+              number: "03",
+              title: "Transparent & Ethical Practices",
+              desc: "No hidden clauses. No unrealistic commitments. Just clear, honest collaboration."
+            },
+            {
+              number: "04",
+              title: "Marketing that Works for You",
+              desc: "From branding to promotional strategies, we equip you with tools that actually create impact in your territory."
+            },
+            {
+              number: "05",
+              title: "Continuous Support System",
+              desc: "We don't disappear after onboarding. Our team stays with you — guiding, supporting, and growing together."
+            }
+          ],
+          partner_shared_head: "More Than a Partner — A Shared Vision",
+          partner_shared_para: "When you join KT Gen Pharmaceuticals, you're not just associating with a company — you become part of a movement that believes in doing pharma differently.",
+          partner_shared_label: "A movement where:",
+          partner_shared_values: [
+            "Quality is non-negotiable",
+            "Relationships are long-term",
+            "Success is shared"
+          ],
+
           // Our Role in the Healthcare Ecosystem
           role_head: "Our Role in the Healthcare Ecosystem",
           role_para: "As a pharmaceutical distribution partner, KT GEN Pharmaceuticals plays a critical role in ensuring continuity of care by:",
@@ -119,10 +178,10 @@ i18n
           about_meet_head: "Leadership & Governance",
           meet_card1name: "Dr. Tejuvarshini V",
           meet_card1title: "CEO",
-          meet_card1bio: "Provides strategic leadership with strong expertise in pharmaceutical operations, regulatory compliance, and organizational governance. Her vision supports sustainable growth and operational excellence.",
+          meet_card1bio: "Dr. Tejuvarshini plays a vital role in KT Gen Pharmaceuticals, bringing a strong clinical perspective and a patient-centered approach. Her focus on quality, ethical practices, and clinically relevant formulations ensures that the company delivers reliable and effective healthcare solutions, contributing to its vision of building trust and long-term impact.",
           meet_card2name: "Dr. Kiran Shankar",
           meet_card2title: "Chairman and Founder",
-          meet_card2bio: "Brings extensive experience in pharmaceutical distribution, business development, and quality assurance, strengthening partnerships and operational efficiency.",
+          meet_card2bio: "Dr. Kiran, the founder of KT Gen Pharmaceuticals, established the company with a vision to restore trust, quality, and ethics in the pharmaceutical industry. With a strong clinical background, he focuses on delivering reliable, high-quality formulations and building transparent, long-term partnerships, ensuring that every step reflects integrity and purpose.",
           meet_card3name: "Mr. Rohith V",
           meet_card3title: "Managing Director",
           meet_card3bio: "Contributes operational insight in supply chain coordination and market expansion, reinforcing distribution capabilities and customer engagement.",
@@ -195,7 +254,7 @@ i18n
 
           // Contact Us
           address_label: "Registered Office:",
-          address_full: "Number 3009/1–4, 17th Cross, 2nd Main Road,\nBanashankari 2nd Stage,\nBengaluru – 560070, Karnataka, India",
+          address_full: "No. 3009/1–4, 17th Cross, 2nd Main Road,\nBanashankari 2nd Stage,\nBengaluru – 560070, Karnataka, India",
 
           // UI labels
           about_btn: "Learn More",
@@ -217,6 +276,65 @@ i18n
           about_paras: [
             "KT GEN Pharmaceuticals में, हमारा मानना है कि गुणवत्तापूर्ण दवाओं तक पहुँच प्रभावी स्वास्थ्य सेवा वितरण के लिए मौलिक है। हमारा संचालन पारदर्शिता, अनुपालन और जवाबदेही पर बना है, जो हमें फार्मास्युटिकल निर्माताओं और स्वास्थ्य सेवा प्रदाताओं के बीच एक भरोसेमंद कड़ी के रूप में सेवा करने में सक्षम बनाता है।",
             "फार्मास्युटिकल वितरण प्रणालियों और नियामक ढाँचों की गहरी समझ के साथ, हम यह सुनिश्चित करते हैं कि संभाला जाने वाला प्रत्येक उत्पाद आवश्यक गुणवत्ता और सुरक्षा मानकों को पूरा करता है। दीर्घकालिक साझेदारी पर हमारा ध्यान सार्वजनिक स्वास्थ्य परिणामों में सकारात्मक योगदान देते हुए हितधारकों के लिए स्थायी मूल्य बनाने की अनुमति देता है।"
+          ],
+
+          // Our Story (Hindi)
+          our_story_badge: "हमारी कहानी",
+          our_story_head: "KT Gen Pharmaceuticals किसी बोर्डरूम में नहीं बनी।",
+          our_story_paras: [
+            "इसकी शुरुआत एक सरल लेकिन शक्तिशाली अवलोकन से हुई — स्वास्थ्य सेवा हर जगह है, फिर भी विश्वास दुर्लभ है।",
+            "एक ऐसी दुनिया में जहाँ दवाइयों को अक्सर संख्याओं, मार्जिन और लेन-देन तक सीमित कर दिया जाता है, हमने एक अलग रास्ता चुना। हमारा मानना था कि हर फ़ॉर्मूलेशन एक ज़िम्मेदारी लेकर आती है — न केवल ठीक करने के लिए, बल्कि ईमानदारी, सटीकता और उद्देश्य को बनाए रखने के लिए।",
+            "KT Gen की स्थापना विज्ञान और सत्यनिष्ठा के बीच की खाई को पाटने के दृष्टिकोण के साथ की गई थी। हम यहाँ सबसे बड़ी फार्मास्युटिकल कंपनी बनने के लिए नहीं हैं — हम यहाँ सबसे भरोसेमंद कंपनी बनने के लिए हैं।"
+          ],
+          our_story_commitments_label: "हमारा हर उत्पाद एक गहरी प्रतिबद्धता को दर्शाता है:",
+          our_story_commitments: [
+            "उस गुणवत्ता के लिए जो कभी समझौता नहीं करती",
+            "उस नवाचार के लिए जो वास्तविक नैदानिक ज़रूरतों की पूर्ति करता है",
+            "उन साझेदारियों के लिए जो लक्ष्यों पर नहीं, पारदर्शिता पर बनी हैं"
+          ],
+          our_story_closing: "सावधानी से तैयार किए गए फ़ॉर्मूलेशन से लेकर नैतिक रूप से संचालित प्रथाओं तक, KT Gen एक नई पीढ़ी के फार्मास्युटिकल्स का प्रतिनिधित्व करती है — जहाँ विकास सार्थक है और विश्वास मापने योग्य है।",
+          our_story_tagline: "हम सिर्फ दवाएं नहीं बनाते। हम विश्वास बनाते हैं — एक खुराक से दूसरी खुराक तक।",
+
+          // Partner Program (Hindi)
+          partner_program_badge: "पार्टनर प्रोग्राम",
+          partner_program_head: "व्यवसाय से परे बढ़ें",
+          partner_program_intro: "KT Gen Pharmaceuticals में, साझेदारी एक वितरण चैनल नहीं है — यह एक साझा यात्रा है।",
+          partner_program_para: "हम समझते हैं कि हर भागीदार के पीछे महत्वाकांक्षा, जोखिम और कुछ स्थायी बनाने की इच्छा होती है। इसीलिए हमारा पार्टनर प्रोग्राम न केवल आपके व्यवसाय को समर्थन देने के लिए, बल्कि उसे ऊंचा उठाने के लिए डिज़ाइन किया गया है।",
+          partner_diff_head: "हमारी साझेदारी को क्या अलग बनाता है?",
+          partner_diff_cards: [
+            {
+              number: "01",
+              title: "विशेष विकास का अवसर",
+              desc: "हम क्षेत्र-केंद्रित साझेदारियाँ प्रदान करते हैं, यह सुनिश्चित करते हुए कि आप प्रतिस्पर्धा नहीं करते — आप नेतृत्व करते हैं।"
+            },
+            {
+              number: "02",
+              title: "उद्देश्य के साथ पोर्टफोलियो",
+              desc: "हमारी उत्पाद श्रृंखला वास्तविक बाजार मांग और नैदानिक प्रासंगिकता के आधार पर सावधानीपूर्वक डिज़ाइन की गई है।"
+            },
+            {
+              number: "03",
+              title: "पारदर्शी और नैतिक प्रथाएं",
+              desc: "कोई छिपी हुई शर्तें नहीं। कोई अवास्तविक प्रतिबद्धताएं नहीं। बस स्पष्ट, ईमानदार सहयोग।"
+            },
+            {
+              number: "04",
+              title: "आपके लिए काम करने वाली मार्केटिंग",
+              desc: "ब्रांडिंग से प्रचार रणनीतियों तक, हम आपको ऐसे उपकरणों से लैस करते हैं जो आपके क्षेत्र में वास्तविक प्रभाव बनाते हैं।"
+            },
+            {
+              number: "05",
+              title: "निरंतर सहायता प्रणाली",
+              desc: "हम ऑनबोर्डिंग के बाद गायब नहीं होते। हमारी टीम आपके साथ रहती है — मार्गदर्शन, समर्थन और एक साथ बढ़ते हुए।"
+            }
+          ],
+          partner_shared_head: "सिर्फ एक भागीदार से अधिक — एक साझा दृष्टिकोण",
+          partner_shared_para: "जब आप KT Gen Pharmaceuticals से जुड़ते हैं, तो आप केवल एक कंपनी से नहीं जुड़ते — आप एक ऐसे आंदोलन का हिस्सा बनते हैं जो फार्मा को अलग तरीके से करने में विश्वास रखता है।",
+          partner_shared_label: "एक आंदोलन जहाँ:",
+          partner_shared_values: [
+            "गुणवत्ता गैर-परक्राम्य है",
+            "रिश्ते दीर्घकालिक हैं",
+            "सफलता साझा की जाती है"
           ],
 
           // Our Role in the Healthcare Ecosystem
@@ -310,10 +428,10 @@ i18n
           about_meet_head: "हमारी नेतृत्व टीम",
           meet_card1name: "डॉ. किरण एस",
           meet_card1title: "अध्यक्ष और संस्थापक",
-          meet_card1bio: "फार्मास्युटिकल वितरण, व्यवसाय विकास और गुणवत्ता आश्वासन में व्यापक अनुभव लाते हैं, साझेदारी और परिचालन दक्षता को मजबूत करते हैं।",
+          meet_card1bio: "डॉ. किरण, केटी जेन फार्मास्यूटिकल्स के संस्थापक, ने कंपनी की स्थापना फार्मास्युटिकल उद्योग में विश्वास, गुणवत्ता और नैतिकता को पुनर्स्थापित करने की दृष्टि के साथ की। एक मजबूत क्लिनिकल पृष्ठभूमि के साथ, वे विश्वसनीय, उच्च-गुणवत्ता वाले फॉर्मूलेशन और पारदर्शी, दीर्घकालिक साझेदारी के निर्माण पर ध्यान केंद्रित करते हैं।",
           meet_card2name: "डॉ. तेजुवर्शिनी वी",
           meet_card2title: "सीईओ",
-          meet_card2bio: "फार्मास्युटिकल संचालन, नियामक अनुपालन और संगठनात्मक शासन में मजबूत विशेषज्ञता के साथ रणनीतिक नेतृत्व प्रदान करती हैं। उनका दृष्टिकोण स्थायी विकास और परिचालन उत्कृष्टता का समर्थन करता है।",
+          meet_card2bio: "डॉ. तेजुवर्शिनी केटी जेन फार्मास्यूटिकल्स में एक महत्वपूर्ण भूमिका निभाती हैं। वे एक मजबूत क्लिनिकल दृष्टिकोण और रोगी-केंद्रित सोच के साथ कार्य करती हैं। गुणवत्ता, नैतिक व्यवहार और चिकित्सीय रूप से प्रासंगिक फॉर्मूलेशन पर उनका ध्यान कंपनी को विश्वसनीय और प्रभावी स्वास्थ्य समाधान प्रदान करने में सक्षम बनाता है।",
           meet_card3name: "श्री रोहित वी",
           meet_card3title: "प्रबंध निदेशक",
           meet_card3bio: "आपूर्ति श्रृंखला समन्वय और बाजार विस्तार में परिचालन अंतर्दृष्टि का योगदान देते हैं, वितरण क्षमताओं और ग्राहकों के जुड़ाव को सुदृढ़ करते हैं।",
@@ -386,7 +504,7 @@ i18n
 
           // Contact Us
           address_label: "पंजीकृत कार्यालय:",
-          address_full: "Number 3009/1–4, 17वीं क्रॉस, दूसरा मेन रोड,\nबनशंकरी दूसरा चरण,\nबेंगलुरु - 560070, कर्नाटक, भारत",
+          address_full: "No. 3009/1–4, 17वीं क्रॉस, दूसरा मेन रोड,\nबनशंकरी दूसरा चरण,\nबेंगलुरु - 560070, कर्नाटक, भारत",
 
           // UI labels
           about_btn: "और जानें",

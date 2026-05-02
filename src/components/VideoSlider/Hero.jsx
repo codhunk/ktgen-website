@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import videoHero from "./videos/video4.mp4";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 const TypewriterText = ({ words }) => {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [currentText, setCurrentText] = useState("");
@@ -95,13 +96,12 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-wrap gap-4">
-            <button className="px-8 py-3 bg-blue-600 rounded-lg text-sm sm:text-base font-semibold text-white hover:bg-blue-700 transition">
-              {t("home_btn1")}
-            </button>
-
-            <button className="px-8 py-3 border border-white/40 rounded-lg text-sm sm:text-base text-white hover:bg-white/10 transition">
-              {t("home_btn2")}
-            </button>
+            <Link
+              to="/contact"
+              className="px-8 py-3 bg-blue-600 rounded-lg text-sm sm:text-base font-semibold text-white hover:bg-blue-700 transition"
+            >
+              Contact Us
+            </Link>
           </div>
         </motion.div>
       </div>

@@ -17,6 +17,7 @@ import AnimatedSlider from "../../components/Home/AnimatedSlider";
 import Whyuscom from '../../components/Whyuscom'
 import { useTranslation } from "react-i18next";
 import CountHead from "../../components/Home/Counting/CountHead";
+import HomeDirectors from "../../components/Home/HomeDirectors";
 
 const videos = [
   {
@@ -102,38 +103,8 @@ const Home = () => {
         <Counting />
       </div>
 
-      <div className="pb-8 min-h-screen bg-indigo-50 dark:bg-gray-900 flex flex-col items-center justify-center text-slate-800 dark:text-white px-4 text-center transition-all duration-300">
-        {/* <div className="mt-10 border border-red-600 ">
-          <OurMission />
-        </div> */}
-
-        {/* <div>
-          <h1 className=" text-4xl md:text-6xl text-center w-full px-5 py-10 text-black dark:text-[#7eb449] font-bold">
-            {t("home_expert")}
-          </h1>
-        </div> */}
-
-        {/* <div>
-          <AnimatedSlider />
-        </div> */}
-
-        {/* Testominial Slider */}
+      <div className="pb-8 bg-indigo-50 dark:bg-gray-900 flex flex-col items-center justify-center text-slate-800 dark:text-white px-4 text-center transition-all duration-300">
         <div className="rounded-xl w-full md:w-[95%] 2xl:max-w-7xl pb-4 h-auto mt-6">
-          {/* <h1 className="text-3xl text-center w-full px-5 mb-4 text-black dark:text-[#7eb449] font-bold ">
-            {t("testimo")}
-          </h1> */}
-          {/* why us component */}
-          {/* <div className="">
-            <Whyuscom />
-          </div> */}
-
-          {/* <TestimonialSlider
-            videos={videos}
-            onVideoClick={(index) => {
-              setStartIndex(index);
-              setModalOpen(true);
-            }}
-          /> */}
           {modalOpen && (
             <TestimonialModal
               videos={videos}
@@ -142,10 +113,14 @@ const Home = () => {
             />
           )}
         </div>
+      </div>
 
-        <div className="mt-10 ">
-          <PartnerProgram />
-        </div>
+      <div className="mt-0 w-full">
+        <HomeDirectors />
+      </div>
+
+      <div className="mt-0 w-full">
+        <PartnerProgram />
       </div>
     </>
   );

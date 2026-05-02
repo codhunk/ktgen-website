@@ -58,7 +58,7 @@ const App = () => {
             {/* Gallery Page */}
             <Route path="/gallery" element={<Gallery />} />
             {/* <Route path="/pregnency-sec" element={<Preg />} /> */}
-            <Route path="/campaign-sec" element={<Comp />} />
+            {/* <Route path="/campaign-sec" element={<Comp />} /> */}
             {/* <Route path="/therapy" element={<TherapyArea />} /> */}
             {/* <Route path="/csr" element={<CSRPage />} /> */}
             <Route path="/story" element={<OurStoryPage />} />

@@ -36,11 +36,9 @@ const Navbar = () => {
         { name: "OUR MISSION", link: "/ourmission", icon: <RiTeamFill /> },
       ],
     },
-    { name: "CAMPAIGN", link: "/campaign-sec" },
     {
       name: "PHARMACY",
       sub: [
-        // { name: "Therapy Area", link: "/therapy", icon: <MdOutlineWork /> },
         { name: "Doctors & Pharmacies", link: "/doctors-pharmacies", icon: <MdOutlineWork /> },
       ],
     },
