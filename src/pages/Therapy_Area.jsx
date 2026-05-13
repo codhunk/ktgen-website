@@ -197,7 +197,7 @@ export default function TherapyArea() {
       </motion.section>
 
       {/* FAQ with Dropdown */}
-      <motion.section
+      {/* <motion.section
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
@@ -253,7 +253,7 @@ export default function TherapyArea() {
             );
           })}
         </div>
-      </motion.section>
+      </motion.section> */}
 
       {/* CTA */}
       <motion.section

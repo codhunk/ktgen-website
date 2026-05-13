@@ -56,7 +56,7 @@ const pharmacies = [
 
 const DoctorsPharmaciesPage = () => {
     return (
-        <div className="bg-gray-50 text-gray-900 pt-20">
+        <div className="bg-gray-50 text-gray-900 pt-8">
             {/* Hero Section */}
             <section className="bg-blue-800 text-white py-20 px-6 text-center">
                 <h1 className="text-4xl sm:text-5xl font-bold mb-4">Doctors & Pharmacies</h1>
@@ -86,7 +86,7 @@ const DoctorsPharmaciesPage = () => {
             </section>
 
             {/* Testimonials Section */}
-            <section className="bg-gray-100 py-20 px-6">
+            {/* <section className="bg-gray-100 py-20 px-6">
                 <div className="max-w-6xl mx-auto">
                     <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 text-center mb-12">What Our Patients Say</h2>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -104,7 +104,7 @@ const DoctorsPharmaciesPage = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             {/* Join the Network Section */}
             <section className="py-20 px-6 bg-white">
@@ -129,7 +129,7 @@ const DoctorsPharmaciesPage = () => {
             </section>
 
             {/* FAQs Section */}
-            <section className="py-20 px-6 bg-gray-50">
+            {/* <section className="py-20 px-6 bg-gray-50">
                 <div className="max-w-4xl mx-auto">
                     <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 text-center mb-10">Frequently Asked Questions</h2>
                     <div className="space-y-6">
@@ -147,7 +147,7 @@ const DoctorsPharmaciesPage = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             {/* Stats Section */}
             <section className="py-16 px-6 bg-white">
@@ -172,7 +172,7 @@ const DoctorsPharmaciesPage = () => {
             </section>
 
             {/* Doctors Grid */}
-            <section className="py-16 px-6 bg-gray-50">
+            {/* <section className="py-16 px-6 bg-gray-50">
                 <div className="max-w-6xl mx-auto">
                     <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 text-center mb-10">
                         Meet Our Doctors
@@ -195,7 +195,7 @@ const DoctorsPharmaciesPage = () => {
                         ))}
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             {/* Pharmacies Grid */}
             <section className="py-16 px-6 bg-white">
