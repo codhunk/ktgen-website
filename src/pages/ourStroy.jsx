@@ -154,7 +154,7 @@ export default function OurStoryPage() {
       </section>
 
       {/* ===== WHAT MAKES OUR PARTNERSHIP DIFFERENT ===== */}
-      <section className="py-24 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
+      {/* <section className="py-24 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
         <div className="absolute top-0 left-0 w-80 h-80 bg-blue-100 rounded-full blur-[100px] opacity-40 -translate-x-1/3 -translate-y-1/3" />
         <div className="absolute bottom-0 right-0 w-72 h-72 bg-[#c9a24d]/10 rounded-full blur-[90px] translate-x-1/3 translate-y-1/3" />
         <div className="container mx-auto px-6 max-w-7xl relative z-10">
@@ -222,7 +222,7 @@ export default function OurStoryPage() {
           </motion.div>
 
         </div>
-      </section>
+      </section> */}
 
       {/* About & Mission */}
       <motion.section

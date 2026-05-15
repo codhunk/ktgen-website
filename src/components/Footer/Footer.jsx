@@ -91,11 +91,11 @@ const Footer = () => {
                     draggable="false"
                   />
                   <h2 className="text-3xl font-bold text-white">
-                    KT Gen Pharmaceuticals
+                    KT GEN Pharmaceuticals
                   </h2>
                 </section>
                 <p className="text-md text-slate-200 md:ml-2 w-full md:w-[90%]">
-                  At KT Gen, we are committed to improving lives through high-quality, affordable, and innovative healthcare solutions. As a trusted pharmaceutical company, we focus on delivering safe, effective, and reliable medicines that meet global standards of quality.
+                  At KT GEN, we are committed to improving lives through high-quality, affordable, and innovative healthcare solutions. As a trusted pharmaceutical company, we focus on delivering safe, effective, and reliable medicines that meet global standards of quality.
                 </p>
               </div>
 
@@ -139,11 +139,11 @@ const Footer = () => {
                   <span>+91 7899312233</span>
                 </Link>
                 <Link
-                  to="mailto:KT GEN.web@gmail.com"
+                  to="mailto:ktgen.web@gmail.com"
                   className="flex items-center gap-2 text-[1rem] text-slate-200 hover:text-indigo-400"
                 >
                   <IoMdMail size={20} className="h-fit" />
-                  <span>KT GEN.web@gmail.com</span>
+                  <span>ktgen.web@gmail.com</span>
                 </Link>
               </div>
             </div>
@@ -178,7 +178,7 @@ const Footer = () => {
               className="w-[10vw] xl:w-[10rem]"
               draggable="false"
             />
-            <span>KT Gen</span>
+            <span>KT GEN</span>
             <span>Pharmaceutical</span>
           </div>
           {/* Footer Copyright Part */}
