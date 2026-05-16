@@ -376,7 +376,7 @@ const AboutUs = () => {
       </section>
 
       {/* ================= ETHICS & SUSTAINABILITY ================= */}
-      <section className="py-20 bg-white">
+      <section className="py-10 bg-white">
         <div className="container mx-auto px-6 max-w-7xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
             <motion.div
@@ -470,14 +470,14 @@ const AboutUs = () => {
       </section> */}
 
       {/* ================= WHAT MAKES OUR PARTNERSHIP DIFFERENT ================= */}
-      <section className="py-24 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
-        {/* Decorative blobs */}
+      {/* <section className="py-24 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
+       
         <div className="absolute top-0 left-0 w-80 h-80 bg-blue-100 rounded-full blur-[100px] opacity-40 -translate-x-1/3 -translate-y-1/3" />
         <div className="absolute bottom-0 right-0 w-72 h-72 bg-[#c9a24d]/10 rounded-full blur-[90px] translate-x-1/3 translate-y-1/3" />
 
         <div className="container mx-auto px-6 max-w-7xl relative z-10">
 
-          {/* Section header */}
+        
           <div className="text-center max-w-3xl mx-auto mb-6">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -493,7 +493,7 @@ const AboutUs = () => {
             </motion.div>
           </div>
 
-          {/* Intro block */}
+      
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -505,7 +505,6 @@ const AboutUs = () => {
             <p className="text-base text-gray-500 font-light leading-relaxed">{t("partner_program_para")}</p>
           </motion.div>
 
-          {/* Sub-heading */}
           <motion.h3
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -515,7 +514,7 @@ const AboutUs = () => {
             {t("partner_diff_head")}
           </motion.h3>
 
-          {/* Cards grid */}
+          
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-20">
             {Array.isArray(t("partner_diff_cards")) && t("partner_diff_cards").map((card, idx) => {
               const icons = [
@@ -535,17 +534,16 @@ const AboutUs = () => {
                   whileHover={{ y: -8, scale: 1.02 }}
                   className="group relative bg-white border border-slate-100 rounded-2xl p-8 shadow-lg shadow-blue-900/5 hover:shadow-2xl hover:shadow-blue-900/10 hover:border-[#c9a24d]/30 transition-all duration-500 flex flex-col"
                 >
-                  {/* Card number badge */}
+            
                   <div className="absolute top-6 right-6 text-4xl font-black text-gray-100 group-hover:text-[#c9a24d]/20 transition-colors duration-500 select-none leading-none">
                     {card.number}
                   </div>
 
-                  {/* Icon */}
                   <div className="w-14 h-14 rounded-xl bg-blue-50 text-blue-700 flex items-center justify-center mb-6 group-hover:bg-blue-700 group-hover:text-white transition-all duration-300 shadow-inner">
                     {icons[idx] || <Star size={26} />}
                   </div>
 
-                  {/* Content */}
+                
                   <h4 className="text-lg font-bold text-gray-800 mb-3 group-hover:text-blue-700 transition-colors leading-snug">
                     {card.title}
                   </h4>
@@ -553,14 +551,14 @@ const AboutUs = () => {
                     {card.desc}
                   </p>
 
-                  {/* Bottom accent */}
+                
                   <div className="mt-6 w-8 h-1 bg-blue-100 rounded-full group-hover:w-16 group-hover:bg-[#c9a24d] transition-all duration-500" />
                 </motion.div>
               );
             })}
           </div>
 
-          {/* Shared Vision block */}
+         
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -608,7 +606,7 @@ const AboutUs = () => {
           </motion.div>
 
         </div>
-      </section>
+      </section> */}
 
       {/* ================= LEADERSHIP TEAM ================= */}
       <LeadershipTeam />

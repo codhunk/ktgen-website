@@ -165,7 +165,7 @@ const LeadershipTeam = () => {
     <section className="bg-gradient-to-r from-purple-100 via-blue-100 to-cyan-100 dark:from-purple-950 dark:via-blue-950 dark:to-cyan-950 py-10">
       <div className="container mx-auto px-4 text-center">
         <motion.h2
-          className="text-4xl font-bold text-blue-900 dark:text-indigo-100 mb-12"
+          className="text-3xl font-bold text-blue-900 dark:text-indigo-100 mb-12"
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
