@@ -9,6 +9,6 @@ export default defineConfig({
     host: "0.0.0.0", // Allow external access
     port: 5173, //  Vite Port
     allowedHosts: [".ngrok-free.app"], // Allow ngrok site
-    strictPort: true,
+    strictPort: false,
   },
 });

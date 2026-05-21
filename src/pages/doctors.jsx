@@ -198,7 +198,7 @@ const DoctorsPharmaciesPage = () => {
             </section> */}
 
             {/* Pharmacies Grid */}
-            <section className="py-16 px-6 bg-white">
+            {/* <section className="py-16 px-6 bg-white">
                 <div className="max-w-6xl mx-auto">
                     <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 text-center mb-10">
                         Trusted Pharmacies
@@ -222,7 +222,7 @@ const DoctorsPharmaciesPage = () => {
                         ))}
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             {/* CTA Section */}
             <section className="bg-blue-700 text-white py-20 px-6 text-center">

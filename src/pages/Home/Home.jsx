@@ -18,6 +18,7 @@ import Whyuscom from '../../components/Whyuscom'
 import { useTranslation } from "react-i18next";
 import CountHead from "../../components/Home/Counting/CountHead";
 import HomeDirectors from "../../components/Home/HomeDirectors";
+import TherapiesSection from "../../components/Home/TherapiesSection";
 
 const videos = [
   {
@@ -98,6 +99,8 @@ const Home = () => {
         <Hero />
       </div>
       <CountHead />
+      {/* Therapies We Are Present In */}
+      <TherapiesSection />
       {/* Counting */}
       <div className="bg-[#FBF8F2] w-full flex justify-center items-center">
         <Counting />

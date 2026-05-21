@@ -8,8 +8,6 @@ import founderImage from "./assets/leaders/campaign1.jpg";
 import journey1 from "./assets/leaders/journey.jpg";
 import journey2 from "./assets/leaders/journey1.jpg";
 import journey3 from "./assets/leaders/journey2.jpg";
-import award1 from "./assets/leaders/award1.jpg";
-import award2 from "./assets/leaders/award2.jpg";
 import globe from "./assets/leaders/global.jpg";
 import patient1 from "./assets/leaders/campaign2.jpg";
 import patient2 from "./assets/leaders/campaign3.jpg";
@@ -17,7 +15,7 @@ import patient2 from "./assets/leaders/campaign3.jpg";
 const milestones = [
   { year: "2018", title: "Founded with Vision", description: "KT Gen was born with a mission to bridge the gap between medical innovation and community care.", image: journey1 },
   { year: "2020", title: "Scaling Impact", description: "Expanded across multiple states, launching digital platforms and mobile medical units.", image: journey2 },
-  { year: "2023", title: "Global Collaborations", description: "Partnered with global health organizations to further scale our reach and deepen our impact.", image: journey3 },
+  { year: "2023", title: "Global Collaborations", description: "Partnering with global health organizations to further scale our reach and deepen our impact.", image: journey3 },
 ];
 
 const testimonials = [
@@ -232,7 +230,7 @@ export default function OurStoryPage() {
         variants={stagger}
         className="py-24 px-6 text-center"
       >
-        <h2 className="text-3xl sm:text-4xl font-semibold mb-8">Who We Are</h2>
+        <h2 className="text-3xl sm:text-4xl font-semibold mb-8 underline underline-offset-8 text-[#B8860B]">Who We Are</h2>
         <motion.div className="max-w-6xl mx-auto text-gray-700 text-lg space-y-6">
           <motion.p variants={fadeUp}>
             KT Gen was founded to create accessible, affordable, and sustainable healthcare solutions, reaching thousands of underserved communities through digital health and mobile clinics.
@@ -295,7 +293,7 @@ export default function OurStoryPage() {
       </motion.section>
 
       {/* Awards & Recognition */}
-      <motion.section
+      {/* <motion.section
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
@@ -313,7 +311,7 @@ export default function OurStoryPage() {
             <p className="mt-4 text-gray-600">Digital Health Innovator</p>
           </motion.div>
         </div>
-      </motion.section>
+      </motion.section> */}
 
       {/* Global Outreach */}
       <motion.section

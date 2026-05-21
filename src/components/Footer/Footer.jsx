@@ -169,7 +169,7 @@ const Footer = () => {
 
           </div>
           {/* Footer Bottom Section */}
-          <div
+          {/*    <div
             className="w-full  flex justify-center items-center gap-2 md:gap-5 text-[5.5vw] xl:text-[5rem]
           font-bold text-center uppercase text-white mb-6">
             <img
@@ -180,7 +180,7 @@ const Footer = () => {
             />
             <span>KT GEN</span>
             <span>Pharmaceutical</span>
-          </div>
+          </div> */}
           {/* Footer Copyright Part */}
           <div className=" text-white flex items-center justify-center mb-2">
             <span className="  text-gray-200 text-xs">
