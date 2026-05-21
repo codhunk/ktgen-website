@@ -276,13 +276,13 @@ const TherapiesSection = () => {
 
         {/* Card */}
         <div className="bg-[#f5f2eb] rounded-2xl shadow-sm px-6 py-10 md:px-12 md:py-12" style={{ borderTop: '3px solid #D4AF37' }}>
-          {/* Row 1 — 3 cols on mobile → 6 cols on md */}
+          {/* Row 1 — 2 cols on mobile → 3 on sm → 6 cols on md */}
           <motion.div
             variants={containerVariants}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6 gap-y-10"
+            className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-y-10"
             style={{ justifyItems: 'center' }}
           >
             {row1.map((therapy, i) => (
@@ -293,13 +293,13 @@ const TherapiesSection = () => {
           {/* Divider */}
           <div className="my-8 border-t border-gray-400 opacity-60" />
 
-          {/* Row 2 — 3 cols centered on all sizes */}
+          {/* Row 2 — 2 cols on mobile → 3 on sm */}
           <motion.div
             variants={containerVariants}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="grid grid-cols-3 gap-y-10"
+            className="grid grid-cols-2 sm:grid-cols-3 gap-y-10"
             style={{ justifyItems: 'center' }}
           >
             {row2.map((therapy, i) => (
