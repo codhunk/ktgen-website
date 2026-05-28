@@ -14,7 +14,7 @@ import patient2 from "./assets/leaders/campaign3.jpg";
 
 const milestones = [
   { year: "2018", title: "Founded with Vision", description: "KT Gen was born with a mission to bridge the gap between medical innovation and community care.", image: journey1 },
-  { year: "2020", title: "Scaling Impact", description: "Expanded across multiple states, launching digital platforms and mobile medical units.", image: journey2 },
+  { year: "2020", title: "Scaling Impact", description: "Explanding across multiple states, launching digital platforms and mobile medical units.", image: journey2 },
   { year: "2023", title: "Global Collaborations", description: "Partnering with global health organizations to further scale our reach and deepen our impact.", image: journey3 },
 ];
 
