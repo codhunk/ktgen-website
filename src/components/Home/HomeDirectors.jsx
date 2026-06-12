@@ -29,7 +29,7 @@ const directors = [
     linkedin: "#"
   },
 ];
-
+// hii
 const DirectorRow = ({ d, index }) => {
   const { t } = useTranslation();
   const isEven = index % 2 === 0;
